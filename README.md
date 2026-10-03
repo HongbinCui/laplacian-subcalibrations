@@ -1,6 +1,6 @@
 # Laplacian algebras and subcalibrations: computational verification
 
-Verification code accompanying **Laplacian algebras and subcalibrations for minimal hypercones**, by **Hongbin Cui**.
+Verification code accompanying **Laplacian algebras and subcalibrations for minimal hypercones (arXiv:2609.17217v2)**, by **Hongbin Cui**.
 
 The programs check differential identities, exact positivity certificates, and specified finite or coordinate-model calculations from the paper. The manuscript contains the mathematical proofs; the code provides reproducible algebraic checks.
 
