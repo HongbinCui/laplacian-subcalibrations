@@ -8,7 +8,7 @@ The programs check differential identities, exact positivity certificates, and s
 
 Download the complete repository using **Code > Download ZIP**, then extract it before opening a notebook. Keep the directory structure intact: the `.nb` notebooks load accompanying `.wl` files, and some supplemental notebooks also load a shared helper.
 
-In Mathematica 12, start a fresh kernel, open [START_HERE_Verification_v5.nb](anc/START_HERE_Verification_v5.nb), and choose **Evaluation > Evaluate Notebook**. This entry runs the main thirteen units, containing **550 assertions**. All units must pass and successfully export their TXT and CSV records. Save the evaluated notebook explicitly.
+In Mathematica 12, start a fresh kernel, open [START_HERE_Verification.nb](anc/START_HERE_Verification_v5.nb), and choose **Evaluation > Evaluate Notebook**. This entry runs the main thirteen units, containing **550 assertions**. All units must pass and successfully export their TXT and CSV records. Save the evaluated notebook explicitly.
 
 The additional units below run separately; the main entry does not run them. Use a fresh kernel for each separate Mathematica entry.
 
