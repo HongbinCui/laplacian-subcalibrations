@@ -1,0 +1,39 @@
+Appendix D: odd-degree rigidity and moment elimination
+Actual mathematical-check record (the unit return also requires both result exports)
+
+"Code release" | "20260923-v6"
+"Manuscript" | "Revised manuscript, 23 September 2026"
+"Unit" | "Appendix D: odd-degree rigidity and moment elimination"
+"Kernel" | "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"
+"Version number" | 12.
+"System ID" | "Windows-x86-64"
+"Started" | "Fri 2 Oct 2026 15:48:48"
+"Finished" | "Fri 2 Oct 2026 15:48:48"
+"Expected checks" | 15
+"Actual checks" | 15
+"Passed checks" | 15
+"Failed checks" | 0
+"Evaluation-message groups" | {}
+"Mathematical checks complete and passed" | True
+
+Groups: label | count | completed without evaluation messages
+"CheckOddDegreeRigidityAndMoments" | 15 | True
+
+Every check: label | passed | residual
+"odd-degree coefficient normalization at a maximum" | True | "0"
+"spherical gradient matrix at a maximum" | True | "True"
+"first spherical Hessian equation" | True | "0"
+"mixed spherical Hessian equation" | True | "0"
+"last spherical Hessian equation" | True | "0"
+"factorization of the Hessian eigenvalue restriction" | True | "0"
+"excluded Hessian eigenvalue residual" | True | "0"
+"remaining Hessian eigenvalue of the gradient square" | True | "0"
+"second-order degree rigidity obstruction" | True | "0"
+"first cubic spherical moment differential identity" | True | "0"
+"mixed cubic spherical moment differential identity" | True | "0"
+"third cubic spherical moment differential identity" | True | "0"
+"fourth cubic spherical moment differential identity" | True | "0"
+"cubic spherical moment elimination" | True | "0"
+"normalized cubic Bochner coefficient" | True | "0"
+
+Finite sample checks do not replace the all-orders or analytic proofs.

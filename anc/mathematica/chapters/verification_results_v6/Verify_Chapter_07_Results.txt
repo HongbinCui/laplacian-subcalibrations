@@ -1,0 +1,45 @@
+Manuscript Chapter 8 (stable unit Chapter07): gradient-square closed singular cubics
+Actual mathematical-check record (the unit return also requires both result exports)
+
+"Code release" | "20260923-v6"
+"Manuscript" | "Revised manuscript, 23 September 2026"
+"Unit" | "Manuscript Chapter 8 (stable unit Chapter07): gradient-square closed singular cubics"
+"Kernel" | "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"
+"Version number" | 12.
+"System ID" | "Windows-x86-64"
+"Started" | "Fri 2 Oct 2026 15:48:47"
+"Finished" | "Fri 2 Oct 2026 15:48:47"
+"Expected checks" | 18
+"Actual checks" | 18
+"Passed checks" | 18
+"Failed checks" | 0
+"Evaluation-message groups" | {}
+"Mathematical checks complete and passed" | True
+
+Groups: label | count | completed without evaluation messages
+"CheckCubic" | 4 | True
+"CheckCubicSpectrum" | 5 | True
+"CheckQuaternionicCubicModel" | 6 | True
+"CheckCubicCertificateHardyBound" | 3 | True
+
+Every check: label | passed | residual
+"cubic SF gradient" | True | "0"
+"cubic SF Laplacian" | True | "0"
+"cubic SF defect" | True | "0"
+"cubic parameter propagation" | True | "0"
+"cubic angular power Jacobi identity" | True | "0"
+"cubic smaller eigenfunction root" | True | "0"
+"cubic singular cutoff exponent" | True | "0"
+"cubic sharp Hardy square" | True | "0"
+"cubic sharp Hardy value in dimension 27" | True | "0"
+"quaternionic cubic normalized gradient square" | True | "0"
+"quaternionic cubic mixed gradient closure" | True | "0"
+"quaternionic cubic quartic gradient closure" | True | "0"
+"quaternionic cubic nonzero critical point" | True | "True"
+"quaternionic cubic harmonic Hessian trace" | True | "0"
+"quaternionic cubic Hessian norm and Bochner coefficient" | True | "0"
+"cubic SF boundary Jacobi coefficient" | True | "0"
+"cubic SF certificate Hardy bound" | True | "0"
+"cubic SF certificate value in dimension 27" | True | "0"
+
+Finite sample checks do not replace the all-orders or analytic proofs.

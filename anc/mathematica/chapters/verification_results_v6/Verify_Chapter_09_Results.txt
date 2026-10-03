@@ -1,0 +1,77 @@
+Manuscript Chapter 11 (stable unit Chapter09): Riedler pullbacks and Cartan targets
+Actual mathematical-check record (the unit return also requires both result exports)
+
+"Code release" | "20260923-v6"
+"Manuscript" | "Revised manuscript, 23 September 2026"
+"Unit" | "Manuscript Chapter 11 (stable unit Chapter09): Riedler pullbacks and Cartan targets"
+"Kernel" | "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"
+"Version number" | 12.
+"System ID" | "Windows-x86-64"
+"Started" | "Fri 2 Oct 2026 15:48:48"
+"Finished" | "Fri 2 Oct 2026 15:48:48"
+"Expected checks" | 50
+"Actual checks" | 50
+"Passed checks" | 50
+"Failed checks" | 0
+"Evaluation-message groups" | {}
+"Mathematical checks complete and passed" | True
+
+Groups: label | count | completed without evaluation messages
+"CheckQuartic" | 6 | True
+"CheckPullbackExtended" | 33 | True
+"CheckQuarticGradientSquareLaplacian" | 1 | True
+"CheckQuarticStructureAndObstruction" | 10 | True
+
+Every check: label | passed | residual
+"Riedler corrected gradient" | True | "0"
+"Riedler corrected defect" | True | "0"
+"quartic cometric determinant" | True | "0"
+"quartic Jacobi coefficient" | True | "0"
+"quartic spherical gradient" | True | "0"
+"quartic spherical defect" | True | "0"
+"harmonic CM target gradient" | True | "0"
+"harmonic CM target Laplacian" | True | "0"
+"harmonic CM weighted transfer polynomial" | True | "0"
+"harmonic CM source cometric determinant" | True | "0"
+"harmonic CM source gradient" | True | "0"
+"harmonic CM source Laplacian" | True | "0"
+"harmonic CM pullback defect identity" | True | "0"
+"harmonic CM explicit source certificate" | True | "0"
+"Cartan source closure specialization" | True | "True"
+"Cartan sextic gradient" | True | "0"
+"Cartan sextic defining defect" | True | "0"
+"Cartan degree-ten source defect" | True | "0"
+"Cartan source determinant" | True | "0"
+"Cartan first transfer coefficient m=14" | True | "True"
+"Cartan second transfer coefficient m=14" | True | "True"
+"Cartan first transfer coefficient m=26" | True | "True"
+"Cartan second transfer coefficient m=26" | True | "True"
+"Cartan source potential homogeneous degree ten" | True | "0"
+"unequal Lawson target defining defect" | True | "0"
+"unequal Lawson symbolic radial-power transfer" | True | "0"
+"unequal Lawson linear radial-power transfer" | True | "0"
+"unequal Lawson transfer square completion" | True | "0"
+"unequal Lawson source gradient" | True | "0"
+"unequal Lawson source defining defect" | True | "0"
+"unequal Lawson explicit source certificate" | True | "0"
+"unequal Lawson target defect square completion" | True | "0"
+"unequal Lawson target gradient square completion" | True | "0"
+"unequal Lawson source potential homogeneous degree eight" | True | "0"
+"Cartan boundary Jacobi coefficient" | True | "0"
+"Cartan positive Hardy remainder m=14" | True | "True"
+"Cartan positive Hardy remainder m=26" | True | "True"
+"unequal Lawson boundary Jacobi coefficient" | True | "0"
+"unequal Lawson Hardy bound 2273/4" | True | "0"
+"quartic gradient-square Laplacian expansion" | True | "0"
+"orthogonal quartic gradient norm" | True | "0"
+"orthogonal quartic Laplacian" | True | "0"
+"orthogonal quartic minimal-level numerator" | True | "0"
+"orthogonality of the three splitting quartics" | True | "0"
+"Riedler sixteen-dimensional curvature" | True | "0"
+"Riedler induced Laplacian of Q" | True | "0"
+"Riedler link gradient norm" | True | "0"
+"Riedler link Laplacian" | True | "0"
+"Riedler angular eigenfunction" | True | "0"
+"Riedler negative Hardy quotient" | True | "0"
+
+Finite sample checks do not replace the all-orders or analytic proofs.

@@ -1,0 +1,139 @@
+{
+  "release": "20260923-v6",
+  "unit": "Verify_Chapter_07_General_Cubic_Algebra",
+  "context": "MergedVerificationV6`Chapter07General`",
+  "manuscript_chapter": 7,
+  "independent_of_original_550": true,
+  "expected_count": 31,
+  "expected_zero_residual_count": 29,
+  "expected_true_count": 2,
+  "source": "Verify_Chapter_07_General_Cubic_Algebra.wl",
+  "notebook": "Verify_Chapter_07_General_Cubic_Algebra.nb",
+  "output_directory": "verification_results_v6_supplemental",
+  "assertion_labels": [
+    "C07G-01 cubic dictionary F = <x^2,x>/6",
+    "C07G-02 cubic dictionary gradient = x^2/2",
+    "C07G-03 cubic dictionary Hessian = L_x",
+    "C07G-04 cubic dictionary Laplacian = trace L_x",
+    "C07G-05 gradient square = |x^2|^2/4",
+    "C07G-06 gradient S = x^3",
+    "C07G-07 general Bochner identity including nonharmonic term",
+    "C07G-08 translation derivative and annihilator identity",
+    "C07G-09 general quadratic-weight cubic-algebra residual",
+    "C07G-10 quadratic Gamma and Jordan product",
+    "C07G-11 Euler-operator commutator sign",
+    "C07G-12 diagonal double-commutator entries",
+    "C07G-13 critical cubic curvature quadratic Taylor coefficient",
+    "C07G-14 quadratic Hessian curvature identity",
+    "C07G-15 general quadratic q contributes q(c) h at order two",
+    "C07G-16 general-q Hessian polynomial residual",
+    "C07G-17 smooth-multiplier quadratic Taylor jet",
+    "C07G-18 positive-multiplier order-four sign under Hessian relation",
+    "C07G-19 gradient identities imply radial weight q = 2R",
+    "C07G-20 variable-K SF gradient square",
+    "C07G-21 variable-K SF Laplacian",
+    "C07G-22 SF contractions with R F S",
+    "C07G-23 SF gradient-square partial derivatives",
+    "C07G-24 variable-K SF curvature polynomial",
+    "C07G-25 variable-K SF positive decomposition",
+    "C07G-26 quotient polynomial extension at F = 0",
+    "C07G-27 radial specialization K = 4kR",
+    "C07G-28 positive-S spherical maximum branch F nonzero",
+    "C07G-29 positive-S spherical maximum branch F zero",
+    "C07G-30 Q nonnegative coefficients on stated nonnegative domain",
+    "C07G-31 SF decomposition nonnegative coefficients on stated slack domain"
+  ],
+  "tex_label_mapping": {
+    "01-08": [
+      "eq:cubic-polarized-product",
+      "eq:cubic-multiplication-dictionary",
+      "eq:cubic-variable-trace"
+    ],
+    "09": [
+      "eq:cubic-general-weight"
+    ],
+    "10-12": [
+      "thm:cubic-one-dimensional-degree-three"
+    ],
+    "13-16": [
+      "eq:cubic-general-weight",
+      "eq:cubic-general-hessian-polynomial"
+    ],
+    "17-18": [
+      "eq:cubic-positive-multiplier-leading-sign"
+    ],
+    "19": [
+      "eq:cubic-gradient-identities-only"
+    ],
+    "20-23": [
+      "eq:cubic-variable-trace-gradient"
+    ],
+    "24-26": [
+      "eq:cubic-variable-trace-positive-decomposition"
+    ],
+    "27": [
+      "rem:cubic-algebraic-certificate-scope"
+    ],
+    "28-29": [
+      "eq:cubic-gradient-only-S-bound"
+    ],
+    "30-31": [
+      "eq:cubic-variable-trace-gradient",
+      "eq:cubic-variable-trace-positive-decomposition"
+    ]
+  },
+  "scope": [
+    "Generic coefficient checks 01-18 use three coordinates; dimension-independent proofs remain in the manuscript.",
+    "General quadratic q is retained in 09 and 13-18.",
+    "K is independent of R except in the explicit specialization 27.",
+    "Stationary branches 28-29 are substitutions, not a proof of branch exhaustion or maximum existence.",
+    "Coefficient sign checks 30-31 assume R >= 0, S >= 0, t = F^2 >= 0, K - 16R >= 0, R^2/3 - S >= 0.",
+    "Geometry, singular-set removability, and global positivity assumptions are not CAS conclusions."
+  ],
+  "execution": {
+    "status": "passed",
+    "engine": "Mathematica 12.0.0 for Microsoft Windows (64-bit)",
+    "native_mathematica_execution": true,
+    "record_supplied_date": "2026-10-02",
+    "expected_count": 31,
+    "actual_count": 31,
+    "passed_count": 31,
+    "failed_count": 0,
+    "zero_residual_count": 29,
+    "true_residual_count": 2,
+    "evaluation_messages": [],
+    "groups": [
+      {
+        "name": "Cubic dictionary",
+        "count": 9
+      },
+      {
+        "name": "Quadratic operators",
+        "count": 3
+      },
+      {
+        "name": "General-q critical jets",
+        "count": 6
+      },
+      {
+        "name": "Variable-K SF",
+        "count": 13
+      }
+    ],
+    "results_txt": "verification_results_v6_supplemental/Verify_Chapter_07_General_Cubic_Algebra_Results.txt",
+    "results_csv": "verification_results_v6_supplemental/Verify_Chapter_07_General_Cubic_Algebra_Results.csv",
+    "evaluated_notebook": "Verify_Chapter_07_General_Cubic_Algebra.nb",
+    "note": "Documentary summary of supplied native records; updating this manifest did not execute the program."
+  },
+  "sha256": {
+    "README_Chapter_07_General_Cubic_Algebra.md": "f6c54bba56d4db64dc3988bbbdfbe050e6b5c12959f9740946ffc573992c0f8d",
+    "Verify_Chapter_07_General_Cubic_Algebra.nb": "983887ba9f0c778c633f333a4fb2628945d89ae5b3c94e4591d68db6f2a577b8",
+    "Verify_Chapter_07_General_Cubic_Algebra.wl": "ad04b47c817fdbe24dcaca8997241d39516cbbe4ada101dc4813827a4cb6721c",
+    "verification_results_v6_supplemental/Verify_Chapter_07_General_Cubic_Algebra_Results.csv": "41352565113960b047dbe7a0aabb0688a671d87386eaeeb98813362fe2c702e2",
+    "verification_results_v6_supplemental/Verify_Chapter_07_General_Cubic_Algebra_Results.txt": "e309b3f026eb648317d430cc75c6a953cee692911e618c054dc1487cbda33eee"
+  },
+  "tex_label_mapping_notes": {
+    "09": "eq:cubic-general-weight: equivalent algebraic multiplication identity"
+  },
+  "sha256_scope": "Hashes of files supplied in this package, recorded during documentation packaging; not execution-time attestations."
+}

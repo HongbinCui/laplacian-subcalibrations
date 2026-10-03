@@ -1,0 +1,76 @@
+{
+  "method": "Exact sparse Laurent polynomial arithmetic over fractions.Fraction",
+  "engine": "Python standard library; no SymPy, Mathics, or Mathematica used",
+  "python_version": "3.12.14",
+  "native_mathematica_executed": false,
+  "passed": true,
+  "identity_count": 13,
+  "checks": [
+    {
+      "identity": "radial master: gradient square / R^(2a)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "radial master: defect / R^(3a)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "unweighted Clifford pullback: defect",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "weighted Clifford pullback: gradient / R^(2a)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "weighted Clifford pullback: Laplacian / R^a",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "weighted Clifford pullback: defect / R^(3a)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "weighted Clifford pullback: preserved M-ratio / R^(2a)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "dimension monotonicity: finite difference / R^(4a)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "Simons fractional target: W_H",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "Simons fractional target: Delta H",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "Simons fractional target: L(H)",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "Simons fractional target: H Delta H",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    },
+    {
+      "identity": "Simons fractional target: a=1, ell=7/2, M=0 dimension bound",
+      "passed": true,
+      "nonzero_remainder_terms": 0
+    }
+  ],
+  "scope": "Differential identities only; does not verify geometric measure theory arguments."
+}

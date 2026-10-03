@@ -1,0 +1,42 @@
+Chapter 5: isoparametric hypercones
+Actual mathematical-check record (the unit return also requires both result exports)
+
+"Code release" | "20260923-v6"
+"Manuscript" | "Revised manuscript, 23 September 2026"
+"Unit" | "Chapter 5: isoparametric hypercones"
+"Kernel" | "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"
+"Version number" | 12.
+"System ID" | "Windows-x86-64"
+"Started" | "Fri 2 Oct 2026 15:48:47"
+"Finished" | "Fri 2 Oct 2026 15:48:47"
+"Expected checks" | 16
+"Actual checks" | 16
+"Passed checks" | 16
+"Failed checks" | 0
+"Evaluation-message groups" | {}
+"Mathematical checks complete and passed" | True
+
+Groups: label | count | completed without evaluation messages
+"CheckIsoparametricIdentities" | 5 | True
+"CheckIsoparametricExtended" | 7 | True
+"CheckLawsonMotivatingPotential" | 4 | True
+
+Every check: label | passed | residual
+"rank-one radial defect" | True | "0"
+"isoparametric correction g=2, t=1/3" | True | "0"
+"isoparametric correction g=4, t=1/7" | True | "0"
+"isoparametric correction g=4, t=3/7" | True | "0"
+"(4,1,7) correction" | True | "0"
+"critical isoparametric coefficient z^0 vanishes" | True | "0"
+"critical isoparametric coefficient z^1 vanishes" | True | "0"
+"critical isoparametric coefficient z^2 vanishes" | True | "0"
+"forced critical isoparametric cubic coefficient" | True | "0"
+"Lin one-sided gradient square" | True | "0"
+"Lin one-sided Laplacian" | True | "0"
+"Lin one-sided defect 64 R F^2 (v-17u)" | True | "0"
+"Lawson multiplier" | True | "0"
+"Lawson quartic potential" | True | "0"
+"inverse squared x-radius" | True | "0"
+"inverse squared y-radius" | True | "0"
+
+Finite sample checks do not replace the all-orders or analytic proofs.

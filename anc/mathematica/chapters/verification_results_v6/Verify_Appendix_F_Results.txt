@@ -1,0 +1,52 @@
+Historical homogeneity checks (stable unit AppendixF)
+Actual mathematical-check record (the unit return also requires both result exports)
+
+"Code release" | "20260923-v6"
+"Notation revision" | "20260928-v3"
+"Manuscript" | "Revised manuscript, 23 September 2026"
+"Unit" | "Historical homogeneity checks (stable unit AppendixF)"
+"Kernel" | "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"
+"Version number" | 12.
+"System ID" | "Windows-x86-64"
+"Started" | "Fri 2 Oct 2026 15:48:48"
+"Finished" | "Fri 2 Oct 2026 15:48:48"
+"Expected checks" | 27
+"Actual checks" | 27
+"Passed checks" | 27
+"Failed checks" | 0
+"Evaluation-message groups" | {}
+"Mathematical checks complete and passed" | True
+
+Groups: label | count | completed without evaluation messages
+"CheckCliffordHomogeneityAppendix" | 27 | True
+
+Every check: label | passed | residual
+"F: degree of L(G)" | True | "0"
+"F: degree of prefactor" | True | "0"
+"F: degree of G1" | True | "0"
+"F: degree of G2" | True | "0"
+"F: V_gamma has weighted degree four" | True | "0"
+"F: D_gamma has weighted degree minus two" | True | "0"
+"F: Q_gamma has weighted degree two" | True | "0"
+"F: Qhat has weighted degree two" | True | "0"
+"F: normalized quotient has degree zero" | True | "0"
+"F: S/R squared equals lambda H" | True | "0"
+"F: S=R squared lambda H before normalization" | True | "0"
+"F: H on lambda=0" | True | "0"
+"F: H on lambda=1" | True | "0"
+"F: H on theta=0" | True | "0"
+"F: H on theta=1" | True | "0"
+"F: cleared endpoint is polynomial, case 1" | True | "True"
+"F: cleared endpoint is polynomial, case 2" | True | "True"
+"F: cleared endpoint is polynomial, case 3" | True | "True"
+"F: cleared endpoint is polynomial, case 4" | True | "True"
+"F: denominator clearing identity, case 1" | True | "0"
+"F: denominator clearing identity, case 2" | True | "0"
+"F: denominator clearing identity, case 3" | True | "0"
+"F: denominator clearing identity, case 4" | True | "0"
+"F: polynomial value at H=0 is finite, case 1" | True | "True"
+"F: polynomial value at H=0 is finite, case 2" | True | "True"
+"F: polynomial value at H=0 is finite, case 3" | True | "True"
+"F: polynomial value at H=0 is finite, case 4" | True | "True"
+
+Finite sample checks do not replace the all-orders or analytic proofs.

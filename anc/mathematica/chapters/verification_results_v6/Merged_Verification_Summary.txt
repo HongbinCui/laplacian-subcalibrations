@@ -1,0 +1,23 @@
+Revised manuscript: actual v6 execution of the retained 13-unit suite
+Code release: 20260923-v6
+Kernel: 12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)
+System ID: Windows-x86-64
+Started: Fri 2 Oct 2026 15:48:47
+Finished: Fri 2 Oct 2026 15:48:48
+Overall passed: True
+Total retained-suite assertions, including stated appendix repetitions: 550
+
+File | expected | actual | passed
+"Verify_Chapter_04.wl" | 6 | 6 | True
+"Verify_Chapter_05.wl" | 16 | 16 | True
+"Verify_Chapter_06.wl" | 49 | 49 | True
+"Verify_Chapter_07.wl" | 18 | 18 | True
+"Verify_Chapter_08.wl" | 193 | 193 | True
+"Verify_Chapter_09.wl" | 50 | 50 | True
+"Verify_Chapter_10.wl" | 134 | 134 | True
+"Verify_Appendix_A.wl" | 8 | 8 | True
+"Verify_Appendix_B.wl" | 15 | 15 | True
+"Verify_Appendix_C.wl" | 1 | 1 | True
+"Verify_Appendix_D.wl" | 15 | 15 | True
+"Verify_Appendix_E.wl" | 18 | 18 | True
+"Verify_Appendix_F.wl" | 27 | 27 | True

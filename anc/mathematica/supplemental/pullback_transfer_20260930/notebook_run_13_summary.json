@@ -1,0 +1,15 @@
+{
+	"interface_version":"20261002-notebook-r2",
+	"source_file":"verify_pullback_transfer.wl",
+	"source_sha256":"8cda337561669aa5bc442cb526f4b8658568e93478bf1750c1203c7a9a31b5ab",
+	"kernel_version":"12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)",
+	"system_id":"Windows-x86-64",
+	"started":"Fri 2 Oct 2026 17:39:14",
+	"finished":"Fri 2 Oct 2026 17:39:14",
+	"expected_checks":13,
+	"actual_checks":13,
+	"mathematical_checks_passed":true,
+	"evaluation_succeeded":true,
+	"no_evaluation_messages":true,
+	"scope":"Existing symbolic assertions; no new geometric proof."
+}

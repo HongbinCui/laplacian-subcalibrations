@@ -1,0 +1,11 @@
+Notebook[{
+Cell["Chapter 4: algebraic multipliers and Jacobi stability: Mathematica 12 verification (complete v6)", "Title"],
+Cell["Unzip the package first. Keep this notebook next to Verify_Chapter_04.wl. Evaluate the first input cell with Shift+Enter, or choose Evaluation > Evaluate Notebook. No Python, external package, or network connection is needed.", "Text"],
+Cell["The source uses exact arithmetic. The actual kernel version, check counts, and residuals are exported automatically into verification_results_v6. This notebook has no prefilled evaluation output. Save it after evaluation to retain your own result.", "Text"],
+Cell[BoxData[RowBox[{"Block", "[", "{", "$IterationLimit", "=", "Infinity", ",", "$ContextPath", "=", "{", "\"System`\"", "}", ",", "$Context", "=", "\"Global`\"", "}", ",", "Get", "[", "FileNameJoin", "[", "{", "NotebookDirectory", "[", "]", ",", "\"Verify_Chapter_04.wl\"", "}", "]", "]", "]"}]], "Input"],
+Cell["Summary", "Section"],
+Cell[BoxData[RowBox[{"{", "MergedVerificationV5`Chapter04`VerificationResults", ",", "Length", "[", "MergedVerificationV5`Chapter04`VerificationLog", "]", "}"}]], "Input"],
+Cell["Every exact check", "Section"],
+Cell[BoxData[RowBox[{"MergedVerificationV5`Chapter04`VerificationLog", "//", "TableForm"}]], "Input"],
+Cell["A success requires every expected check to run and pass, and both result files to be exported successfully. The v5 filename/context is a stable unit ID; active code release is v6. Finite matrix-order tests and coordinate samples are explicitly distinguished from symbolic identities; the geometric, singular-set, spectral-domain and all-orders arguments remain in the paper.", "Text"]
+}, WindowTitle -> "Chapter 4: algebraic multipliers and Jacobi stability", StyleDefinitions -> "Default.nb"]

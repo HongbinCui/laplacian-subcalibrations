@@ -1,0 +1,53 @@
+Chapter 7 supplemental: general cubic algebra and variable-K SF
+Actual supplemental execution record
+
+"Code release" | "20260923-v6"
+"Kernel" | "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"
+"Expected checks" | 31
+"Actual checks" | 31
+"Passed checks" | 31
+"Failed checks" | 0
+"Evaluation-message groups" | {}
+"Mathematical checks passed" | True
+
+Groups: label | count | no evaluation messages
+"Cubic dictionary" | 9 | True
+"Quadratic operators" | 3 | True
+"General-q critical jets" | 6 | True
+"Variable-K SF" | 13 | True
+
+Checks: label | passed | residual
+"C07G-01 cubic dictionary F = <x^2,x>/6" | True | "0"
+"C07G-02 cubic dictionary gradient = x^2/2" | True | "0"
+"C07G-03 cubic dictionary Hessian = L_x" | True | "0"
+"C07G-04 cubic dictionary Laplacian = trace L_x" | True | "0"
+"C07G-05 gradient square = |x^2|^2/4" | True | "0"
+"C07G-06 gradient S = x^3" | True | "0"
+"C07G-07 general Bochner identity including nonharmonic term" | True | "0"
+"C07G-08 translation derivative and annihilator identity" | True | "0"
+"C07G-09 general quadratic-weight cubic-algebra residual" | True | "0"
+"C07G-10 quadratic Gamma and Jordan product" | True | "0"
+"C07G-11 Euler-operator commutator sign" | True | "0"
+"C07G-12 diagonal double-commutator entries" | True | "0"
+"C07G-13 critical cubic curvature quadratic Taylor coefficient" | True | "0"
+"C07G-14 quadratic Hessian curvature identity" | True | "0"
+"C07G-15 general quadratic q contributes q(c) h at order two" | True | "0"
+"C07G-16 general-q Hessian polynomial residual" | True | "0"
+"C07G-17 smooth-multiplier quadratic Taylor jet" | True | "0"
+"C07G-18 positive-multiplier order-four sign under Hessian relation" | True | "0"
+"C07G-19 gradient identities imply radial weight q = 2R" | True | "0"
+"C07G-20 variable-K SF gradient square" | True | "0"
+"C07G-21 variable-K SF Laplacian" | True | "0"
+"C07G-22 SF contractions with R F S" | True | "0"
+"C07G-23 SF gradient-square partial derivatives" | True | "0"
+"C07G-24 variable-K SF curvature polynomial" | True | "0"
+"C07G-25 variable-K SF positive decomposition" | True | "0"
+"C07G-26 quotient polynomial extension at F = 0" | True | "0"
+"C07G-27 radial specialization K = 4kR" | True | "0"
+"C07G-28 positive-S spherical maximum branch F nonzero" | True | "0"
+"C07G-29 positive-S spherical maximum branch F zero" | True | "0"
+"C07G-30 Q nonnegative coefficients on stated nonnegative domain" | True | "True"
+"C07G-31 SF decomposition nonnegative coefficients on stated slack domain" | True | "True"
+
+The returned source value additionally requires BOTH exports to succeed.
+Geometry, singular-set removability, and global positivity hypotheses are not CAS conclusions.

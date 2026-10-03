@@ -1,0 +1,395 @@
+{
+  "description": "Exact verification of the Jordan pencil F_t=A+tB",
+  "utc_execution_time": "2026-09-27T16:46:12.420203+00:00",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "script_sha256": "627d0ed4be9e79ff197e2bd559f6a5e690cab1f7507f8ca485251a6c24a9ff24",
+  "arithmetic": "exact rational polynomial and symbolic radical identities",
+  "elapsed_seconds": 0.969,
+  "status": "PASS",
+  "passed": 65,
+  "total": 65,
+  "formulas": {
+    "F_t": "A + B*t",
+    "S_t": "W*t*(t - 1) + 4*(nu*t + rho)**2/3",
+    "Delta_F_t": "0",
+    "L_F_t": "-8*(rho+t**2*(2-t)*nu)*F_t - (8/3)*t*(t-1)*(3*t+1)*(rho+t*nu)*B",
+    "expanded_L_coefficients_in_t": {
+      "0": "-8*A*rho",
+      "1": "-16*B*rho/3",
+      "2": "-8*(6*A*nu - B*nu - 2*B*rho)/3",
+      "3": "8*(3*A*nu - 4*B*nu - 3*B*rho)/3"
+    },
+    "minimal_parameters": [
+      "0",
+      "1",
+      "-1/3"
+    ],
+    "q_at_minus_one_third": "8*(rho+7*nu/27)"
+  },
+  "regular_zero_witnesses": [
+    {
+      "parameter_branch": "t>0",
+      "Z": "diag(1,1,-2)",
+      "u": "Matrix([[0, 0, 1/sqrt(t_positive)]])",
+      "A": "-2",
+      "B": "2/t_positive",
+      "rho": "3",
+      "nu": "1/t_positive",
+      "W": "16/t_positive",
+      "rho_plus_t_nu": "4",
+      "F_t": "0",
+      "D_u_F_t_squared_norm": "16*t_positive",
+      "L_at_regular_zero": "(64/3 - 64*t_positive/3)*(3*t_positive + 1)"
+    },
+    {
+      "parameter_branch": "t<0",
+      "Z": "diag(1,1,-2)",
+      "u": "Matrix([[sqrt(2)*sqrt(-1/t_negative), 0, 0]])",
+      "A": "-2",
+      "B": "2/t_negative",
+      "rho": "3",
+      "nu": "-2/t_negative",
+      "W": "-8/t_negative",
+      "rho_plus_t_nu": "1",
+      "F_t": "0",
+      "D_u_F_t_squared_norm": "-8*t_negative",
+      "L_at_regular_zero": "(16/3 - 16*t_negative/3)*(3*t_negative + 1)"
+    }
+  ],
+  "scope": [
+    "The formal calculation assumes the stated invariant closure for d=1,2,4.",
+    "The full closure and Laplacian table are independently verified in real coordinates for d=1.",
+    "The diagonal real witnesses embed unchanged into K=R,C,H.",
+    "The necessity argument uses L nonzero at a regular zero for every excluded real t.",
+    "The geometric equivalence of L=0 on regular zeros with minimality is used, not formally proved by this script.",
+    "The Cayley-Dickson identification N=A+B, complex/quaternionic coordinate closure, irreducibility, stability, and minimization are outside this check."
+  ],
+  "checks": [
+    {
+      "name": "Delta(F_t)=0 for formal d",
+      "category": "formal closure",
+      "passed": true
+    },
+    {
+      "name": "S_t full polynomial",
+      "category": "formal closure",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) full polynomial",
+      "category": "formal closure",
+      "passed": true
+    },
+    {
+      "name": "S_t coefficient of t^0",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "S_t coefficient of t^1",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "S_t coefficient of t^2",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) coefficient of t^0",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) coefficient of t^1",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) coefficient of t^2",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) coefficient of t^3",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) coefficient of t^4",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "L(F_t) displayed t^4 cancellation",
+      "category": "coefficient checks",
+      "passed": true
+    },
+    {
+      "name": "minimal equation at t=0",
+      "category": "special parameters",
+      "passed": true
+    },
+    {
+      "name": "minimal equation at t=1",
+      "category": "special parameters",
+      "passed": true
+    },
+    {
+      "name": "minimal equation at t=-1/3",
+      "category": "special parameters",
+      "passed": true
+    },
+    {
+      "name": "existing nonradial S at t=-1/3",
+      "category": "special parameters",
+      "passed": true
+    },
+    {
+      "name": "existing nonradial Gamma(F,S)=2qF",
+      "category": "special parameters",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Delta(rho)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(rho,rho)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(rho,nu)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(rho,A)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(rho,B)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(rho,W)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Delta(nu)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(nu,nu)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(nu,A)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(nu,B)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(nu,W)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Delta(A)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(A,A)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(A,B)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(A,W)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Delta(B)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(B,B)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(B,W)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Delta(W)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Gamma(W,W)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Delta(F_t)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate S_t",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "real-coordinate Hessian definition of L(F_t)",
+      "category": "independent d=1 coordinates",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness nu",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness A",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness B",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness W",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness F_t=0",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness rho+t*nu",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness |D_u F_t|^2",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 witness is regular",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 L(F_t) at witness",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 direct coordinate F_t=0",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t>0 direct coordinate L(F_t)",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness nu",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness A",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness B",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness W",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness F_t=0",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness rho+t*nu",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness |D_u F_t|^2",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 witness is regular",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 L(F_t) at witness",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 direct coordinate F_t=0",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "t<0 direct coordinate L(F_t)",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "exceptional nonzero roots are exactly -1/3 and 1",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "all parameters have common zero diag(1,-1,0),u=0",
+      "category": "regular zeros",
+      "passed": true
+    },
+    {
+      "name": "common zero gradient squared norm equals 4/3",
+      "category": "regular zeros",
+      "passed": true
+    }
+  ]
+}
