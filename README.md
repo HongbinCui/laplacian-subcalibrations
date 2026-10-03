@@ -8,7 +8,7 @@ The programs check differential identities, exact positivity certificates, and s
 
 Download the complete repository using **Code > Download ZIP**, then extract it before opening a notebook. Keep the directory structure intact: the `.nb` notebooks load accompanying `.wl` files, and some supplemental notebooks also load a shared helper.
 
-In Mathematica 12, start a fresh kernel, open [START_HERE_Verification.nb](anc/START_HERE_Verification_v5.nb), and choose **Evaluation > Evaluate Notebook**. This entry runs the main thirteen units, containing **550 assertions**. All units must pass and successfully export their TXT and CSV records. Save the evaluated notebook explicitly.
+In Mathematica 12, start a fresh kernel, open [Main Mathematica verification](anc/START_HERE_Verification_v5.nb), and choose **Evaluation > Evaluate Notebook**. This entry runs the main thirteen units, containing **550 assertions**. All units must pass and successfully export their TXT and CSV records. Save the evaluated notebook explicitly. Dates and `v5`/`v6` in program names are stable identifiers, not manuscript versions.
 
 The additional units below run separately; the main entry does not run them. Use a fresh kernel for each separate Mathematica entry.
 
@@ -30,7 +30,7 @@ The 28-, 38-, and 13-assertion notebooks should report **`COMPLETE AND PASSED: T
 
 The author's native **Mathematica 12.0.0 (Windows 64-bit)** runs cover all **660 Wolfram Language assertions**, with all checks passing. The two Python-only units have passing records for **127 assertions**. The resulting total of **787 program assertions includes stated overlaps**; it does not count 787 distinct mathematical results.
 
-Evaluated notebooks and execution records are included. [Verification Records](anc/Verification_Records.md) identifies their locations, dates, environments, and source-hash scope. Preparing this repository did not change or rerun the programs or retained results. Dates and `v5`/`v6` in program names are stable identifiers, not manuscript versions.
+Evaluated notebooks and execution records are included. [Verification Records](anc/Verification_Records.md) identifies their locations, dates, environments, and source-hash scope. Preparing this repository did not change or rerun the programs or retained results.
 
 ## Verification scope and documentation
 
