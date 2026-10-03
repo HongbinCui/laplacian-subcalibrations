@@ -53,9 +53,12 @@ record. Neither is counted as an additional set of assertions.
 
 ## Stable identifiers and scope
 
-The retained executable files, evaluated notebooks and result records are
-unchanged. Superseded compatibility logs and notation-audit archives are
-omitted. No execution record or source hash has been relabeled as a new run.
+A documentation update on 3 October 2026 corrects Markdown formula display,
+clarifies the main notebook instructions and the presence of saved outputs
+in three supplemental notebooks, and updates the electronic supplement's
+download instructions. All notebook input cells, saved output cells,
+Wolfram and Python source files, and execution records remain unchanged.
+No execution record or source hash has been relabeled as a new run.
 Dates and v5/v6 in program names and output paths remain stable identifiers;
 current manuscript mapping is in `mathematica/chapters/VERIFICATION_GUIDE.md`.
 
