@@ -25,11 +25,11 @@ coefficients, and the regular-zero witnesses. The supplied run passed
 Use the manuscript normalization
 
 $$
-\rho=\tfrac12\operatorname{tr}Z^2,\qquad \nu=|u|^2,\qquad
+\rho=\tfrac12\mathrm{tr}\,Z^2,\qquad \nu=|u|^2,\qquad
 A=\det Z,\qquad B=-u^*Zu,\qquad W=4u^*Z^2u,
 $$
 
-with the metric $\tfrac12\operatorname{Re}\operatorname{tr}(dZ^2)+|du|^2$.
+with the metric $\tfrac12\mathrm{Re}\,\mathrm{tr}\,(dZ^2)+|du|^2$.
 For $F_t=A+tB$, the script checks
 
 $$
@@ -38,7 +38,7 @@ S_t=|\nabla F_t|^2=\tfrac43(\rho+t\nu)^2+t(t-1)W,
 $$
 
 and, with
-$\mathcal L(F)=|\nabla F|^2\Delta F-\operatorname{Hess}F(\nabla F,\nabla F)$,
+$\mathcal L(F)=|\nabla F|^2\Delta F-\mathrm{Hess}\,F(\nabla F,\nabla F)$,
 
 $$
 \mathcal L(F_t)=-8[\rho+t^2(2-t)\nu]F_t
@@ -80,7 +80,7 @@ $\mathcal L(F_t)=-q_tF_t$, with
 | $1$ | $8(\rho+\nu)$ |
 | $-1/3$ | $8(\rho+7\nu/27)$ |
 
-For necessity, take $Z=\operatorname{diag}(1,1,-2)$. The following
+For necessity, take $Z=\mathrm{diag}(1,1,-2)$. The following
 witnesses are real and thus lie in all three spaces
 $\mathbb K=\mathbb R,\mathbb C,\mathbb H$.
 
@@ -97,7 +97,7 @@ and the negative branch permits only $t=-1/3$. Consequently each
 other nonzero real parameter has a regular zero where mean curvature
 is nonzero. The parameter $t=0$ is already covered by its minimal
 equation. For every real $t$,
-$(Z,u)=(\operatorname{diag}(1,-1,0),0)$ is a regular zero with
+$(Z,u)=(\mathrm{diag}(1,-1,0),0)$ is a regular zero with
 $S_t=4/3$, so the regular set is nonempty.
 
 This argument proves that **the regular zero hypersurface is minimal
@@ -113,7 +113,7 @@ irreducibility claim for the other members of the pencil.
   Laplacian table, and pencil formulas for $d=1$.
 - Symbolic witness calculations establish the algebra and regularity
   needed for the necessity proof. The standard geometric identity
-  $\operatorname{div}(\nabla F/|\nabla F|) =\mathcal L(F)/|\nabla F|^3$ on the regular set supplies the
+  $\mathrm{div}(\nabla F/|\nabla F|) =\mathcal L(F)/|\nabla F|^3$ on the regular set supplies the
   connection with minimality; the script does not formalize that
   differential-geometric theorem.
 - The Cayley--Dickson identification $N=A+B$, irreducibility,

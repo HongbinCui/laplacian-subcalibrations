@@ -10,7 +10,7 @@ renaming of the executable programs.
 | Radial calculations, especially `CheckRadialMaster` in `Verify_Appendix_A.wl` | $R=\lvert x\rvert^2$, ambient dimension $N$ | `r=R`, `n=N`; code `r` is a squared radius |
 | Clifford cubics, Chapter 9 | $S=\lvert\nabla F\rvert^2$, $J=\Gamma(S,S)=\lvert\nabla S\rvert^2$, $K=\Delta S$ | `ss` or the locally specified gradient-square variable; `jGradS/jLink/jValue` for $J$, `ds` for $K$ |
 | Clifford Jacobi test | $\mathsf M_J$ | `JacobiMatrix`; it is a matrix, not the scalar $J$ |
-| Nonharmonic certificate, Appendix F | $H_2=\lvert\operatorname{Hess}F\rvert^2$, $T=\Gamma(S,S)$ | `h2`, `tt` |
+| Nonharmonic certificate, Appendix F | $H_2=\lvert\mathrm{Hess}\,F\rvert^2$, $T=\Gamma(S,S)$ | `h2`, `tt` |
 | Complex determinants, Chapter 12 | $P=a^{-2}\lvert\nabla G\rvert^2=Q+F^2K$, $Q=E_{m-1}$, $K=2c+t$ | This local $K$ is a coefficient and is not the Clifford $K$ or $J$ |
 | Retained Cartan/Lawson pullback unit, Chapter 11 | Target $q=\lvert y\rvert^2$, source $Q=q(P)$ | Local code `t` is target $q$; local code `q` is source $Q$ |
 | Pullback-transfer supplement | $R=\lvert x\rvert^2$, $h=H\circ P$, $W_H=\lvert\nabla_yH\rvert^2$ | `r`, `hh`, `wH`; `wH` means $W_H(P)$ and $\lvert\nabla_xh\rvert^2=4R\,W_H(P)$ |
