@@ -1,0 +1,1362 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     57737,       1352]
+NotebookOptionsPosition[     47340,       1221]
+NotebookOutlinePosition[     47748,       1238]
+CellTagsIndexPosition[     47705,       1235]
+WindowTitle->COMPLETE VERIFICATION V6 - 20260923
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["COMPLETE VERIFICATION V6 - 20260923", "Title",ExpressionUUID->"13b48ff5-3f8c-445a-b1e7-0f19757ff873"],
+
+Cell["\<\
+Mathematica 12. Extract this entire package into a new folder. Quit the old \
+kernel before running. Choose Evaluation > Evaluate Notebook. No old \
+verification files are needed.\
+\>", "Text",ExpressionUUID->"1bdf6c74-9850-4e70-ae02-7d6c66413812"],
+
+Cell["\<\
+The first output must begin COMPLETE VERIFICATION V6 (20260923). This \
+retained suite requires 13 stable-ID units and 550 assertions. The new \
+Chapter 7 supplemental unit runs separately. Historical v5 native results do \
+not certify these v6 wrappers. Save this notebook after evaluation. Results \
+are written into mathematica/chapters/verification_results_v6.\
+\>", "Text",ExpressionUUID->"9615894e-2eb8-4d78-a931-001a2bd2fffa"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Block", "[", "{", "$IterationLimit", "=", "Infinity", ",", 
+  "$ContextPath", "=", "{", "\"\<System`\>\"", "}", ",", "$Context", "=", 
+  "\"\<Global`\>\"", "}", ",", "Get", "[", "FileNameJoin", "[", "{", 
+  "NotebookDirectory", "[", "]", ",", "\"\<START_HERE_Verification_v5.wl\>\"",
+   "}", "]", "]", "]"}]], "Input",
+ CellLabel->"In[1]:=",ExpressionUUID->"0523c065-d5e1-40be-8bf0-797c4e4d56a0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"COMPLETE VERIFICATION V6 (20260923) -- \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "COMPLETE VERIFICATION V6 (20260923) -- ", 
+   "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127804945*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"bb7aff9c-0836-41e1-be6c-\
+019ce375fbd1"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Source directory: \"\>", 
+   "\[InvisibleSpace]", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\
+\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\\"\>\
+"}],
+  SequenceForm[
+  "Source directory: ", 
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127891823*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"8c883cc7-1dcf-4339-b6fa-\
+43601d6b04b0"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_04.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_04.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161279016705`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"bb1c59e2-87cf-4aca-8175-\
+028d5d749674"],
+
+Cell[BoxData["\<\"Chapter 4: algebraic multipliers and Jacobi \
+stability\"\>"], "Print",
+ CellChangeTimes->{3.999916127903088*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"1c4d35fc-5057-41ec-bb86-\
+fe46c8ff0ab6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127904087*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"4938ce97-d202-4e8d-b984-\
+60b270866ebc"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "6", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "6", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "6"}],
+  SequenceForm[
+  "Checks: ", 6, "; passed: ", 6, "; failed: ", 0, "; expected: ", 6],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161279050875`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"7fae8ecd-721e-46d8-996d-\
+962326049d0f"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161279050875`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"d46fa5e8-4611-4f2a-937d-\
+2d68fdb2d7c0"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_04_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_04_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_04_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_04_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127906088*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5b417540-1dd6-4868-967f-\
+753a4e2a623f"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.999916127908086*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5a069add-420f-4b2d-be75-\
+a4785680a680"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_05.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_05.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127908086*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"44cb1d73-a160-42db-a18e-\
+eed7260f30ad"],
+
+Cell[BoxData["\<\"Chapter 5: isoparametric hypercones\"\>"], "Print",
+ CellChangeTimes->{3.9999161279090853`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"b90741af-44d2-4f9d-81dd-\
+bf25400d4f83"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161279090853`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"ea56dc4a-402f-4eff-9a8c-\
+a696754bd1fa"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "16", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "16", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "16"}],
+  SequenceForm[
+  "Checks: ", 16, "; passed: ", 16, "; failed: ", 0, "; expected: ", 16],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612791059*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"3ee0f584-f362-4911-883c-\
+623678dc8d1b"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161279119525`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"c56991b6-c509-4832-97e0-\
+c77a4aed92f5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_05_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_05_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_05_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_05_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161279125957`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"6f1a8944-a2f8-4890-84fd-\
+9d52f45e8842"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161279125957`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"7518d3b4-4aa2-4adf-9786-\
+3702a2d70223"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_06.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_06.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127913596*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"426910d1-6bc0-4968-b3cc-\
+b80c95a01e2b"],
+
+Cell[BoxData["\<\"Chapter 6: bihomogeneous hypercones and Hopf \
+constructions\"\>"], "Print",
+ CellChangeTimes->{3.9999161279146023`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"415269b4-fcd5-45a8-b974-\
+f76f8af5562e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161279146023`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"19faadcc-fd00-45d9-8d0b-\
+f7eff89ae763"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "49", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "49", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "49"}],
+  SequenceForm[
+  "Checks: ", 49, "; passed: ", 49, "; failed: ", 0, "; expected: ", 49],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127915596*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"49be4ef4-a092-46d9-b3e7-\
+207d018bd736"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.999916127916596*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"2d80230d-fde6-43fe-9dd7-\
+d6aaa73471cf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_06_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_06_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_06_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_06_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127916596*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"57971bab-adea-43d9-98a3-\
+483b084d276f"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.999916127917597*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"c47791ca-de3c-4e02-b9a2-\
+339d7abae3a8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_07.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_07.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127917597*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"abaf1fcb-a4e9-43f6-8939-\
+dcfc3004d6a3"],
+
+Cell[BoxData["\<\"Manuscript Chapter 8 (stable unit Chapter07): \
+gradient-square closed singular cubics\"\>"], "Print",
+ CellChangeTimes->{3.999916127917597*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"3336e51c-3f07-445b-afed-\
+a7e514632f30"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612792093*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"e71f71a0-d9e7-4d8b-ae4b-\
+779546c6c08e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "18"}],
+  SequenceForm[
+  "Checks: ", 18, "; passed: ", 18, "; failed: ", 0, "; expected: ", 18],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612792093*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"fc5e6e13-3874-4e1c-af83-\
+1b01747fee4f"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.999916127922935*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"b3f596e6-9188-4f76-81d6-\
+45dde336f6f7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_07_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_07_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_07_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_07_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916127922935*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"897b8be8-10c4-4b37-b277-\
+c81b569720b1"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.999916127922935*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"dcaabf50-da1f-40d3-94bc-\
+fc45596a156d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_08.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_08.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612792494*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"3c26c4d7-d119-4598-94ce-\
+82190129e4a4"],
+
+Cell[BoxData["\<\"Manuscript Chapter 9 (stable unit Chapter08): \
+Area-minimizing Clifford cubic cones\"\>"], "Print",
+ CellChangeTimes->{3.99991612792494*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"a08b7567-4199-4df6-b4cc-\
+43e4a8621f5a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612792494*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"1adb7ce8-e8d6-447f-9cb1-\
+05c371ef12fc"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "193", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "193", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "193"}],
+  SequenceForm[
+  "Checks: ", 193, "; passed: ", 193, "; failed: ", 0, "; expected: ", 193],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161280660734`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"87f94df2-d6f7-4e9e-994b-\
+fbfd7b1c45b0"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161280660734`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"6d851689-accd-4c01-8a7e-\
+4c7cbac352ed"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_08_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_08_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_08_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_08_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128083027*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"1dfbfd30-d35b-42db-bedc-\
+faabfb51d4ed"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.999916128083027*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"c3cadc2b-1205-444c-ac42-\
+38d8e9718b9f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_09.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_09.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128083027*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"bae2a63a-350b-4967-91ab-\
+046eb9b017f2"],
+
+Cell[BoxData["\<\"Manuscript Chapter 11 (stable unit Chapter09): Riedler \
+pullbacks and Cartan targets\"\>"], "Print",
+ CellChangeTimes->{3.9999161280859213`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"728071ee-6b1e-4b67-8dde-\
+d602c9cbdb1f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161280859213`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"d49f76ab-de73-4179-8bd8-\
+897921079ce7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "50", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "50", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "50"}],
+  SequenceForm[
+  "Checks: ", 50, "; passed: ", 50, "; failed: ", 0, "; expected: ", 50],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128095945*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"bb9dfc91-8545-42f7-9c5a-\
+33297cfec7c8"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.999916128095945*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"46d1333d-e23b-4206-8fac-\
+f67e3decf934"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_09_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_09_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_09_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_09_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612809795*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"4bde0d2a-7f73-4c8e-8972-\
+1874751ed597"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161280993195`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"f4d3c10f-969d-41bf-8140-\
+addbb5432458"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Chapter_10.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Chapter_10.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161280993195`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"e98f6e8d-0a66-44f7-851f-\
+7586644f9590"],
+
+Cell[BoxData["\<\"Manuscript Chapter 12 (stable unit Chapter10): complex \
+determinant cones\"\>"], "Print",
+ CellChangeTimes->{3.9999161281026335`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"ceee7b83-4477-4201-942c-\
+4023248a34b1"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161281026335`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"6cfcc0b8-5dfe-4738-b0a7-\
+59a5a9a4b0a9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "134", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "134", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "134"}],
+  SequenceForm[
+  "Checks: ", 134, "; passed: ", 134, "; failed: ", 0, "; expected: ", 134],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283497148`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"02730407-6477-423e-9076-\
+76e16412bc1b"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161283497148`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"100b49d3-cde6-4c05-a3ff-\
+897f1c4a4a62"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_10_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Chapter_10_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_10_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Chapter_10_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612836627*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"25865c08-36e3-408d-ab27-\
+c10a3cbcb602"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.99991612836627*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"86aede36-f0ed-4fba-908a-\
+a3e7d7694d8c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Appendix_A.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Appendix_A.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612836627*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"ae117c54-25a8-40f6-a3a7-\
+b64467d0c128"],
+
+Cell[BoxData["\<\"Appendix A: power multipliers and radial \
+perturbations\"\>"], "Print",
+ CellChangeTimes->{3.99991612836627*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"84358784-81ea-4a81-b1b2-\
+25b059afb6d9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.99991612836627*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"1201b663-21ee-4fdd-a454-\
+5988dc38df54"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "8"}],
+  SequenceForm[
+  "Checks: ", 8, "; passed: ", 8, "; failed: ", 0, "; expected: ", 8],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283814974`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"7753ad29-bce6-4dd4-a46c-\
+d49c000bd52a"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161283826666`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"6eb6a94b-e828-4541-bd8f-\
+205837a472cf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_A_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_A_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_A_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_A_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283826666`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"0c1545b0-3639-4550-9363-\
+17bda4d73fd1"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161283826666`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"c2021a44-bc46-4c32-92da-\
+c91ba2a3848b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Appendix_B.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Appendix_B.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128385451*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5edc071b-9b95-4668-b20c-\
+3c65780d1de3"],
+
+Cell[BoxData["\<\"Appendix B: exact positivity certificates\"\>"], "Print",
+ CellChangeTimes->{3.999916128385451*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"dc1ab3be-661e-4004-a78f-\
+d00116ae3ae7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128385451*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"343ebeba-a09c-4048-ad8b-\
+156a1f27187d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "15", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "15", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "15"}],
+  SequenceForm[
+  "Checks: ", 15, "; passed: ", 15, "; failed: ", 0, "; expected: ", 15],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128387457*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"d476dbfb-72b5-4c8d-9b8e-\
+e7404e7be4a5"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.999916128387457*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"40649311-e5f3-455e-952b-\
+1d921f5b08a4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_B_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_B_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_B_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_B_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128387457*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"fdc0a582-0d64-4553-a465-\
+07cc00c473bb"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.999916128389462*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"17fc85a8-e75e-4f06-b604-\
+630eadecb8c1"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Appendix_C.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Appendix_C.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128389462*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"672db66d-d0e2-4cde-92c9-\
+3a11c2c37aed"],
+
+Cell[BoxData["\<\"Appendix C: cubic critical-set geometry (exponent \
+cross-check)\"\>"], "Print",
+ CellChangeTimes->{3.999916128389462*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"e22c76ed-cdc1-4584-a7c1-\
+93da1c12af54"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283914676`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"0e8126df-1264-44f0-86ba-\
+942b7321edf5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm[
+  "Checks: ", 1, "; passed: ", 1, "; failed: ", 0, "; expected: ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283914676`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"00be25c9-a301-4a1b-841c-\
+2311f8e39f6a"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161283914676`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5ceeef43-3989-48ee-a8ac-\
+954a5bd1042c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_C_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_C_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_C_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_C_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283936186`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"67dadffe-8842-49c9-a281-\
+730afc6c4ef9"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161283936186`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"571795da-0367-4938-9525-\
+a05da3335f1e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Appendix_D.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Appendix_D.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161283936186`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"0294dfb8-7464-47ad-928d-\
+d2a9fe019b61"],
+
+Cell[BoxData["\<\"Appendix D: odd-degree rigidity and moment \
+elimination\"\>"], "Print",
+ CellChangeTimes->{3.9999161284051313`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"add581a9-a6f0-4726-bb52-\
+987fecf1daca"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284051313`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"ee894d56-c098-4160-a3a4-\
+aba6ccbd8aa2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "15", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "15", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "15"}],
+  SequenceForm[
+  "Checks: ", 15, "; passed: ", 15, "; failed: ", 0, "; expected: ", 15],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284091125`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"55f34602-e636-4d5b-b3cc-\
+949f3767e0ed"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161284091125`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"1fbfec83-85ea-489d-82cb-\
+66a7ae13d7ae"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_D_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_D_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_D_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_D_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284091125`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"4e62471e-dfa7-4d00-adb2-\
+28ea5632db82"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161284111176`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"3c0b9599-646f-4a0d-9b4b-\
+06383727b21c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Appendix_E.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Appendix_E.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284111176`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"73f7ea29-0e85-417e-98df-\
+c73cdbdbd799"],
+
+Cell[BoxData["\<\"Ancillary Hessian derivation (stable unit AppendixE)\"\>"], \
+"Print",
+ CellChangeTimes->{3.9999161284111176`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"9514a89a-1398-48e7-bc1d-\
+b33684259d4b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284111176`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5716fb92-9148-45ff-ac3f-\
+62b430aa1dd5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "18"}],
+  SequenceForm[
+  "Checks: ", 18, "; passed: ", 18, "; failed: ", 0, "; expected: ", 18],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.999916128413123*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5a7ffb8b-e821-4d0b-8049-\
+614dc5e46f70"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.999916128413123*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"37fae14f-f226-45f8-a38f-\
+0255fe622ef8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_E_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_E_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_E_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_E_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284151278`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"c0d03a48-1247-452f-8ad7-\
+988ef340aa85"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161284159756`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"5d945540-a8e9-46b7-b820-\
+80c5014df4d2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\n========== \"\>", 
+   "\[InvisibleSpace]", "\<\"Verify_Appendix_F.wl\"\>", 
+   "\[InvisibleSpace]", "\<\" ==========\"\>"}],
+  SequenceForm["\n========== ", "Verify_Appendix_F.wl", " =========="],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284159756`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"e177fe61-1de5-47b7-bfbc-\
+697d16504e87"],
+
+Cell[BoxData["\<\"Historical homogeneity checks (stable unit \
+AppendixF)\"\>"], "Print",
+ CellChangeTimes->{3.9999161284159756`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"6eb5be51-a9fc-4d6d-b55b-\
+386ecc1792cb"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kernel: \"\>", 
+   "\[InvisibleSpace]", "\<\"12.0.0 for Microsoft Windows (64-bit) (April 6, \
+2019)\"\>"}],
+  SequenceForm[
+  "Kernel: ", "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161284159756`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"4c0d1b57-673e-46c6-8b66-\
+e6a1118ed3c9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Checks: \"\>", "\[InvisibleSpace]", "27", 
+   "\[InvisibleSpace]", "\<\"; passed: \"\>", "\[InvisibleSpace]", "27", 
+   "\[InvisibleSpace]", "\<\"; failed: \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"; expected: \"\>", "\[InvisibleSpace]", "27"}],
+  SequenceForm[
+  "Checks: ", 27, "; passed: ", 27, "; failed: ", 0, "; expected: ", 27],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161285215178`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"a298dbf1-f974-447b-a35b-\
+ba03c6cf1173"],
+
+Cell[BoxData["\<\"ALL CHECKS PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161285235224`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"aa7fc620-862c-4c86-863c-\
+419f1d604b89"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Result files: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_F_Results.txt\"\>", 
+     ",", "\<\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Desktop\\\\\:6b21\:6821\
+\:51c6\:7b2c\:4e8c\:7248\\\\anc\\\\mathematica\\\\chapters\\\\verification_\
+results_v6\\\\Verify_Appendix_F_Results.csv\"\>"}], "}"}]}],
+  SequenceForm[
+  "Result files: ", {
+   "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\\\
+anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_F_\
+Results.txt", 
+    "C:\\Users\\DELL\\OneDrive\\Desktop\\\:6b21\:6821\:51c6\:7b2c\:4e8c\:7248\
+\\anc\\mathematica\\chapters\\verification_results_v6\\Verify_Appendix_F_\
+Results.csv"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161285327597`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"adea99c8-02fb-4485-98f3-\
+a16b63140197"],
+
+Cell[BoxData["\<\"UNIT PASSED AND RESULTS SAVED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161285327597`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"52930ab6-819e-476a-a678-\
+3304bbe3f5b3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\nTotal assertions: \"\>", "\[InvisibleSpace]", "550"}],
+  SequenceForm["\nTotal assertions: ", 550],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9999161285327597`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"e8586db7-7bbd-47e2-8861-\
+30db10205872"],
+
+Cell[BoxData["\<\"ALL CHAPTERS AND APPENDICES PASSED.\"\>"], "Print",
+ CellChangeTimes->{3.9999161285327597`*^9},
+ CellLabel->
+  "\:6b63\:5728\:8ba1\:7b97In[1]:=",ExpressionUUID->"e6900909-0b24-4cfb-85f2-\
+4585181660e2"]
+}, Open  ]],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.9999161285327597`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"f73c6313-0f5f-46ef-babf-90a86e102dc0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Complete-suite summary", "Section",ExpressionUUID->"9b84041b-eac1-4ed3-a55f-f5c7ec3444a5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MergedVerificationV5`RunAll`VerificationSummary", "//", 
+  "TableForm"}]], "Input",
+ CellLabel->"In[2]:=",ExpressionUUID->"fb0cd74d-ce61-4dbc-bac6-ff4c43b3cdaf"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Verify_Chapter_04.wl\"\>", "6", "6", "True"},
+    {"\<\"Verify_Chapter_05.wl\"\>", "16", "16", "True"},
+    {"\<\"Verify_Chapter_06.wl\"\>", "49", "49", "True"},
+    {"\<\"Verify_Chapter_07.wl\"\>", "18", "18", "True"},
+    {"\<\"Verify_Chapter_08.wl\"\>", "193", "193", "True"},
+    {"\<\"Verify_Chapter_09.wl\"\>", "50", "50", "True"},
+    {"\<\"Verify_Chapter_10.wl\"\>", "134", "134", "True"},
+    {"\<\"Verify_Appendix_A.wl\"\>", "8", "8", "True"},
+    {"\<\"Verify_Appendix_B.wl\"\>", "15", "15", "True"},
+    {"\<\"Verify_Appendix_C.wl\"\>", "1", "1", "True"},
+    {"\<\"Verify_Appendix_D.wl\"\>", "15", "15", "True"},
+    {"\<\"Verify_Appendix_E.wl\"\>", "18", "18", "True"},
+    {"\<\"Verify_Appendix_F.wl\"\>", "27", "27", "True"}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.999916128609729*^9},
+ CellLabel->
+  "Out[2]//TableForm=",ExpressionUUID->"0a67f20f-1ed4-48c4-ac41-bd27c2847019"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["MergedVerificationV5`RunAll`VerificationResults"], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"4e6e8b96-3220-4960-ba3b-0c35db670201"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.999916128636567*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"3ea9630c-e8aa-4957-8c50-a04338ec7df0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{775, 872},
+WindowMargins->{{579, Automatic}, {72, Automatic}},
+WindowTitle->"COMPLETE VERIFICATION V6 - 20260923",
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (2019\:5e744\:67088\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[629, 23, 107, 0, 156, "Title",ExpressionUUID->"13b48ff5-3f8c-445a-b1e7-0f19757ff873"],
+Cell[739, 25, 258, 4, 56, "Text",ExpressionUUID->"1bdf6c74-9850-4e70-ae02-7d6c66413812"],
+Cell[1000, 31, 443, 6, 100, "Text",ExpressionUUID->"9615894e-2eb8-4d78-a931-001a2bd2fffa"],
+Cell[CellGroupData[{
+Cell[1468, 41, 420, 6, 82, "Input",ExpressionUUID->"0523c065-d5e1-40be-8bf0-797c4e4d56a0"],
+Cell[CellGroupData[{
+Cell[1913, 51, 490, 12, 22, "Print",ExpressionUUID->"bb7aff9c-0836-41e1-be6c-019ce375fbd1"],
+Cell[2406, 65, 568, 14, 22, "Print",ExpressionUUID->"8c883cc7-1dcf-4339-b6fa-43601d6b04b0"],
+Cell[2977, 81, 429, 10, 41, "Print",ExpressionUUID->"bb1c59e2-87cf-4aca-8175-028d5d749674"],
+Cell[3409, 93, 238, 5, 22, "Print",ExpressionUUID->"1c4d35fc-5057-41ec-bb86-fe46c8ff0ab6"],
+Cell[3650, 100, 424, 11, 22, "Print",ExpressionUUID->"4938ce97-d202-4e8d-b984-60b270866ebc"],
+Cell[4077, 113, 580, 12, 22, "Print",ExpressionUUID->"7fae8ecd-721e-46d8-996d-962326049d0f"],
+Cell[4660, 127, 203, 4, 22, "Print",ExpressionUUID->"d46fa5e8-4611-4f2a-937d-2d68fdb2d7c0"],
+Cell[4866, 133, 1081, 22, 95, "Print",ExpressionUUID->"5b417540-1dd6-4868-967f-753a4e2a623f"],
+Cell[5950, 157, 213, 4, 22, "Print",ExpressionUUID->"5a069add-420f-4b2d-be75-a4785680a680"],
+Cell[6166, 163, 427, 10, 41, "Print",ExpressionUUID->"44cb1d73-a160-42db-a18e-eed7260f30ad"],
+Cell[6596, 175, 220, 4, 22, "Print",ExpressionUUID->"b90741af-44d2-4f9d-81dd-bf25400d4f83"],
+Cell[6819, 181, 426, 11, 22, "Print",ExpressionUUID->"ea56dc4a-402f-4eff-9a8c-a696754bd1fa"],
+Cell[7248, 194, 583, 12, 22, "Print",ExpressionUUID->"3ee0f584-f362-4911-883c-623678dc8d1b"],
+Cell[7834, 208, 203, 4, 22, "Print",ExpressionUUID->"c56991b6-c509-4832-97e0-c77a4aed92f5"],
+Cell[8040, 214, 1083, 22, 95, "Print",ExpressionUUID->"6f1a8944-a2f8-4890-84fd-9d52f45e8842"],
+Cell[9126, 238, 215, 4, 22, "Print",ExpressionUUID->"7518d3b4-4aa2-4adf-9786-3702a2d70223"],
+Cell[9344, 244, 427, 10, 41, "Print",ExpressionUUID->"426910d1-6bc0-4968-b3cc-b80c95a01e2b"],
+Cell[9774, 256, 245, 5, 22, "Print",ExpressionUUID->"415269b4-fcd5-45a8-b974-f76f8af5562e"],
+Cell[10022, 263, 426, 11, 22, "Print",ExpressionUUID->"19faadcc-fd00-45d9-8d0b-f7eff89ae763"],
+Cell[10451, 276, 584, 12, 22, "Print",ExpressionUUID->"49be4ef4-a092-46d9-b3e7-207d018bd736"],
+Cell[11038, 290, 201, 4, 22, "Print",ExpressionUUID->"2d80230d-fde6-43fe-9dd7-d6aaa73471cf"],
+Cell[11242, 296, 1081, 22, 95, "Print",ExpressionUUID->"57971bab-adea-43d9-98a3-483b084d276f"],
+Cell[12326, 320, 213, 4, 22, "Print",ExpressionUUID->"c47791ca-de3c-4e02-b9a2-339d7abae3a8"],
+Cell[12542, 326, 427, 10, 41, "Print",ExpressionUUID->"abaf1fcb-a4e9-43f6-8939-dcfc3004d6a3"],
+Cell[12972, 338, 269, 5, 22, "Print",ExpressionUUID->"3336e51c-3f07-445b-afed-a7e514632f30"],
+Cell[13244, 345, 423, 11, 22, "Print",ExpressionUUID->"e71f71a0-d9e7-4d8b-ae4b-779546c6c08e"],
+Cell[13670, 358, 583, 12, 22, "Print",ExpressionUUID->"fc5e6e13-3874-4e1c-af83-1b01747fee4f"],
+Cell[14256, 372, 201, 4, 22, "Print",ExpressionUUID->"b3f596e6-9188-4f76-81d6-45dde336f6f7"],
+Cell[14460, 378, 1081, 22, 95, "Print",ExpressionUUID->"897b8be8-10c4-4b37-b277-c81b569720b1"],
+Cell[15544, 402, 213, 4, 22, "Print",ExpressionUUID->"dcaabf50-da1f-40d3-94bc-fc45596a156d"],
+Cell[15760, 408, 426, 10, 41, "Print",ExpressionUUID->"3c26c4d7-d119-4598-94ce-82190129e4a4"],
+Cell[16189, 420, 266, 5, 22, "Print",ExpressionUUID->"a08b7567-4199-4df6-b4cc-43e4a8621f5a"],
+Cell[16458, 427, 423, 11, 22, "Print",ExpressionUUID->"1adb7ce8-e8d6-447f-9cb1-05c371ef12fc"],
+Cell[16884, 440, 592, 12, 22, "Print",ExpressionUUID->"87f94df2-d6f7-4e9e-994b-fbfd7b1c45b0"],
+Cell[17479, 454, 203, 4, 22, "Print",ExpressionUUID->"6d851689-accd-4c01-8a7e-4c7cbac352ed"],
+Cell[17685, 460, 1081, 22, 95, "Print",ExpressionUUID->"1dfbfd30-d35b-42db-bedc-faabfb51d4ed"],
+Cell[18769, 484, 213, 4, 22, "Print",ExpressionUUID->"c3cadc2b-1205-444c-ac42-38d8e9718b9f"],
+Cell[18985, 490, 427, 10, 41, "Print",ExpressionUUID->"bae2a63a-350b-4967-91ab-046eb9b017f2"],
+Cell[19415, 502, 270, 5, 22, "Print",ExpressionUUID->"728071ee-6b1e-4b67-8dde-d602c9cbdb1f"],
+Cell[19688, 509, 426, 11, 22, "Print",ExpressionUUID->"d49f76ab-de73-4179-8bd8-897921079ce7"],
+Cell[20117, 522, 584, 12, 22, "Print",ExpressionUUID->"bb9dfc91-8545-42f7-9c5a-33297cfec7c8"],
+Cell[20704, 536, 201, 4, 22, "Print",ExpressionUUID->"46d1333d-e23b-4206-8fac-f67e3decf934"],
+Cell[20908, 542, 1080, 22, 95, "Print",ExpressionUUID->"4bde0d2a-7f73-4c8e-8972-1874751ed597"],
+Cell[21991, 566, 215, 4, 22, "Print",ExpressionUUID->"f4d3c10f-969d-41bf-8140-addbb5432458"],
+Cell[22209, 572, 429, 10, 41, "Print",ExpressionUUID->"e98f6e8d-0a66-44f7-851f-7586644f9590"],
+Cell[22641, 584, 259, 5, 22, "Print",ExpressionUUID->"ceee7b83-4477-4201-942c-4023248a34b1"],
+Cell[22903, 591, 426, 11, 22, "Print",ExpressionUUID->"6cfcc0b8-5dfe-4738-b0a7-59a5a9a4b0a9"],
+Cell[23332, 604, 592, 12, 22, "Print",ExpressionUUID->"02730407-6477-423e-9076-76e16412bc1b"],
+Cell[23927, 618, 203, 4, 22, "Print",ExpressionUUID->"100b49d3-cde6-4c05-a3ff-897f1c4a4a62"],
+Cell[24133, 624, 1080, 22, 95, "Print",ExpressionUUID->"25865c08-36e3-408d-ab27-c10a3cbcb602"],
+Cell[25216, 648, 212, 4, 22, "Print",ExpressionUUID->"86aede36-f0ed-4fba-908a-a3e7d7694d8c"],
+Cell[25431, 654, 426, 10, 41, "Print",ExpressionUUID->"ae117c54-25a8-40f6-a3a7-b64467d0c128"],
+Cell[25860, 666, 238, 5, 22, "Print",ExpressionUUID->"84358784-81ea-4a81-b1b2-25b059afb6d9"],
+Cell[26101, 673, 423, 11, 22, "Print",ExpressionUUID->"1201b663-21ee-4fdd-a454-5988dc38df54"],
+Cell[26527, 686, 580, 12, 22, "Print",ExpressionUUID->"7753ad29-bce6-4dd4-a46c-d49c000bd52a"],
+Cell[27110, 700, 203, 4, 22, "Print",ExpressionUUID->"6eb6a94b-e828-4541-bd8f-205837a472cf"],
+Cell[27316, 706, 1083, 22, 95, "Print",ExpressionUUID->"0c1545b0-3639-4550-9363-17bda4d73fd1"],
+Cell[28402, 730, 215, 4, 22, "Print",ExpressionUUID->"c2021a44-bc46-4c32-92da-c91ba2a3848b"],
+Cell[28620, 736, 427, 10, 41, "Print",ExpressionUUID->"5edc071b-9b95-4668-b20c-3c65780d1de3"],
+Cell[29050, 748, 224, 4, 22, "Print",ExpressionUUID->"dc1ab3be-661e-4004-a78f-d00116ae3ae7"],
+Cell[29277, 754, 424, 11, 22, "Print",ExpressionUUID->"343ebeba-a09c-4048-ad8b-156a1f27187d"],
+Cell[29704, 767, 584, 12, 22, "Print",ExpressionUUID->"d476dbfb-72b5-4c8d-9b8e-e7404e7be4a5"],
+Cell[30291, 781, 201, 4, 22, "Print",ExpressionUUID->"40649311-e5f3-455e-952b-1d921f5b08a4"],
+Cell[30495, 787, 1081, 22, 95, "Print",ExpressionUUID->"fdc0a582-0d64-4553-a465-07cc00c473bb"],
+Cell[31579, 811, 213, 4, 22, "Print",ExpressionUUID->"17fc85a8-e75e-4f06-b604-630eadecb8c1"],
+Cell[31795, 817, 427, 10, 41, "Print",ExpressionUUID->"672db66d-d0e2-4cde-92c9-3a11c2c37aed"],
+Cell[32225, 829, 247, 5, 22, "Print",ExpressionUUID->"e22c76ed-cdc1-4584-a7c1-93da1c12af54"],
+Cell[32475, 836, 426, 11, 22, "Print",ExpressionUUID->"0e8126df-1264-44f0-86ba-942b7321edf5"],
+Cell[32904, 849, 580, 12, 22, "Print",ExpressionUUID->"00be25c9-a301-4a1b-841c-2311f8e39f6a"],
+Cell[33487, 863, 203, 4, 22, "Print",ExpressionUUID->"5ceeef43-3989-48ee-a8ac-954a5bd1042c"],
+Cell[33693, 869, 1083, 22, 95, "Print",ExpressionUUID->"67dadffe-8842-49c9-a281-730afc6c4ef9"],
+Cell[34779, 893, 215, 4, 22, "Print",ExpressionUUID->"571795da-0367-4938-9525-a05da3335f1e"],
+Cell[34997, 899, 429, 10, 41, "Print",ExpressionUUID->"0294dfb8-7464-47ad-928d-d2a9fe019b61"],
+Cell[35429, 911, 241, 5, 22, "Print",ExpressionUUID->"add581a9-a6f0-4726-bb52-987fecf1daca"],
+Cell[35673, 918, 426, 11, 22, "Print",ExpressionUUID->"ee894d56-c098-4160-a3a4-aba6ccbd8aa2"],
+Cell[36102, 931, 586, 12, 22, "Print",ExpressionUUID->"55f34602-e636-4d5b-b3cc-949f3767e0ed"],
+Cell[36691, 945, 203, 4, 22, "Print",ExpressionUUID->"1fbfec83-85ea-489d-82cb-66a7ae13d7ae"],
+Cell[36897, 951, 1083, 22, 95, "Print",ExpressionUUID->"4e62471e-dfa7-4d00-adb2-28ea5632db82"],
+Cell[37983, 975, 215, 4, 22, "Print",ExpressionUUID->"3c0b9599-646f-4a0d-9b4b-06383727b21c"],
+Cell[38201, 981, 429, 10, 41, "Print",ExpressionUUID->"73f7ea29-0e85-417e-98df-c73cdbdbd799"],
+Cell[38633, 993, 239, 5, 22, "Print",ExpressionUUID->"9514a89a-1398-48e7-bc1d-b33684259d4b"],
+Cell[38875, 1000, 426, 11, 22, "Print",ExpressionUUID->"5716fb92-9148-45ff-ac3f-62b430aa1dd5"],
+Cell[39304, 1013, 584, 12, 22, "Print",ExpressionUUID->"5a7ffb8b-e821-4d0b-8049-614dc5e46f70"],
+Cell[39891, 1027, 201, 4, 22, "Print",ExpressionUUID->"37fae14f-f226-45f8-a38f-0255fe622ef8"],
+Cell[40095, 1033, 1083, 22, 95, "Print",ExpressionUUID->"c0d03a48-1247-452f-8ad7-988ef340aa85"],
+Cell[41181, 1057, 215, 4, 22, "Print",ExpressionUUID->"5d945540-a8e9-46b7-b820-80c5014df4d2"],
+Cell[41399, 1063, 429, 10, 41, "Print",ExpressionUUID->"e177fe61-1de5-47b7-bfbc-697d16504e87"],
+Cell[41831, 1075, 240, 5, 22, "Print",ExpressionUUID->"6eb5be51-a9fc-4d6d-b55b-386ecc1792cb"],
+Cell[42074, 1082, 426, 11, 22, "Print",ExpressionUUID->"4c0d1b57-673e-46c6-8b66-e6a1118ed3c9"],
+Cell[42503, 1095, 586, 12, 22, "Print",ExpressionUUID->"a298dbf1-f974-447b-a35b-ba03c6cf1173"],
+Cell[43092, 1109, 203, 4, 22, "Print",ExpressionUUID->"aa7fc620-862c-4c86-863c-419f1d604b89"],
+Cell[43298, 1115, 1083, 22, 95, "Print",ExpressionUUID->"adea99c8-02fb-4485-98f3-a16b63140197"],
+Cell[44384, 1139, 215, 4, 22, "Print",ExpressionUUID->"52930ab6-819e-476a-a678-3304bbe3f5b3"],
+Cell[44602, 1145, 332, 8, 41, "Print",ExpressionUUID->"e8586db7-7bbd-47e2-8861-30db10205872"],
+Cell[44937, 1155, 220, 4, 22, "Print",ExpressionUUID->"e6900909-0b24-4cfb-85f2-4585181660e2"]
+}, Open  ]],
+Cell[45172, 1162, 153, 2, 32, "Output",ExpressionUUID->"f73c6313-0f5f-46ef-babf-90a86e102dc0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45362, 1169, 96, 0, 67, "Section",ExpressionUUID->"9b84041b-eac1-4ed3-a55f-f5c7ec3444a5"],
+Cell[CellGroupData[{
+Cell[45483, 1173, 185, 3, 45, "Input",ExpressionUUID->"fb0cd74d-ce61-4dbc-bac6-ff4c43b3cdaf"],
+Cell[45671, 1178, 1287, 28, 249, "Output",ExpressionUUID->"0a67f20f-1ed4-48c4-ac41-bd27c2847019"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46995, 1211, 151, 1, 28, "Input",ExpressionUUID->"4e6e8b96-3220-4960-ba3b-0c35db670201"],
+Cell[47149, 1214, 151, 2, 32, "Output",ExpressionUUID->"3ea9630c-e8aa-4957-8c50-a04338ec7df0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
