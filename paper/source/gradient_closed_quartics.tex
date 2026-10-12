@@ -1,0 +1,85 @@
+\subsection{Quartic closure and a rectangular matrix family}
+\label{sec:quartic-gradient-closure}
+
+The following example realizes generator degrees $(2,4,6)$ by
+rectangular matrices, with minimality selecting a single row dimension.
+
+\begin{proposition}[The rectangular matrix family]
+\label{ex:rectangular-gradient-closure}
+\label{prop:rectangular-minimal-selection}
+Let \(p\ge3\), give \(M_{p,3}(\R)\) its Frobenius inner product,
+and put
+\begin{equation}\label{eq:rectangular-quartic-definition}
+ B=X^{\mathsf T}X,\qquad P_j=\tr(B^j),\qquad
+ R=P_1,\qquad F=2P_2-R^2,\qquad S=|\nabla F|^2.
+\end{equation}
+Then \(\cA_R(F)=\R[R,F,S]\), with three algebraically independent
+generators of degrees \((2,4,6)\). Its complete closure table is
+\begin{equation}\label{eq:rectangular-quartic-laplacians}
+ \Delta R=6p,\qquad \Delta F=4(6-p)R,\qquad
+ \Delta S=32(p+6)R^2+448F,
+\end{equation}
+\begin{equation}\label{eq:rectangular-quartic-gamma}
+ \begin{aligned}
+ \Gamma(R,R)&=4R,\quad \Gamma(R,F)=8F,\quad \Gamma(R,S)=12S,\\
+ \Gamma(F,F)&=S,\\
+ \Gamma(F,S)&=8RS+128(R^2+F)F,\\
+ \Gamma(S,S)&=192(R^2+F)S+1024R^3F+2048RF^2.
+ \end{aligned}
+\end{equation}
+The regular zero set is minimal if and only if \(p=5\). In that
+case \(N=15\), \(F\) is nonharmonic, and
+\begin{equation}\label{eq:rectangular-quartic-minimality}
+ \Delta F=4R,\qquad \cL(F)=-64(R^2+F)F.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Differentiation of
+\(B=X^{\mathsf T}X\) gives
+\begin{equation}\label{eq:rectangular-trace-differentiation}
+ \nabla P_j=2jXB^{j-1},\qquad
+ \Gamma(P_i,P_j)=4ijP_{i+j-1}.
+\end{equation}
+For the required Laplacians, the product rule gives
+\[
+ \Delta P_1=6p,\qquad
+ \Delta P_2=4(p+4)P_1,\qquad
+ \Delta P_3=6\bigl((p+5)P_2+P_1^2\bigr).
+\]
+These formulas, derived in \cref{app:rectangular-trace-details},
+together with the product rule give
+\begin{equation}\label{eq:rectangular-S-traces}
+ \nabla F=4X(2B-R\Id),\qquad
+ S=64P_3-64RP_2+16R^3
+  =64P_3-32RF-16R^3,
+\end{equation}
+and \eqref{eq:rectangular-quartic-laplacians}.
+
+The characteristic equation of the $3\times3$ matrix $B$ reduces
+$P_4,P_5$ to $R,F,S$. The resulting formulas in
+\cref{app:rectangular-trace-details} give the last two gradient
+entries of \eqref{eq:rectangular-quartic-gamma}; Euler's identity
+supplies its first row. Thus \cref{prop:MR-generator-test} proves closure;
+conversely every Laplacian algebra containing \(R,F\) contains
+\(S=\Gamma(F,F)\), proving the equality with \(\cA_R(F)\).
+On diagonal rectangular matrices with three distinct positive squared
+entries \(t_1,t_2,t_3\), the Jacobian of
+\((P_1,P_2,P_3)\) is a nonzero Vandermonde determinant times six.
+The triangular change in \eqref{eq:rectangular-S-traces} is invertible,
+so \(R,F,S\) are algebraically independent.
+
+Finally the displayed table gives
+\[
+ \cL(F)=4(5-p)RS-64(R^2+F)F.
+\]
+At a matrix with \(B=\operatorname{diag}(4,1,1)\), one has
+\(F=0\), \(R=6\), and \(S=768>0\). Thus the regular zero
+set can be minimal only for \(p=5\); for this value the curvature
+identity \eqref{eq:div-normalized-gradient} proves minimality.
+The Laplacian in \eqref{eq:rectangular-quartic-laplacians} proves
+the last assertion. For comparison, the member with \(p=6\) is
+harmonic and has the same gradient pairings, but its regular zero
+set is not minimal.
+\end{proof}
+

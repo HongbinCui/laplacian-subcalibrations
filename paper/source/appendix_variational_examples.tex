@@ -1,0 +1,72 @@
+\subsection{Calibrated complex cones with zero stability gap}
+\label{sec:prelim-complex-gap}
+
+Dimler--Lee \cite[Theorem~4.2]{DimlerLee24} construct calibrated
+complex hypersurface cones with zero Hardy gap when degree equals
+complex dimension. The following extends this to all larger degrees.
+
+\begin{proposition}[Area-minimizing complex cones without strict stability]
+\label{prop:complex-zero-gap}
+Let \(k\geq2\), and let \(f\) be a homogeneous holomorphic polynomial
+of degree \(d\geq k\) on \(\mathbb C^{k+1}\), with \(df(z)\ne0\) for
+\(z\ne0\).  Then \(C=f^{-1}(0)\), with its complex orientation, is
+area minimizing of real dimension \(2k\), and its Hardy stability gap
+is zero:
+\begin{equation}\label{eq:complex-zero-gap}
+ \inf_{0\ne V\in C_c^\infty(NC_{\reg})}
+ \frac{Q_C^\perp(V)}{\displaystyle\int_Cr^{-2}|V|^2}=0.
+\end{equation}
+Thus \(C\) is area minimizing but not strictly stable in the Hardy sense.
+\end{proposition}
+
+\begin{proof}
+The K\"ahler calibration \(\omega_0^k/k!\), where
+\(\omega_0=\sum_{j=1}^{k+1}dx_j\wedge dy_j\), calibrates the complex
+current \(C\) \cite{HarveyLawson82a}.  Thus
+\eqref{eq:calibration-Stokes-comparison} gives area minimization and
+\(Q_C^\perp\geq0\).
+
+Choose \(g=\ell^{d-k}\), with \(\ell\) a linear form nonzero at
+some point of \(C\setminus\{0\}\), and take \(g=1\) if \(d=k\).
+Thus \(g\) has degree \(d-k\) and does not vanish identically on \(C\).
+Writing \(f=u+iv\), holomorphicity gives \(\nabla v=J\nabla u\):
+the gradients are orthogonal with equal length. Hence
+\begin{equation}\label{eq:complex-critical-Jacobi-field}
+ V_g=\frac{\operatorname{Re}g\,\nabla u+
+                 \operatorname{Im}g\,\nabla v}{|\nabla u|^2}
+ \quad\text{on }C_{\reg}
+\end{equation}
+is normal and satisfies \(df(V_g)=g\).
+Near each compact subset of \(C_{\reg}\), the holomorphic equations
+\(f-tg=0\) form a smooth family of complex, hence minimal,
+hypersurfaces for small real \(t\). Differentiating the equation and
+minimality at \(t=0\) gives normal velocity \(V_g\) and
+\(J_C^\perp V_g=0\).
+
+Since \(\deg g=d-k\) and \(\deg\nabla u=d-1\),
+\[
+ V_g(r\theta)=r^{1-k}W(\theta),\qquad
+ \theta\in\Lambda=C\cap\Sph^{2k+1},
+\]
+where \(W\) is smooth and not identically zero on the compact smooth
+link. The degree \(1-k=-(\dim_{\R}C-2)/2\) is the critical Hardy degree.
+Multiplying \(J_C^\perp V_g=0\) by \(\chi^2V_g\) and integrating
+by parts in \eqref{eq:normal-Jacobi-definition} yields
+\begin{equation}\label{eq:normal-Jacobi-cutoff}
+ Q_C^\perp(\chi V_g)=\int_C|\nabla_C\chi|^2|V_g|^2
+\end{equation}
+for every smooth compactly supported scalar cutoff on \(C_{\reg}\).
+Take a nonzero \(\zeta\in C_c^\infty((-2,-1))\) and, for \(L>1\), set
+\(\chi_L(r)=\zeta(\log r/L)\).  Writing
+\(b=\int_\Lambda|W|^2>0\) and using
+\(d\mu_C=r^{2k-1}\,dr\,d\mu_\Lambda\), we obtain
+\[
+ Q_C^\perp(\chi_LV_g)=\frac bL\int_\R|\zeta'|^2,
+ \qquad
+ \int_Cr^{-2}|\chi_LV_g|^2=bL\int_\R|\zeta|^2.
+\]
+The quotient is
+\(L^{-2}\int|\zeta'|^2/\int|\zeta|^2\), which tends to zero.
+Together with stability, this proves \eqref{eq:complex-zero-gap}.
+\end{proof}
+

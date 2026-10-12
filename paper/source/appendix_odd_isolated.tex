@@ -1,0 +1,202 @@
+\subsection{Odd gradient-square closure with trivial critical set}
+\label{sec:odd-isolated-proof}
+
+\begin{proof}[Proof of \cref{thm:odd-isolated-closure}]
+The count in \eqref{eq:oddtable} applies without a nonzero critical
+point. We retain its constants
+\(\alpha,\beta,\gamma,\delta,\varepsilon\), without imposing the
+normalization \eqref{eq:normalizedodd}. Write
+\(f=F|_{\Sph^{N-1}}\), \(s=S|_{\Sph^{N-1}}\), and put
+\[
+ K=2e(e-1),\qquad L=4(e-1)^2,\qquad
+ D=2(e-1)(N+2e-4).
+\]
+The spherical identities are
+\begin{equation}\label{eq:odd-isolated-spherical}
+\begin{aligned}
+ |\nabla f|^2&=s-e^2f^2,&
+ \langle\nabla f,\nabla s\rangle&=f(\beta-Ks),\\
+ |\nabla s|^2&=Q(s)+\delta f^2,&
+ Q(t)&=\gamma+\varepsilon t-Lt^2,\\
+ \Delta f&=-e(N+e-2)f,&
+ \Delta s&=\alpha-Ds.
+\end{aligned}
+\end{equation}
+Here and throughout this proof, gradients, Hessians, and Laplacians
+without subscripts are spherical. These formulas follow by subtracting
+the radial derivatives from \eqref{eq:oddtable}; the Laplacian formula
+uses \(\Delta(r^jv)=r^{j-2}[\Delta_{\Sph}v+j(j+N-2)v]\).
+
+\emph{Step 1: the upper bound for \(s\).}
+The assumption on the critical set gives \(s>0\). At a critical
+point of \(f\), Euler's identity gives
+\(\nabla_{\R^N}F=efx\), and differentiation of Euler's identity
+gives \(\nabla_{\R^N}S=2(e-1)Sx\). Since \(s=e^2f^2>0\)
+there, the identity for \(\Gamma(F,S)\) yields \(\beta=2e^3(e-1)f^2>0\).
+Rescale \(F\) so that \(\beta=1\), and write
+\[
+ s_0=\frac1K,\qquad a^2=\frac{s_0}{e^2}.
+\]
+Thus the only critical values of \(f\) are \(a\) and \(-a\),
+and \(s=s_0\) at every such point. Oddness ensures that both values
+occur and that \(-a\leq f\leq a\).
+
+We claim that \(s\leq s_0\) everywhere. Otherwise follow the complete
+gradient flow of \(f\) from a point where \(g=s-s_0>0\). Along
+this trajectory, with parameter \(t\),
+\[
+ \dot f=s-e^2f^2,\qquad \dot g=-Kfg.
+\]
+The second equation preserves \(g>0\). The function \(f\) increases
+and is bounded, and every accumulation point is critical: indeed,
+\(\int_0^\infty|\nabla f|^2\,dt<\infty\), while
+\(|\nabla f|^2\) is uniformly continuous along a smooth flow on the
+compact sphere. Since the initial value is larger than \(-a\), it
+follows that \(f\to a\) and \(g\to0\). Direct differentiation
+of the two flow equations shows that
+\[
+ \bigl(f^2-a^2-g/e\bigr)g^{-e/(e-1)}
+\]
+is constant. Consequently
+\[
+ f^2-a^2=\frac ge+c_1g^{e/(e-1)}.
+\]
+The right-hand side is positive for sufficiently small positive \(g\),
+contradicting \(|f|\leq a\). This proves the claim.
+
+\emph{Step 2: the minimum and maximum Hessians.}
+Suppose that \(s\) is nonconstant. Its minimum \(m\) satisfies
+\(0<m<s_0\). At a minimum point, the second identity in
+\eqref{eq:odd-isolated-spherical} gives \(f=0\), so
+\(v=\nabla f\) has \(|v|^2=m\). Let \(B_m=\Hess s\) there.
+Differentiating that identity once, and the identity for
+\(|\nabla s|^2\) twice, gives
+\begin{equation}\label{eq:odd-isolated-minimum}
+ B_mv=\eta v,\qquad
+ B_m^2=\frac{Q'(m)}2B_m+\delta v\otimes v,
+ \qquad \eta=1-Km>0.
+\end{equation}
+In particular,
+\begin{equation}\label{eq:odd-isolated-minimum-scalar}
+ Q(m)=0,\qquad
+ \eta^2=\frac{Q'(m)}2\eta+\delta m.
+\end{equation}
+For example, the second matrix identity follows because the Hessian
+of \(|\nabla s|^2\) at a critical point of \(s\) is \(2B_m^2\),
+whereas the Hessian of \(\delta f^2\) at \(f=0\) is
+\(2\delta v\otimes v\).
+
+At a point where \(f=a\), put \(B=\Hess f\) and
+\(C=\Hess s\). Differentiating
+\eqref{eq:odd-isolated-spherical} twice gives
+\begin{equation}\label{eq:odd-isolated-maximum}
+ C=2B(B+e^2aI),\qquad
+ BC=-e(e-1)aC,\qquad
+ C^2=\left(\frac\varepsilon2-Ls_0\right)C+\delta aB.
+\end{equation}
+In the middle identity we used the first one to commute \(B\) and
+\(C\). It follows that the eigenvalues of \(B\) belong to
+\[
+ 0,\quad -e^2a,\quad -e(e-1)a,
+\]
+and the corresponding eigenvalues of \(C\) are
+\(0,0,-1/e\).
+
+\emph{Step 3: exclusion of a nonconstant \(s\).}
+If \(\delta=0\), the equations at the two extrema give
+\(Q(m)=Q(s_0)=0\). Hence \(Q(t)=-L(t-m)(t-s_0)\).
+The scalar identity in \eqref{eq:odd-isolated-minimum-scalar},
+together with \(\eta>0\), gives
+\[
+ K(s_0-m)=\eta=\frac{Q'(m)}2=\frac L2(s_0-m).
+\]
+This is impossible because \(K=2e(e-1)\ne2(e-1)^2=L/2\).
+
+Now suppose \(\delta\ne0\). In
+\eqref{eq:odd-isolated-maximum}, the eigenvalue \(-e^2a\) of
+\(B\) is impossible, because its \(C\)-eigenvalue is zero.
+Since \(\tr B=-e(N+e-2)a<0\), the eigenvalue
+\(-e(e-1)a\) occurs. Substitution in the last identity yields
+\begin{equation}\label{eq:odd-isolated-delta}
+ \delta=4e-6-e\varepsilon.
+\end{equation}
+The value of the gradient-square identity at this same point is
+\begin{equation}\label{eq:odd-isolated-q-at-maximum}
+ Q(s_0)+\delta s_0/e^2=0.
+\end{equation}
+Set \(x=m/s_0\in(0,1)\). Eliminating \(\gamma\) with
+\eqref{eq:odd-isolated-q-at-maximum}, and substituting
+\eqref{eq:odd-isolated-delta}, the two scalar equations
+\eqref{eq:odd-isolated-minimum-scalar}, after multiplication by
+their nonzero denominators, become
+\begin{align*}
+ 0={}&e\varepsilon[ex-(e-1)]
+       +2(e^2-3e+3)-2e(e-1)x^2,\\
+ 0={}&e\varepsilon[ex-(e-1)]
+       +2e(e-1)+(10-8e)x-2(e-1)(e-2)x^2.
+\end{align*}
+Their difference is
+\[
+ 2(x-1)\bigl(2(e-1)x-(2e-3)\bigr)=0.
+\]
+Since \(x<1\), this gives
+\begin{equation}\label{eq:odd-isolated-forced-coefficients}
+ \begin{aligned}
+ x&=\frac{2e-3}{2(e-1)},&
+ \varepsilon&=\frac{4e^2-15e+12}{e(e-2)},\\
+ \delta&=\frac e{e-2},&
+ Q'(m)&=-\frac1{e-2},&
+ \eta&=\frac1{2(e-1)}.
+ \end{aligned}
+\end{equation}
+The nonnegative Hessian \(B_m\) preserves \(v^\perp\). By
+\eqref{eq:odd-isolated-minimum}, its eigenvalues on \(v^\perp\)
+are either zero or \(Q'(m)/2<0\), so they are all zero. Thus
+\(\Delta s=\eta\) at the minimum.
+
+At the maximum point of \(f\), let \(r\) be the multiplicity
+of \(-e(e-1)a\) in \(B\). Taking traces gives
+\[
+ r=\frac{N+e-2}{e-1},\qquad \Delta s=-\frac re.
+\]
+On the other hand, subtracting the two values of
+\(\Delta s=\alpha-Ds\) gives
+\[
+ \frac1{2(e-1)}+\frac re
+ =D(s_0-m)=\frac{N+2e-4}{2e(e-1)}.
+\]
+Consequently \(r=(N+e-4)/(2(e-1))\), in contradiction with
+the preceding trace formula. Hence \(s\) is constant, proving
+\(S=cR^{e-1}\) with \(c>0\).
+
+\emph{Step 4: the harmonic eikonal classification.}
+Rescale once more so that \(S=e^2R^{e-1}\). Tkachev's polynomial
+eikonal theorem \cite[Theorem~1]{TkachevIsoparametric14} gives, up to
+sign,
+\[
+ f=T_j(g),\qquad e=jp,\qquad p\in\{1,2,3,4,6\},
+\]
+where \(g\) is the spherical restriction of a Cartan--M\"unzner
+polynomial of degree \(p\). Since \(e\) is odd, \(p\in\{1,3\}\)
+and that polynomial is harmonic. In particular,
+\[
+ |\nabla g|^2=p^2(1-g^2),\qquad
+ \Delta g=-p(p+N-2)g.
+\]
+The Chebyshev equation
+\((1-t^2)T_j''-tT_j'+j^2T_j=0\) and the chain rule give
+\[
+ \Delta f=-e^2T_j(g)-p(N-2)gT_j'(g).
+\]
+Comparing this with harmonicity of \(F\), namely
+\(\Delta f=-e(e+N-2)f\), and using \(N>2\), yields
+\[
+ tT_j'(t)=jT_j(t)\qquad(-1<t<1).
+\]
+This identity would make \(T_j\) a monomial. For \(j>1\), its
+coefficient of \(t^{j-2}\) is nonzero, so \(j=1\). Thus \(e=p=3\).
+Cartan's classification of harmonic cubic eikonal polynomials
+\cite{Cartan39}, also recovered in
+\cite[Theorem~1.1]{TkachevCartan10}, gives the four stated
+dimensions and models.
+\end{proof}

@@ -1,0 +1,132 @@
+\label{sec:clifford-area-transfer}
+
+A source-radius factor compensates for the dilation term in
+\eqref{eq:pullback-defect} in sufficiently large admissible dimensions.
+
+\begin{theorem}[Area minimization under Clifford pullback]
+\label{thm:clifford-area-transfer}
+Let \(f\) be a nonzero homogeneous polynomial on \(\R^m\), and let
+\(Z\subset\{f=0\}\) be a closed conical real algebraic set containing
+the origin and having codimension at least two.  Suppose that
+\(H\in C^3(\R^m\setminus Z)\cap C^0(\R^m)\) is homogeneous of
+degree \(\ell>0\), with
+\[
+ \operatorname{sgn}H=\operatorname{sgn}f,\qquad
+ |\nabla_yH|>0\quad\text{on }\R^m\setminus Z.
+\]
+Put \(W_H=|\nabla_yH|^2\), and suppose that, off \(Z\),
+\[
+ H\cL_y(H)\geq0,\qquad H\Delta_yH\geq-MW_H
+\]
+for some finite \(M\geq0\).  Let \(P:\R^N\to\R^m\) be the
+Clifford map above.  If \(a>0\) and
+\begin{equation}\label{eq:clifford-transfer-bound}
+ N\geq1+4\ell(1+M)+2a(1+M)+\frac{\ell}{a},
+\end{equation}
+then
+\[
+ G=R^aH(P),\qquad E=\{f(P)<0\},
+\]
+defines a two-sided subcalibration: off \(P^{-1}(Z)\),
+\(\nabla_xG\ne0\) and \(G\cL_x(G)\geq0\), with strict inequality
+in the two open phases.  Consequently \(E\) is locally perimeter
+minimizing and \(\partial\llbracket E\rrbracket\) is locally mass
+minimizing. If \(N\geq3\) and both phases are nonempty, this current
+is strictly area minimizing. If both signs of \(f\) occur in every
+neighborhood of each target zero, then
+\[
+ \operatorname{spt}\partial\llbracket E\rrbracket=\{f(P)=0\}.
+\]
+In particular, this last condition holds when \(f\) is harmonic.
+\end{theorem}
+
+\begin{proof}
+Set \(h=H(P)\) and \(b=a(a+2\ell)\).  The chain rule and Euler's
+identity give, on \(\R^N\setminus P^{-1}(Z)\),
+\begin{align}
+ |\nabla_xG|^2
+ &=4R^{2a+1}W_H(P)+4bR^{2a-1}h^2,
+ \label{eq:clifford-transfer-gradient}\\
+ \cL_x(G)
+ &=16R^{3a+2}(\cL_yH)(P)
+   +8\bigl[a(N-1)-\ell-2b\bigr]R^{3a}hW_H(P)\notag\\
+ &\quad+16bR^{3a}h^2(\Delta_yH)(P)
+   +8b\bigl[a(N-1)+\ell\bigr]R^{3a-2}h^3.
+ \label{eq:clifford-transfer-defect}
+\end{align}
+For the second formula, use the radial identity
+\eqref{eq:radial-master-L} with the source function \(h\), of degree
+\(2\ell\), and substitute
+\[
+\begin{gathered}
+ |\nabla_xh|^2=4RW_H(P),\qquad
+ \Delta_xh=4R(\Delta_yH)(P),\\
+ \cL_x(h)=16R^2(\cL_yH)(P)-8\ell hW_H(P).
+\end{gathered}
+\]
+These identities follow from \eqref{eq:Clifford-pullback-identities}.
+
+Multiplication of \eqref{eq:clifford-transfer-defect} by \(h\) yields
+\begin{align*}
+ h\cL_x(G)\geq{}&
+ 8\bigl[a(N-1)-\ell-2b(1+M)\bigr]R^{3a}h^2W_H(P)\\
+ &+8b\bigl[a(N-1)+\ell\bigr]R^{3a-2}h^4.
+\end{align*}
+The first coefficient is nonnegative by
+\eqref{eq:clifford-transfer-bound}, and the last term is positive
+when \(h\ne0\).  Since \(R^a>0\), this proves the claimed phase
+inequality.  Formula \eqref{eq:clifford-transfer-gradient} gives
+\(\nabla_xG\ne0\) off \(Z'=P^{-1}(Z)\).
+
+The extension of \(G\) is continuous with the signs of \(f(P)\);
+at the origin, use \(H(P(x))=O(|x|^{2\ell})\).
+Surjectivity gives \(f(P)\not\equiv0\), hence local finite perimeter.
+Since \(P\) is a submersion off the origin, stratifying \(Z\) shows
+that \(Z'=P^{-1}(Z)\) has codimension at least two. Thus
+\cref{cor:gradient-subcalibration} applies. For \(N\ge3\) and two
+nonempty phases, the strict divergence signs give strict minimality
+by \cref{thm:strict-minimality-flux}.
+
+The additional phase assumption transfers by submersion away from
+the origin and by surjectivity and homogeneity at the origin.
+The support conclusion follows from \cref{rem:polynomial-finite-perimeter}.
+\end{proof}
+
+For harmonic nonconstant \(f\), \eqref{eq:Clifford-pullback-identities}
+and surjectivity make \(F=f\circ P\) nonzero and harmonic.
+Area minimization then implies real irreducibility by
+\cref{prop:minimizing-irreducibility}. Nonharmonic targets still
+require the stated phase hypothesis for full support.
+
+The ratio bound is preserved under iteration:
+\[
+ \Delta_xG=4R^{a+1}(\Delta_yH)(P)
+       +2a(N+2a+4\ell-2)R^{a-1}h,
+\]
+and \eqref{eq:clifford-transfer-gradient} gives
+\begin{align}
+ G\Delta_xG+M|\nabla_xG|^2
+ ={}&4R^{2a+1}\bigl(H\Delta_yH+MW_H\bigr)(P)\notag\\
+ &+\bigl[2a(N+2a+4\ell-2)+4Mb\bigr]R^{2a-1}h^2
+ \geq0.
+ \label{eq:clifford-transfer-ratio}
+\end{align}
+Thus the same \(M\) is available for iteration; see
+\cref{cor:iterated-clifford-transfer}. In particular, \(a=1\)
+preserves polynomial potentials and gives the sufficient bound
+\(N\geq5\ell+3+(4\ell+2)M\).
+
+The harmonic radial criterion supplies further target potentials.
+Let \(f\) be homogeneous of degree \(e\) on \(\R^m\) and satisfy
+the hypotheses of \cref{cor:harmonic-radial-existence}. Set
+\(\sigma=(m-1-2e)/2>0\) and \(H=|y|^\sigma f\). Harmonicity gives
+\[
+ H\Delta_yH
+ =\sigma(\sigma+2e+m-2)|y|^{2\sigma-2}f^2\geq0
+ \qquad(y\ne0).
+\]
+Together with the corollary's phase sign and nonvanishing gradient,
+this verifies all target hypotheses with \(Z=\{0\}\),
+\(\ell=e+\sigma\), and \(M=0\). Thus
+\cref{thm:clifford-area-transfer} applies whenever the source-dimension
+bound \eqref{eq:clifford-transfer-bound} holds.

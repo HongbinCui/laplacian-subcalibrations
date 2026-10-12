@@ -1,0 +1,69 @@
+\subsection{Polarization and metrized operations in arbitrary degree}
+\label{sec:higher-metrized-operations}
+
+For a homogeneous polynomial $F$ of degree $d\ge3$, its scalar
+polarization is the symmetric $d$-linear form
+$A_F=D^dF/d!$, characterized by $A_F(x,\ldots,x)=F(x)$
+\cite[Section~2.6.4, equation~(2.6.5)]{Landsberg2012}.
+Here $D^dF$ is the constant $d$th differential. Its evaluation is
+given by the polarization formula
+\[
+ D^dF[x_1,\ldots,x_d]
+ =\sum_{I\subseteq\{1,\ldots,d\}}(-1)^{d-|I|}
+     F\Bigl(\sum_{i\in I}x_i\Bigr).
+\]
+The alternating sum cancels terms missing some vector argument;
+homogeneity leaves the mixed derivative of order $d$.
+
+Using the Euclidean inner product, define the symmetric
+$(d-1)$-linear map $\mu:V^{d-1}\to V$ by
+\[
+ \langle\mu(x_1,\ldots,x_{d-1}),x_d\rangle
+       =dA_F(x_1,\ldots,x_d)
+       =\frac{1}{(d-1)!}D^dF[x_1,\ldots,x_d].
+\]
+The complete symmetry of the right side is the metric compatibility
+condition. Since $DF(x)[v]=dA_F(x,\ldots,x,v)$, this normalization
+makes $\mu(x,\ldots,x)=\nabla F(x)$. For $d=3$, the product in
+\eqref{eq:cubic-polarized-product} satisfies
+$\langle xy,z\rangle=6A_F(x,y,z)$, so $xy=2\mu(x,y)$;
+its multiplication operator is consequently twice the one used here.
+Put $P(x)=\mu(x,\ldots,x)$ and
+$L_xv=\mu(x,\ldots,x,v)$, with $d-2$ copies of $x$ in the latter.
+Polarization and Euler's identity give
+\begin{equation}\label{eq:higher-metrized-dictionary}
+ F=\frac1d\langle P,x\rangle,\qquad
+ \nabla F=P,\qquad \Hess F=(d-1)L_x,\qquad
+ \Delta F=(d-1)\tr L_x.
+\end{equation}
+Every $L_x$ is self-adjoint. With $S=|P|^2$,
+\begin{equation}\label{eq:higher-metrized-minimality}
+ \cL(F)=(d-1)\bigl(S\tr L_x-\langle L_xP,P\rangle\bigr).
+\end{equation}
+In the harmonic case, $\tr L_x=0$ for all $x$, and Bochner's formula
+and differentiation of $S$ give
+\begin{equation}\label{eq:higher-metrized-Bochner}
+ \Delta S=2(d-1)^2\tr(L_x^2),\qquad
+ \Gamma(S,S)=4(d-1)^2|L_xP|^2.
+\end{equation}
+Indeed, $\nabla S=2(d-1)L_xP$ and
+$\Delta|\nabla F|^2=2|\Hess F|^2$ when $\Delta F=0$.
+Thus $\cL(F)=-qF$ is equivalent to
+\[
+ d(d-1)\langle L_xP,P\rangle=q\langle P,x\rangle
+\]
+in this harmonic normalization. The weight $q$ has degree $2d-4$
+and need not be radial.
+
+The polarization formula is an equivalent algebraic description of
+the polynomial, and the contractions above express the minimal surface
+equation in terms of a symmetric metrized operation. In higher degree
+this can organize the identities needed to compute
+$q,S,\Delta S,\Gamma(S,S)$ in
+\cref{sec:harmonic-multiplier-criterion}. It becomes useful for a sign
+test when additional structure, such as Clifford relations, norm
+composition \cite[Chapter~1, Appendix, pp.~21--22]{Shapiro2000}, or
+spectral minor identities, makes these contractions tractable.
+Polarization alone supplies neither a classification nor the required
+sign inequalities. For $d>3$ the operation is $(d-1)$-linear, so the
+binary-algebra methods for cubics do not transfer automatically.

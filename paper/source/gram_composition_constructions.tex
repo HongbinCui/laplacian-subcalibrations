@@ -1,0 +1,81 @@
+\subsection{An example from complex Gram coordinates}
+\label{sec:gram-composition-constructions}
+
+The following sextic is obtained from the nine quadratic coordinates
+of a complex Hermitian Gram matrix. Its profile uses the imaginary
+part of a cyclic product of three off-diagonal entries. It shows
+that the composition criterion also produces higher-degree minimal
+regular zero sets.
+
+\begin{example}[A complex Gram sextic]
+\label{thm:complex-gram-cycle-sextic}
+For every $k\ge2$, let $x_1,x_2,x_3\in\mathbb C^k$ and
+$h_{ij}=x_i^*x_j$.  Then
+\begin{equation}\label{eq:complex-gram-cycle-sextic}
+ F=\operatorname{Im}(h_{12}h_{23}h_{31})
+\end{equation}
+is a real harmonic homogeneous polynomial of degree six on $\R^{6k}$
+with nonempty minimal regular zero set.
+
+More explicitly, set $r_i=h_{ii}$, $R=\sum_i r_i$,
+\[
+ a_1=|h_{23}|^2,\qquad a_2=|h_{31}|^2,\qquad
+ a_3=|h_{12}|^2,\qquad
+ t=\operatorname{Re}(h_{12}h_{23}h_{31}).
+\]
+With $\{i,j,l\}=\{1,2,3\}$ in each summand, define
+\begin{align}
+ S&=\sum_{i=1}^3 r_i a_i(a_j+a_l)-2t\sum_{i=1}^3a_i,
+ \label{eq:complex-gram-cycle-gradient}\\
+ B&=\sum_{i=1}^3a_i(r_i+r_j)(r_i+r_l)
+       -\sum_{i=1}^3a_i^2-2Rt.
+ \label{eq:complex-gram-cycle-weight}
+\end{align}
+Then
+\begin{equation}\label{eq:complex-gram-cycle-minimality}
+ \Delta F=0,\qquad |\nabla F|^2=S,\qquad
+ \Gamma(F,S)=4BF,\qquad \cL(F)=-2BF.
+\end{equation}
+\end{example}
+
+\begin{proof}
+Use the complex bilinear extension of $\Gamma$ in
+\eqref{eq:complex-Gram-differential-table}.  For
+$Z=h_{12}h_{23}h_{31}$ and $A=a_1+a_2+a_3$, the product rule gives
+\[
+ \Gamma(Z,Z)=4AZ,\qquad
+ \Gamma(Z,\overline Z)=2\sum_i r_i a_i(a_j+a_l).
+\]
+Taking real and imaginary parts proves
+$|\nabla F|^2=S$.  The same table gives
+\begin{equation}\label{eq:complex-gram-cycle-pairings}
+ \Gamma(F,r_i)=4F,\quad
+ \Gamma(F,a_i)=2(R-r_i)F,\quad
+ \Gamma(F,t)=2AF.
+\end{equation}
+Applying these three identities to the expression for $S$ gives
+$\Gamma(F,S)=4BF$. Indeed, writing
+$D=\sum_i r_i a_i$ and $E=\sum_i r_i a_i^2$, one has
+$S=AD-E-2tA$. After the $A^2$ terms cancel, the product rule gives
+\[
+ \Gamma(F,S)=4F\left[
+ RD+\frac A2\sum_i r_i(R-r_i)-\sum_i a_i^2
+ -\sum_i r_i a_i(R-r_i)-2Rt\right].
+\]
+The coefficient of $a_i$ in the brackets is
+$r_i^2+r_1r_2+r_2r_3+r_3r_1=(r_i+r_j)(r_i+r_l)$,
+so the brackets equal $B$. This is a polynomial identity, valid
+also when the Gram entries satisfy rank relations, as for $k=2$.
+For harmonicity, with $x_2,x_3$ fixed, $F$ is the Hermitian
+quadratic form in $x_1$ with matrix
+\[
+ \frac{h_{23}x_2x_3^*-\overline{h_{23}}x_3x_2^*}{2i}.
+\]
+Its trace is zero, so its block Laplacian vanishes.  The same
+argument applies to the other two blocks.  The point
+$x_1=x_3=e_1$, $x_2=e_1+e_2$ has $F=0$ and $S=2$, proving
+nonempty regularity; \eqref{eq:complex-gram-cycle-minimality}
+then proves minimality.
+
+\end{proof}
+

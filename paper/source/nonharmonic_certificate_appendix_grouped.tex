@@ -1,0 +1,151 @@
+\subsection{The cubic certificate without harmonicity}
+\label{app:nonharmonic-cubic-certificate}
+
+For a cubic \(F\), put \(R=|x|^2\), \(S=|\nabla F|^2\).
+We specialize \cref{app:power-identities} to \(G=F\sqrt{RS}\),
+retaining the quadratic weight and trace terms.
+
+For \(\cL(F)=-qF\), put
+\[
+ t=\Delta F,\qquad H_2=|\Hess F|^2,\qquad K=\Delta S,
+ \qquad T=\Gamma(S,S).
+\]
+Then
+\begin{equation}\label{eq:cubic-nonharmonic-basic}
+ \Gamma(F,S)=2St+2qF,\qquad K=2H_2+2\Gamma(F,t).
+\end{equation}
+In the associated metrized algebra this means
+\[
+ t(x)=\tr L_x,\qquad H_2(x)=\tr(L_x^2),\qquad
+ K(x)=2\tr(L_x^2)+\langle x^2,b\rangle,
+ \quad \langle b,x\rangle=\tr L_x.
+\]
+The fixed vector \(b\) is the trace vector.
+
+\paragraph*{Polynomial coefficients}
+
+Define
+\begin{align}
+ B_0={}&16S^2\bigl[S(H_2-2q+3t^2)-T\bigr],
+ \label{eq:cubic-nonharmonic-B0}\\
+ B_1={}&-16S^2\Gamma(F,q)-8S^2\Gamma(S,t)+16KS^2t\notag\\
+       &+80S^2qt-4STt-2S\Gamma(F,T),
+ \label{eq:cubic-nonharmonic-B1}\\
+ B_2={}&-8S\Gamma(S,q)+16KqS+2KT+32q^2S-\Gamma(S,T).
+ \label{eq:cubic-nonharmonic-B2}
+\end{align}
+Then put
+\begin{equation}\label{eq:cubic-nonharmonic-coefficients}
+\begin{aligned}
+ C_0={}&R^2B_0+16(N-12)RS^4,\\
+ C_1={}&R^2B_1+16(2N+9)RS^3t,\\
+ C_2={}&R^2B_2
+       +R\bigl[88KS^2+32(N-1)qS^2+4(N-23)ST\bigr]\\
+       &+176(N+4)S^3.
+\end{aligned}
+\end{equation}
+The degrees of \((B_0,B_1,B_2)\) are \((14,11,8)\), and those
+of \((C_0,C_1,C_2)\) are \((18,15,12)\). In particular, all terms
+of \(C_0+FC_1+F^2C_2\) have degree eighteen.
+
+\paragraph*{The conditional certificate}
+
+\begin{proposition}[A polynomial certificate without harmonicity]
+\label{thm:cubic-nonharmonic-certificate}
+Let \(F\) be a nonzero square-free homogeneous cubic on \(\R^N\),
+\(N\ge2\), satisfying \(\cL(F)=-qF\) for a homogeneous quadratic
+polynomial \(q\). Let \(C_0,C_1,C_2\) be the explicit homogeneous
+polynomials in \eqref{eq:cubic-nonharmonic-coefficients}. If
+\begin{equation}\label{eq:cubic-nonharmonic-PSD}
+ C_0\ge0,\qquad C_2\ge0,\qquad C_1^2\le4C_0C_2
+\end{equation}
+at every point, then \(G=F\sqrt{RS}\) generates a two-sided
+subcalibration off \(Z=\{\nabla F=0\}\). Consequently
+\(E=\{F<0\}\) is locally perimeter minimizing and
+\(\partial\llbracket E\rrbracket\) is locally mass minimizing.
+No harmonicity or radiality assumption is required.
+\end{proposition}
+
+\begin{proof}
+The derivation below gives
+\begin{equation}\label{eq:cubic-nonharmonic-defect}
+ \cL(G)=\frac{F}{16\sqrt R\,S^{3/2}}
+                   (C_0+FC_1+F^2C_2)\qquad(S>0).
+\end{equation}
+The positive semidefinite matrix in \eqref{eq:cubic-nonharmonic-PSD},
+evaluated on \((1,F)\), gives \(F\cL(G)\ge0\).
+The potential is continuous with the phases of \(F\); its positive
+multiplier and degree six give \(\nabla G\ne0\) off \(Z\) by
+\cref{cor:gradient-subcalibration}. Square-freeness makes \(Z\)
+removable by \cref{lem:square-free-critical-set}, so
+\cref{thm:removable-subcalibration} applies.
+\end{proof}
+
+The leading coefficient is
+\begin{equation}\label{eq:cubic-nonharmonic-leading-H}
+ C_0=16RS^2\mathscr H_{\rm gen},\qquad
+ \mathscr H_{\rm gen}
+ =(N-12)S^2+RS(H_2-2q+3t^2)-RT.
+\end{equation}
+When \(t=0\), \(q=2R\), and \(T=4RS+12D\), this is precisely
+\(\mathscr H\) in \eqref{eq:cubic-unified-H}. For harmonic models,
+the transport identities of \cref{thm:cubic-unified-sextic} give sharper
+conditions than \eqref{eq:cubic-nonharmonic-PSD}.
+
+The minimizing current has support \(\{F=0\}\) if both phases have
+positive volume in every ball centered at a zero; square-freeness
+alone does not ensure this.
+
+\paragraph*{Derivation of the defect}
+
+First let \(H=F\sqrt S\), of degree five. Product differentiation gives
+\begin{align}
+ Q_H:=|\nabla H|^2
+   &=S^2+2FSt+F^2\left(2q+\frac{T}{4S}\right),
+ \label{eq:cubic-nonharmonic-H-gradient}\\
+ \Delta H
+   &=3\sqrt S\,t+
+     \frac{F}{\sqrt S}\left(2q+\frac K2-\frac{T}{4S}\right).
+ \label{eq:cubic-nonharmonic-H-laplacian}
+\end{align}
+To compute \(\cL(H)\), regard
+\(Q_H\) as a function of \(F,S,t,q,T\). Its partial derivatives are
+\[
+\begin{aligned}
+ (Q_H)_F&=2St+4qF+\frac{FT}{2S},&
+ (Q_H)_S&=2S+2Ft-\frac{F^2T}{4S^2},\\
+ (Q_H)_t&=2FS,&
+ (Q_H)_q&=2F^2,&
+ (Q_H)_T&=\frac{F^2}{4S}.
+\end{aligned}
+\]
+Use the chain rule with
+\(\Gamma(F,F)=S\), \(\Gamma(F,S)=2St+2qF\),
+\(\Gamma(S,S)=T\), and
+\(\Gamma(F,t)=K/2-H_2\). Since
+\[
+ \Gamma(H,Q_H)=\sqrt S\,\Gamma(F,Q_H)
+                    +\frac{F}{2\sqrt S}\Gamma(S,Q_H),
+\]
+substitution into \(\cL(H)=Q_H\Delta H-\Gamma(H,Q_H)/2\) and
+collection of the displayed powers of \(F\) yield
+\begin{equation}\label{eq:cubic-nonharmonic-H-defect}
+ \cL(H)=\frac{F}{16S^{3/2}}(B_0+FB_1+F^2B_2).
+\end{equation}
+The term independent of these displayed factors uses the Bochner
+relation \(K/2-\Gamma(F,t)=H_2\); this accounts for the \(H_2\) term
+in \eqref{eq:cubic-nonharmonic-B0}.
+
+Finally \(G=\sqrt R\,H\). The radial identity
+\eqref{eq:cubic-radial-lift}, with \(d=5\), gives
+\[
+ \cL(G)=R^{3/2}\left[
+ \cL(H)+\frac{11H^2\Delta H}{R}
+       +\frac{(N-12)H|\nabla H|^2}{R}
+       +\frac{11(N+4)H^3}{R^2}\right].
+\]
+Inserting \eqref{eq:cubic-nonharmonic-H-gradient}--\eqref{eq:cubic-nonharmonic-H-defect}
+and factoring out \(F/(16\sqrt R\,S^{3/2})\) gives
+\eqref{eq:cubic-nonharmonic-coefficients} and
+\eqref{eq:cubic-nonharmonic-defect}, with polynomial extension across
+the zeros of \(F\).

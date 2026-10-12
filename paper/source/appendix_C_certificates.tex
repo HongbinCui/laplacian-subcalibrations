@@ -1,0 +1,55 @@
+\section[Positivity and Obstruction Certificates]{Exact Positivity and Obstruction Certificates}
+\label{app:exact-certificates}
+
+\subsection{Exact positivity certificates}
+\label{subsec:legacy-exact-certificates}
+
+Our use of Bernstein coefficients to certify polynomial nonnegativity
+was inspired by \cite[Section~6.3 and Appendix~A]{LienTsai26}.
+For a polynomial \(P\) of degree at most \(m\) on \([a,b]\), put
+\(z=a+(b-a)t\) and write \(P(a+(b-a)t)=\sum_{j=0}^m c_jt^j\).
+Its Bernstein expansion is
+\begin{equation}\label{eq:Bernstein-expansion}
+ P(a+(b-a)t)=\sum_{i=0}^m b_i\binom mi t^i(1-t)^{m-i},
+\end{equation}
+where
+\begin{equation}\label{eq:Bernstein-coefficients}
+ b_i=\sum_{j=0}^i c_j\frac{\binom ij}{\binom mj}.
+\end{equation}
+Indeed,
+\[
+ \sum_{i=j}^m\frac{\binom ij}{\binom mj}\binom mi t^i(1-t)^{m-i}
+ =t^j\sum_{i=j}^m\binom{m-j}{i-j}t^{i-j}(1-t)^{m-i}=t^j.
+\]
+The Bernstein basis functions are nonnegative and sum to one on
+\([0,1]\), so \(P\geq\min_i b_i\) on \([a,b]\).
+
+\begin{example}[An exact check for the \((4,1,7)\) correction]
+\label{ex:Bernstein-17}
+For the polynomial \(P\) in \eqref{eq:P-17}, \eqref{eq:Bernstein-coefficients}, at degree five on each interval,
+gives the following minimum coefficients:
+\[
+\begin{array}{c|ccccc}
+ \text{interval}
+ &[-7/4,-1]&[-1,-1/2]&[-1/2,0]&[0,1/8]&[1/8,1/4]\\ \hline
+ \min b_i
+ &372925/1024&33735/32&42&10973/1280&1099085/32768
+\end{array}
+\]
+All five numbers are positive.  These intervals cover the entire
+realizable interval, so this proves the positivity assertion in
+\cref{prop:17-correction}.
+\end{example}
+
+The accompanying file \nolinkurl{LSC-INTERVAL-POSITIVITY.wl} checks these
+positivity certificates with exact rational arithmetic. The related
+isoparametric identities are checked in \nolinkurl{LSC-ISOPARAMETRIC.wl}.
+
+
+\input{sections/clifford_power_obstruction_grouped}
+\input{sections/nonharmonic_certificate_appendix_grouped}
+
+\input{sections/appendix_quartic_details}
+\input{sections/appendix_rectangular_trace_details}
+\input{sections/appendix_application_details}
+\input{sections/appendix_determinant_details}

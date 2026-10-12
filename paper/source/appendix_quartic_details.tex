@@ -1,0 +1,43 @@
+\subsection{Quartic potential identities}
+\label{app:quartic-potential-details}
+
+For the normalization of \cref{ex:Riedler-correct-power}, take
+$G=RQ^{3/4}F$ and use the differential table
+\eqref{eq:quartic-ambient-closure}.
+The quotient chain rule gives
+\begin{align}
+ |\nabla G|^2
+ &=RQ^{1/2}\bigl(16R^2Q^2+33R^2F^2+32QF^2\bigr),
+ \label{eq:Riedler-correct-gradient}\\
+ \frac{\cL(G)}{F}
+ &=RQ^{1/4}\Bigl[
+ 16(12k-47)R^4Q^2+16(2N-41)R^2Q^3\notag\\
+ &\qquad
+ +F^2\bigl((396k+66)R^4+(384k+66N-681)R^2Q\notag\\
+ &\hspace{35mm} +(64N+160)Q^2\bigr)\Bigr].
+ \label{eq:Riedler-correct-defect}
+\end{align}
+Every coefficient is positive for $N\geq32$ and $k\geq4$.
+Equivalently, apply \cref{prop:combined-power-multiplier} with
+\eqref{eq:Riedler-correct-potential}.
+
+
+On the regular zero set, these formulas yield
+\eqref{eq:Riedler-positive-boundary}.
+
+\paragraph*{The $(3,7,7)$ specialization}
+The differential table and certificate used for
+\cref{thm:weighted-Clifford-quartic} are
+\cref{eq:balanced-quartic-table,eq:balanced-quartic-certificate}
+at $N=32$ and $\nu=7$:
+\begin{equation}\label{eq:weighted-Clifford-table}
+ \begin{aligned}
+ \Delta(R,W,F)&=(64,28R,0),&\quad \Gamma(F,W)&=4RF,\\
+ \Gamma(F,F)&=\Gamma(W,W)=4RW.
+ \end{aligned}
+\end{equation}
+\begin{equation}\label{eq:weighted-Clifford-certificate}
+ \cL(WF)=16WF\left[(3R^2-2W)W^2+(21R^2-6W)F^2\right].
+\end{equation}
+The certificate file is
+\nolinkurl{LSC-WEIGHTED-CLIFFORD-QUARTIC.wl}.

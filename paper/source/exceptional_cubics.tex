@@ -1,0 +1,409 @@
+\subsection{Four-generator radial models}
+\label{sec:exceptional-four-generator}
+
+\subsubsection{Complexified Jordan norms}
+\label{exc-jordan-models}
+
+The sextic \(D\) is now independent: \(D=(\Gamma(S,S)-4RS)/12\).
+In the preceding trace family, \(D=F^2\).
+
+
+Let \(\mathbb K_d=\R,\mathbb C,\mathbb H,\mathbb O\) for
+\(d=1,2,4,8\), respectively, and set
+\(J_d=\operatorname{Herm}_3(\mathbb K_d)\), writing \(J=J_d\) locally.
+Its Jordan product is \(x\bullet y=(xy+yx)/2\), its unit is \(e\),
+and its Euclidean inner product is \(\tr(x\bullet y)\).
+Thus \((J_d)_0=e^\perp=\{x\in J_d:\tr x=0\}\) denotes its trace-free part.
+On the real vector space
+underlying \(V=J\otimes_{\R}\mathbb C\), use the real part of
+the Hermitian extension of this inner product. Thus
+\(|x+iy|^2=|x|^2+|y|^2\) and \(\dim_{\R}V=6(d+1)\).
+Let \(N\) be the complexification
+of the Jordan determinant. A Jordan frame consists of three
+idempotents \(c_i\) with \(c_i\bullet c_j=\delta_{ij}c_i\),
+\(\tr c_i=1\), and \(\sum_i c_i=e\). The normalization is
+\[
+ N(z_1c_1+z_2c_2+z_3c_3)=z_1z_2z_3,
+ \qquad |z_1c_1+z_2c_2+z_3c_3|^2=\sum_i|z_i|^2.
+\]
+These are the complexified rank-three models in
+\cite[Section~6.11.6(iv)]{NadirashviliTkachevVladut14}; the polynomial
+there is \(2\operatorname{Re}N\), with the same zero set.
+Their REC characteristic dimensions are \((n_1,n_2)=(1,3d+2)\).
+
+The determinant has the coordinate formula
+\begin{equation}\label{exc-norm-coordinates}
+ z=\begin{pmatrix}
+ a&\bar u&\bar v\\ u&b&w\\ v&\bar w&h
+ \end{pmatrix},\qquad
+ N(z)=abh-a\,n(w)-b\,n(v)-h\,n(u)
+       +2\operatorname{Sc}((\bar u w)v).
+\end{equation}
+Here \(a,b,h\in\mathbb C\) and
+\(u,v,w\in\mathbb K_d\otimes_{\R}\mathbb C\);
+the bar is algebra conjugation fixing complex scalars,
+\(n(u)=u\bar u\), and \(\operatorname{Sc}\) is the complex-linear
+extension of the scalar part. Thus \(n\) is a complex quadratic
+form, distinct from the Hermitian norm \(|u|^2\).
+
+The quadratic adjoint \(z^\#\) satisfies
+\((dN)_z(v)=\tr(z^\#\bullet v)\), with the complex bilinear
+trace form. The rank-three identities are
+\begin{equation}\label{exc-adjoint}
+ z\bullet z^\#=N(z)e,\qquad
+ (z^\#)^\#=N(z)z,\qquad
+ \tr(z\bullet z^\#)=3N(z).
+\end{equation}
+They extend from \(J\) to \(V\) as polynomial identities; see
+\cite[Section~3.2.7]{NadirashviliTkachevVladut14} for the Jordan algebra
+background. Put
+\begin{equation}\label{exc-invariants}
+ F=\operatorname{Re}N,\qquad R=|z|^2,\qquad
+ S=|z^\#|^2,\qquad D=|N(z)|^2.
+\end{equation}
+Holomorphicity gives \(\Delta F=0\) and \(|\nabla F|^2=S\).
+The Jordan product on \(J\) is distinct from the metrized product
+obtained by polarizing \(F\) on \(V\).
+
+\begin{theorem}[The smallest closure of the complexified models]
+\label{thm:exc-jordan-closure}
+For each \(d\in\{1,2,4,8\}\), the four polynomials in
+\eqref{exc-invariants} are algebraically independent and
+\[
+ \cA_R(F)=\R[R,F,S,D].
+\]
+Their degrees are \(2,3,4,6\); in particular,
+\((\cA_R(F))_2=\R R\) and \((\cA_R(F))_3=\R F\).
+The Laplacian identities are
+\begin{equation}\label{exc-jordan-laplacians}
+ \Delta R=12(d+1),\qquad \Delta F=0,\qquad
+ \Delta S=4(d+2)R,\qquad \Delta D=4S.
+\end{equation}
+The gradient pairings, apart from those determined by
+\(\Gamma(R,P)=2\deg(P)P\), are
+\begin{equation}\label{exc-gradient-table}
+\begin{aligned}
+ \Gamma(F,F)&=S,& \Gamma(F,S)&=4RF,& \Gamma(F,D)&=2SF,\\
+ \Gamma(S,S)&=4RS+12D,& \Gamma(S,D)&=8RD,&
+ \Gamma(D,D)&=4SD.
+\end{aligned}
+\end{equation}
+In particular, \(\cL(F)=-2RF\), so the regular zero set is minimal.
+Throughout \(V\),
+\begin{equation}\label{exc-global-inequalities}
+ R^2\geq3S,\qquad RS\geq9D,\qquad S^2\geq3RD,
+ \qquad 0\leq F^2\leq D.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+\emph{Differential identities.}
+For real \(a\in J\), \(T_a:z\mapsto a\bullet z\)
+is self-adjoint for the Hermitian trace metric, and
+\eqref{exc-adjoint} gives \((dN)_z(T_az)=(\tr a)N(z)\).
+Consequently \(\exp(itT_a)\) is unitary and multiplies \(N\)
+by \(\exp(it\tr a)\). Real Jordan automorphisms are also
+unitary and preserve \(N\). These transformations preserve
+\(R,S,D\) and transport identities involving \(N\) with its
+phase factor.
+
+The linearized Jordan identity implies that the commutators
+\([T_a,T_b]\) are derivations, whose exponentials are automorphisms.
+Take the standard diagonal frame \((c_i)\). At
+\(x=\sum_i r_ic_i\), with distinct positive \(r_i\), the
+Peirce decomposition \cite[Section~3.2.6]{NadirashviliTkachevVladut14} is
+\[
+ J=\bigoplus_i\R c_i\ \oplus\!\bigoplus_{i<j}J_{ij},
+ \qquad \dim_{\R}J_{ij}=d.
+\]
+Here \(J_{ij}\) consists of matrices supported in the \((i,j)\)
+and \((j,i)\) entries, and
+\(c_i\bullet a=c_j\bullet a=a/2\) for \(a\in J_{ij}\).
+Varying the \(r_i\) supplies the real diagonal directions, while
+the derivations and unitary infinitesimal transformations give
+\[
+ [T_{c_i},T_a]x=\tfrac14(r_j-r_i)a,\qquad
+ iT_ax=\tfrac12(r_i+r_j)ia,\qquad iT_{c_i}x=ir_ic_i.
+\]
+These directions span the underlying real space of \(V\).
+The map obtained by varying the diagonal entries and the transformation
+parameters is therefore a submersion at \(x\), so its image contains
+a real open subset of \(V\).
+
+On the diagonal, with \(t_i=r_i^2\),
+\(R=e_1(t), S=e_2(t), D=e_3(t)\), where
+\(e_1(t)=\sum_i t_i\), \(e_2(t)=\sum_{i<j}t_it_j\), and
+\(e_3(t)=t_1t_2t_3\). The first derivatives of
+these three invariants in the off-diagonal directions vanish.
+Differentiation gives the last row of \eqref{exc-gradient-table}.
+Extending \(\Gamma\) complex bilinearly, diagonal differentiation
+gives \(\Gamma(N,S)=4RN\), whose real part is the desired identity
+for \(F\). Holomorphicity gives the remaining pairings with
+\(F\). The complex Hessian of \(N\) has diagonal-block
+squared norm \(2R\); on \(J_{ij}\) its block is
+\(-r_k\Id\), where \(\{i,j,k\}=\{1,2,3\}\), contributing
+\(dR\) in total. Therefore
+\[
+\begin{gathered}
+ |\Hess_{\mathbb C}N|^2=(d+2)R,\qquad
+ |\Hess_{\R}F|^2=2(d+2)R,\\
+ \Delta S=2|\Hess_{\R}F|^2=4(d+2)R.
+\end{gathered}
+\]
+Here \(|\Hess_{\R}\operatorname{Re}(e^{i\theta}N)|^2
+=2|\Hess_{\mathbb C}N|^2\), so the real Hessian norm is
+unchanged by the determinant phase.
+Also \(\Delta|N|^2=4|z^\#|^2\). Phase covariance transports
+these identities to the open subset just obtained, and polynomiality
+then proves them on all of \(V\).
+
+\emph{The smallest closure.}
+The differential identities satisfy
+\cref{prop:cubic-scalar-killing-closure}, which gives the claimed
+smallest algebra. At distinct positive \(t_i\), the Jacobian
+of \((e_1,e_2,e_3)\) is nonzero. Changing the overall complex
+phase preserves \(R,S,D\) and changes \(F\) whenever \(N\)
+is nonreal. Hence the four differentials are independent at such
+a point.
+
+\emph{Global inequalities.}
+The gradient table and \cref{lem:cubic-unified-bounds} give
+\eqref{exc-global-inequalities}.
+\end{proof}
+
+\subsubsection{Polynomial potentials and the Jordan minimizing range}
+\label{exc-multipliers}
+
+The following polynomial alternative also applies to the model in
+\cref{exc-g2-model}.
+
+\begin{proposition}[An algebraic sign criterion for the multiplier \(S\)]
+\label{prop:exc-SF-certificate}
+Let \(F\) be a harmonic cubic on a Euclidean space \(V\), set
+\(R=|x|^2\) and \(S=|\nabla F|^2\), and let \(D\) be a
+sextic satisfying \eqref{exc-gradient-table} and
+\eqref{exc-global-inequalities}. Suppose \(\Delta S=cR\).
+For \(G=SF\), one has \(\cL(G)=F\mathcal P_c\), where
+\begin{equation}\label{exc-SF-certificate}
+\begin{aligned}
+ \mathcal P_c={}&(c-\tfrac{58}{3})RS^3
+       +\tfrac{10}{3}S^2(RS-9D)\\
+ &+F^2\bigl[(12c-72)RD+12cS(R^2-3S)+(36c-96)S^2\bigr].
+\end{aligned}
+\end{equation}
+If \(c\geq58/3\), then \(G\cL(G)\geq0\), and
+\(\nabla G\neq0\) wherever \(S>0\).
+\end{proposition}
+
+\begin{proof}
+Set \(K=cR\) in \eqref{eq:cubic-SF-general-defect} and regroup
+to obtain \eqref{exc-SF-certificate}. Every summand is nonnegative
+by \eqref{exc-global-inequalities} when \(c\geq58/3\).
+The gradient formula \eqref{eq:cubic-SF-general-gradient} gives
+\(|\nabla G|^2\geq S^3\).
+\end{proof}
+
+\begin{theorem}[Area minimization for the complexified Jordan models]
+\label{thm:exc-jordan-minimizing}
+For the four models in \cref{exc-jordan-models},
+\(\{F<0\}\) is locally perimeter minimizing if and only if
+\(d\in\{2,4,8\}\). In all three minimizing dimensions,
+\(G=F\sqrt{RS}\) generates a subcalibration. For \(d=4,8\),
+the polynomial potential \(SF\) does so as well.
+\end{theorem}
+
+\begin{proof}
+For \(d=2,4,8\), the dimension and trace coefficient are
+\[
+ (N,K/R)=(18,16),\ (30,24),\ (54,40),\qquad K=\Delta S.
+\]
+Since \(\tr L_x^2=K/2\), each pair satisfies
+\cref{cor:cubic-unified-trace}; this proves the minimizing assertions
+for the common potential. For \(d=4,8\),
+\cref{prop:exc-SF-certificate} additionally gives the polynomial
+potential \(SF\).
+
+The singular set is the Jordan rank-at-most-one cone
+\[
+ \Sing\{F=0\}=\Sigma=\{z\in V:z^\#=0\}.
+\]
+To describe its nonzero stratum, take
+\(a\neq0\) in \eqref{exc-norm-coordinates} and set
+\[
+ B=b-\frac{n(u)}a,\quad C=h-\frac{n(v)}a,\quad
+ W=w-\frac{u\bar v}a.
+\]
+The determinant formula gives
+\begin{equation}\label{exc-schur}
+ N(z)=a\bigl(BC-n(W)\bigr).
+\end{equation}
+This identity also holds for \(d=8\). Indeed, multiplicativity
+of \(n\) and associativity of the scalar part give
+\[
+ n\!\left(w-\frac{u\bar v}{a}\right)
+ =n(w)-\frac{2}{a}\operatorname{Sc}((\bar u w)v)
+       +\frac{n(u)n(v)}{a^2},
+\]
+which proves \eqref{exc-schur} after expanding \(aBC\).
+The coordinate change is holomorphically invertible, so
+\(dN=0\) is exactly \(B=C=W=0\) in this chart. Hence
+these points are geometrically singular: the transverse real
+quadratic form \(\operatorname{Re}(a(BC-n(W)))\) is nondegenerate
+and indefinite. Moreover,
+\(\Sigma\setminus\{0\}\) is smooth of complex dimension
+\(1+2d\), and real codimension \(2(d+2)\). To see that these
+charts cover the nonzero set, recall that the spectral theorem makes
+primitive idempotents span \(J\), and that real Jordan automorphisms
+act transitively on them
+\cite[Theorem~III.1.2 and Corollary~IV.2.7]{FarautKoranyi94}.
+Some primitive idempotent therefore has nonzero trace pairing with
+any nonzero \(z\), and an automorphism takes it to \(c_1\).
+
+For \(d=4,8\), the codimension bound and
+\eqref{eq:cubic-SF-general-gradient} allow
+\cref{cor:gradient-subcalibration} to be applied to \(SF\).
+Harmonicity identifies the boundary-current support with \(\{F=0\}\)
+by \cref{rem:polynomial-finite-perimeter}.
+
+For \(d=1\), take \(p\in\Sigma\setminus\{0\}\) and put
+\(H=\Hess F(p)\). The chart \eqref{exc-schur} shows that
+\(H\) has real rank \(2(d+2)\).
+\Cref{prop:cubic-general-singular-spectrum}, with \(q=2R\), gives
+\(H^3=R(p)H\). Since \(\tr H=0\), its nonzero eigenvalues
+are \(\pm\sqrt{R(p)}\), each of multiplicity \(d+2\).
+Thus the tangent cone, with the induced Euclidean metric, is
+\begin{equation}\label{exc-jordan-tangent}
+ C_{d+1,d+1}\times\R^{4d+2},\qquad
+ C_{q,q}=\{(x,y)\in\R^{q+1}\oplus\R^{q+1}:|x|=|y|\}.
+\end{equation}
+For \(d=1\), the normal factor \(C_{2,2}\) is unstable by the
+Hardy criterion in \cref{sec:tangent-instability-transfer}.
+\Cref{lem:tangent-instability-transfer} therefore rules out local
+perimeter minimization.
+\end{proof}
+
+For \(d=2\), complexification identifies \(V\) isometrically
+with \(M_3(\mathbb C)\) with its Frobenius metric, and \(N\)
+with the determinant. In the notation of \cref{sec:complex-determinants},
+\(R=E_1\), \(S=E_2\), and \(D=E_3\). Thus both the closure
+table and the potential above are the three-by-three cases of the
+construction there.
+
+\subsubsection{The \texorpdfstring{$G_2$}{G2} trilinear model}
+\label{exc-g2-model}
+
+Let \(\times\) be the standard cross product on
+\(\operatorname{Im}\mathbb O=\R^7\), and set
+\[
+ F(a,b,c)=\langle a\times b,c\rangle,
+ \qquad (a,b,c)\in(\R^7)^3.
+\]
+Equivalently, \(F(a,b,c)=\varphi(a,b,c)\), where \(\varphi\)
+is the associative calibration on \(\R^7\) of Harvey and Lawson
+\cite[Section~IV.1.A]{HarveyLawson82a}.
+This is the classical model in
+\cite[Section~6.4, equation~(6.26), Proposition~6.3]{TkachevClassification10},
+whose defining polynomial \(\operatorname{Re}(a(bc))\) is
+\(-F\). Up to similarity, its subtracted Jordan model is the cubic
+norm restricted to the trace-orthogonal complement of
+\(\operatorname{Herm}_3(\R)\) in \(\operatorname{Herm}_3(\mathbb O)\);
+see \cite[Proposition~6.4.4 and Table~6.4.1]{NadirashviliTkachevVladut14}.
+Let \(A\) be the real \(7\times3\) matrix with
+columns \(a,b,c\), and put
+\[
+ B=A^tA,\qquad R=\tr B,\qquad S=e_2(B),\qquad D=\det B,
+\]
+where \(e_2(B)\) is the second elementary symmetric polynomial
+of the eigenvalues of \(B\).
+
+The compact real group \(G_2=\operatorname{Aut}(\mathbb O)\)
+acts diagonally on \(V=(\R^7)^3\). Schwarz's invariant-generation
+theorem \cite[Theorem~4 and equations~(5.1)--(5.3)]{Schwarz83} gives
+\[
+ \R[V]^{G_2}=\R[B_{ij},F].
+\]
+The commuting \(SO(3)\) action on the columns fixes \(F\)
+and conjugates \(B\). Averaging polynomial expressions over
+\(SO(3)\), whose conjugation invariants on symmetric matrices
+are generated by the elementary symmetric polynomials, therefore gives
+\[
+ \R[V]^{G_2\times SO(3)}=\R[R,F,S,D].
+\]
+This invariant ring equals \(\cA_R(F)\):
+
+\begin{theorem}[The trilinear model]
+\label{thm:exc-g2}
+The four polynomials \(R,F,S,D\) are algebraically independent,
+and \(\cA_R(F)=\R[R,F,S,D]\). In particular,
+\((\cA_R(F))_2=\R R\) and \((\cA_R(F))_3=\R F\).
+They satisfy
+\eqref{exc-gradient-table} and \eqref{exc-global-inequalities},
+with
+\begin{equation}\label{exc-g2-laplacians}
+ \Delta R=42,\qquad \Delta F=0,\qquad
+ \Delta S=24R,\qquad \Delta D=10S.
+\end{equation}
+Both \(G=F\sqrt{RS}\) and the polynomial potential \(SF\)
+give subcalibrations of \(\{F<0\}\subset\R^{21}\), which is
+locally perimeter minimizing.
+\end{theorem}
+
+\begin{proof}
+The cross-product identity
+\(|a\times b|^2=|a|^2|b|^2-\langle a,b\rangle^2\)
+gives \(|\nabla F|^2=S\), while trilinearity gives
+\(\Delta F=0\). Alternation gives
+\(\langle\nabla_{a_i}F,a_j\rangle=\delta_{ij}F\), with
+\(a_i\) denoting the columns. In matrix notation,
+\[
+ \nabla_A S=2A(RI-B),\qquad
+ \nabla_A D=2A\operatorname{adj}B.
+\]
+These formulas and the three-by-three Newton identities give
+\eqref{exc-gradient-table}. Direct differentiation of the Gram
+invariants gives \(\Delta S=24R\) and \(\Delta D=10S\).
+The global inequalities \eqref{exc-global-inequalities} follow
+from \cref{lem:cubic-unified-bounds}.
+
+The smallest-algebra assertion now follows from
+\cref{prop:cubic-scalar-killing-closure}.
+For independence,
+choose orthonormal \(e_1,e_2\), put \(e_3=e_1\times e_2\),
+and choose a unit \(e_4\) orthogonal to their span. At
+\[
+ a=r_1e_1,\qquad b=r_2e_2,\qquad
+ c=r_3(\cos\theta\,e_3+\sin\theta\,e_4),
+\]
+the three invariants \(R,S,D\) are the elementary symmetric
+functions of \(r_1^2,r_2^2,r_3^2\), while
+\(F=r_1r_2r_3\cos\theta\). Distinct positive \(r_i^2\)
+and \(0<\theta<\pi\) give four independent differentials.
+
+Here \(N=21\) and \(K=24R\), so
+\cref{cor:cubic-unified-trace} gives the common potential.
+For the polynomial potential, \cref{prop:exc-SF-certificate} applies
+with \(c=24\). The singular set of the zero cone is
+\[
+ \Sing\{F=0\}=\Sigma=\{S=0\}
+ =\{A\in M_{7,3}(\R):\operatorname{rank}A\leq1\}.
+\]
+At a nonzero rank-one matrix, a column rotation reduces to
+\((a,0,0)\), whose transverse leading form
+\(\langle a\times\delta b,\delta c\rangle\) is indefinite of rank twelve.
+The nonzero stratum has dimension
+\(7+3-1=9\), hence codimension \(12\). The gradient bound
+\eqref{eq:cubic-SF-general-gradient} and \cref{cor:gradient-subcalibration}
+therefore give the same minimizing phase.
+\end{proof}
+
+\begin{remark}
+For both families, Bochner's identity gives
+\(2|L_x|_{\mathrm{HS}}^2=c|x|^2\), where \(c>0\). Hence
+\(L_v=0\) implies \(v=0\), and their smallest closures have the intrinsic
+degree pattern \((3)\) of \cref{thm:cubic-one-dimensional-degree-three}.
+For the \(G_2\) model this differs from its trilinear coordinate
+presentation: the larger invariant algebra
+\(\R[V]^{G_2}\) contains their separate radii, whereas the
+smallest algebra is also invariant under column rotations and
+does not contain \(|a|^2,|b|^2,|c|^2\).
+\end{remark}

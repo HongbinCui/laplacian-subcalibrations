@@ -1,0 +1,297 @@
+\subsection{Three-generator closure and rank-four trace cubics}
+\label{sec:gradient-square-rank-two}
+
+For the closure and realizations in
+\cref{prop:cubic-singular-normalization,prop:cubic-gradient-classification},
+we determine area minimization, trace models, and the sharp stability
+constant. The degree-seven polynomial $G=SF$ complements the common
+degree-six potential $F\sqrt{RS}$.
+
+\subsubsection{The tangent obstruction and the existence theorem}
+
+The following closure criterion retains its displayed generality:
+for example, the reducible polynomial \(F=xyz\) on \(\R^3\)
+satisfies \eqref{eq:cubic-normalized-closure} with \(k=1\), by
+direct differentiation. This comparison endpoint is not subject to
+the introductory irreducibility convention.
+
+\begin{theorem}[Area minimization from gradient-square closure]
+\label{thm:cubic-rank-two-existence}
+Let \(F\) be a nonzero homogeneous cubic on \(\R^N\), \(N\geq3\),
+and let \(S=|\nabla F|^2\).  Suppose that
+\(\R[R,F,S]\) is a Laplacian algebra and that \(F\) has a
+nonzero critical point.  Write \(N=6k-3\) as in
+\cref{prop:cubic-singular-normalization}.  Then
+\begin{equation}\label{eq:cubic-minimality-threshold}
+ \partial\llbracket\{F<0\}\rrbracket\text{ is locally mass minimizing}
+ \quad\Longleftrightarrow\quad k\geq4.
+\end{equation}
+Every minimizing member is strictly area minimizing in the sense of
+\cref{def:four-variational-notions}, with polynomial potential
+\(G=SF\) of degree seven. It is also strictly stable, with the
+optimal Hardy constant determined in \cref{thm:sharp}.
+\end{theorem}
+
+\begin{proof}
+Normalize as in \eqref{eq:cubic-normalized-closure} and suppose
+\(k\geq4\). The dictionary in
+\cref{prop:cubic-multiplication-dictionary} translates the normalized
+gradient identities into the product identities of
+\cref{thm:cubic-algebraic-trace-certificate}. Moreover, Bochner's
+identity gives
+\[
+ K=\Delta S=4kR,\qquad
+ \tr(L_x^2)=\tfrac12K=2kR\geq8R.
+\]
+That theorem therefore gives the polynomial subcalibration potential
+\(G=SF\), including the required sign and the removability of its
+critical set. Its divergence is strictly signed wherever \(F\ne0\).
+Since \(G\) is homogeneous and polynomial and both phases are nonempty,
+\cref{cor:polynomial-strict-minimality} gives the strict mass gap.
+
+The sharp stability constant is computed in \cref{thm:sharp}.
+Harmonicity and \cref{prop:minimizing-irreducibility} also show that
+every minimizing member is irreducible.
+
+For the converse, \cref{prop:cubic-gradient-classification} identifies
+\(k=1\) with the reducible harmonic cubic \(xyz\), whose phases cannot
+minimize perimeter by \cref{prop:minimizing-irreducibility}.
+For \(k=2,3\), take a nonzero critical point \(p\).
+The Taylor expansion in \cref{prop:cubic-singular-normalization} gives
+\[
+ r^{-2}F(p+rz)\longrightarrow
+ \frac{|p|}{2}\bigl(|u|^2-|v|^2\bigr),
+ \qquad z=(u,v,w),\quad u,v\in\R^k.
+\]
+The transverse quadratic cone is unstable, since its link has
+\(|A|^2=2k-2\) and
+\[
+ \frac{(2k-3)^2}{4}-(2k-2)<0.
+\]
+By \cref{sec:tangent-instability-transfer}, the Taylor expansion gives
+smooth regular graphical convergence. \Cref{lem:tangent-instability-transfer}
+therefore makes these cases unstable and excludes area minimization.
+\end{proof}
+
+\subsubsection{The rank-four trace realizations}
+
+The trace cubics on $\operatorname{Herm}_4(\mathbb F_d)_0$,
+$d=1,2,4$, realize the three exceptional cases in dimensions
+$9,15,27$ \cite[Section~6.11.6(iii)]{NadirashviliTkachevVladut14}.
+They admit the following uniform calculation.
+
+\begin{corollary}[The rank-four trace cubics]
+\label{cor:quaternionic-trace-cubic}
+Let \(\mathbb F_d=\R,\mathbb C,\mathbb H\), with real dimension
+\(d=1,2,4\), and equip
+\[
+ V=\operatorname{Herm}_4(\mathbb F_d)_0,\qquad
+ \dim_{\R}V=3+6d,
+\]
+with \(\langle A,B\rangle=\operatorname{Re}\tr(AB)\).
+For \(F(A)=\tfrac13\operatorname{Re}\tr(A^3)\),
+\(R=\tr(A^2)\), and \(S=|\nabla F|^2\), one has
+\[
+ \cA_R(F)=\R[R,F,S],\qquad
+ \Delta F=0,\quad \Delta S=4(d+1)R,
+\]
+\[
+ \Gamma(F,S)=4RF,\qquad \Gamma(S,S)=4RS+12F^2.
+\]
+The generators are algebraically independent. The oriented zero cone
+is area minimizing if and only if \(d=4\); in that case \(G=SF\)
+proves strict area minimality. The common potential \(F\sqrt{RS}\)
+also gives a subcalibration in this case.
+\end{corollary}
+
+\begin{proof}
+Projection onto the trace-free subspace gives
+\[
+\begin{gathered}
+ \nabla F=A^2-\tfrac R4\Id,\qquad
+ S=\tr(A^4)-\tfrac{R^2}{4},\\
+ (\Hess F)_A(B)=AB+BA-\tfrac12\operatorname{Re}\tr(AB)\Id.
+\end{gathered}
+\]
+Write \(p_j=\sum_i\lambda_i^j\) after diagonalizing \(A\), where
+\(p_1=0\). If \(P\) is the orthogonal projection onto the
+sum-zero diagonal vectors, the diagonal Hessian is
+\(2P\operatorname{diag}(\lambda_i)P\), with trace zero and
+squared Hilbert--Schmidt norm \(2R\). Each off-diagonal entry
+contributes \(d\) eigenvalues \(\lambda_i+\lambda_j\). Thus
+\[
+ \Delta F=0,\qquad
+ |\Hess F|^2=2R+d\sum_{i<j}(\lambda_i+\lambda_j)^2
+             =2(d+1)R,
+\]
+and \(\Delta S=4(d+1)R\). Also,
+\(\nabla S=4A^3-RA-p_3\Id\). Newton's identities give
+\[
+ p_5=\tfrac56Rp_3,\qquad
+ p_6=\tfrac34Rp_4-\tfrac18R^3+\tfrac13p_3^2.
+\]
+Substitution proves the two gradient identities. Together with
+Euler's identities, \cref{prop:MR-generator-test} gives Laplacian
+closure. Since \(S=\Gamma(F,F)\) belongs to \(\cA_R(F)\),
+this is the smallest algebra containing \(R,F\).
+At distinct eigenvalues, the Vandermonde determinant shows that
+\(p_2,p_3,p_4\) have independent differentials on \(p_1=0\);
+hence \(R,F,S\) are algebraically independent.
+
+The gradient formula and the transverse model in
+\cref{prop:cubic-singular-normalization} identify the singular set as
+\[
+ \Sing\{F=0\}
+ =\{A\in V:A^2=\tfrac14\tr(A^2)\Id\}.
+\]
+Its nonzero matrices have eigenvalues \((\lambda,\lambda,-\lambda,-\lambda)\),
+with \(\lambda>0\). In particular,
+\(\operatorname{diag}(1,1,-1,-1)\) is a nonzero critical point.
+Since \(\Delta S=4kR\) with \(k=d+1\),
+\cref{thm:cubic-rank-two-existence} proves all the minimizing and
+nonminimizing assertions. For the common potential, put \(D=F^2\).
+The displayed identities imply
+\[
+ \Gamma(F,D)=2SF,\qquad\Gamma(S,D)=8RD,\qquad
+ \Gamma(D,D)=4SD.
+\]
+For \(d=4\), \(N=27\) and \(\tr L_x^2=10R\), so
+\cref{cor:cubic-unified-trace} applies.
+\end{proof}
+
+\Needspace{12\baselineskip}
+\subsubsection{Exact link geometry and the sharp Hardy constant}
+On the sphere write \(f=F|_{\Sph^{N-1}}\) and
+\(s=S|_{\Sph^{N-1}}\).
+Let \(M=Z^*\cap \Sph^{N-1}\). Since \(Z^*\) is conical and radial
+vectors are transverse to the sphere, \(M\) is a compact smooth
+submanifold of dimension \(4k-4\). The zero link
+\(\Sigma=\{F=0\}\cap \Sph^{N-1}\) has regular part of dimension \(6k-5\).
+Its transverse dimension along \(M\) is thus \(2k-1\).
+If \(\rho\) denotes spherical distance to \(M\), then, near \(M\),
+\begin{equation}\label{eq:tube}
+ s\asymp\rho^2,\qquad
+ \cH^{N-2}\bigl(\Sigma_{\reg}\cap\{\rho<\eps\}\bigr)
+ \leq C\eps^{2k-1}.
+\end{equation}
+The proof of these estimates is given in \cref{sec:cubic-local-geometry}.
+
+\paragraph{Two geometric identities.}
+With \(\nu=\nabla F/\sqrt S\), the curvature identity proved in
+\cref{prop:harmonic-power-Jacobi} is
+\(|A_C|^2=(\Delta S)/(2S)-|\nabla S|^2/(2S^2)\).
+Substituting \(\Delta S=4kR\) and \(|\nabla S|^2=4RS\)
+on the regular cone gives
+\begin{equation}\label{eq:Aexact}
+ |A_C|^2=\frac{2(k-1)R}{S},\qquad
+ |A_\Sigma|^2=\frac{2(k-1)}s.
+\end{equation}
+
+The spherical cross term \(\Gamma_{\Sph}(f,s)=4f(1-3s)\) vanishes on
+the zero link. Therefore
+\begin{equation}\label{eq:linksgrad}
+ |\nabla_\Sigma s|^2=4s-16s^2.
+\end{equation}
+In particular \(0<s\leq1/4\) on \(\Sigma_{\mathrm{reg}}\), improving
+the global bound \(s\leq1/3\) in
+\eqref{eq:cubic-gradient-only-S-bound}.
+
+To compute the link Laplacian, differentiate the closure table:
+\begin{align*}
+ \Gamma(F,\Gamma(F,S))&=4RS+24F^2,\\
+ \Hess F(\nabla F,\nabla S)&=\tfrac12|\nabla S|^2=2RS+6F^2.
+\end{align*}
+Their difference is \(\Hess S(\nabla F,\nabla F)\); hence
+\(\Hess S(\nu,\nu)=2R\) on the cone. Since \(S\) has degree four,
+its spherical normal Hessian at \(r=1\) equals \(2-4s\).
+Subtract this from \(\Delta_{\Sph}s=4k-4(N+2)s\). The link is minimal,
+so there is no mean-curvature term, and
+\begin{equation}\label{eq:linksLap}
+ \Delta_\Sigma s=4k-2-4(N+1)s
+ =4k-2-(24k-8)s.
+\end{equation}
+
+\paragraph{A positive eigenfunction and its domain.}
+Let \(J_\Sigma=\Delta_\Sigma+|A_\Sigma|^2\).
+For any real \(p\), equations \eqref{eq:Aexact}--\eqref{eq:linksLap} give
+\begin{equation}\label{eq:powerJ}
+ J_\Sigma(s^{-p})
+ =\left\{\frac{4p^2+(6-4k)p+2k-2}{s}
+           +4p(6k-6-4p)\right\}s^{-p}.
+\end{equation}
+For \(k\geq4\), define
+\begin{equation}\label{eq:p}
+ \delta_k=\sqrt{4k^2-20k+17}>0,\qquad
+ p_k=\frac{2k-3-\delta_k}{4}>0,\qquad
+ B_k=4p_k(6k-6-4p_k).
+\end{equation}
+The coefficient of \(s^{-1}\) in \eqref{eq:powerJ} vanishes, so
+\begin{equation}\label{eq:eig}
+ \phi=s^{-p_k}>0,\qquad J_\Sigma\phi=B_k\phi.
+\end{equation}
+
+\begin{theorem}[Optimal Hardy stability constant]\label{thm:sharp}
+Under \eqref{eq:cubic-normalized-closure}, with a nonvertex critical point and \(k\geq4\),
+the Friedrichs bottom of \(-J_\Sigma\), initially defined on
+\(C_c^\infty(\Sigma_{\mathrm{reg}})\), is \(-B_k\).
+The optimal constant in
+\[
+ Q_C(u)\geq H_k\int_Cr^{-2}u^2,
+ \qquad u\in C_c^\infty(C_{\mathrm{reg}}\setminus\{0\}),
+\]
+is
+\begin{equation}\label{eq:sharpH}
+ \boxed{H_k=\bigl(k+\sqrt{4k^2-20k+17}\bigr)^2.}
+\end{equation}
+In particular, for \(k=5\), \(N=27\), \(H_5=42+10\sqrt{17}\).
+\end{theorem}
+
+\begin{proof}
+For every compactly supported smooth \(v\) on the regular link,
+the positive-solution identity applied to \eqref{eq:eig} gives
+\begin{equation}\label{eq:linkground}
+ \int_\Sigma\bigl(|\nabla v|^2-|A_\Sigma|^2v^2\bigr)
+ =\int_\Sigma\phi^2\left|\nabla(v/\phi)\right|^2-B_k\int_\Sigma v^2.
+\end{equation}
+The bottom is therefore at least \(-B_k\).
+
+By \eqref{eq:tube}, \(\phi\asymp\rho^{-2p_k}\), and \(2k-3-4p_k=\delta_k>0\).
+Thus \(\phi\in L^2(\Sigma)\), with finite gradient and potential
+energy near \(M\). Choose smooth cutoffs \(\eta_\epsilon\), zero
+when \(\rho<\epsilon\), one when \(\rho>2\epsilon\), with
+\(|\nabla\eta_\epsilon|\leq C/\epsilon\). The local volume bound gives
+\[
+ \int_\Sigma\phi^2|\nabla\eta_\epsilon|^2
+ =O(\epsilon^{2k-3-4p_k})=O(\epsilon^{\delta_k})\longrightarrow0.
+\]
+Use \(v=\eta_\epsilon\phi\) in \eqref{eq:linkground}. Its Rayleigh
+quotient tends to \(-B_k\), proving the claimed bottom.
+The same estimates give convergence to \(\phi\) in the Friedrichs
+form norm. Testing \eqref{eq:eig} first against compactly supported
+smooth functions and then using form density shows that \(\phi\)
+belongs to the Friedrichs operator domain, with eigenvalue \(-B_k\)
+for \(-J_\Sigma\).
+
+The cone dimension is \(n=N-1=6k-4\).  By
+\eqref{eq:exact-Hardy-gap}, the optimal cone constant is
+\[
+ \frac{(n-2)^2}{4}+\inf\operatorname{spec}(-J_\Sigma)
+ =9(k-1)^2-B_k.
+\]
+Finally,
+\[
+ 9(k-1)^2-B_k
+ =\bigl(3(k-1)-4p_k\bigr)^2=(k+\delta_k)^2,
+\]
+which proves \eqref{eq:sharpH}.
+\end{proof}
+
+\begin{remark}
+For the larger root in \eqref{eq:p},
+\(2k-3-4p=-\delta_k\), so the cutoff energy does not tend to zero.
+The radicand \(\delta_k^2\) equals four times the Hardy stability
+constant of the transverse balanced quadratic cone:
+\[
+ \delta_k^2=4\left[\frac{(2k-3)^2}{4}-(2k-2)\right].
+\]
+\end{remark}

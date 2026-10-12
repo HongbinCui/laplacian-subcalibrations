@@ -1,0 +1,188 @@
+\subsection{Recurrence and scalar bounds for determinant potentials}
+\label{app:determinant-details}
+
+We prove the algebraic lemmas for the all-degree induction in
+\cref{det:first-section}, using \(\mathcal C_m\), \(\mathcal R_r\), and
+the binomial sums of
+\eqref{det:cleared-polynomial}--\eqref{det:scalar-budget}.
+
+\subsubsection*{Coefficient extraction for the recurrence}
+
+\begin{proof}[Proof of \cref{det:stable-recurrence}]
+For $q\geq1$, write
+\[
+ H_{st}^{(q)}=\sum_i y_i^q e_s(\widehat y_i)e_t(\widehat y_i).
+\]
+Here and below $e_j=0$ for $j<0$.  Direct substitution in
+\eqref{det:cleared-polynomial} gives
+\begin{align}
+ \mathcal C_m=e_1(D_m^{\mathrm{sym}})^2\biggl[
+ &2\sum_{s=1}^{m-1}s(s+1)\frac{e_{s+1}}{e_s}
+ -2\sum_{s=1}^{m-1}\frac{H_{ss}^{(1)}}{e_s^2}
+ -\sum_{s,t=1}^{m-1}\frac{H_{st}^{(1)}}{e_se_t}\notag\\
+ &+\frac1{e_1}\sum_{s=1}^{m-1}\frac{H_{s0}^{(2)}}{e_s}
+ -\frac{2e_2}{e_1}\biggr].
+ \label{det:C-expanded}
+\end{align}
+This also shows that the denominators cancel.  The case $m=2$ gives
+$\mathcal C_2=0$.
+
+We calculate the coefficient of $e_{r+1}$ in
+\eqref{det:C-expanded} for $m=r+1$.  Let
+$\mathscr E(z)=\sum_{j=0}^{r+1}e_jz^j=\prod_i(1+y_i z)$.
+Summing \(H_{st}^{(1)}z^sw^t\) gives the formal power series identity
+\begin{align}
+ \sum_{s,t\geq0}H_{st}^{(1)}z^sw^t
+ &=\mathscr E(z)\mathscr E(w)
+       \sum_i\frac{y_i}{(1+y_i z)(1+y_i w)}\notag\\
+ &=\frac{z\mathscr E'(z)\mathscr E(w)
+          -w\mathscr E'(w)\mathscr E(z)}{z-w}.
+ \label{det:H-generating}
+\end{align}
+Extracting the coefficient of $z^sw^t$ in
+\eqref{det:H-generating} gives, for $0\leq s,t\leq r$,
+\[
+ H_{st}^{(1)}=\sum_{j=0}^{\min(s,t)}
+       (s+t+1-2j)e_j e_{s+t+1-j},
+\]
+where $e_j=0$ for $j>r+1$ in this calculation with $r+1$ variables.
+Since $j\leq r$ in every summand, this expression is affine in
+$e_{r+1}$. For $1\leq s,t\leq r$, differentiation with respect to
+that formal variable therefore yields
+\begin{equation}\label{det:H-coefficient}
+ \frac{\partial H_{st}^{(1)}}{\partial e_{r+1}}
+ =\begin{cases}
+   (2r+1-s-t)e_{s+t-r},&s+t\geq r,\\
+   0,&s+t<r.
+  \end{cases}
+\end{equation}
+Similarly,
+\[
+ \sum_{s\geq0}H_{s0}^{(2)}z^s
+ =\frac{e_1\mathscr E(z)-\mathscr E'(z)}z,
+ \qquad
+ H_{s0}^{(2)}=e_1e_{s+1}-(s+2)e_{s+2}.
+\]
+It follows that
+\begin{equation}\label{det:H2-coefficient}
+ \frac{\partial H_{s0}^{(2)}}{\partial e_{r+1}}
+ =\begin{cases}
+   0,&s\leq r-2,\\
+   -(r+1),&s=r-1,\\
+   e_1,&s=r.
+  \end{cases}
+\end{equation}
+These formulas show that $\mathcal C_{r+1}$ depends affinely on
+$e_{r+1}$.  Setting $e_{r+1}=0$ leaves $e_r^2\mathcal C_r$.
+Indeed, append a zero variable to $r$ positive variables.  The terms
+with $s=r$ vanish at every nonzero coordinate, and every term from the
+zero coordinate has a factor $y_i$ or $y_i^2$.  This proves the claimed
+restriction as a polynomial identity.
+
+Since the ratio of $e_1(D_{r+1}^{\mathrm{sym}})^2$ to
+$\mathcal P_r/e_{r+1}$ is $e_r$, equations
+\eqref{det:H-coefficient}--\eqref{det:H2-coefficient} give
+\begin{align}
+ \frac{\mathcal R_r}{\mathcal P_r}
+ ={}&2r(r+1)
+ -2e_r\sum_{\substack{1\leq s\leq r\\2s\geq r}}
+       \frac{(2r+1-2s)e_{2s-r}}{e_s^2}\notag\\
+ &-e_r\sum_{\substack{1\leq s,t\leq r\\s+t\geq r}}
+       \frac{(2r+1-s-t)e_{s+t-r}}{e_se_t}
+ +1-(r+1)\frac{e_r}{e_1e_{r-1}}.
+ \label{det:R-before-grouping}
+\end{align}
+The diagonal term $s=r$ contributes $-2$.  In the double sum, the
+terms with $s=r$ or $t=r$ contribute $-(r^2+r-1)$.  Together with
+$2r(r+1)+1$, these terms give the constant $r(r+1)$.
+
+The remaining terms with $s+t=r$ have the form
+$e_r/(e_pe_{r-p})$.  The double sum contributes the factor
+$2-\mathbf1_{2p=r}$, and the diagonal sum contributes
+$2\mathbf1_{2p=r}$.  The last term of
+\eqref{det:R-before-grouping} adds $\mathbf1_{p=1}$.
+Their total coefficient is the first coefficient in
+\eqref{det:R-recurrence}.
+
+For the terms with $s+t=r+k>r$ and $s,t<r$, choose $s\leq t$ and
+write $s=k+d$, $t=r-d$.  Then
+$1\leq d\leq\lfloor(r-1)/2\rfloor$ and $1\leq k\leq r-2d$.
+The two orders in the double sum and the diagonal contribution give
+$2+\mathbf1_{k=r-2d}$, while
+$2r+1-s-t=r-k+1$.  This is the second sum in
+\eqref{det:R-recurrence}, and proves the recurrence.
+\end{proof}
+
+\subsubsection*{The scalar binomial estimate}
+
+\begin{proof}[Proof of \cref{det:binomial-budget}]
+Let $S_{r,d}$ denote the inner sum in $J_r$, and put
+\[
+ t_{r,d}=\frac{\binom{r-d}{d}}{\binom rd},\qquad
+ t_{r,d}=0\quad\text{if }2d>r.
+\]
+For $\ell=r-2d$, the identities
+\[
+ \sum_{k=1}^{\ell}\binom{k+d}{d}
+     =\binom{r-d+1}{d+1}-1,\qquad
+ \sum_{k=1}^{\ell}k\binom{k+d}{d}
+     =(d+1)\binom{r-d+1}{d+2}
+\]
+give
+\begin{align}
+ S_{r,d}={}&\frac2{\binom rd}
+  \left[(r+1)\left(\binom{r-d+1}{d+1}-1\right)
+       -(d+1)\binom{r-d+1}{d+2}\right]\notag\\
+ &+(2d+1)t_{r,d}.
+ \label{det:Srd}
+\end{align}
+Also,
+\[
+ \frac{t_{r,d+1}}{t_{r,d}}
+ =\frac{(r-2d)(r-2d-1)}{(r-d)^2}.
+\]
+We claim that
+\begin{equation}\label{det:telescoping}
+ S_{r,d}\leq\frac{2r^3}{r-1}
+  \left(\frac{t_{r,d}}{d+1}-\frac{t_{r,d+1}}{d+2}\right).
+\end{equation}
+To check the sign explicitly, divide \eqref{det:Srd} by $t_{r,d}$.
+After omitting the negative term
+$-2(r+1)/\binom{r-d}{d}$, the result is
+\[
+ B_{r,d}=\frac{2(r-d+1)(r+2d^2+3d+2)}{(d+1)(d+2)}+2d+1.
+\]
+Put $u=d-1\geq0$ and $v=r-2d-1\geq0$.  Over the positive denominator
+$(r-1)(d+1)(d+2)(r-d)^2$, the numerator of
+\[
+ \frac{2r^3}{r-1}\left(\frac1{d+1}
+    -\frac{(r-2d)(r-2d-1)}{(d+2)(r-d)^2}\right)-B_{r,d}
+\]
+is
+\begin{align*}
+ {}&2uv^4+(4u^3+25u^2+29u)v^3\\
+ &+(16u^4+102u^3+206u^2+140u+14)v^2\\
+ &+(18u^5+137u^4+385u^3+484u^2+258u+44)v\\
+ &+4u^6+38u^5+140u^4+252u^3+230u^2+104u+24.
+\end{align*}
+Every coefficient is nonnegative.  This proves
+\eqref{det:telescoping}.  Summation in $d$, with
+$t_{r,1}=(r-1)/r$, gives
+\begin{equation}\label{det:J-bound}
+ J_r\leq\frac{2r^3}{r-1}\frac{t_{r,1}}2=r^2.
+\end{equation}
+
+For the remaining sum, direct calculation gives
+\[
+ (I_2,I_3,I_4)=\left(6,4,\frac{25}{4}\right),\qquad
+ (J_2,J_3,J_4)=\left(0,6,\frac{43}{4}\right).
+\]
+Thus \eqref{det:scalar-budget} holds for $r\leq4$.
+Also, $I_5=24/5\leq5$ and $I_6=329/60\leq6$.  For $r\geq7$,
+$\binom rp\geq\binom r2$ when $2\leq p\leq r/2$, so
+\[
+ I_r\leq\frac{3(r+1)}r
+       +\frac{3(r+1)(r-2)}{r(r-1)}\leq r.
+\]
+Combine this with \eqref{det:J-bound} to finish the proof.
+\end{proof}
