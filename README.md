@@ -1,8 +1,8 @@
-# Laplacian algebras and subcalibrations
+# Laplacian Algebras and Subcalibrations for Minimal Hypercones
 
 Hongbin Cui — manuscript and computational verification materials.
 
-**Release prepared:** 2026-10-12 · **Manuscript:** V15, 166 pages  
+**Distribution updated:** 2026-10-13 · **Manuscript:** arXiv v2 submission, 166 pages  
 **Recorded verification:** PASS — 26/26 units, 7134/7134 checks  
 **Environment:** Wolfram Mathematica 12.0.0, Microsoft Windows 64-bit
 
@@ -57,7 +57,12 @@ and the before/after snapshots. No new execution is claimed by this packaging.
 
 ## Manuscript and verification versions
 
-The current paper is **V15**. The unchanged verification suite retains its
+The current paper is the **arXiv v2 submission prepared on 2026-10-13**.
+This update restores the author's original full title and includes the
+anonymous-reader acknowledgment and AI-assisted figure-generation disclosure.
+The PDF filename is retained to preserve existing links. No mathematical
+statements, proofs, or verification files have changed since V15.
+The unchanged verification suite retains its
 original identifier **20261011_memo_v7**. These identify different artifacts.
 Subsequent manuscript revisions did not change the tested identities or code.
 
@@ -70,7 +75,7 @@ provides the current publication status.
 `anc/manuscript/` contains the V7 PDF and label snapshot used by the frozen
 certificate index. It is a provenance reference, not the current paper.
 The index's old page and equation/theorem locations should be resolved by
-semantic LaTeX labels in `paper/source/` when consulting V15. Do not delete
+semantic LaTeX labels in `paper/source/` when consulting the current paper. Do not delete
 or edit the frozen reference files: they belong to the recorded source hashes.
 
 ## Compile the paper
@@ -93,5 +98,8 @@ repository root. On a system with sha256sum, run `sha256sum -c SHA256SUMS`
 before generating new output or modifying the files.
 
 For citation, use the paper's arXiv record and identify the fixed GitHub release
-used for computation. This package does not assert that arXiv v2 is already
-public. See [release notes](RELEASE_NOTES.md).
+used for computation. The verified computational snapshot is available at
+[verification-20261012-v15](https://github.com/HongbinCui/laplacian-subcalibrations/releases/tag/verification-20261012-v15).
+The current distribution corrects the manuscript title and accompanying prose;
+its verification files are identical to that snapshot. This package does not
+assert that arXiv v2 is already public. See [release notes](RELEASE_NOTES.md).

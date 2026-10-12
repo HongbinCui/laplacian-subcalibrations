@@ -1,15 +1,20 @@
-# Release notes — 2026-10-12
+# Manuscript title restored — 2026-10-13
 
-Suggested tag: `verification-20261012-v15`
+Suggested tag: `verification-20261013-v2`
 
-- Current manuscript: *Laplacian algebras and subcalibrations*, V15, 166 pages.
-- Complete Mathematica source and the author's native Mathematica 12.0.0
-  (Windows 64-bit) execution record: 26 units and 7134 checks passed.
-- The immutable verification suite keeps its identifier `20261011_memo_v7`.
-- V15 shortens repeated exposition and joins short unnumbered displays to prose;
-  the mathematical statements, proof steps, and numbered equations are retained.
-- The frozen certificate reference and all supplied execution files are unchanged.
-- This release includes a current root README and a distribution checksum list.
+- Paper: *Laplacian Algebras and Subcalibrations for Minimal Hypercones*,
+  arXiv v2 submission, 166 pages. The author's original full title is restored.
+- The PDF and LaTeX source include the anonymous-reader acknowledgment,
+  AI-assisted figure-generation disclosure, and fixed verification-release link.
+- Mathematical statements, proofs, and numbering are unchanged from V15.
+- All 72 verification and execution-record files are unchanged. The native
+  Mathematica 12.0.0 (Windows 64-bit) run on 2026-10-12 passed all 26 units
+  and 7134 checks; the verification identifier remains `20261011_memo_v7`.
+- The distribution checksum list has been regenerated for the updated documents.
 
-The verification is supplementary: it establishes only the assertions actually
-checked, with the scope stated in the code and certificate index.
+The earlier `verification-20261012-v15` release remains the computational
+snapshot cited by the paper. The current release supersedes its abbreviated
+manuscript title; it does not claim a new computational execution.
+
+The verification establishes only the assertions actually checked, within the
+scope stated in the code and certificate index, and supplements the proofs.
