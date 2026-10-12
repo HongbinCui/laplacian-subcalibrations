@@ -60,6 +60,8 @@ and the before/after snapshots. No new execution is claimed by this packaging.
 The current paper is the **arXiv v2 submission prepared on 2026-10-13**.
 This update restores the author's original full title and includes the
 anonymous-reader acknowledgment and AI-assisted figure-generation disclosure.
+The PDF, LaTeX source, and this README cite the same release,
+`verification-20261013-v2`.
 The PDF filename is retained to preserve existing links. No mathematical
 statements, proofs, or verification files have changed since V15.
 The unchanged verification suite retains its
@@ -97,9 +99,11 @@ for GitHub; an arXiv submission should be packaged separately.
 repository root. On a system with sha256sum, run `sha256sum -c SHA256SUMS`
 before generating new output or modifying the files.
 
-For citation, use the paper's arXiv record and identify the fixed GitHub release
-used for computation. The verified computational snapshot is available at
-[verification-20261012-v15](https://github.com/HongbinCui/laplacian-subcalibrations/releases/tag/verification-20261012-v15).
-The current distribution corrects the manuscript title and accompanying prose;
-its verification files are identical to that snapshot. This package does not
-assert that arXiv v2 is already public. See [release notes](RELEASE_NOTES.md).
+For citation, use the paper's arXiv record and the release cited in the paper:
+[verification-20261013-v2](https://github.com/HongbinCui/laplacian-subcalibrations/releases/tag/verification-20261013-v2).
+Download the attached `Laplacian_GitHub_complete_20261013.zip` for the current
+paper and the complete, unchanged verification suite and execution record.
+This corrected attachment supersedes the earlier attachment of the same name.
+GitHub's automatic `Source code` downloads follow the tagged commit and are
+separate from this maintained attachment. This package does not assert that
+arXiv v2 is already public. See [release notes](RELEASE_NOTES.md).
