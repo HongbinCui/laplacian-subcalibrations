@@ -1,0 +1,64 @@
+{
+	"CertificateID":"LSC-POWER-MULTIPLIERS",
+	"Status":"PASS",
+	"ExpectedChecks":8,
+	"ActualChecks":8,
+	"PassedChecks":8,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":1.21258e-2,
+	"SourceSHA256":"352498ed27336306c6e60596600adec8ffe6cde2f7f80137080b6b6bc0a1bc7b",
+	"Checks":[
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00001",
+			"Name":"gradient-power gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00002",
+			"Name":"gradient-power defect for symbolic real exponent",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00003",
+			"Name":"radial gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00004",
+			"Name":"radial curvature",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00005",
+			"Name":"radial Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00006",
+			"Name":"combined powers: direct gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00007",
+			"Name":"combined powers: direct curvature identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-POWER-MULTIPLIERS::00008",
+			"Name":"radial perturbation: exact boundary coefficient change",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

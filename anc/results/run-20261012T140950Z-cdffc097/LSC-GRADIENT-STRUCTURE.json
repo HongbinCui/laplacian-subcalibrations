@@ -1,0 +1,208 @@
+{
+	"CertificateID":"LSC-GRADIENT-STRUCTURE",
+	"Status":"PASS",
+	"ExpectedChecks":32,
+	"ActualChecks":32,
+	"PassedChecks":32,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":2.69523e-2,
+	"SourceSHA256":"abc782ac670b69139681e78b1a9a72b62f6dd5f938ad1b2de311c07161864d95",
+	"Checks":[
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00001",
+			"Name":"radial_potential_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00002",
+			"Name":"radial_potential_Laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00003",
+			"Name":"radial_potential_normalized_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00004",
+			"Name":"Bochner_Hessian_norm",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00005",
+			"Name":"critical_quartic_reduction",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00006",
+			"Name":"critical_nonzero_eigenvalue",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00007",
+			"Name":"cone_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00008",
+			"Name":"cone_Laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00009",
+			"Name":"cone_second_fundamental_norm",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00010",
+			"Name":"normalized_link_gradient",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00011",
+			"Name":"normalized_link_Laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00012",
+			"Name":"maximum_rank_dimension_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00013",
+			"Name":"distance_Laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00014",
+			"Name":"normal_flow_volume_density",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00015",
+			"Name":"intrinsic_power_Laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00016",
+			"Name":"cone_gradient_power_Jacobi",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00017",
+			"Name":"cone_separated_Jacobi",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00018",
+			"Name":"optimal_indicial_root",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00019",
+			"Name":"optimal_multiplier_Jacobi_gap",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00020",
+			"Name":"optimal_multiplier_degree",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00021",
+			"Name":"optimal_normal_speed_degree",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00022",
+			"Name":"optimal_positive_exponent_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00023",
+			"Name":"odd_flow_first_integral",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00024",
+			"Name":"odd_minimum_Q_elimination",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00025",
+			"Name":"odd_minimum_Hessian_elimination",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00026",
+			"Name":"odd_elimination_factor",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00027",
+			"Name":"odd_maximum_Hessian_delta",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00028",
+			"Name":"odd_forced_epsilon",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00029",
+			"Name":"odd_forced_delta",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00030",
+			"Name":"odd_forced_Q_derivative",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00031",
+			"Name":"odd_two_rank_separation",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-GRADIENT-STRUCTURE::00032",
+			"Name":"stable_dimension_slack",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		}
+	]
+}

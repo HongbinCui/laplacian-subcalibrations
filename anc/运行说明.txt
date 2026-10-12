@@ -1,0 +1,39 @@
+Computational Verification — 20261011_memo_v7
+源码准备日期：2026-10-11
+适用环境：Mathematica 12.0，Windows 64-bit。
+
+本包提供本次稿件的完整 Wolfram Language 验证代码，等待您实际运行。未附旧版运行日志，也不预设本次运行已经通过。
+
+一、运行
+1. 将整个压缩包解压到可写文件夹，保持目录结构。
+2. 在 Mathematica 中打开 StartHere.nb。
+3. 菜单 Evaluation > Quit Kernel > Local，先结束已有内核；随后执行会启动新内核。
+4. 选中唯一的输入单元，按 Shift+Enter：
+
+   Get[FileNameJoin[{NotebookDirectory[], "RunAll.wl"}]]
+
+也可以在新 notebook 中用完整路径：
+
+   Get["C:/完整路径/RunAll.wl"]
+
+不需要任何外部脚本语言、额外程序包或网络连接。manifest.json 列出全部 26 个单元，ExpectedChecks 字段给出确切断言总数，启动运行时也会显示。所有补充断言已经整合，不需要另行运行。
+
+二、查看进度
+屏幕及 progress.log 会显示每个单元的开始、完成、通过数量和耗时。不同单元耗时差别较大。每个单元完成后，全部断言结果写入该单元的 JSON 文件，并追加到 checks.log。
+
+三、结果位置
+每次运行自动建立新的目录：
+
+   results/run-实际UTC日期时间-唯一后缀/
+
+保存 summary.txt、summary.json、summary.wl、status.json、checks.log、progress.log、各 LSC-*.json 以及源码哈希和清单快照。真实运行日期、Mathematica 版本、操作系统、字长及耗时均由当前内核生成。今天的源码准备日期不会冒充实际运行日期。
+
+四、完整通过的标准
+summary.json 和 status.json 均为 PASS；CompleteSuite 为 true；完成单元 26/26；ActualChecks 和 PassedChecks 均等于 ExpectedChecks。非字面 True 的断言均按失败处理；消息、异常、数量/名称不一致或源码变动均不能产生完整 PASS。
+
+中止时会尽量记录 ABORTED；若关闭内核、关机或写文件失败而未产生最终完成标记，则属于未完成运行。RUNNING、INCOMPLETE、ABORTED、FAIL、PARTIAL_PASS 均不表示完整通过。再次执行会新建目录，不会覆盖前一次结果。
+
+五、运行后
+请保留整个新生成的 run-* 文件夹，将 summary.txt 及完整结果一并交回核对，然后再将本次代码及实际输出上传 GitHub。请不要只保留 PASS 截图，不要手动改写运行日期或摘要状态。
+
+数学适用范围及正文对应位置见 CertificateIndex.md 和 manifest.json。有限坐标样例只验证标明范围内的代数计算，一般性与分析性论证以稿件证明为准。

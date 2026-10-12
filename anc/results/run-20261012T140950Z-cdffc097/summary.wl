@@ -1,0 +1,250 @@
+<|"Status" -> "PASS", "Release" -> "20261011_memo_v7", 
+ "CompleteSuite" -> True, "AllSelectedUnitsPassed" -> True, 
+ "StartedUTC" -> "2026-10-12T14:09:51Z", "StartedLocal" -> 
+  "2026-10-12 22:09:51", "FinishedUTC" -> "2026-10-12T14:09:53Z", 
+ "FinishedLocal" -> "2026-10-12 22:09:53", 
+ "ElapsedSeconds" -> 2.0716806`7.76786779266279, 
+ "Kernel" -> <|"WolframVersion" -> 
+    "12.0.0 for Microsoft Windows (64-bit) (April 6, 2019)", 
+   "VersionNumber" -> 12., "SystemID" -> "Windows-x86-64", 
+   "OperatingSystem" -> "Windows", "MachineType" -> "PC", 
+   "ProcessorType" -> "x86-64", "SystemWordLength" -> 64, 
+   "MachinePrecision" -> 15.954589770191003, "TimeZoneHours" -> 8.|>, 
+ "ExpectedUnits" -> 26, "CompletedUnits" -> 26, "ExpectedChecks" -> 7134, 
+ "ActualChecks" -> 7134, "PassedChecks" -> 7134, 
+ "SourcesUnchangedDuringRun" -> True, "SourceSHA256" -> 
+  <|"RunAll.wl" -> 
+    "124177657fb0f018bd14f8deaa177f0c3bea5c4c0f1f9673141fe910c1bfe964", 
+   "Kernel/Runner.wl" -> 
+    "aa5f531411ad8892f524a8e07c010b7c5ddf9df8bbc0313efc776f3057c71985", 
+   "StartHere.nb" -> 
+    "88784d145b21866a073aa1a713d1c07cee15fb76dc7e347e79352f2635aa5dda", 
+   "README.md" -> 
+    "2e209aae2e346b7d430dcda21d06c8fb42322b1b34592a8f72b4a4ff7f68d719", 
+   "\:8fd0\:884c\:8bf4\:660e.txt" -> 
+    "90608f7cb0e8e3475ff4daf0ce917a54a19cb3661abbd4745af19289cabd0028", 
+   "CertificateIndex.md" -> 
+    "9a7122d592549cebf4f6ce7173a4f1a3d81b207b58f1e26f93446df0bcb13dad", 
+   "manuscript/labels.aux" -> 
+    "66f82631517e576de2ea68551ea16aeaa584e43ba8905946ccfb12a7371a43e6", 
+   "manuscript/Laplacian_Subcalibrations_Memo_20261011_v7.pdf" -> 
+    "90bc4a1082de6086a7ff1764b8d472fbc0549fbdb2dce2da70771ae159d13700", 
+   "certificates/LSC-MULTIPLIER-JACOBI.wl" -> 
+    "5dafd3634c1c38033f56d8e99978b78fa666d21e37c5cd14d55c6044fa030c84", 
+   "certificates/LSC-ISOPARAMETRIC.wl" -> 
+    "5fc07447b50a19af2be108ae39c6c6893587aa9892c063dcce005eba1ff7cba1", 
+   "certificates/LSC-BIHOMOGENEOUS-HOPF.wl" -> 
+    "d9834620ebad8b6ce0ede6fc5ece1d23557159c47567b2ff3fdda21fc6559522", 
+   "certificates/LSC-CUBIC-NORMALIZED.wl" -> 
+    "1fd96a82f7fa1195206071a0878cae9be8bd8e563b9da8cfbae2c1b06985173d", 
+   "certificates/LSC-CLIFFORD-CUBIC.wl" -> 
+    "ea8b283171c95834c3aa9f4c0262fb1324ddd175c5ce0c8320ba32aeefda32f5", 
+   "certificates/LSC-CLIFFORD-PULLBACK.wl" -> 
+    "85a5114db61ea0440d998cc1eb1a5b808b30e565e910e4ee315c7df184b11a39", 
+   "certificates/LSC-COMPLEX-DETERMINANT.wl" -> 
+    "8290e01e579007b440d3c1f5f3e61bf1131483f2f0203ad9fdf1b3a897094890", 
+   "certificates/LSC-POWER-MULTIPLIERS.wl" -> 
+    "352498ed27336306c6e60596600adec8ffe6cde2f7f80137080b6b6bc0a1bc7b", 
+   "certificates/LSC-INTERVAL-POSITIVITY.wl" -> 
+    "64e3eb0ff6b117a2a9648bc623d98790253da61cf9a3a362a61dfe9cf759e9dc", 
+   "certificates/LSC-CUBIC-CUTOFF-EXPONENT.wl" -> 
+    "cafe12cee7cc25aeda38a6b6d749d1ab838e0fcb261a9f0f8dbe2002d19a1607", 
+   "certificates/LSC-ODD-RIGIDITY.wl" -> 
+    "89aacbf09c2940971c05582c3e72515f5d364e15d4941e1ae749cd1a7e649839", 
+   "certificates/LSC-CLIFFORD-HESSIAN.wl" -> 
+    "226c4672b5771e5d804f7ca321c5dbd2a38ecd7f40b58e8c65e9aa21d6a4951f", 
+   "certificates/LSC-CLIFFORD-HOMOGENEITY.wl" -> 
+    "4dd02a99a5e65c81aba4c20ae8e4c5c7d63efd5d931aae45f94256b2329fb55c", 
+   "certificates/LSC-CUBIC-METRIC-ALGEBRA.wl" -> 
+    "5d59e1ab04e42b18c6a09d00a8541e0e19074d2f89970823b4a5051a1ee6ccb4", 
+   "certificates/LSC-EXCEPTIONAL-CUBICS.wl" -> 
+    "6c017712ead3f2e69ba71552d017884ef5940d79405d0206b44ba720a0712511", 
+   "certificates/LSC-CUBIC-CERTIFICATES.wl" -> 
+    "9236da7a1b15dffae1a7a2931addb6b1892a994811ed797ee08dce44a8593579", 
+   "certificates/LSC-PULLBACK-TRANSFER.wl" -> 
+    "0a5d576263bc13808dead03053319f205aa209b24cc33e92043c3659005372d9", 
+   "certificates/LSC-JORDAN-PENCIL.wl" -> 
+    "6997267c0c59df9e36868898997eaf916c87c7977d31e880a035f848acb6b8c6", 
+   "certificates/LSC-INTRINSIC-FIVE-GENERATORS.wl" -> 
+    "0cb01fa7fbd14ab344c78cff23cf9d144584a21ac03639cce46f2de53fa80d1f", 
+   "certificates/LSC-HARMONIC-SPECTRAL.wl" -> 
+    "48206077c611dbc26bff81d10e41eba6a77f0b1635b90cf016f1f61b63c2c63a", 
+   "certificates/LSC-NORM-PRODUCTS-PFAFFIANS.wl" -> 
+    "575e306d42e60db0ad2846254307501ce2544e501fae732d9d080a4d3e5c8dd4", 
+   "certificates/LSC-WEIGHTED-CLIFFORD-QUARTIC.wl" -> 
+    "fb8a92cc5aa575fc6061a55b61170eac5040d93fc7918fd8ee514f39a691db62", 
+   "certificates/LSC-GENERAL-QUARTIC.wl" -> 
+    "60dacf40f567fd4f1dcb67e01f2671796264dd321b895fccec698040003b2e00", 
+   "certificates/LSC-REVIEW-STRENGTHENINGS.wl" -> 
+    "8e6a1770c428349173faa55bd0418b550762be713a938f1a584196c7c4bc15a0", 
+   "certificates/LSC-GRADIENT-STRUCTURE.wl" -> 
+    "abc782ac670b69139681e78b1a9a72b62f6dd5f938ad1b2de311c07161864d95", 
+   "certificates/LSC-QUADRATIC-COMPOSITIONS.wl" -> 
+    "7abde6c33116a82376ead971405c5b047fc52caec5c73ca4913a9d3ded1fdf34"|>, 
+ "Manuscript" -> 
+  <|"Title" -> "Laplacian algebras and subcalibrations for minimal \
+hypercones", "PDF" -> 
+    "manuscript/Laplacian_Subcalibrations_Memo_20261011_v7.pdf", 
+   "Pages" -> 210, "PDFSHA256" -> 
+    "90bc4a1082de6086a7ff1764b8d472fbc0549fbdb2dce2da70771ae159d13700", 
+   "CompiledLabels" -> "manuscript/labels.aux", "CompiledLabelsSHA256" -> 
+    "66f82631517e576de2ea68551ea16aeaa584e43ba8905946ccfb12a7371a43e6", 
+   "Pagination" -> "Locations use printed page numbers: vii front-matter \
+pages followed by 203 Arabic-numbered pages.", 
+   "Format" -> "AMS Memoirs (memo-l)"|>, 
+ "Units" -> {<|"CertificateID" -> "LSC-MULTIPLIER-JACOBI", 
+    "Status" -> "PASS", "ExpectedChecks" -> 6, "ActualChecks" -> 6, 
+    "PassedChecks" -> 6, "EvaluationOK" -> True, "CountOK" -> True, 
+    "CheckCatalogOK" -> True, "Messages" -> {}, "UnitMessages" -> "{}", 
+    "ElapsedSeconds" -> 0.012924, "SourceSHA256" -> 
+     "5dafd3634c1c38033f56d8e99978b78fa666d21e37c5cd14d55c6044fa030c84"|>, 
+   <|"CertificateID" -> "LSC-ISOPARAMETRIC", "Status" -> "PASS", 
+    "ExpectedChecks" -> 16, "ActualChecks" -> 16, "PassedChecks" -> 16, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0085712, 
+    "SourceSHA256" -> 
+     "5fc07447b50a19af2be108ae39c6c6893587aa9892c063dcce005eba1ff7cba1"|>, 
+   <|"CertificateID" -> "LSC-BIHOMOGENEOUS-HOPF", "Status" -> "PASS", 
+    "ExpectedChecks" -> 49, "ActualChecks" -> 49, "PassedChecks" -> 49, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0401448, 
+    "SourceSHA256" -> 
+     "d9834620ebad8b6ce0ede6fc5ece1d23557159c47567b2ff3fdda21fc6559522"|>, 
+   <|"CertificateID" -> "LSC-CUBIC-NORMALIZED", "Status" -> "PASS", 
+    "ExpectedChecks" -> 18, "ActualChecks" -> 18, "PassedChecks" -> 18, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0084242, 
+    "SourceSHA256" -> 
+     "1fd96a82f7fa1195206071a0878cae9be8bd8e563b9da8cfbae2c1b06985173d"|>, 
+   <|"CertificateID" -> "LSC-CLIFFORD-CUBIC", "Status" -> "PASS", 
+    "ExpectedChecks" -> 193, "ActualChecks" -> 193, "PassedChecks" -> 193, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.1692134, 
+    "SourceSHA256" -> 
+     "ea8b283171c95834c3aa9f4c0262fb1324ddd175c5ce0c8320ba32aeefda32f5"|>, 
+   <|"CertificateID" -> "LSC-CLIFFORD-PULLBACK", "Status" -> "PASS", 
+    "ExpectedChecks" -> 50, "ActualChecks" -> 50, "PassedChecks" -> 50, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0157101, 
+    "SourceSHA256" -> 
+     "85a5114db61ea0440d998cc1eb1a5b808b30e565e910e4ee315c7df184b11a39"|>, 
+   <|"CertificateID" -> "LSC-COMPLEX-DETERMINANT", "Status" -> "PASS", 
+    "ExpectedChecks" -> 134, "ActualChecks" -> 134, "PassedChecks" -> 134, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.2521586, 
+    "SourceSHA256" -> 
+     "8290e01e579007b440d3c1f5f3e61bf1131483f2f0203ad9fdf1b3a897094890"|>, 
+   <|"CertificateID" -> "LSC-POWER-MULTIPLIERS", "Status" -> "PASS", 
+    "ExpectedChecks" -> 8, "ActualChecks" -> 8, "PassedChecks" -> 8, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0121258, 
+    "SourceSHA256" -> 
+     "352498ed27336306c6e60596600adec8ffe6cde2f7f80137080b6b6bc0a1bc7b"|>, 
+   <|"CertificateID" -> "LSC-INTERVAL-POSITIVITY", "Status" -> "PASS", 
+    "ExpectedChecks" -> 15, "ActualChecks" -> 15, "PassedChecks" -> 15, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0064803, 
+    "SourceSHA256" -> 
+     "64e3eb0ff6b117a2a9648bc623d98790253da61cf9a3a362a61dfe9cf759e9dc"|>, 
+   <|"CertificateID" -> "LSC-CUBIC-CUTOFF-EXPONENT", "Status" -> "PASS", 
+    "ExpectedChecks" -> 1, "ActualChecks" -> 1, "PassedChecks" -> 1, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0037032, 
+    "SourceSHA256" -> 
+     "cafe12cee7cc25aeda38a6b6d749d1ab838e0fcb261a9f0f8dbe2002d19a1607"|>, 
+   <|"CertificateID" -> "LSC-ODD-RIGIDITY", "Status" -> "PASS", 
+    "ExpectedChecks" -> 15, "ActualChecks" -> 15, "PassedChecks" -> 15, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0070199, 
+    "SourceSHA256" -> 
+     "89aacbf09c2940971c05582c3e72515f5d364e15d4941e1ae749cd1a7e649839"|>, 
+   <|"CertificateID" -> "LSC-CLIFFORD-HESSIAN", "Status" -> "PASS", 
+    "ExpectedChecks" -> 18, "ActualChecks" -> 18, "PassedChecks" -> 18, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0070441, 
+    "SourceSHA256" -> 
+     "226c4672b5771e5d804f7ca321c5dbd2a38ecd7f40b58e8c65e9aa21d6a4951f"|>, 
+   <|"CertificateID" -> "LSC-CLIFFORD-HOMOGENEITY", "Status" -> "PASS", 
+    "ExpectedChecks" -> 27, "ActualChecks" -> 27, "PassedChecks" -> 27, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.1053902, 
+    "SourceSHA256" -> 
+     "4dd02a99a5e65c81aba4c20ae8e4c5c7d63efd5d931aae45f94256b2329fb55c"|>, 
+   <|"CertificateID" -> "LSC-CUBIC-METRIC-ALGEBRA", "Status" -> "PASS", 
+    "ExpectedChecks" -> 31, "ActualChecks" -> 31, "PassedChecks" -> 31, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0452427, 
+    "SourceSHA256" -> 
+     "5d59e1ab04e42b18c6a09d00a8541e0e19074d2f89970823b4a5051a1ee6ccb4"|>, 
+   <|"CertificateID" -> "LSC-EXCEPTIONAL-CUBICS", "Status" -> "PASS", 
+    "ExpectedChecks" -> 28, "ActualChecks" -> 28, "PassedChecks" -> 28, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0398026, 
+    "SourceSHA256" -> 
+     "6c017712ead3f2e69ba71552d017884ef5940d79405d0206b44ba720a0712511"|>, 
+   <|"CertificateID" -> "LSC-CUBIC-CERTIFICATES", "Status" -> "PASS", 
+    "ExpectedChecks" -> 38, "ActualChecks" -> 38, "PassedChecks" -> 38, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0611943, 
+    "SourceSHA256" -> 
+     "9236da7a1b15dffae1a7a2931addb6b1892a994811ed797ee08dce44a8593579"|>, 
+   <|"CertificateID" -> "LSC-PULLBACK-TRANSFER", "Status" -> "PASS", 
+    "ExpectedChecks" -> 13, "ActualChecks" -> 13, "PassedChecks" -> 13, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0108789, 
+    "SourceSHA256" -> 
+     "0a5d576263bc13808dead03053319f205aa209b24cc33e92043c3659005372d9"|>, 
+   <|"CertificateID" -> "LSC-JORDAN-PENCIL", "Status" -> "PASS", 
+    "ExpectedChecks" -> 65, "ActualChecks" -> 65, "PassedChecks" -> 65, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0311987, 
+    "SourceSHA256" -> 
+     "6997267c0c59df9e36868898997eaf916c87c7977d31e880a035f848acb6b8c6"|>, 
+   <|"CertificateID" -> "LSC-INTRINSIC-FIVE-GENERATORS", "Status" -> "PASS", 
+    "ExpectedChecks" -> 62, "ActualChecks" -> 62, "PassedChecks" -> 62, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.3097707, 
+    "SourceSHA256" -> 
+     "0cb01fa7fbd14ab344c78cff23cf9d144584a21ac03639cce46f2de53fa80d1f"|>, 
+   <|"CertificateID" -> "LSC-HARMONIC-SPECTRAL", "Status" -> "PASS", 
+    "ExpectedChecks" -> 61, "ActualChecks" -> 61, "PassedChecks" -> 61, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0292137, 
+    "SourceSHA256" -> 
+     "48206077c611dbc26bff81d10e41eba6a77f0b1635b90cf016f1f61b63c2c63a"|>, 
+   <|"CertificateID" -> "LSC-NORM-PRODUCTS-PFAFFIANS", "Status" -> "PASS", 
+    "ExpectedChecks" -> 6015, "ActualChecks" -> 6015, "PassedChecks" -> 6015, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.3310665, 
+    "SourceSHA256" -> 
+     "575e306d42e60db0ad2846254307501ce2544e501fae732d9d080a4d3e5c8dd4"|>, 
+   <|"CertificateID" -> "LSC-WEIGHTED-CLIFFORD-QUARTIC", "Status" -> "PASS", 
+    "ExpectedChecks" -> 12, "ActualChecks" -> 12, "PassedChecks" -> 12, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0023632, 
+    "SourceSHA256" -> 
+     "fb8a92cc5aa575fc6061a55b61170eac5040d93fc7918fd8ee514f39a691db62"|>, 
+   <|"CertificateID" -> "LSC-GENERAL-QUARTIC", "Status" -> "PASS", 
+    "ExpectedChecks" -> 46, "ActualChecks" -> 46, "PassedChecks" -> 46, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0202356, 
+    "SourceSHA256" -> 
+     "60dacf40f567fd4f1dcb67e01f2671796264dd321b895fccec698040003b2e00"|>, 
+   <|"CertificateID" -> "LSC-REVIEW-STRENGTHENINGS", "Status" -> "PASS", 
+    "ExpectedChecks" -> 23, "ActualChecks" -> 23, "PassedChecks" -> 23, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0044321, 
+    "SourceSHA256" -> 
+     "8e6a1770c428349173faa55bd0418b550762be713a938f1a584196c7c4bc15a0"|>, 
+   <|"CertificateID" -> "LSC-GRADIENT-STRUCTURE", "Status" -> "PASS", 
+    "ExpectedChecks" -> 32, "ActualChecks" -> 32, "PassedChecks" -> 32, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.0269523, 
+    "SourceSHA256" -> 
+     "abc782ac670b69139681e78b1a9a72b62f6dd5f938ad1b2de311c07161864d95"|>, 
+   <|"CertificateID" -> "LSC-QUADRATIC-COMPOSITIONS", "Status" -> "PASS", 
+    "ExpectedChecks" -> 158, "ActualChecks" -> 158, "PassedChecks" -> 158, 
+    "EvaluationOK" -> True, "CountOK" -> True, "CheckCatalogOK" -> True, 
+    "Messages" -> {}, "UnitMessages" -> "{}", "ElapsedSeconds" -> 0.1982856, 
+    "SourceSHA256" -> 
+     "7abde6c33116a82376ead971405c5b047fc52caec5c73ca4913a9d3ded1fdf34"|>}|>

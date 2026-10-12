@@ -1,0 +1,124 @@
+{
+	"CertificateID":"LSC-CLIFFORD-HESSIAN",
+	"Status":"PASS",
+	"ExpectedChecks":18,
+	"ActualChecks":18,
+	"PassedChecks":18,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":7.0441e-3,
+	"SourceSHA256":"226c4672b5771e5d804f7ca321c5dbd2a38ecd7f40b58e8c65e9aa21d6a4951f",
+	"Checks":[
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00001",
+			"Name":"E: B squared",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00002",
+			"Name":"E: C squared",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00003",
+			"Name":"E: Clifford anticommutator",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00004",
+			"Name":"E: B C B reduction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00005",
+			"Name":"E: y transpose D B D y",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00006",
+			"Name":"E: y transpose B D y",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00007",
+			"Name":"E: norm of Z_y",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00008",
+			"Name":"E: C quadratic form on Z_y",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00009",
+			"Name":"E: radial contraction with U_y",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00010",
+			"Name":"E: radial contraction with Z_y",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00011",
+			"Name":"E: Hess F(U,U), eq:HFUU",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00012",
+			"Name":"E: Hess F(U,Z), eq:HFUZ",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00013",
+			"Name":"E: Hess F(Z,Z), eq:HFZZ",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00014",
+			"Name":"E: all six displayed contributions to Hess S(U,Z)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00015",
+			"Name":"E: all five displayed contributions to Hess S(Z,Z)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00016",
+			"Name":"E: Hess S(U,U), eq:HSUU",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00017",
+			"Name":"E: Hess S(U,Z), eq:HSUZ",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HESSIAN::00018",
+			"Name":"E: Hess S(Z,Z), eq:HSZZ",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

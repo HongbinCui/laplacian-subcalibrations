@@ -1,0 +1,88 @@
+{
+	"CertificateID":"LSC-WEIGHTED-CLIFFORD-QUARTIC",
+	"Status":"PASS",
+	"ExpectedChecks":12,
+	"ActualChecks":12,
+	"PassedChecks":12,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":2.3632e-3,
+	"SourceSHA256":"fb8a92cc5aa575fc6061a55b61170eac5040d93fc7918fd8ee514f39a691db62",
+	"Checks":[
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00001",
+			"Name":"weighted_clifford_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00002",
+			"Name":"weighted_clifford_Laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00003",
+			"Name":"weighted_clifford_curvature_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00004",
+			"Name":"weighted_clifford_degree_eight",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00005",
+			"Name":"weighted_clifford_slack_decomposition",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00006",
+			"Name":"weighted_clifford_positive_bracket_coefficients",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {3, 21, 10, 78}; all supplied indeterminates are assumed nonnegative."
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00007",
+			"Name":"weighted_clifford_signed_defect_certificate",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00008",
+			"Name":"weighted_clifford_Laplacian_product_coefficients",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {36}; all supplied indeterminates are assumed nonnegative."
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00009",
+			"Name":"weighted_clifford_boundary_beta",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00010",
+			"Name":"weighted_clifford_beta_lower_bound_remainder",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00011",
+			"Name":"weighted_clifford_beta_slack_coefficient",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {12}; all supplied indeterminates are assumed nonnegative."
+		},
+		{
+			"CheckID":"LSC-WEIGHTED-CLIFFORD-QUARTIC::00012",
+			"Name":"weighted_clifford_Hardy_gap_385_over_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		}
+	]
+}

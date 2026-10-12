@@ -1,0 +1,244 @@
+{
+	"CertificateID":"LSC-CUBIC-CERTIFICATES",
+	"Status":"PASS",
+	"ExpectedChecks":38,
+	"ActualChecks":38,
+	"PassedChecks":38,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":6.11943e-2,
+	"SourceSHA256":"9236da7a1b15dffae1a7a2931addb6b1892a994811ed797ee08dce44a8593579",
+	"Checks":[
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00001",
+			"Name":"unified gradient norm",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00002",
+			"Name":"unified Laplacian ratio",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00003",
+			"Name":"unified H\/J defect identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00004",
+			"Name":"trace corollary remainder",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00005",
+			"Name":"Clifford Gamma(f,s)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00006",
+			"Name":"Clifford Gamma(s,s)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00007",
+			"Name":"Clifford Gamma(f,D)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00008",
+			"Name":"Clifford Gamma(s,D)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00009",
+			"Name":"Clifford Gamma(D,D)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00010",
+			"Name":"Clifford normalized Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00011",
+			"Name":"Clifford H44 decomposition",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00012",
+			"Name":"Clifford parameter increment",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00013",
+			"Name":"Clifford power obstruction endpoint",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00014",
+			"Name":"Clifford power obstruction interior",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00015",
+			"Name":"radial lift gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00016",
+			"Name":"radial lift defect identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00017",
+			"Name":"dimension 26 radial lift coefficient 11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00018",
+			"Name":"dimension 26 radial lift coefficient 14",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00019",
+			"Name":"dimension 26 radial lift coefficient 330",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00020",
+			"Name":"nonradial Gamma(F,F)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00021",
+			"Name":"nonradial harmonicity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00022",
+			"Name":"nonradial minimality",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00023",
+			"Name":"nonradial Delta(P)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00024",
+			"Name":"nonradial Gamma(P,P)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00025",
+			"Name":"nonradial H gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00026",
+			"Name":"nonradial H Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00027",
+			"Name":"nonradial exact N defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00028",
+			"Name":"nonradial seven-summand decomposition",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00029",
+			"Name":"nonradial rho=0 strictness reduction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00030",
+			"Name":"nonradial P maximum remainder",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00031",
+			"Name":"nonradial square bound for H Delta(H)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00032",
+			"Name":"nonradial H Delta(H) lower coefficients",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00033",
+			"Name":"nonharmonic H gradient chain rule",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00034",
+			"Name":"nonharmonic H Laplacian chain rule",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00035",
+			"Name":"nonharmonic B identity with Bochner correction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00036",
+			"Name":"nonharmonic C identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00037",
+			"Name":"nonharmonic leading coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-CERTIFICATES::00038",
+			"Name":"nonharmonic to radial leading term",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

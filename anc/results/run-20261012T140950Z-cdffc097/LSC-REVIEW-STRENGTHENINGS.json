@@ -1,0 +1,154 @@
+{
+	"CertificateID":"LSC-REVIEW-STRENGTHENINGS",
+	"Status":"PASS",
+	"ExpectedChecks":23,
+	"ActualChecks":23,
+	"PassedChecks":23,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":4.4321e-3,
+	"SourceSHA256":"8e6a1770c428349173faa55bd0418b550762be713a938f1a584196c7c4bc15a0",
+	"Checks":[
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00001",
+			"Name":"intrinsic_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00002",
+			"Name":"intrinsic_laplacian_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00003",
+			"Name":"intrinsic_radius_recovery",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00004",
+			"Name":"Cartan_reduction_from_R_F_algebra",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00005",
+			"Name":"Cartan_reduction_eikonal_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00006",
+			"Name":"Cartan_reduction_harmonicity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00007",
+			"Name":"Cartan_reconstruction",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00008",
+			"Name":"quartic_h_nine_r0_eight",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00009",
+			"Name":"quartic_h_nine_weight_remainder",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00010",
+			"Name":"quartic_h_nine_negative_discriminant",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00011",
+			"Name":"quartic_h_nine_discriminant_bound",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00012",
+			"Name":"quartic_h_nine_parameter_remainder",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00013",
+			"Name":"quartic_h_nine_positive_discriminant_bound",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {9720\/7, 30564\/49, 684\/7, 23\/49}; all supplied indeterminates are assumed nonnegative."
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00014",
+			"Name":"quartic_h_nine_positive_leading_coefficient",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {315, 144, 27}; all supplied indeterminates are assumed nonnegative."
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00015",
+			"Name":"degree_eight_h_eleven",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00016",
+			"Name":"degree_eight_h_ten_active_weights_at_least_three",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00017",
+			"Name":"quartic_h_nine_low_unused_weights_excluded",
+			"Passed":true,
+			"Detail":"Exact 21-case integer enumeration: {<|\"Weights\" -> {1, 2, 7}, \"Ell\" -> 9, \"Delta\" -> 2, \"Excluded\" -> True|>, <|\"Weights\" -> {2, 2, 7}, \"Ell\" -> 10, \"Delta\" -> 4, \"Excluded\" -> True|>, <|\"Weights\" -> {3, 2, 7}, \"Ell\" -> 11, \"Delta\" -> 4, \"Excluded\" -> True|>, <|\"Weights\" -> {4, 2, 7}, \"Ell\" -> 12, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {5, 2, 7}, \"Ell\" -> 13, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {6, 2, 7}, \"Ell\" -> 14, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {7, 2, 7}, \"Ell\" -> 15, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {1, 3, 6}, \"Ell\" -> 9, \"Delta\" -> 4, \"Excluded\" -> True|>, <|\"Weights\" -> {2, 3, 6}, \"Ell\" -> 10, \"Delta\" -> 4, \"Excluded\" -> True|>, <|\"Weights\" -> {3, 3, 6}, \"Ell\" -> 11, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {4, 3, 6}, \"Ell\" -> 12, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {5, 3, 6}, \"Ell\" -> 13, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {6, 3, 6}, \"Ell\" -> 14, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {7, 3, 6}, \"Ell\" -> 15, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {1, 4, 5}, \"Ell\" -> 9, \"Delta\" -> 4, \"Excluded\" -> True|>, <|\"Weights\" -> {2, 4, 5}, \"Ell\" -> 10, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {3, 4, 5}, \"Ell\" -> 11, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {4, 4, 5}, \"Ell\" -> 12, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {5, 4, 5}, \"Ell\" -> 13, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {6, 4, 5}, \"Ell\" -> 14, \"Delta\" -> 8, \"Excluded\" -> True|>, <|\"Weights\" -> {7, 4, 5}, \"Ell\" -> 15, \"Delta\" -> 8, \"Excluded\" -> True|>}"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00018",
+			"Name":"quartic_h_nine_Hardy_positive",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {1, 15, 225\/4}; all supplied indeterminates are assumed nonnegative."
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00019",
+			"Name":"spectral_necessary_dimension_arithmetic",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00020",
+			"Name":"spectral_Hardy_homogeneity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00021",
+			"Name":"octonionic_Hardy_coefficient",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00022",
+			"Name":"Pfaffian_Hardy_coefficient",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-REVIEW-STRENGTHENINGS::00023",
+			"Name":"spectral_Hardy_positive_at_necessary_dimension",
+			"Passed":true,
+			"Detail":"Nonzero coefficients: {1\/4, 1\/2, 1\/4}; all supplied indeterminates are assumed nonnegative."
+		}
+	]
+}

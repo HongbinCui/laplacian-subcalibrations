@@ -1,0 +1,197 @@
+\section[Quadratic Compositions and Quartics]{Quadratic Compositions and Quartic Hypercones}
+\label{sec:two-quadratic}
+
+Starting with OT--FKM splitting quartics, we develop the two-block
+normal form, quadratic Jordan compositions, and a common theorem
+for orthogonal quartic data. Its realization table guides the quartic
+applications. A Gram sextic extends the construction, while
+higher-bidegree octonionic pullbacks exhibit transverse instability.
+
+\subsection{OT--FKM splitting and the two-block normal form}
+
+Allowing the two radii in the balanced OT--FKM sections of
+\cite{CuiFKM25} to vary independently gives singular hypercones
+with a $(2,2,4)$ Laplacian algebra.
+
+Let $x,y\in\R^\ell$. Choose skew-symmetric matrices
+$A_1,\ldots,A_{m-1}$ satisfying
+\[
+ A_iA_j+A_jA_i=-2\delta_{ij}\Id.
+\]
+Assume
+\begin{equation}\label{bh:range}
+ 2\leq m\leq\ell-2.
+\end{equation}
+Only parameters for which this Clifford representation exists are
+included. In particular, $A_1$ is a complex structure, so $\ell$ is even.
+Set
+\begin{gather}\label{bh:quartic-data}
+ u=\norm{x}^2,\quad v=\norm{y}^2,\quad R=u+v,\quad T=uv,\qquad
+ Q=\ip{x}{y}^2+\sum_{i=1}^{m-1}\ip{A_i x}{y}^2,\\
+ c=\frac{m-1}{\ell-2},\quad a=1-2c,\quad b=c(1-c),\quad
+ F=Q-cT.\label{bh:centered}
+\end{gather}
+Here $0<c<1$ and $b>0$; write $C=\{F=0\}$.
+
+\begin{remark}[Relation to the original OT--FKM cone]\label{bh:fkm-relation}
+In these coordinates, the Cartan--M\"unzner OT--FKM polynomial \cite{FKM81} is
+\[
+ \Phi=R^2-2(u-v)^2-8Q
+      =-R^2+8(1-c)T-8F.
+\]
+On $u=v$, the equation $F=0$ is equivalent to
+$\Phi=(1-2c)R^2$. Without the balance condition it is instead
+$\Phi=-R^2+8(1-c)T$, whose normalized right-hand side varies with
+$T/R^2$. The codimension-two cone studied in \cite{CuiFKM25}
+is exactly the balanced section $C\cap\{u=v\}$, whose only singular
+point is the vertex; the full hypercone has the two singular axes
+described below.
+\end{remark}
+
+
+\input{sections/two_block_normal_form}
+
+\input{sections/quadratic_jordan_framework}
+\input{sections/clifford_composition_background}
+\input{sections/general_quartic_theorem}
+\input{sections/quartic_family_completions}
+
+\subsection{Further quartic realizations}
+
+The remaining realizations in \cref{tab:quartic-weight-realizations}
+have different singular geometry. Their subcalibrations and Hardy
+bounds follow from the same quartic theorem.
+
+\input{sections/orthogonal_quartic_families}
+\input{sections/weighted_clifford_quartic}
+
+\subsubsection{An unequal Lawson pullback}
+
+\begin{example}[An unequal quadratic target]
+\label{ex:lawson-pullback}
+A Lawson cone in $\R^5\oplus\R^6$ pulls back to a quartic in
+$\R^{64}$, illustrating \cref{prop:pullback-subcalibration}.
+On the target, put
+\[
+ T=|u|^2+|v|^2,\qquad f=5|u|^2-4|v|^2,\qquad H=Tf.
+\]
+The target potential satisfies \eqref{eq:pullback-target-sign} with
+$\ell=4$ and $\kappa=1/2$, strictly off $f=0$; the calculation is
+recorded in \cref{app:application-details}.
+
+Choose eleven Clifford matrices on \(\R^{64}\), and set
+\(F=f\circ P\), \(Q=T\circ P=|P|^2\), and
+\(R=|x|^2\) on the source. Thus \(G=H\circ P=QF\).
+The source blocks
+\[
+ E_0=R^2-Q,\qquad E_1=\sum_{i=1}^{5}P_i^2,\qquad
+ E_2=\sum_{i=6}^{11}P_i^2
+\]
+have weights $(22,5,6)$. Such matrices exist by
+\cite[Table~4.1]{RiedlerThesis25}. With $T_{\rm gen}=Q/4$,
+$F_{\rm gen}=F/36$, \cref{thm:quartic-table-existence} gives the
+same potential $QF$, critical set $P^{-1}(0)$, full support, and
+strict area minimality. Here $Q>0$ off $P^{-1}(0)$, so the
+multiplier has the required positive domain. The Hardy coefficient
+in \eqref{eq:bihomogeneous-Hardy} is $2273/4$.
+\end{example}
+
+
+\input{sections/gram_composition_constructions}
+
+\subsection{Higher bidegrees and transverse instability}
+
+The two-block equations also admit higher bidegrees. In the following
+octonionic examples, an unstable transverse tangent cone excludes
+area minimization.
+
+Identify $\R^8$ with $\mathbb O$ and set
+\[
+ \mu(x,y)=x\overline y,\qquad x,y\in\mathbb O.
+\]
+Then $\norm{\mu}^2=T$ and
+\begin{equation}\label{bh:mu}
+ D\mu\,D\mu^{\mathsf T}=R\Id_8,\qquad
+ \Delta\mu=0,\qquad D\mu(\nabla R)=4\mu.
+\end{equation}
+These follow because multiplication by a fixed nonzero octonion is
+a linear similarity, with its squared norm as dilation squared;
+see \cite[Chapter~1, Lemma~1.3(1) and Appendix, pp.~15--16 and 21--22]{Shapiro2000}
+for the norm-multiplicative algebra and similarity identities.
+
+We use T.~Wang's octonionic pullback construction
+\cite[Section~3.4]{WangTeng26}. For $g=3,4,6$, choose the normalized
+Cartan--M\"unzner polynomial $\Phi_g$ on $\R^8$ with multiplicities
+respectively $(2,2)$, $(1,2)$, and $(1,1)$. Set
+\[
+ P_g=\Phi_g\circ\mu,\qquad F_g=P_g-t_gT^{g/2},\qquad
+ (\kappa_g,t_g)=(0,0),(8,1/3),(0,0),
+\]
+in the same order, where $\Delta\Phi_g=\kappa_g|z|^{g-2}$ and
+terms with zero coefficient are omitted. The value $t_g$ is the
+minimal level from \cref{sec:low-rank}. These polynomials have
+bidegree $(g,g)$.
+
+\begin{proposition}\label{bh:octonionic}
+Each $\R[u,v,P_g]$ is a graded Laplacian algebra with three
+algebraically independent generators. Each $C_g=\{F_g=0\}\subset\R^{16}$
+is a minimal hypercone, with singular set equal to the two coordinate
+$\R^8$ subspaces. For $g=3,4,6$, these hypercones are unstable.
+\end{proposition}
+\begin{proof}
+The closure identities are
+\begin{gather}\label{bh:higher-table}
+ \Delta u=\Delta v=16,\quad\Gamma(u,v)=0,\quad
+ \Gamma(u,u)=4u,\quad\Gamma(v,v)=4v,\\
+ \Gamma(u,P_g)=\Gamma(v,P_g)=2gP_g,\quad
+ \Gamma(P_g,P_g)=g^2RT^{g-1},\nonumber\\
+ \Delta P_g=\kappa_gRT^{g/2-1}.\nonumber
+\end{gather}
+The last expression is polynomial (zero for $g=3$).
+The gradient determinant $16g^2R(T^g-P_g^2)$ is positive at
+intermediate levels. Thus \cref{prop:MR-generator-test} gives
+closure and \eqref{eq:background-quotient-Gram} gives independence
+and spherical quotient dimension two.
+
+Put $H_g(z)=\Phi_g(z)-t_g\norm{z}^g$, with the second term zero when
+$t_g=0$. This is a homogeneous polynomial in every case under
+consideration, and its zero set is the minimal isoparametric
+hypercone in $\R^8$. A useful consequence of \eqref{bh:mu} is, for any
+homogeneous $H$ of degree $h$,
+\begin{equation}\label{bh:mu-pullback}
+ \cL(H\circ\mu)=R^2(\cL(H))\circ\mu
+                    -2h(H\norm{\nabla H}^2)\circ\mu.
+\end{equation}
+Indeed $\norm{\nabla(H\circ\mu)}^2=R(\norm{\nabla H}^2)\circ\mu$,
+$\Delta(H\circ\mu)=R(\Delta H)\circ\mu$, and
+$\Gamma(H\circ\mu,R)=4h(H\circ\mu)$. Substitution proves
+\eqref{bh:mu-pullback}. Both terms vanish on $H_g\circ\mu=0$, proving
+minimality. Off the coordinate subspaces $\mu\ne0$, the target
+minimal level is regular, and \eqref{bh:mu} gives a nonzero source
+gradient. Along either coordinate subspace that gradient vanishes.
+
+At $(x_0,0)$ with $x_0\ne0$, the first nonzero term is
+$H_g(x_0\overline y)$, so the tangent cone is a product of $\R^8$
+with an orthogonal image of the target minimal cone. The target
+link has dimension six and constant squared curvature $6(g-1)$.
+Its classical Hardy margin is
+\[
+ D_g=\frac{25}{4}-6(g-1)=
+ \begin{cases}-23/4,&g=3,\\-47/4,&g=4,\\-95/4,&g=6.
+ \end{cases}
+\]
+Each is negative, so \cref{lem:tangent-instability-transfer}
+proves instability of $C_g$. The target cone
+is nonlinear, so these coordinate strata are genuine singularities.
+\end{proof}
+
+\begin{remark}[The quadratic target and the sign obstruction]
+For a quadratic target with both multiplicities positive, let
+$Q=\norm{\operatorname{pr}_W\mu}^2$, $m=\dim W$, and
+$c=(m-1)/6$. This $Q$ obeys \eqref{bh:original-table} with $\ell=8$.
+The curvature and cutoff proof above applies without a choice of
+Clifford splitting, so the full $(2,2)$ hypercone $Q=cT$ is also
+unstable. Thus all four bidegrees in this $\R^8\times\R^8$ construction
+give unstable hypercones. The minimizing question for a codimension-two balance section is separate.
+\end{remark}
+

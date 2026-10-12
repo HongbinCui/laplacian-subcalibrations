@@ -1,0 +1,316 @@
+{
+	"CertificateID":"LSC-CLIFFORD-PULLBACK",
+	"Status":"PASS",
+	"ExpectedChecks":50,
+	"ActualChecks":50,
+	"PassedChecks":50,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":1.57101e-2,
+	"SourceSHA256":"85a5114db61ea0440d998cc1eb1a5b808b30e565e910e4ee315c7df184b11a39",
+	"Checks":[
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00001",
+			"Name":"Riedler corrected gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00002",
+			"Name":"Riedler corrected defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00003",
+			"Name":"quartic cometric determinant",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00004",
+			"Name":"quartic Jacobi coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00005",
+			"Name":"quartic spherical gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00006",
+			"Name":"quartic spherical defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00007",
+			"Name":"harmonic CM target gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00008",
+			"Name":"harmonic CM target Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00009",
+			"Name":"harmonic CM weighted transfer polynomial",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00010",
+			"Name":"harmonic CM source cometric determinant",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00011",
+			"Name":"harmonic CM source gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00012",
+			"Name":"harmonic CM source Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00013",
+			"Name":"harmonic CM pullback defect identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00014",
+			"Name":"harmonic CM explicit source certificate",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00015",
+			"Name":"Cartan source closure specialization",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00016",
+			"Name":"Cartan sextic gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00017",
+			"Name":"Cartan sextic defining defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00018",
+			"Name":"Cartan degree-ten source defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00019",
+			"Name":"Cartan source determinant",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00020",
+			"Name":"Cartan first transfer coefficient m=14",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00021",
+			"Name":"Cartan second transfer coefficient m=14",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00022",
+			"Name":"Cartan first transfer coefficient m=26",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00023",
+			"Name":"Cartan second transfer coefficient m=26",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00024",
+			"Name":"Cartan source potential homogeneous degree ten",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00025",
+			"Name":"unequal Lawson target defining defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00026",
+			"Name":"unequal Lawson symbolic radial-power transfer",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00027",
+			"Name":"unequal Lawson linear radial-power transfer",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00028",
+			"Name":"unequal Lawson transfer square completion",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00029",
+			"Name":"unequal Lawson source gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00030",
+			"Name":"unequal Lawson source defining defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00031",
+			"Name":"unequal Lawson explicit source certificate",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00032",
+			"Name":"unequal Lawson target defect square completion",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00033",
+			"Name":"unequal Lawson target gradient square completion",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00034",
+			"Name":"unequal Lawson source potential homogeneous degree eight",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00035",
+			"Name":"Cartan boundary Jacobi coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00036",
+			"Name":"Cartan positive Hardy remainder m=14",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00037",
+			"Name":"Cartan positive Hardy remainder m=26",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00038",
+			"Name":"unequal Lawson boundary Jacobi coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00039",
+			"Name":"unequal Lawson Hardy bound 2273\/4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00040",
+			"Name":"quartic gradient-square Laplacian from closure",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00041",
+			"Name":"orthogonal quartic gradient norm",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00042",
+			"Name":"orthogonal quartic Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00043",
+			"Name":"orthogonal quartic minimal-level numerator",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00044",
+			"Name":"orthogonality of the three splitting quartics",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00045",
+			"Name":"Riedler sixteen-dimensional curvature",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00046",
+			"Name":"Riedler induced Laplacian of Q",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00047",
+			"Name":"Riedler link gradient norm",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00048",
+			"Name":"Riedler link Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00049",
+			"Name":"Riedler angular eigenfunction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-PULLBACK::00050",
+			"Name":"Riedler negative Hardy quotient",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

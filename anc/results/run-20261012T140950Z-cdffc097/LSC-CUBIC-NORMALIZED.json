@@ -1,0 +1,124 @@
+{
+	"CertificateID":"LSC-CUBIC-NORMALIZED",
+	"Status":"PASS",
+	"ExpectedChecks":18,
+	"ActualChecks":18,
+	"PassedChecks":18,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":8.4242e-3,
+	"SourceSHA256":"1fd96a82f7fa1195206071a0878cae9be8bd8e563b9da8cfbae2c1b06985173d",
+	"Checks":[
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00001",
+			"Name":"cubic SF gradient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00002",
+			"Name":"cubic SF Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00003",
+			"Name":"cubic SF defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00004",
+			"Name":"cubic parameter propagation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00005",
+			"Name":"cubic angular power Jacobi identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00006",
+			"Name":"cubic smaller eigenfunction root",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00007",
+			"Name":"cubic singular cutoff exponent",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00008",
+			"Name":"cubic sharp Hardy square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00009",
+			"Name":"cubic sharp Hardy value in dimension 27",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00010",
+			"Name":"quaternionic cubic normalized gradient square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00011",
+			"Name":"quaternionic cubic mixed gradient closure",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00012",
+			"Name":"quaternionic cubic quartic gradient closure",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00013",
+			"Name":"quaternionic cubic nonzero critical point",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00014",
+			"Name":"quaternionic cubic harmonic Hessian trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00015",
+			"Name":"quaternionic cubic Hessian norm and Bochner coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00016",
+			"Name":"cubic SF boundary Jacobi coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00017",
+			"Name":"cubic SF certificate Hardy bound",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-NORMALIZED::00018",
+			"Name":"cubic SF certificate value in dimension 27",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

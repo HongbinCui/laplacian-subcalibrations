@@ -1,0 +1,52 @@
+{
+	"CertificateID":"LSC-MULTIPLIER-JACOBI",
+	"Status":"PASS",
+	"ExpectedChecks":6,
+	"ActualChecks":6,
+	"PassedChecks":6,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":1.2924e-2,
+	"SourceSHA256":"5dafd3634c1c38033f56d8e99978b78fa666d21e37c5cd14d55c6044fa030c84",
+	"Checks":[
+		{
+			"CheckID":"LSC-MULTIPLIER-JACOBI::00001",
+			"Name":"general exact multiplier: arbitrary two-jets",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-MULTIPLIER-JACOBI::00002",
+			"Name":"general scalar composition identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-MULTIPLIER-JACOBI::00003",
+			"Name":"general spherical numerator from polar differentiation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-MULTIPLIER-JACOBI::00004",
+			"Name":"degree window: exact completed square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-MULTIPLIER-JACOBI::00005",
+			"Name":"Simons RF gradient-square identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-MULTIPLIER-JACOBI::00006",
+			"Name":"Simons RF polynomial defect",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

@@ -1,0 +1,964 @@
+{
+	"CertificateID":"LSC-QUADRATIC-COMPOSITIONS",
+	"Status":"PASS",
+	"ExpectedChecks":158,
+	"ActualChecks":158,
+	"PassedChecks":158,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":0.1982856,
+	"SourceSHA256":"7abde6c33116a82376ead971405c5b047fc52caec5c73ca4913a9d3ded1fdf34",
+	"Checks":[
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00001",
+			"Name":"quartic_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00002",
+			"Name":"quartic_gamma_F_W",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00003",
+			"Name":"quartic_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00004",
+			"Name":"quartic_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00005",
+			"Name":"quartic_recover_W_without_polynomial_division",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00006",
+			"Name":"quartic_block_sum",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00007",
+			"Name":"quartic_block_laplacian_0",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00008",
+			"Name":"quartic_block_gamma_0_0",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00009",
+			"Name":"quartic_block_gamma_0_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00010",
+			"Name":"quartic_block_gamma_0_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00011",
+			"Name":"quartic_block_laplacian_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00012",
+			"Name":"quartic_block_gamma_1_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00013",
+			"Name":"quartic_block_gamma_1_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00014",
+			"Name":"quartic_block_laplacian_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00015",
+			"Name":"quartic_block_gamma_2_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00016",
+			"Name":"quartic_potential_laplacian",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00017",
+			"Name":"quartic_potential_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00018",
+			"Name":"quartic_potential_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00019",
+			"Name":"quartic_P_monotonicity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00020",
+			"Name":"quartic_P_boundary",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00021",
+			"Name":"quartic_gradient_positive_decomposition",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00022",
+			"Name":"quartic_boundary_Jacobi_potential",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00023",
+			"Name":"quartic_Hardy_coefficient",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00024",
+			"Name":"m2_ell12_discriminant",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00025",
+			"Name":"m2_left_endpoint",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00026",
+			"Name":"m2_left_derivative",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00027",
+			"Name":"m2_ell_at_least16_increasing",
+			"Passed":true,
+			"Detail":"Polynomial with nonnegative indeterminates: 26 + 84*ss + 15*vv + 6*ss*vv + vv^2"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00028",
+			"Name":"m3_ell12_discriminant",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00029",
+			"Name":"m3_ell16_discriminant",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00030",
+			"Name":"m3_ell20_discriminant",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00031",
+			"Name":"m3_shifted_positive_form",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00032",
+			"Name":"m3_ell_at_least24_positive",
+			"Passed":true,
+			"Detail":"Polynomial with nonnegative indeterminates: 184 + 42*ss + 66*ss^2 + 8*vv + 23*ss*vv + 3*ss^2*vv + ss*vv^2"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00033",
+			"Name":"m3_ell12_completed_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00034",
+			"Name":"k3_Hardy_constant",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00035",
+			"Name":"k2_transverse_Hardy_gap",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00036",
+			"Name":"coordinate_m2_delta_Q",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00037",
+			"Name":"coordinate_m2_gamma_QQ",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00038",
+			"Name":"coordinate_m2_gamma_WQ",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00039",
+			"Name":"coordinate_m3_delta_Q",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00040",
+			"Name":"coordinate_m3_gamma_QQ",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00041",
+			"Name":"coordinate_m3_gamma_WQ",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00042",
+			"Name":"coordinate_delta_W",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00043",
+			"Name":"coordinate_gamma_WW",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00044",
+			"Name":"sextic_harmonic_all_row_counts",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00045",
+			"Name":"sextic_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00046",
+			"Name":"sextic_gamma_F_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00047",
+			"Name":"sextic_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00048",
+			"Name":"sextic_delta_complex_cycle",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00049",
+			"Name":"sextic_gamma_F_real_cycle",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00050",
+			"Name":"sextic_gamma_F_radius_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00051",
+			"Name":"sextic_gamma_F_edge_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00052",
+			"Name":"sextic_gamma_F_radius_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00053",
+			"Name":"sextic_gamma_F_edge_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00054",
+			"Name":"sextic_gamma_F_radius_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00055",
+			"Name":"sextic_gamma_F_edge_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00056",
+			"Name":"sextic_regular_point_gradient_square",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00057",
+			"Name":"sextic_Hopf_determinant_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00058",
+			"Name":"sextic_one_row_identically_zero",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00059",
+			"Name":"sextic_nonvertex_quadratic_initial_term",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00060",
+			"Name":"det4_rank1_exact_expansion",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00061",
+			"Name":"det4_rank1_lower_orders_vanish",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00062",
+			"Name":"det4_rank1_cubic_initial_form",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00063",
+			"Name":"rectangular_trace_P4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00064",
+			"Name":"rectangular_trace_P5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00065",
+			"Name":"rectangular_delta_R",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00066",
+			"Name":"rectangular_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00067",
+			"Name":"rectangular_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00068",
+			"Name":"rectangular_gamma_RR",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00069",
+			"Name":"rectangular_gamma_RF",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00070",
+			"Name":"rectangular_gamma_RS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00071",
+			"Name":"rectangular_gamma_FF",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00072",
+			"Name":"rectangular_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00073",
+			"Name":"rectangular_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00074",
+			"Name":"rectangular_general_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00075",
+			"Name":"rectangular_p5_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00076",
+			"Name":"rectangular_regular_point_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00077",
+			"Name":"rectangular_regular_point_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00078",
+			"Name":"rectangular_RFS_eigenvalue_Jacobian_squared",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00079",
+			"Name":"rectangular_coordinate_p3_sample1_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00080",
+			"Name":"rectangular_coordinate_p3_sample1_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00081",
+			"Name":"rectangular_coordinate_p3_sample1_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00082",
+			"Name":"rectangular_coordinate_p3_sample1_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00083",
+			"Name":"rectangular_coordinate_p3_sample1_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00084",
+			"Name":"rectangular_coordinate_p3_sample1_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00085",
+			"Name":"rectangular_coordinate_p3_sample2_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00086",
+			"Name":"rectangular_coordinate_p3_sample2_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00087",
+			"Name":"rectangular_coordinate_p3_sample2_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00088",
+			"Name":"rectangular_coordinate_p3_sample2_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00089",
+			"Name":"rectangular_coordinate_p3_sample2_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00090",
+			"Name":"rectangular_coordinate_p3_sample2_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00091",
+			"Name":"rectangular_coordinate_p3_sample3_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00092",
+			"Name":"rectangular_coordinate_p3_sample3_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00093",
+			"Name":"rectangular_coordinate_p3_sample3_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00094",
+			"Name":"rectangular_coordinate_p3_sample3_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00095",
+			"Name":"rectangular_coordinate_p3_sample3_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00096",
+			"Name":"rectangular_coordinate_p3_sample3_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00097",
+			"Name":"rectangular_coordinate_p4_sample1_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00098",
+			"Name":"rectangular_coordinate_p4_sample1_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00099",
+			"Name":"rectangular_coordinate_p4_sample1_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00100",
+			"Name":"rectangular_coordinate_p4_sample1_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00101",
+			"Name":"rectangular_coordinate_p4_sample1_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00102",
+			"Name":"rectangular_coordinate_p4_sample1_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00103",
+			"Name":"rectangular_coordinate_p4_sample2_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00104",
+			"Name":"rectangular_coordinate_p4_sample2_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00105",
+			"Name":"rectangular_coordinate_p4_sample2_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00106",
+			"Name":"rectangular_coordinate_p4_sample2_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00107",
+			"Name":"rectangular_coordinate_p4_sample2_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00108",
+			"Name":"rectangular_coordinate_p4_sample2_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00109",
+			"Name":"rectangular_coordinate_p4_sample3_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00110",
+			"Name":"rectangular_coordinate_p4_sample3_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00111",
+			"Name":"rectangular_coordinate_p4_sample3_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00112",
+			"Name":"rectangular_coordinate_p4_sample3_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00113",
+			"Name":"rectangular_coordinate_p4_sample3_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00114",
+			"Name":"rectangular_coordinate_p4_sample3_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00115",
+			"Name":"rectangular_coordinate_p5_sample1_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00116",
+			"Name":"rectangular_coordinate_p5_sample1_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00117",
+			"Name":"rectangular_coordinate_p5_sample1_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00118",
+			"Name":"rectangular_coordinate_p5_sample1_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00119",
+			"Name":"rectangular_coordinate_p5_sample1_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00120",
+			"Name":"rectangular_coordinate_p5_sample1_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00121",
+			"Name":"rectangular_coordinate_p5_sample2_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00122",
+			"Name":"rectangular_coordinate_p5_sample2_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00123",
+			"Name":"rectangular_coordinate_p5_sample2_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00124",
+			"Name":"rectangular_coordinate_p5_sample2_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00125",
+			"Name":"rectangular_coordinate_p5_sample2_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00126",
+			"Name":"rectangular_coordinate_p5_sample2_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00127",
+			"Name":"rectangular_coordinate_p5_sample3_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00128",
+			"Name":"rectangular_coordinate_p5_sample3_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00129",
+			"Name":"rectangular_coordinate_p5_sample3_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00130",
+			"Name":"rectangular_coordinate_p5_sample3_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00131",
+			"Name":"rectangular_coordinate_p5_sample3_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00132",
+			"Name":"rectangular_coordinate_p5_sample3_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00133",
+			"Name":"rectangular_coordinate_p6_sample1_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00134",
+			"Name":"rectangular_coordinate_p6_sample1_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00135",
+			"Name":"rectangular_coordinate_p6_sample1_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00136",
+			"Name":"rectangular_coordinate_p6_sample1_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00137",
+			"Name":"rectangular_coordinate_p6_sample1_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00138",
+			"Name":"rectangular_coordinate_p6_sample1_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00139",
+			"Name":"rectangular_coordinate_p6_sample2_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00140",
+			"Name":"rectangular_coordinate_p6_sample2_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00141",
+			"Name":"rectangular_coordinate_p6_sample2_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00142",
+			"Name":"rectangular_coordinate_p6_sample2_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00143",
+			"Name":"rectangular_coordinate_p6_sample2_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00144",
+			"Name":"rectangular_coordinate_p6_sample2_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00145",
+			"Name":"rectangular_coordinate_p6_sample3_delta_F",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00146",
+			"Name":"rectangular_coordinate_p6_sample3_delta_S",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00147",
+			"Name":"rectangular_coordinate_p6_sample3_gamma_FS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00148",
+			"Name":"rectangular_coordinate_p6_sample3_gamma_SS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00149",
+			"Name":"rectangular_coordinate_p6_sample3_minimality_defect",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00150",
+			"Name":"rectangular_coordinate_p6_sample3_gradient_trace_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00151",
+			"Name":"rectangular_critical_RFS",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00152",
+			"Name":"rectangular_critical_Hessian_polynomial",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00153",
+			"Name":"rectangular_critical_Hessian_trace",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00154",
+			"Name":"rectangular_critical_Hessian_squared_trace",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00155",
+			"Name":"radial_profile_cubic_gradient_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00156",
+			"Name":"radial_profile_cubic_laplacian_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00157",
+			"Name":"radial_profile_cubic_defect_modulo_profile",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-QUADRATIC-COMPOSITIONS::00158",
+			"Name":"radial_profile_quadratic_selected_level",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		}
+	]
+}

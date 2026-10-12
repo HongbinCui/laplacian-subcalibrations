@@ -1,0 +1,202 @@
+{
+	"CertificateID":"LSC-CUBIC-METRIC-ALGEBRA",
+	"Status":"PASS",
+	"ExpectedChecks":31,
+	"ActualChecks":31,
+	"PassedChecks":31,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":4.52427e-2,
+	"SourceSHA256":"5d59e1ab04e42b18c6a09d00a8541e0e19074d2f89970823b4a5051a1ee6ccb4",
+	"Checks":[
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00001",
+			"Name":"C07G-01 cubic dictionary F = <x^2,x>\/6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00002",
+			"Name":"C07G-02 cubic dictionary gradient = x^2\/2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00003",
+			"Name":"C07G-03 cubic dictionary Hessian = L_x",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00004",
+			"Name":"C07G-04 cubic dictionary Laplacian = trace L_x",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00005",
+			"Name":"C07G-05 gradient square = |x^2|^2\/4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00006",
+			"Name":"C07G-06 gradient S = x^3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00007",
+			"Name":"C07G-07 general Bochner identity including nonharmonic term",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00008",
+			"Name":"C07G-08 translation derivative and annihilator identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00009",
+			"Name":"C07G-09 general quadratic-weight cubic-algebra residual",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00010",
+			"Name":"C07G-10 quadratic Gamma and Jordan product",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00011",
+			"Name":"C07G-11 Euler-operator commutator sign",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00012",
+			"Name":"C07G-12 diagonal double-commutator entries",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00013",
+			"Name":"C07G-13 critical cubic curvature quadratic Taylor coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00014",
+			"Name":"C07G-14 quadratic Hessian curvature identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00015",
+			"Name":"C07G-15 general quadratic q contributes q(c) h at order two",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00016",
+			"Name":"C07G-16 general-q Hessian polynomial residual",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00017",
+			"Name":"C07G-17 smooth-multiplier quadratic Taylor jet",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00018",
+			"Name":"C07G-18 positive-multiplier order-four sign under Hessian relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00019",
+			"Name":"C07G-19 gradient identities imply radial weight q = 2R",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00020",
+			"Name":"C07G-20 variable-K SF gradient square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00021",
+			"Name":"C07G-21 variable-K SF Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00022",
+			"Name":"C07G-22 SF contractions with R F S",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00023",
+			"Name":"C07G-23 SF gradient-square partial derivatives",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00024",
+			"Name":"C07G-24 variable-K SF curvature polynomial",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00025",
+			"Name":"C07G-25 variable-K SF positive decomposition",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00026",
+			"Name":"C07G-26 quotient polynomial extension at F = 0",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00027",
+			"Name":"C07G-27 radial specialization K = 4kR",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00028",
+			"Name":"C07G-28 positive-S spherical maximum branch F nonzero",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00029",
+			"Name":"C07G-29 positive-S spherical maximum branch F zero",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00030",
+			"Name":"C07G-30 Q nonnegative coefficients on stated nonnegative domain",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CUBIC-METRIC-ALGEBRA::00031",
+			"Name":"C07G-31 SF decomposition nonnegative coefficients on stated slack domain",
+			"Passed":true,
+			"Detail":"True"
+		}
+	]
+}

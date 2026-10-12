@@ -1,0 +1,752 @@
+\section[Complex Determinants]{Real Parts of Complex Determinants in All Orders}
+\label{sec:complex-determinants}
+
+The determinant has the gradient table of \cref{sec:spectral-positivity},
+but \(\Delta E_{m-1}=16E_{m-2}\) excludes \(\sqrt S\) in orders
+at least three; see \eqref{eq:spectral-balanced-defect}.
+We prove \cref{main:complex-determinants} using the product of proper
+minor norms and two coefficient inequalities uniform in matrix order.
+We use the Frobenius Euclidean metric
+\(\langle U,V\rangle=\operatorname{Re}\tr(UV^*)\) on
+\(M_m(\mathbb C)\), so that \(|U|^2=\sum_{i,j}|U_{ij}|^2\), and write
+\[
+ f(Z)=\det_{\mathbb C}Z,\qquad F=\operatorname{Re}f,
+ \qquad C_m=\{F=0\},\qquad E^-_m=\{F<0\}.
+\]
+For $0\leq k\leq m$, let
+\begin{equation}\label{det:minor-norms}
+ E_0=1,\qquad
+ E_k(Z)=\sum_{|I|=|J|=k}|\det Z_{I,J}|^2.
+\end{equation}
+Let $x_1,\ldots,x_m\ge0$ be the squared singular values of $Z$,
+and retain the elementary symmetric polynomials $e_k$ from
+\cref{sec:spectral-positivity}. Cauchy--Binet gives
+\[
+ E_k(Z)=\sum_{|I|=k}\det(ZZ^*)_{I,I},\qquad
+ \sum_{k=0}^m E_k(Z)t^k
+ =\det(\Id+tZZ^*)=\prod_{i=1}^m(1+tx_i).
+\]
+Comparing coefficients yields $E_k=e_k(x_1,\ldots,x_m)$;
+in particular, $E_1=|Z|^2$ and $E_m=|f|^2$.
+The minor invariants $E_1,\ldots,E_{m-1}$ are positive at rank
+at least $m-1$. Their product vanishes precisely at rank at most
+$m-2$, the singular set of the cone, and is positive along its
+regular part.
+We take the product candidate
+\begin{equation}\label{det:potential}
+ a=\left(\prod_{k=1}^{m-1}E_k\right)^{1/2},\qquad G=aF.
+\end{equation}
+Logarithmic derivatives add over the minor orders.
+\Cref{det:divergence-formula} reduces the defect sign to a boundary
+coefficient controlled by Newton inequalities and a second coefficient
+controlled by a covariance decomposition.
+The homogeneous degree of $G$ is $m(m+1)/2$.
+The case $m=1$ is a hyperplane; the coefficient calculations assume $m\geq2$.
+
+For $m=2,3$, the potential is
+\[
+ G_2=F_2E_1^{1/2},\qquad G_3=F_3(E_1E_2)^{1/2}.
+\]
+The first multiplier is the radius $E_1^{1/2}=|Z|$; the second also
+includes the norm $E_2^{1/2}$ of the second-order minors and agrees
+with the \(d=2\) Jordan potential in \cref{thm:exc-jordan-minimizing}.
+The low-order geometry and determinant phase are discussed in
+\cref{det:low-orders-phase}; the coefficient signs are proved in
+\cref{det:first-section,det:second-section}.
+
+\subsection{Invariant calculus and the multiplier identity}
+
+\begin{lemma}\label{det:basic-identities}
+For $1\leq j,k\leq m$, one has
+\begin{align}
+ \Delta F&=0,&\Gamma(F,F)&=E_{m-1},\label{det:basic-one}\\
+ \Gamma(F,E_k)&=2(m-k+1)E_{k-1}F,
+ &\Delta E_k&=4(m-k+1)^2E_{k-1},\label{det:basic-two}\\
+ \Gamma(E_j,E_k)
+ &=4\sum_{i=1}^m x_i
+       \frac{\partial e_j}{\partial x_i}
+       \frac{\partial e_k}{\partial x_i}.
+ \label{det:basic-three}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+The real part of a holomorphic polynomial is harmonic.  The complex
+first derivatives of $f$ are its cofactors, so their squared norms sum
+to $E_{m-1}$.  This proves \eqref{det:basic-one}.
+
+For the mixed identity, use complex matrix coordinates $z_\alpha$ and
+observe that
+\[
+ \Gamma(F,E_k)
+ =2\operatorname{Re}\sum_\alpha
+       \frac{\partial f}{\partial z_\alpha}
+       \frac{\partial E_k}{\partial\overline z_\alpha}.
+\]
+The complex expression in this sum transforms by the same determinant
+phase as $f$ under the left and right unitary actions.  Thus singular
+value decomposition reduces the identity to a diagonal matrix, with its
+determinant phase retained.  At such a matrix,
+\[
+ \sum_\alpha
+       \frac{\partial f}{\partial z_\alpha}
+       \frac{\partial E_k}{\partial\overline z_\alpha}
+ =f\sum_i e_{k-1}(x_1,\ldots,\widehat x_i,\ldots,x_m)
+ =(m-k+1)E_{k-1}f.
+\]
+The polynomial identity extends to singular matrices by continuity.
+
+For a holomorphic polynomial $q$,
+$\Delta|q|^2=4\sum_\alpha|\partial q/\partial z_\alpha|^2$.
+Apply this to the minors in \eqref{det:minor-norms}.  Each fixed
+$(k-1)$-minor occurs $(m-k+1)^2$ times, which gives the Laplacian
+formula.
+
+The same unitary invariance reduces \eqref{det:basic-three} to
+$D=\operatorname{diag}(\sigma_1,\ldots,\sigma_m)$, where
+$x_i=\sigma_i^2$. At $D$, nonprincipal minors vanish, and
+\[
+ \mathrm d(\det Z_{I,I})_D[H]
+ =\sum_{i\in I}
+       \left(\prod_{\ell\in I\setminus\{i\}}\sigma_\ell\right)H_{ii}.
+\]
+Differentiating their squared moduli and summing gives
+\[
+ \mathrm dE_k(D)[H]
+ =2\sum_i\sigma_i\frac{\partial e_k}{\partial x_i}
+                                     \operatorname{Re}H_{ii}.
+\]
+Thus all other first derivatives vanish and
+\[
+ \nabla E_k(D)=\operatorname{diag}\left(
+             2\sigma_i\frac{\partial e_k}{\partial x_i}\right)_{i=1}^m.
+\]
+Pairing these gradients proves \eqref{det:basic-three}, including
+repeated or zero singular values.
+\end{proof}
+
+Apply \cref{prop:spectral-smallest-algebra} with \(d=m\), roots
+\(x_i\), and \(b_k=4(m-k+1)^2>0\) from
+\cref{det:basic-identities}. The algebra is Laplacian and, for \(m\ge3\),
+\begin{equation}\label{det:smallest-algebra}
+ \cA_R(F)=\R[E_1,\ldots,E_m,F].
+\end{equation}
+For \(m=2\), the same proposition gives
+\(\cA_R(F)=\R[R,F]\).
+
+The joint image of \((E_1,\ldots,E_m,F)\) is exactly
+\begin{equation}\label{det:quotient-image}
+ \left\{(e_1(x),\ldots,e_m(x),t):
+       x\in[0,\infty)^m,\quad t\in\R,\quad t^2\le e_m(x)\right\}.
+\end{equation}
+Indeed, \(F^2\le|\det Z|^2=E_m\), and the diagonal matrices
+\[
+ Z=\operatorname{diag}\left(\sqrt{x_1}e^{i\vartheta},
+                   \sqrt{x_2},\ldots,\sqrt{x_m}\right)
+\]
+have \(E_k=e_k(x)\) and \(F=\sqrt{e_m(x)}\cos\vartheta\).
+The phase and Vandermonde argument of
+\cref{prop:norm-product-exact-algebra} therefore gives the full
+image, including zero spectra, and generic rank \(m+1\).
+Thus for \(m\ge3\) the generators are independent and the spherical
+quotient dimension is \(m\); for \(m=2\), the algebra \(\R[R,F]\)
+has spherical quotient dimension one.
+
+The identities \eqref{det:basic-one}--\eqref{det:basic-two} also give
+\begin{equation}\label{det:mean-curvature}
+ \cL F
+ =-\tfrac12\Gamma(F,E_{m-1})=-2E_{m-2}F.
+\end{equation}
+Thus the regular part of $C_m$ is minimal, as in
+\cite[Corollary~5.2 and Example~5.4]{HoppeTkachev19}.
+
+\begin{example}[Generator degrees for harmonic determinant cones]
+\label{ex:determinant-generator-degrees}
+For \(m\ge3\), the polynomial \(F=\operatorname{Re}\det Z\) is
+an irreducible homogeneous harmonic equation of degree \(m\) on
+\(\R^{2m^2}\), with nonempty regular minimal zero set. Its
+Laplacian algebra has \(m+1\) algebraically independent generators,
+and the least possible maximal degree of homogeneous generators
+is \(2m\).
+
+Harmonicity and minimality follow from \eqref{det:basic-one} and
+\eqref{det:mean-curvature}. For irreducibility, complexify the real
+coordinates to independent matrices \(Z,W\), so that
+\(2F=\det Z+\det W\). As a polynomial in \(z_{11}\), this is
+\(Dz_{11}+C\), where \(D\) is the corresponding cofactor. Any
+factor of \(D\) is independent of \(W\), whereas \(C\) has
+coefficient \(1\) on \(w_{11}\cdots w_{mm}\). Thus \(D\) and
+\(C\) are coprime, so \(Dz_{11}+C\) is primitive and linear over
+the fraction field. Gauss' lemma proves irreducibility
+\cite[Chapter~VIII, Section~5, pp.~395--398]{Knapp16}.
+The zero \(Z=\operatorname{diag}(i,1,\ldots,1)\) is regular by
+\eqref{det:basic-one}.
+
+By \eqref{det:smallest-algebra},
+\[
+ \cA_R(F)=\R[E_1,\ldots,E_m,F],\qquad \deg E_k=2k.
+\]
+Algebraic independence gives the lower bound \(m+1\) for the
+number of generators. Every homogeneous element of
+degree less than \(2m\) belongs to the proper subalgebra
+\(\R[E_1,\ldots,E_{m-1},F]\), and such elements cannot generate
+\(E_m\). Conversely, the displayed generators have maximal
+degree \(2m\). Thus the least possible maximal degree is exactly
+\(2m\), and the uniform bound in
+\cref{prop:uniform-finite-generation} must satisfy
+\(B(2m^2,m)\ge2m\).
+\end{example}
+
+The singular set has
+real codimension eight and is given by
+\begin{equation}\label{det:singular-set}
+ \mathcal S_m=\{Z:\operatorname{rank}_{\mathbb C}Z\leq m-2\}
+ =\{\nabla F=0\}.
+\end{equation}
+The cofactor identity gives the second equality. To see that every
+point of this set is geometrically singular, take a matrix of rank
+$q\leq m-2$. Schur-complement coordinates, absorbing a nonvanishing
+determinant factor into one row, identify its zero set locally with
+a smooth factor times $\{\operatorname{Re}\det W=0\}$ at $W=0$,
+where $W\in M_{m-q}(\mathbb C)$. Since $m-q\geq2$, this transverse
+cone contains every complex rank-one line. Their real tangent
+directions span the whole matrix space, so the zero set cannot be
+a smooth hypersurface there.
+The rank-\(q\) stratum has real dimension
+\(2q(2m-q)\), so the largest stratum in \(\mathcal S_m\)
+has dimension \(2m^2-8\).
+The multiplier in \eqref{det:potential} is smooth and strictly positive
+on $M_m(\mathbb C)\setminus\mathcal S_m$: at every matrix of rank at
+least $m-1$, all $E_1,\ldots,E_{m-1}$ are positive. This includes the
+regular zeros of $F$, even when the matrix is not invertible.
+On $\mathcal S_m$ the displayed product gives $a=0$ and $G=0$.
+For \(m\ge3\), this set contains nonzero points, where
+\cref{prop:harmonic-positive-multiplier-obstruction} excludes multipliers
+extending as strictly positive \(C^2\) functions. For \(m=2\),
+\(\mathcal S_2=\{0\}\).
+
+\input{sections/determinant_tangent_strata}
+
+We now specialize \cref{thm:exact-multiplier} to a positive smooth
+invariant multiplier $a=a(E_1,\ldots,E_m)$ on the full-rank locus.
+By \eqref{det:basic-two}, the chain rule gives
+\[
+ \Gamma(F,a)
+ =F\sum_{k=1}^m2(m-k+1)E_{k-1}
+                   \frac{\partial a}{\partial E_k}.
+\]
+Thus division by $F$ below gives smooth invariant functions.
+Put $Q=E_{m-1}$, $P=a^{-2}|\nabla G|^2$, and
+\begin{equation}\label{det:divergence-notation}
+ c=\frac{\Gamma(F,a)}{aF},\qquad
+ t=\frac{\Gamma(a,a)}{a^2},\qquad
+ K=2c+t,\qquad \delta=\frac{\Delta a}{a}+c-t.
+\end{equation}
+For an invariant coefficient $q=q(E_1,\ldots,E_m)$, write
+\begin{equation}\label{det:T-operator}
+ \mathcal Tq=\frac{\Gamma(F,q)}F
+ =\sum_{k=1}^m2(m-k+1)E_{k-1}\frac{\partial q}{\partial E_k}.
+\end{equation}
+
+\begin{lemma}[The multiplier identity]\label{det:divergence-formula}
+With the notation just introduced, one has
+\begin{align}
+ P&=Q+F^2K,\label{det:P}\\
+ \cL(G)&=a^3F(D_0+F^2D_1),
+ \label{det:divergence}\\
+ D_0&=Q\delta-2E_{m-2}-QK-\frac{\Gamma(a,Q)}{2a},
+ \label{det:D0}\\
+ D_1&=K\delta-\tfrac12\left(\mathcal TK+2cK+\frac{\Gamma(a,K)}a\right).
+ \label{det:D1}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Apply \cref{lem:harmonic-log-multiplier} with \(h=\log a\).
+Its notation becomes
+\[
+ \begin{gathered}
+ S=Q,\quad q=2E_{m-2},\quad \tau=c,\quad H_h=t,\\
+ Q_h=K,\quad \Delta h=\delta-c,\quad \kappa=\mathcal TK.
+ \end{gathered}
+\]
+The last identity follows from \eqref{det:T-operator}; all these
+coefficients are smooth across \(F=0\).
+Substituting in \eqref{eq:harmonic-log-gradient} and
+\eqref{eq:harmonic-log-two-coefficients}, with
+\(\Gamma(h,Q)=\Gamma(a,Q)/a\) and
+\(\Gamma(h,K)=\Gamma(a,K)/a\), gives the stated formulas.
+\end{proof}
+
+In the notation of \cref{thm:exact-multiplier}, the lemma states
+\[
+ \cK_F(a)=a^3(D_0+F^2D_1),\qquad
+ G\cL(G)=aF^2\cK_F(a)=a^4F^2(D_0+F^2D_1).
+\]
+The coefficient $D_0$ determines the boundary Jacobi sign, while
+$D_1>0$ supplies strict divergence off the cone once $D_0\geq0$.
+We now take the uniform product multiplier
+\begin{equation}\label{det:uniform-weight}
+ a=\prod_{k=1}^{m-1}E_k^\lambda.
+\end{equation}
+The value $\lambda=1/2$ gives \eqref{det:potential}.
+
+\subsection{From the coefficient signs to area minimization}
+\label{det:geometric-proof}
+
+We first deduce the geometric conclusions from the coefficient signs
+proved in \cref{det:first-section,det:second-section}.
+
+\begin{proof}[Proof of \cref{main:complex-determinants}]
+The case $m=1$ is an oriented hyperplane.
+
+\emph{The sign of $G\cL(G)$.}  For $m\geq2$, take
+$\lambda=1/2$ in \eqref{det:uniform-weight}.  Then
+$G=aF$ is the potential in \eqref{det:potential}, and
+\cref{det:first-reduction,det:first-inequality,det:second-positive}
+give $D_0,D_1\geq0$.  Therefore \eqref{det:divergence} yields
+\begin{equation}\label{det:divergence-signs}
+ G\cL(G)=a^4F^2(D_0+F^2D_1)\geq0
+ \qquad\text{on the full-rank locus}.
+\end{equation}
+
+\emph{Extension and comparison.}
+Off $\mathcal S_m$, the proper minor norms are positive, so $a,G$
+are smooth and \eqref{det:divergence-signs} extends by continuity to
+rank $m-1$. Positive homogeneity gives $\nabla G\ne0$ there by the
+verification following \cref{cor:gradient-subcalibration}.
+The continuous potential has the phases of $F$, and the exceptional
+set has real codimension eight by \eqref{det:singular-set}.
+Thus \cref{cor:gradient-subcalibration,thm:removable-subcalibration}
+give perimeter and mass comparison; harmonicity gives full support
+by \cref{rem:polynomial-finite-perimeter}.
+
+\emph{Strict minimality.}  For $\lambda=1/2$, \cref{det:second-positive} gives $D_1>0$.
+Hence $q_{X_G}=\operatorname{sgn}(G)\diver X_G>0$ at full-rank points
+with $F\ne0$. Each phase contains such points, giving positive flux
+integrals. Homogeneity and \cref{thm:strict-minimality-flux} prove
+strict area minimality.
+
+\emph{Stability.} Off \(\mathcal S_m\), all of
+\(E_1,\ldots,E_{m-1}\) are positive, so the invariant expression
+\eqref{det:D0} is smooth.
+Thus \(D_0\geq0\) extends from full-rank matrices to rank \(m-1\)
+by continuity. On the regular cone, the Jacobi potential in
+\eqref{eq:boundary-potential-algebraic} is consequently
+\[
+ V_G=\frac{\cK_F(a)}{a^3|\nabla F|^2}=\frac{D_0}{E_{m-1}}\geq0.
+\]
+Apply \cref{thm:ground-state-gap} with
+$n=2m^2-1$ and $\ell=m(m+1)/2$. This gives
+\eqref{eq:main-determinant-stability}:
+\[
+ Q_{C_m}(u)\geq
+ \left(\ell-\frac n2\right)^2\int_{C_m}r^{-2}u^2
+ =\frac{(m^2-m-1)^2}{4}\int_{C_m}r^{-2}u^2.\qedhere
+\]
+\end{proof}
+
+\begin{remark}[Low orders and determinant phase]\label{det:low-orders-phase}
+For \(m=2\), the cone \(C_2\) is orthogonally congruent to the
+classical Simons cone in \(\R^4\oplus\R^4\).
+Indeed, for \(Z=\left(\begin{smallmatrix}z_1&z_2\\z_3&z_4\end{smallmatrix}\right)\),
+the unitary change of coordinates
+\[
+ w=\frac1{\sqrt2}\bigl(z_1+z_4,\ i(z_1-z_4),\ i(z_2+z_3),\ z_2-z_3\bigr)
+\]
+gives \(\sum_{j=1}^4w_j^2=2\det Z\).
+Writing \(w=u+iv\), with \(u,v\in\R^4\), we obtain
+\(2F_2=|u|^2-|v|^2\). Thus this order recovers the standard
+quadratic cone.
+
+For every real $\theta$, the isometry $Z\mapsto e^{-i\theta/m}Z$
+preserves all the $E_k$ and sends $F$ to
+$\operatorname{Re}(e^{-i\theta}\det_{\mathbb C}Z)$.
+Consequently the phase cone
+$\{\operatorname{Re}(e^{-i\theta}\det_{\mathbb C}Z)=0\}$ has the
+corresponding subcalibration and is locally area minimizing for every
+$m\geq1$, with the same strict minimality and stability conclusions
+when $m\geq2$. In particular, the real and imaginary determinant zero cones
+are orthogonally congruent.
+\end{remark}
+
+\subsection{Nonnegativity of the first coefficient}
+\label{det:first-section}
+
+We prove $D_0\geq0$ for the choice $\lambda=1/2$ in
+\eqref{det:uniform-weight}.  On the full-rank locus, set
+$y_i=x_i^{-1}$. For the remainder of this section, an unadorned
+$e_s$ denotes the elementary symmetric polynomial in $y_1,\ldots,y_m$.
+For $1\leq s\leq m-1$, define
+\begin{equation}\label{det:a-variables}
+ a_{si}=\frac{e_s(y_1,\ldots,\widehat y_i,\ldots,y_m)}{e_s(y)},
+ \qquad P_i=\sum_{s=1}^{m-1} a_{si},
+\end{equation}
+and introduce four scalar sums for the coefficient calculation:
+\begin{equation}\label{det:A-V-Y}
+ A=\sum_i y_i\sum_{s=1}^{m-1}(s a_{si}-a_{si}^2),\qquad
+ B=\sum_i y_iP_i,\qquad
+ V=\sum_i y_iP_i^2,\qquad Y=\sum_i y_i^2P_i.
+\end{equation}
+
+\begin{lemma}\label{det:first-reduction}
+For the weight \eqref{det:uniform-weight},
+\begin{equation}\label{det:first-reduction-equation}
+ \frac{D_0}{Q}
+ =4\lambda A-4\lambda^2V
+       -2\frac{e_2}{e_1}+2\lambda\frac{Y}{e_1}.
+\end{equation}
+Consequently, at $\lambda=1/2$, the inequality $D_0\geq0$ is equivalent
+to
+\begin{equation}\label{det:first-homogeneous}
+ 2A+\frac{Y}{e_1}-V-2\frac{e_2}{e_1}\geq0.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+We first explain the reciprocal substitution. Put $p=\prod_i x_i$.
+For a $k$-element index set $I$,
+$\prod_{i\in I}x_i=p\prod_{j\notin I}y_j$. Summing over $I$ gives
+\[
+ E_k(x)=p\,e_{m-k}(y),\qquad
+ \frac{E_{k-1}(x)}{E_k(x)}
+ =\frac{e_{m-k+1}(y)}{e_{m-k}(y)}.
+\]
+Write $y_{\widehat i}$ for the tuple with $y_i$ omitted. Since \(\partial_{y_i}e_{s+1}(y)=e_s(y_{\widehat i})\),
+Euler's identity for the homogeneous polynomial $e_{s+1}$ gives
+\[
+ \sum_i y_i e_s(y_{\widehat i})=(s+1)e_{s+1}(y),\qquad
+ \sum_i y_i a_{si}=(s+1)\frac{e_{s+1}}{e_s}.
+\]
+For $s=m-k$, applying the complement identity in the $m-1$ variables
+with $x_i$ omitted also gives
+\[
+ e_{k-1}(x_{\widehat i})=p\,y_i e_s(y_{\widehat i}),\qquad
+ \frac{e_{k-1}(x_{\widehat i})}{E_k(x)}=y_i a_{si}.
+\]
+Consequently, the gradient formula \eqref{det:basic-three} yields
+\[
+ \frac{\Gamma(E_k,E_k)}{E_k^2}
+ =4\sum_i x_i\left(\frac{e_{k-1}(x_{\widehat i})}{E_k(x)}\right)^2
+ =4\sum_i y_i a_{si}^2,
+\]
+where $x_i y_i^2=y_i$.
+Put
+$h=\log a=\lambda\sum_{k=1}^{m-1}\log E_k$.
+The chain rule in \eqref{eq:log-multiplier-derivatives} gives
+\[
+ \frac{\nabla a}{a}=\lambda\sum_{k=1}^{m-1}\frac{\nabla E_k}{E_k},
+ \qquad
+ \frac{\Delta a}{a}-t
+ =\lambda\sum_{k=1}^{m-1}
+ \left(\frac{\Delta E_k}{E_k}
+       -\frac{\Gamma(E_k,E_k)}{E_k^2}\right).
+\]
+Using \cref{det:basic-identities} and the identities just proved, we
+obtain the quantities defined in \eqref{det:divergence-notation}:
+\begin{equation}\label{det:radial-identities}
+ \begin{gathered}
+ c=2\lambda B,\qquad t=4\lambda^2V,\qquad
+ \frac{\Delta a}{a}-t=4\lambda(A+B),\\
+ \delta=4\lambda A+6\lambda B,\qquad
+ K=4\lambda B+4\lambda^2V.
+ \end{gathered}
+\end{equation}
+Finally,
+\[
+ \frac{E_{m-2}}Q=\frac{e_2}{e_1},\qquad
+ \frac{\Gamma(a,Q)}{aQ}=4\lambda\left(B-\frac{Y}{e_1}\right).
+\]
+Insert these identities in \eqref{det:D0}.  The three terms involving
+$B$ cancel, leaving \eqref{det:first-reduction-equation}.
+\end{proof}
+
+\begin{theorem}[First-coefficient inequality]\label{det:first-inequality}
+Let $m\geq2$ and let $y_1,\ldots,y_m$ be positive.
+Then the quantities in \eqref{det:a-variables}--\eqref{det:A-V-Y}
+satisfy \eqref{det:first-homogeneous}.
+\end{theorem}
+
+We prove the theorem by a recurrence for symmetric polynomials.  Put
+\begin{equation}\label{det:cleared-polynomial}
+ D_m^{\mathrm{sym}}=\prod_{s=1}^{m-1}e_s,\qquad
+ \mathcal C_m=e_1(D_m^{\mathrm{sym}})^2
+       \left(2A+\frac{Y}{e_1}-V-2\frac{e_2}{e_1}\right).
+\end{equation}
+This is a symmetric polynomial, viewed as a polynomial in
+$e_1,\ldots,e_m$. In the first two orders,
+\[
+ \mathcal C_2=0,\qquad
+ \mathcal C_3=6e_1e_2e_3(e_1^2-2e_2).
+\]
+Thus the first coefficient vanishes identically for $m=2$; for
+$m=3$, the normalization $e_1(y)=1$ gives
+\[
+ 2A+Y-V-2e_2
+ =6e_3\frac{\sum_i y_i^2}{e_2}>0.
+\]
+For $N\geq m$, let $\mathcal C_m^{[N]}$ denote
+this same formal polynomial evaluated at the elementary symmetric
+functions of $N$ positive variables. Its coefficients and summation
+limits remain those defining \(\mathcal C_m\); they are not recomputed
+by replacing \(m\) with \(N\) in \eqref{det:cleared-polynomial}.
+In the induction, \(N\) is fixed and \(r\) increases, so
+\(\mathcal C_r^{[N]}\) is evaluated on a fixed \(N\)-tuple.
+The formal recurrence below remains valid under these evaluations.
+
+\begin{lemma}[Recurrence for the symmetric polynomials]\label{det:stable-recurrence}
+One has $\mathcal C_2=0$.  For every $r\geq2$,
+\begin{equation}\label{det:C-recurrence}
+ \mathcal C_{r+1}=e_r^2\mathcal C_r+\mathcal R_r.
+\end{equation}
+With
+\[
+ \mathcal P_r=e_1^3e_re_{r+1}\prod_{j=2}^{r-1}e_j^2,
+\]
+the remainder is given by
+\begin{align}
+ \frac{\mathcal R_r}{\mathcal P_r}
+ ={}&r(r+1)
+ -\sum_{p=1}^{\lfloor r/2\rfloor}
+       (r+1)(2+\mathbf1_{p=1}+\mathbf1_{2p=r})
+       \frac{e_r}{e_pe_{r-p}}\notag\\
+ &-\sum_{d=1}^{\lfloor(r-1)/2\rfloor}
+       \sum_{k=1}^{r-2d}
+       (r-k+1)(2+\mathbf1_{k=r-2d})
+       \frac{e_ke_r}{e_{k+d}e_{r-d}}.
+ \label{det:R-recurrence}
+\end{align}
+Every denominator on the right cancels against $\mathcal P_r$.
+\end{lemma}
+
+The proof is given in \cref{app:determinant-details}.
+
+Newton's inequalities bound the sums in \eqref{det:R-recurrence}
+by the following binomial sums, whose total is at most \(r(r+1)\).
+This will give \(\mathcal R_r^{[N]}\geq0\).
+
+\Needspace{10\baselineskip}
+\begin{lemma}[Scalar binomial inequality]\label{det:binomial-budget}
+For $r\geq2$, set
+\begin{align*}
+ I_r&=\sum_{p=1}^{\lfloor r/2\rfloor}
+       \frac{(r+1)(2+\mathbf1_{p=1}+\mathbf1_{2p=r})}{\binom rp},\\
+ J_r&=\sum_{d=1}^{\lfloor(r-1)/2\rfloor}\sum_{k=1}^{r-2d}
+       (r-k+1)(2+\mathbf1_{k=r-2d})
+       \frac{\binom{k+d}{d}}{\binom rd}.
+\end{align*}
+Then
+\begin{equation}\label{det:scalar-budget}
+ I_r+J_r\leq r(r+1).
+\end{equation}
+\end{lemma}
+
+The proof is given in \cref{app:determinant-details}.
+
+\begin{proof}[Proof of \cref{det:first-inequality}]
+Fix $N\geq r+1$ positive variables.  Newton's inequalities state that
+the normalized sequence $\overline e_j=e_j/\binom Nj$ satisfies
+\(\overline e_j^{\,2}\geq\overline e_{j-1}\overline e_{j+1}\).
+This is its log concavity.  Hence
+\begin{align}
+ \frac{e_r}{e_pe_{r-p}}
+ &\leq\frac{\binom Nr}{\binom Np\binom N{r-p}}
+ \leq\frac1{\binom rp},\label{det:newton-one}\\
+ \frac{e_ke_r}{e_{k+d}e_{r-d}}
+ &\leq\frac{\binom Nk\binom Nr}
+           {\binom N{k+d}\binom N{r-d}}
+ \leq\frac{\binom{k+d}{d}}{\binom rd}.
+ \label{det:newton-two}
+\end{align}
+For the last inequality, the quotient of the middle expression by the
+last expression is
+\[
+ \prod_{j=1}^d\frac{N-r+j}{N-k-d+j}\leq1,
+\]
+since $k+d\leq r$.  Thus \cref{det:binomial-budget} and
+\eqref{det:R-recurrence} give $\mathcal R_r^{[N]}\geq0$ for every
+$N\geq r+1$.
+
+We induct in $r$ with the assertion
+$\mathcal C_r^{[N]}\geq0$ for every $N\geq r$.  The base is
+$\mathcal C_2=0$, and \eqref{det:C-recurrence} proves the next step.
+Taking $N=m$ and dividing by the positive factor in
+\eqref{det:cleared-polynomial} proves
+\eqref{det:first-homogeneous}.  Equivalently, under $e_1(y)=1$, this is
+$2A+Y-V-2e_2\geq0$.
+\end{proof}
+
+\subsection{Nonnegativity of the second coefficient}
+\label{det:second-section}
+
+We prove $D_1\geq0$ by a covariance formula valid for every
+$\lambda\geq0$, including $\lambda=1/2$. We retain the variables
+$y_i=x_i^{-1}$.
+\begin{lemma}\label{det:second-positive}
+For the uniform weight \eqref{det:uniform-weight}, $D_1\geq0$ on the
+full-rank locus whenever $\lambda\geq0$. If $\lambda>0$, then $D_1>0$.
+\end{lemma}
+
+\begin{proof}
+To differentiate the ratios $a_{si}$, we use a finite probability space.
+For each $1\leq s\leq m-1$, consider the probability measure on
+$s$-element subsets of $\{1,\ldots,m\}$ given by
+\[
+ \mathbb P_s(S)=\frac{\prod_{i\in S}y_i}{e_s(y)}.
+\]
+This is the conditional Bernoulli distribution of
+\cite[pp.~876--877, equations~(3) and~(6); Section~3.2, p.~883]{ChenLiu97}, with weights
+\(y_i\) and fixed sample size \(s\).
+For random variables \(\xi,\eta\) on this finite probability space,
+their covariance is
+\[
+ \operatorname{Cov}_s(\xi,\eta)
+ =\mathbb E_s(\xi\eta)-\mathbb E_s(\xi)\mathbb E_s(\eta).
+\]
+Let \(\xi_i(S)\) be the indicator of \(i\in S\), equal to one
+when \(i\) belongs to \(S\) and zero otherwise.
+Define
+\[
+ \pi_{si}=\mathbb P_s(i\in S)=1-a_{si},\qquad
+ w_{sij}=\pi_{si}\pi_{sj}-\mathbb P_s(i,j\in S)\quad(i\ne j).
+\]
+Thus \(w_{sij}=-\operatorname{Cov}_s(\xi_i,\xi_j)\).
+If $e_q^{ij}$ denotes the elementary symmetric polynomial with $y_i,y_j$
+omitted, then
+\begin{equation}\label{det:covariance-positive}
+ w_{sij}=\frac{y_iy_j}{e_s^2}
+       \left[(e_{s-1}^{ij})^2-e_{s-2}^{ij}e_s^{ij}\right]\geq0.
+\end{equation}
+This is Newton's inequality, with the convention $e_{-1}^{ij}=0$.
+It is also the Rayleigh inequality for \(e_s\), expressing pairwise
+negative correlation; see
+\cite[Definitions~2.3 and~2.5]{BorceaBrandenLiggett09}.
+Since every subset has exactly \(s\) elements,
+\(\sum_i\xi_i=s\).  This gives
+\begin{equation}\label{det:covariance-rowsum}
+ \sum_{j\ne i}w_{sij}=\pi_{si}(1-\pi_{si})=\pi_{si}a_{si}.
+\end{equation}
+Indeed, the sum of the covariances of the indicator of $i\in S$ with
+all the indicators is its covariance with the constant $|S|=s$.
+
+In addition to \eqref{det:A-V-Y}, put
+\[
+ L=\sum_i y_i\sum_{s=1}^{m-1}s a_{si},\qquad Z_2=\sum_i y_i^2P_i^2,
+ \qquad U=\sum_i y_i^2P_i^3,
+\]
+and define
+\begin{align}
+ H_s&=\sum_i y_i^2a_{si}
+       -\sum_{i<j}w_{sij}(y_i-y_j)^2,
+ \label{det:H-positive}\\
+ \mathcal Q_1&=\sum_{s,i<j}w_{sij}
+       \left[B(y_i+y_j)-(y_i-y_j)(y_iP_i-y_jP_j)\right],
+ \label{det:Q1}\\
+ \mathcal Q_2&=\sum_{s,i<j}w_{sij}
+       \left[V(y_i+y_j)-(y_iP_i-y_jP_j)^2\right].
+ \label{det:Q2}
+\end{align}
+
+We claim the decomposition
+\begin{equation}\label{det:D1-positive-formula}
+ D_1=\lambda R_1+\lambda^2R_2+\lambda^3R_3,
+\end{equation}
+where
+\begin{align}
+ R_1&=4\sum_sH_s,\label{det:R1}\\
+ R_2&=16LB+12Z_2+16\mathcal Q_1,\label{det:R2}\\
+ R_3&=16LV+8U+16\mathcal Q_2.\label{det:R3}
+\end{align}
+We derive it first, then prove the coefficient signs.
+Write
+$\mathscr D_j=y_j\partial_{y_j}$.  Differentiating the probabilities gives
+\begin{equation}\label{det:probability-derivative}
+ \mathscr D_j a_{si}
+ =\begin{cases}
+   w_{sij},&i\ne j,\\
+   -\sum_{\ell\ne i}w_{si\ell},&i=j.
+  \end{cases}
+\end{equation}
+Indeed, direct differentiation gives
+\(\mathscr D_j\mathbb P_s(S)=(\xi_j(S)-\pi_{sj})\mathbb P_s(S)\).
+Thus \(-\mathscr D_j a_{si}=\operatorname{Cov}_s(\xi_i,\xi_j)\),
+the usual covariance identity in the logarithmic parameters
+\(\log y_j\).
+Consequently,
+\begin{align}
+ \mathscr D_jB
+ &=y_jP_j+\sum_s\sum_{i\ne j}w_{sij}(y_i-y_j),
+ \label{det:DB}\\
+ \mathscr D_jV
+ &=y_jP_j^2+2\sum_s\sum_{i\ne j}w_{sij}(y_iP_i-y_jP_j).
+ \label{det:DV}
+\end{align}
+For any smooth invariant function $q$ written in the $y$ variables,
+the change of variables gives
+$\partial_{x_j}q=-y_j\mathscr D_jq$.
+The product multiplier \eqref{det:uniform-weight} satisfies
+$a^{-1}\partial_{x_j}a=\lambda y_jP_j$, by the complement identity
+in the proof of \cref{det:first-reduction}.
+Thus \eqref{det:T-operator} and the gradient pairing
+\eqref{det:basic-three} give
+\begin{equation}\label{det:radial-operators}
+ \mathcal Tq=-2\sum_j y_j\mathscr D_jq,\qquad
+ \frac{\Gamma(a,q)}a=-4\lambda\sum_j y_jP_j\mathscr D_jq.
+\end{equation}
+Insert \eqref{det:radial-identities} and
+\eqref{det:radial-operators} in \eqref{det:D1}.  The coefficients of
+$\lambda,\lambda^2,\lambda^3$ are, respectively,
+\begin{align*}
+ R_1&=4\sum_jy_j\mathscr D_jB,\\
+ R_2&=16B(A+B)+4\sum_jy_j\mathscr D_jV
+                       +8\sum_jy_jP_j\mathscr D_jB,\\
+ R_3&=16V(A+B)+8\sum_jy_jP_j\mathscr D_jV.
+\end{align*}
+Pairing the terms with indices $i,j$ in
+\eqref{det:DB}--\eqref{det:DV} gives
+\begin{align*}
+ \sum_jy_j\mathscr D_jB&=\sum_sH_s,\\
+ \sum_jy_j\mathscr D_jV
+ &=Z_2-2\sum_{s,i<j}w_{sij}(y_i-y_j)(y_iP_i-y_jP_j),\\
+ \sum_jy_jP_j\mathscr D_jB
+ &=Z_2-\sum_{s,i<j}w_{sij}(y_i-y_j)(y_iP_i-y_jP_j),\\
+ \sum_jy_jP_j\mathscr D_jV
+ &=U-2\sum_{s,i<j}w_{sij}(y_iP_i-y_jP_j)^2.
+\end{align*}
+The row-sum identity \eqref{det:covariance-rowsum} also gives
+\begin{equation}\label{det:AplusB}
+ A+B=L+\sum_{s,i<j}w_{sij}(y_i+y_j).
+\end{equation}
+These identities yield \eqref{det:R1}--\eqref{det:R3}.
+
+To prove the signs, use \eqref{det:covariance-rowsum} to obtain
+\[
+ \sum_{i<j}w_{sij}(y_i-y_j)^2
+ \leq\sum_i y_i^2\pi_{si}a_{si}
+ \leq\sum_i y_i^2a_{si}.
+\]
+Thus $H_s\geq0$.  Also,
+\[
+ |(y_i-y_j)(y_iP_i-y_jP_j)|
+ \leq(y_i+y_j)(y_iP_i+y_jP_j)
+ \leq B(y_i+y_j),
+\]
+so $\mathcal Q_1\geq0$.  Cauchy--Schwarz gives
+\[
+ (y_iP_i-y_jP_j)^2
+ \leq(y_i+y_j)(y_iP_i^2+y_jP_j^2)
+ \leq V(y_i+y_j),
+\]
+which proves $\mathcal Q_2\geq0$.  The other terms in
+\eqref{det:R2}--\eqref{det:R3} are nonnegative by definition.
+Finally, $P_i>0$ and $y_i>0$ imply $Z_2>0$.
+Thus $R_2\geq12Z_2$ and $D_1\geq12\lambda^2Z_2>0$ when $\lambda>0$.
+\end{proof}
+
+Despite a common gradient-pairing table, the different Laplacian
+coefficients of the spectral families in
+\cref{sec:norm-products-pfaffians} and the determinants
+lead to the multipliers $\sqrt S$ and the product of proper minor norms,
+respectively. Algebraic closure and spectral inequalities certify both
+in every order. For determinants, $m+1$ independent generators when
+$m\ge3$ give unbounded defining degree and generator count.

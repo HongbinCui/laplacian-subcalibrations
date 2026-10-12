@@ -1,0 +1,106 @@
+{
+	"CertificateID":"LSC-INTERVAL-POSITIVITY",
+	"Status":"PASS",
+	"ExpectedChecks":15,
+	"ActualChecks":15,
+	"PassedChecks":15,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":6.4803e-3,
+	"SourceSHA256":"64e3eb0ff6b117a2a9648bc623d98790253da61cf9a3a362a61dfe9cf759e9dc",
+	"Checks":[
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00001",
+			"Name":"positive Bernstein coefficients g=2, t=1\/3",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00002",
+			"Name":"positive Bernstein coefficients g=4, t=1\/7",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00003",
+			"Name":"positive Bernstein coefficients g=4, t=3\/7",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00004",
+			"Name":"Bernstein table {-7\/4, -1}",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00005",
+			"Name":"positive Bernstein minimum {-7\/4, -1}",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00006",
+			"Name":"Bernstein table {-1, -1\/2}",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00007",
+			"Name":"positive Bernstein minimum {-1, -1\/2}",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00008",
+			"Name":"Bernstein table {-1\/2, 0}",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00009",
+			"Name":"positive Bernstein minimum {-1\/2, 0}",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00010",
+			"Name":"Bernstein table {0, 1\/8}",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00011",
+			"Name":"positive Bernstein minimum {0, 1\/8}",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00012",
+			"Name":"Bernstein table {1\/8, 1\/4}",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00013",
+			"Name":"positive Bernstein minimum {1\/8, 1\/4}",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00014",
+			"Name":"Sturm endpoint signs at -7\/4",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-INTERVAL-POSITIVITY::00015",
+			"Name":"Sturm endpoint signs at 1\/4",
+			"Passed":true,
+			"Detail":"True"
+		}
+	]
+}

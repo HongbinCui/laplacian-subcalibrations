@@ -1,0 +1,820 @@
+{
+	"CertificateID":"LSC-COMPLEX-DETERMINANT",
+	"Status":"PASS",
+	"ExpectedChecks":134,
+	"ActualChecks":134,
+	"PassedChecks":134,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":0.2521586,
+	"SourceSHA256":"8290e01e579007b440d3c1f5f3e61bf1131483f2f0203ad9fdf1b3a897094890",
+	"Checks":[
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00001",
+			"Name":"symbolic identity for the telescoping numerator",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00002",
+			"Name":"direct\/formal determinant C, order 2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00003",
+			"Name":"nonnegative determinant sample, order 2",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00004",
+			"Name":"direct\/formal determinant C, order 3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00005",
+			"Name":"nonnegative determinant sample, order 3",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00006",
+			"Name":"determinant recurrence, order 3, variables 3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00007",
+			"Name":"determinant recurrence, order 3, variables 5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00008",
+			"Name":"direct\/formal determinant C, order 4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00009",
+			"Name":"nonnegative determinant sample, order 4",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00010",
+			"Name":"determinant recurrence, order 4, variables 4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00011",
+			"Name":"determinant recurrence, order 4, variables 6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00012",
+			"Name":"direct\/formal determinant C, order 5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00013",
+			"Name":"nonnegative determinant sample, order 5",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00014",
+			"Name":"determinant recurrence, order 5, variables 5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00015",
+			"Name":"determinant recurrence, order 5, variables 7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00016",
+			"Name":"direct\/formal determinant C, order 6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00017",
+			"Name":"nonnegative determinant sample, order 6",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00018",
+			"Name":"determinant recurrence, order 6, variables 6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00019",
+			"Name":"determinant recurrence, order 6, variables 8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00020",
+			"Name":"direct\/formal determinant C, order 7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00021",
+			"Name":"nonnegative determinant sample, order 7",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00022",
+			"Name":"determinant recurrence, order 7, variables 7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00023",
+			"Name":"determinant recurrence, order 7, variables 9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00024",
+			"Name":"direct\/formal determinant C, order 8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00025",
+			"Name":"nonnegative determinant sample, order 8",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00026",
+			"Name":"determinant recurrence, order 8, variables 8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00027",
+			"Name":"determinant recurrence, order 8, variables 10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00028",
+			"Name":"direct\/formal determinant C, order 9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00029",
+			"Name":"nonnegative determinant sample, order 9",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00030",
+			"Name":"determinant recurrence, order 9, variables 9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00031",
+			"Name":"determinant recurrence, order 9, variables 11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00032",
+			"Name":"direct\/formal determinant C, order 10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00033",
+			"Name":"nonnegative determinant sample, order 10",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00034",
+			"Name":"determinant recurrence, order 10, variables 10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00035",
+			"Name":"determinant recurrence, order 10, variables 12",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00036",
+			"Name":"exact scalar budget r=2",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00037",
+			"Name":"exact scalar budget r=3",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00038",
+			"Name":"exact scalar budget r=4",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00039",
+			"Name":"exact scalar budget r=5",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00040",
+			"Name":"exact scalar budget r=6",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00041",
+			"Name":"exact scalar budget r=7",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00042",
+			"Name":"exact scalar budget r=8",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00043",
+			"Name":"exact scalar budget r=9",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00044",
+			"Name":"exact scalar budget r=10",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00045",
+			"Name":"exact scalar budget r=11",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00046",
+			"Name":"exact scalar budget r=12",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00047",
+			"Name":"exact scalar budget r=13",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00048",
+			"Name":"exact scalar budget r=14",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00049",
+			"Name":"exact scalar budget r=15",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00050",
+			"Name":"exact scalar budget r=16",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00051",
+			"Name":"exact scalar budget r=17",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00052",
+			"Name":"exact scalar budget r=18",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00053",
+			"Name":"exact scalar budget r=19",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00054",
+			"Name":"exact scalar budget r=20",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00055",
+			"Name":"exact scalar budget r=21",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00056",
+			"Name":"exact scalar budget r=22",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00057",
+			"Name":"exact scalar budget r=23",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00058",
+			"Name":"exact scalar budget r=24",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00059",
+			"Name":"exact scalar budget r=25",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00060",
+			"Name":"exact scalar budget r=26",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00061",
+			"Name":"exact scalar budget r=27",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00062",
+			"Name":"exact scalar budget r=28",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00063",
+			"Name":"exact scalar budget r=29",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00064",
+			"Name":"exact scalar budget r=30",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00065",
+			"Name":"exact scalar budget r=31",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00066",
+			"Name":"exact scalar budget r=32",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00067",
+			"Name":"exact scalar budget r=33",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00068",
+			"Name":"exact scalar budget r=34",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00069",
+			"Name":"exact scalar budget r=35",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00070",
+			"Name":"exact scalar budget r=36",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00071",
+			"Name":"exact scalar budget r=37",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00072",
+			"Name":"exact scalar budget r=38",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00073",
+			"Name":"exact scalar budget r=39",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00074",
+			"Name":"exact scalar budget r=40",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00075",
+			"Name":"exact scalar budget r=41",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00076",
+			"Name":"exact scalar budget r=42",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00077",
+			"Name":"exact scalar budget r=43",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00078",
+			"Name":"exact scalar budget r=44",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00079",
+			"Name":"exact scalar budget r=45",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00080",
+			"Name":"exact scalar budget r=46",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00081",
+			"Name":"exact scalar budget r=47",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00082",
+			"Name":"exact scalar budget r=48",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00083",
+			"Name":"exact scalar budget r=49",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00084",
+			"Name":"exact scalar budget r=50",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00085",
+			"Name":"exact scalar budget r=51",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00086",
+			"Name":"exact scalar budget r=52",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00087",
+			"Name":"exact scalar budget r=53",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00088",
+			"Name":"exact scalar budget r=54",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00089",
+			"Name":"exact scalar budget r=55",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00090",
+			"Name":"exact scalar budget r=56",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00091",
+			"Name":"exact scalar budget r=57",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00092",
+			"Name":"exact scalar budget r=58",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00093",
+			"Name":"exact scalar budget r=59",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00094",
+			"Name":"exact scalar budget r=60",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00095",
+			"Name":"exact scalar budget r=61",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00096",
+			"Name":"exact scalar budget r=62",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00097",
+			"Name":"exact scalar budget r=63",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00098",
+			"Name":"exact scalar budget r=64",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00099",
+			"Name":"exact scalar budget r=65",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00100",
+			"Name":"exact scalar budget r=66",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00101",
+			"Name":"exact scalar budget r=67",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00102",
+			"Name":"exact scalar budget r=68",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00103",
+			"Name":"exact scalar budget r=69",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00104",
+			"Name":"exact scalar budget r=70",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00105",
+			"Name":"exact scalar budget r=71",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00106",
+			"Name":"exact scalar budget r=72",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00107",
+			"Name":"exact scalar budget r=73",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00108",
+			"Name":"exact scalar budget r=74",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00109",
+			"Name":"exact scalar budget r=75",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00110",
+			"Name":"exact scalar budget r=76",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00111",
+			"Name":"exact scalar budget r=77",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00112",
+			"Name":"exact scalar budget r=78",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00113",
+			"Name":"exact scalar budget r=79",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00114",
+			"Name":"exact scalar budget r=80",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00115",
+			"Name":"exact scalar budget r=81",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00116",
+			"Name":"exact scalar budget r=82",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00117",
+			"Name":"exact scalar budget r=83",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00118",
+			"Name":"exact scalar budget r=84",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00119",
+			"Name":"exact scalar budget r=85",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00120",
+			"Name":"exact scalar budget r=86",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00121",
+			"Name":"exact scalar budget r=87",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00122",
+			"Name":"exact scalar budget r=88",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00123",
+			"Name":"exact scalar budget r=89",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00124",
+			"Name":"exact scalar budget r=90",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00125",
+			"Name":"exact scalar budget r=91",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00126",
+			"Name":"exact scalar budget r=92",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00127",
+			"Name":"exact scalar budget r=93",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00128",
+			"Name":"exact scalar budget r=94",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00129",
+			"Name":"exact scalar budget r=95",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00130",
+			"Name":"exact scalar budget r=96",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00131",
+			"Name":"exact scalar budget r=97",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00132",
+			"Name":"exact scalar budget r=98",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00133",
+			"Name":"exact scalar budget r=99",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-COMPLEX-DETERMINANT::00134",
+			"Name":"exact scalar budget r=100",
+			"Passed":true,
+			"Detail":"True"
+		}
+	]
+}

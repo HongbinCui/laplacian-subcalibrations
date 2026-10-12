@@ -1,0 +1,382 @@
+{
+	"CertificateID":"LSC-HARMONIC-SPECTRAL",
+	"Status":"PASS",
+	"ExpectedChecks":61,
+	"ActualChecks":61,
+	"PassedChecks":61,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":2.92137e-2,
+	"SourceSHA256":"48206077c611dbc26bff81d10e41eba6a77f0b1635b90cf016f1f61b63c2c63a",
+	"Checks":[
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00001",
+			"Name":"general_log_multiplier_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00002",
+			"Name":"divisible_two_coefficient_identity",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00003",
+			"Name":"Jacobi_boundary_coefficient",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00004",
+			"Name":"gradient_norm_multiplier_D0",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00005",
+			"Name":"spectral_explicit_certificate_all_orders",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00006",
+			"Name":"reciprocal_root_derivative",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00007",
+			"Name":"antitone_numerator_decomposition",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00008",
+			"Name":"balanced_threshold_all_orders",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00009",
+			"Name":"threshold_normalization",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00010",
+			"Name":"pairing_order_2_indices_1_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00011",
+			"Name":"pairing_order_2_indices_1_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00012",
+			"Name":"pairing_order_2_indices_2_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00013",
+			"Name":"root_derivation_order_2_index_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00014",
+			"Name":"root_derivation_order_2_index_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00015",
+			"Name":"Newton_expansion_order_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00016",
+			"Name":"pairing_order_3_indices_1_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00017",
+			"Name":"pairing_order_3_indices_1_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00018",
+			"Name":"pairing_order_3_indices_1_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00019",
+			"Name":"pairing_order_3_indices_2_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00020",
+			"Name":"pairing_order_3_indices_2_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00021",
+			"Name":"pairing_order_3_indices_3_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00022",
+			"Name":"root_derivation_order_3_index_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00023",
+			"Name":"root_derivation_order_3_index_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00024",
+			"Name":"root_derivation_order_3_index_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00025",
+			"Name":"Newton_expansion_order_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00026",
+			"Name":"pairing_order_4_indices_1_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00027",
+			"Name":"pairing_order_4_indices_1_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00028",
+			"Name":"pairing_order_4_indices_1_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00029",
+			"Name":"pairing_order_4_indices_1_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00030",
+			"Name":"pairing_order_4_indices_2_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00031",
+			"Name":"pairing_order_4_indices_2_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00032",
+			"Name":"pairing_order_4_indices_2_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00033",
+			"Name":"pairing_order_4_indices_3_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00034",
+			"Name":"pairing_order_4_indices_3_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00035",
+			"Name":"pairing_order_4_indices_4_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00036",
+			"Name":"root_derivation_order_4_index_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00037",
+			"Name":"root_derivation_order_4_index_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00038",
+			"Name":"root_derivation_order_4_index_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00039",
+			"Name":"root_derivation_order_4_index_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00040",
+			"Name":"Newton_expansion_order_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00041",
+			"Name":"pairing_order_5_indices_1_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00042",
+			"Name":"pairing_order_5_indices_1_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00043",
+			"Name":"pairing_order_5_indices_1_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00044",
+			"Name":"pairing_order_5_indices_1_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00045",
+			"Name":"pairing_order_5_indices_1_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00046",
+			"Name":"pairing_order_5_indices_2_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00047",
+			"Name":"pairing_order_5_indices_2_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00048",
+			"Name":"pairing_order_5_indices_2_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00049",
+			"Name":"pairing_order_5_indices_2_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00050",
+			"Name":"pairing_order_5_indices_3_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00051",
+			"Name":"pairing_order_5_indices_3_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00052",
+			"Name":"pairing_order_5_indices_3_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00053",
+			"Name":"pairing_order_5_indices_4_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00054",
+			"Name":"pairing_order_5_indices_4_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00055",
+			"Name":"pairing_order_5_indices_5_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00056",
+			"Name":"root_derivation_order_5_index_1",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00057",
+			"Name":"root_derivation_order_5_index_2",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00058",
+			"Name":"root_derivation_order_5_index_3",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00059",
+			"Name":"root_derivation_order_5_index_4",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00060",
+			"Name":"root_derivation_order_5_index_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		},
+		{
+			"CheckID":"LSC-HARMONIC-SPECTRAL::00061",
+			"Name":"Newton_expansion_order_5",
+			"Passed":true,
+			"Detail":"Exact residual: 0"
+		}
+	]
+}

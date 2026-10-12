@@ -1,0 +1,106 @@
+{
+	"CertificateID":"LSC-ODD-RIGIDITY",
+	"Status":"PASS",
+	"ExpectedChecks":15,
+	"ActualChecks":15,
+	"PassedChecks":15,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":7.0199e-3,
+	"SourceSHA256":"89aacbf09c2940971c05582c3e72515f5d364e15d4941e1ae749cd1a7e649839",
+	"Checks":[
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00001",
+			"Name":"odd-degree coefficient normalization at a maximum",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00002",
+			"Name":"spherical gradient matrix at a maximum",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00003",
+			"Name":"first spherical Hessian equation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00004",
+			"Name":"mixed spherical Hessian equation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00005",
+			"Name":"last spherical Hessian equation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00006",
+			"Name":"factorization of the Hessian eigenvalue restriction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00007",
+			"Name":"excluded Hessian eigenvalue residual",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00008",
+			"Name":"remaining Hessian eigenvalue of the gradient square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00009",
+			"Name":"second-order degree rigidity obstruction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00010",
+			"Name":"first cubic spherical moment differential identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00011",
+			"Name":"mixed cubic spherical moment differential identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00012",
+			"Name":"third cubic spherical moment differential identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00013",
+			"Name":"fourth cubic spherical moment differential identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00014",
+			"Name":"cubic spherical moment elimination",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ODD-RIGIDITY::00015",
+			"Name":"normalized cubic Bochner coefficient",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

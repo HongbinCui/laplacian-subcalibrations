@@ -1,0 +1,94 @@
+{
+	"CertificateID":"LSC-PULLBACK-TRANSFER",
+	"Status":"PASS",
+	"ExpectedChecks":13,
+	"ActualChecks":13,
+	"PassedChecks":13,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":1.08789e-2,
+	"SourceSHA256":"0a5d576263bc13808dead03053319f205aa209b24cc33e92043c3659005372d9",
+	"Checks":[
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00001",
+			"Name":"radial master: gradient square \/ R^(2a)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00002",
+			"Name":"radial master: defect \/ R^(3a)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00003",
+			"Name":"unweighted Clifford pullback: defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00004",
+			"Name":"weighted Clifford pullback: gradient \/ R^(2a)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00005",
+			"Name":"weighted Clifford pullback: Laplacian \/ R^a",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00006",
+			"Name":"weighted Clifford pullback: defect \/ R^(3a)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00007",
+			"Name":"weighted Clifford pullback: preserved M-ratio \/ R^(2a)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00008",
+			"Name":"dimension monotonicity: finite difference \/ R^(4a)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00009",
+			"Name":"Simons fractional target: W_H",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00010",
+			"Name":"Simons fractional target: Delta H",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00011",
+			"Name":"Simons fractional target: L(H)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00012",
+			"Name":"Simons fractional target: H Delta H",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-PULLBACK-TRANSFER::00013",
+			"Name":"Simons fractional target: a=1, ell=7\/2, M=0 dimension bound",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"CertificateID":"LSC-ISOPARAMETRIC",
+	"Status":"PASS",
+	"ExpectedChecks":16,
+	"ActualChecks":16,
+	"PassedChecks":16,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":8.5712e-3,
+	"SourceSHA256":"5fc07447b50a19af2be108ae39c6c6893587aa9892c063dcce005eba1ff7cba1",
+	"Checks":[
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00001",
+			"Name":"rank-one radial defect",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00002",
+			"Name":"isoparametric correction g=2, t=1\/3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00003",
+			"Name":"isoparametric correction g=4, t=1\/7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00004",
+			"Name":"isoparametric correction g=4, t=3\/7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00005",
+			"Name":"(4,1,7) correction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00006",
+			"Name":"critical isoparametric coefficient z^0 vanishes",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00007",
+			"Name":"critical isoparametric coefficient z^1 vanishes",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00008",
+			"Name":"critical isoparametric coefficient z^2 vanishes",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00009",
+			"Name":"forced critical isoparametric cubic coefficient",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00010",
+			"Name":"Lin one-sided gradient square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00011",
+			"Name":"Lin one-sided Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00012",
+			"Name":"Lin one-sided defect 64 R F^2 (v-17u)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00013",
+			"Name":"Lawson multiplier",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00014",
+			"Name":"Lawson quartic potential",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00015",
+			"Name":"inverse squared x-radius",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-ISOPARAMETRIC::00016",
+			"Name":"inverse squared y-radius",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

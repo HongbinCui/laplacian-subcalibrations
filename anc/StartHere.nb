@@ -1,0 +1,11 @@
+Notebook[{
+Cell["Computational Verification", "Title"],
+Cell["Laplacian algebras and subcalibrations for minimal hypercones", "Subtitle"],
+Cell["Release 20261011_memo_v7. Prepared 2026-10-11. Target: Mathematica 12.0 (Windows 64-bit).", "Text"],
+Cell["This package contains executable Wolfram Language certificates, not a completed execution record. No previous run is included. The full manifest contains 26 units, including the supplementary identities. The exact expected assertion count is recorded in manifest.json and printed at the start of the run.", "Text"],
+Cell["Extract the entire package into a writable folder and open this notebook there. Start a fresh kernel (Evaluation > Quit Kernel > Local), then select the following input cell and press Shift+Enter. Do not edit the prepared source files before the run.", "Text"],
+Cell[BoxData[RowBox[{"Get", "[", RowBox[{"FileNameJoin", "[", RowBox[{"{", RowBox[{RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"RunAll.wl\""}], "}"}], "]"}], "]"}]], "Input"],
+Cell["The runner prints unit starts, completions and elapsed times. Each invocation creates a new results/run-<actual UTC time>-<unique suffix>/ directory, with progress.log, checks.log, per-unit JSON reports and summaries in TXT, JSON and WL formats. The files record the actual kernel version, operating system, execution times and source hashes.", "Text"],
+Cell["Successful full verification requires PASS in both summary.json and status.json, CompleteSuite -> True, all 26 units completed, and ActualChecks and PassedChecks equal to ExpectedChecks. Anything not evaluated to True fails. An aborted, incomplete or selected-unit run does not count as a complete PASS.", "Text"],
+Cell["After completion, preserve and share the entire new run directory together with this unchanged source package. Mathematical scope and manuscript references are listed in manifest.json and CertificateIndex.md.", "Text"]
+}, WindowTitle -> "Computational Verification 20261011_memo_v7", StyleDefinitions -> "Default.nb"]

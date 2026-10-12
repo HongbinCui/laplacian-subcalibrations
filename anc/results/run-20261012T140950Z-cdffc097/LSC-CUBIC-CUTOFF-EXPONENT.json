@@ -1,0 +1,22 @@
+{
+	"CertificateID":"LSC-CUBIC-CUTOFF-EXPONENT",
+	"Status":"PASS",
+	"ExpectedChecks":1,
+	"ActualChecks":1,
+	"PassedChecks":1,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":3.7032e-3,
+	"SourceSHA256":"cafe12cee7cc25aeda38a6b6d749d1ab838e0fcb261a9f0f8dbe2002d19a1607",
+	"Checks":[
+		{
+			"CheckID":"LSC-CUBIC-CUTOFF-EXPONENT::00001",
+			"Name":"cubic singular cutoff exponent",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

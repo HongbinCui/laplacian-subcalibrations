@@ -1,0 +1,406 @@
+{
+	"CertificateID":"LSC-JORDAN-PENCIL",
+	"Status":"PASS",
+	"ExpectedChecks":65,
+	"ActualChecks":65,
+	"PassedChecks":65,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":3.11987e-2,
+	"SourceSHA256":"6997267c0c59df9e36868898997eaf916c87c7977d31e880a035f848acb6b8c6",
+	"Checks":[
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00001",
+			"Name":"Delta(F_t)=0 for formal d",
+			"Passed":true,
+			"Detail":"formal closure: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00002",
+			"Name":"S_t full polynomial",
+			"Passed":true,
+			"Detail":"formal closure: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00003",
+			"Name":"L(F_t) full polynomial",
+			"Passed":true,
+			"Detail":"formal closure: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00004",
+			"Name":"S_t coefficient of t^0",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00005",
+			"Name":"S_t coefficient of t^1",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00006",
+			"Name":"S_t coefficient of t^2",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00007",
+			"Name":"L(F_t) coefficient of t^0",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00008",
+			"Name":"L(F_t) coefficient of t^1",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00009",
+			"Name":"L(F_t) coefficient of t^2",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00010",
+			"Name":"L(F_t) coefficient of t^3",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00011",
+			"Name":"L(F_t) coefficient of t^4",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00012",
+			"Name":"L(F_t) displayed t^4 cancellation",
+			"Passed":true,
+			"Detail":"coefficient checks: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00013",
+			"Name":"minimal equation at t=0",
+			"Passed":true,
+			"Detail":"special parameters: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00014",
+			"Name":"minimal equation at t=1",
+			"Passed":true,
+			"Detail":"special parameters: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00015",
+			"Name":"minimal equation at t=-1\/3",
+			"Passed":true,
+			"Detail":"special parameters: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00016",
+			"Name":"existing nonradial S at t=-1\/3",
+			"Passed":true,
+			"Detail":"special parameters: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00017",
+			"Name":"existing nonradial Gamma(F,S)=2qF",
+			"Passed":true,
+			"Detail":"special parameters: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00018",
+			"Name":"real-coordinate Delta(rho)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00019",
+			"Name":"real-coordinate Gamma(rho,rho)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00020",
+			"Name":"real-coordinate Gamma(rho,nu)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00021",
+			"Name":"real-coordinate Gamma(rho,A)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00022",
+			"Name":"real-coordinate Gamma(rho,B)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00023",
+			"Name":"real-coordinate Gamma(rho,W)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00024",
+			"Name":"real-coordinate Delta(nu)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00025",
+			"Name":"real-coordinate Gamma(nu,nu)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00026",
+			"Name":"real-coordinate Gamma(nu,A)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00027",
+			"Name":"real-coordinate Gamma(nu,B)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00028",
+			"Name":"real-coordinate Gamma(nu,W)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00029",
+			"Name":"real-coordinate Delta(A)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00030",
+			"Name":"real-coordinate Gamma(A,A)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00031",
+			"Name":"real-coordinate Gamma(A,B)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00032",
+			"Name":"real-coordinate Gamma(A,W)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00033",
+			"Name":"real-coordinate Delta(B)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00034",
+			"Name":"real-coordinate Gamma(B,B)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00035",
+			"Name":"real-coordinate Gamma(B,W)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00036",
+			"Name":"real-coordinate Delta(W)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00037",
+			"Name":"real-coordinate Gamma(W,W)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00038",
+			"Name":"real-coordinate Delta(F_t)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00039",
+			"Name":"real-coordinate S_t",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00040",
+			"Name":"real-coordinate Hessian definition of L(F_t)",
+			"Passed":true,
+			"Detail":"independent d=1 coordinates: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00041",
+			"Name":"t>0 witness nu",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00042",
+			"Name":"t>0 witness A",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00043",
+			"Name":"t>0 witness B",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00044",
+			"Name":"t>0 witness W",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00045",
+			"Name":"t>0 witness F_t=0",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00046",
+			"Name":"t>0 witness rho+t*nu",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00047",
+			"Name":"t>0 witness |D_u F_t|^2",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00048",
+			"Name":"t>0 witness is regular",
+			"Passed":true,
+			"Detail":"regular zeros: exact condition holds"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00049",
+			"Name":"t>0 L(F_t) at witness",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00050",
+			"Name":"t>0 direct coordinate F_t=0",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00051",
+			"Name":"t>0 direct coordinate L(F_t)",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00052",
+			"Name":"t<0 witness nu",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00053",
+			"Name":"t<0 witness A",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00054",
+			"Name":"t<0 witness B",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00055",
+			"Name":"t<0 witness W",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00056",
+			"Name":"t<0 witness F_t=0",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00057",
+			"Name":"t<0 witness rho+t*nu",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00058",
+			"Name":"t<0 witness |D_u F_t|^2",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00059",
+			"Name":"t<0 witness is regular",
+			"Passed":true,
+			"Detail":"regular zeros: exact condition holds"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00060",
+			"Name":"t<0 L(F_t) at witness",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00061",
+			"Name":"t<0 direct coordinate F_t=0",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00062",
+			"Name":"t<0 direct coordinate L(F_t)",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00063",
+			"Name":"exceptional nonzero roots are exactly -1\/3 and 1",
+			"Passed":true,
+			"Detail":"regular zeros: exact condition holds"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00064",
+			"Name":"all parameters have common zero diag(1,-1,0),u=0",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		},
+		{
+			"CheckID":"LSC-JORDAN-PENCIL::00065",
+			"Name":"common zero gradient squared norm equals 4\/3",
+			"Passed":true,
+			"Detail":"regular zeros: exact zero"
+		}
+	]
+}

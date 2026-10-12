@@ -1,0 +1,388 @@
+{
+	"CertificateID":"LSC-INTRINSIC-FIVE-GENERATORS",
+	"Status":"PASS",
+	"ExpectedChecks":62,
+	"ActualChecks":62,
+	"PassedChecks":62,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":0.3097707,
+	"SourceSHA256":"0cb01fa7fbd14ab344c78cff23cf9d144584a21ac03639cce46f2de53fa80d1f",
+	"Checks":[
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00001",
+			"Name":"d=1: orthonormal_B_coordinates",
+			"Passed":true,
+			"Detail":"Tr[Z.Z]\/2 equals the sum of squares of all B coordinates."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00002",
+			"Name":"d=1: orthonormal_U_coordinates",
+			"Passed":true,
+			"Detail":"u* u equals the sum of squares of all U coordinates."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00003",
+			"Name":"d=1: Gamma(r,r)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00004",
+			"Name":"d=1: Gamma(r,s)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00005",
+			"Name":"d=1: Gamma(r,a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00006",
+			"Name":"d=1: Gamma(r,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00007",
+			"Name":"d=1: Gamma(r,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00008",
+			"Name":"d=1: Gamma(s,s)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00009",
+			"Name":"d=1: Gamma(s,a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00010",
+			"Name":"d=1: Gamma(s,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00011",
+			"Name":"d=1: Gamma(s,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00012",
+			"Name":"d=1: Gamma(a,a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00013",
+			"Name":"d=1: Gamma(a,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00014",
+			"Name":"d=1: Gamma(a,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00015",
+			"Name":"d=1: Gamma(p,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00016",
+			"Name":"d=1: Gamma(p,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00017",
+			"Name":"d=1: Gamma(h,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00018",
+			"Name":"d=1: Delta(r)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00019",
+			"Name":"d=1: Delta(s)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00020",
+			"Name":"d=1: Delta(a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00021",
+			"Name":"d=1: Delta(p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00022",
+			"Name":"d=1: Delta(h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00023",
+			"Name":"d=1: F_is_harmonic",
+			"Passed":true,
+			"Detail":"The normalized cubic has zero Euclidean Laplacian."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00024",
+			"Name":"d=1: normalized_Hsiang_equation",
+			"Passed":true,
+			"Detail":"The exact normalized Hsiang identity is L[F]=-q F."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00025",
+			"Name":"d=1: D_equals_a_plus_p",
+			"Passed":true,
+			"Detail":"D=Gamma(r,F)=a+p by independent differentiation."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00026",
+			"Name":"d=1: recover_r",
+			"Passed":true,
+			"Detail":"Both the q formula and Delta[S] formula recover r."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00027",
+			"Name":"d=1: recover_s",
+			"Passed":true,
+			"Detail":"Both the q formula and Delta[S] formula recover s."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00028",
+			"Name":"d=1: recover_p",
+			"Passed":true,
+			"Detail":"The cubic and D recover p=3 F-D\/2."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00029",
+			"Name":"d=1: recover_a",
+			"Passed":true,
+			"Detail":"The cubic and D recover a=3 D\/2-3 F."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00030",
+			"Name":"d=1: recover_h",
+			"Passed":true,
+			"Detail":"Independent differentiation recovers h=(Gamma(a,p)+r s)\/18."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00031",
+			"Name":"d=1: rank_five_exact_minor",
+			"Passed":true,
+			"Detail":"At Z=diag(1,-1,0), u=(1,1,1), the rows (r,a,s,p,h) and columns (x,z,u1,u2,u3) give the nonzero exact minor 4 Sqrt[3]\/3."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00032",
+			"Name":"d=2: orthonormal_B_coordinates",
+			"Passed":true,
+			"Detail":"Tr[Z.Z]\/2 equals the sum of squares of all B coordinates."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00033",
+			"Name":"d=2: orthonormal_U_coordinates",
+			"Passed":true,
+			"Detail":"u* u equals the sum of squares of all U coordinates."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00034",
+			"Name":"d=2: Gamma(r,r)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00035",
+			"Name":"d=2: Gamma(r,s)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00036",
+			"Name":"d=2: Gamma(r,a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00037",
+			"Name":"d=2: Gamma(r,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00038",
+			"Name":"d=2: Gamma(r,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00039",
+			"Name":"d=2: Gamma(s,s)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00040",
+			"Name":"d=2: Gamma(s,a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00041",
+			"Name":"d=2: Gamma(s,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00042",
+			"Name":"d=2: Gamma(s,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00043",
+			"Name":"d=2: Gamma(a,a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00044",
+			"Name":"d=2: Gamma(a,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00045",
+			"Name":"d=2: Gamma(a,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00046",
+			"Name":"d=2: Gamma(p,p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00047",
+			"Name":"d=2: Gamma(p,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00048",
+			"Name":"d=2: Gamma(h,h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean first derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00049",
+			"Name":"d=2: Delta(r)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00050",
+			"Name":"d=2: Delta(s)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00051",
+			"Name":"d=2: Delta(a)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00052",
+			"Name":"d=2: Delta(p)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00053",
+			"Name":"d=2: Delta(h)",
+			"Passed":true,
+			"Detail":"Exact polynomial equality from ordinary Euclidean second derivatives."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00054",
+			"Name":"d=2: F_is_harmonic",
+			"Passed":true,
+			"Detail":"The normalized cubic has zero Euclidean Laplacian."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00055",
+			"Name":"d=2: normalized_Hsiang_equation",
+			"Passed":true,
+			"Detail":"The exact normalized Hsiang identity is L[F]=-q F."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00056",
+			"Name":"d=2: D_equals_a_plus_p",
+			"Passed":true,
+			"Detail":"D=Gamma(r,F)=a+p by independent differentiation."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00057",
+			"Name":"d=2: recover_r",
+			"Passed":true,
+			"Detail":"Both the q formula and Delta[S] formula recover r."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00058",
+			"Name":"d=2: recover_s",
+			"Passed":true,
+			"Detail":"Both the q formula and Delta[S] formula recover s."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00059",
+			"Name":"d=2: recover_p",
+			"Passed":true,
+			"Detail":"The cubic and D recover p=3 F-D\/2."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00060",
+			"Name":"d=2: recover_a",
+			"Passed":true,
+			"Detail":"The cubic and D recover a=3 D\/2-3 F."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00061",
+			"Name":"d=2: recover_h",
+			"Passed":true,
+			"Detail":"Independent differentiation recovers h=(Gamma(a,p)+r s)\/18."
+		},
+		{
+			"CheckID":"LSC-INTRINSIC-FIVE-GENERATORS::00062",
+			"Name":"d=2: rank_five_exact_minor",
+			"Passed":true,
+			"Detail":"At Z=diag(1,-1,0), u=(1,1,1), the rows (r,a,s,p,h) and columns (x,z,u1,u2,u3) give the nonzero exact minor 4 Sqrt[3]\/3."
+		}
+	]
+}

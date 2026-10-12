@@ -1,0 +1,184 @@
+{
+	"CertificateID":"LSC-EXCEPTIONAL-CUBICS",
+	"Status":"PASS",
+	"ExpectedChecks":28,
+	"ActualChecks":28,
+	"PassedChecks":28,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":3.98026e-2,
+	"SourceSHA256":"6c017712ead3f2e69ba71552d017884ef5940d79405d0206b44ba720a0712511",
+	"Checks":[
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00001",
+			"Name":"SF gradient norm",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00002",
+			"Name":"SF Laplacian",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00003",
+			"Name":"SF defect, with arbitrary Delta R and Delta D",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00004",
+			"Name":"SF positive decomposition",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00005",
+			"Name":"SF threshold at balanced spectrum and F=0",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00006",
+			"Name":"sqrt(RS)F gradient norm",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00007",
+			"Name":"sqrt(RS)F certificate for Jordan d=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00008",
+			"Name":"Jordan drift transfer",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00009",
+			"Name":"Sign of the transfer bracket",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00010",
+			"Name":"Gram Delta R",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00011",
+			"Name":"Gram Delta S",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00012",
+			"Name":"Gram Delta D",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00013",
+			"Name":"Gram Gamma RR",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00014",
+			"Name":"Gram Gamma RS",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00015",
+			"Name":"Gram Gamma RD",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00016",
+			"Name":"Gram Gamma SS",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00017",
+			"Name":"Gram Gamma SD",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00018",
+			"Name":"Gram Gamma DD",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00019",
+			"Name":"G2 Delta D = 10S",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00020",
+			"Name":"Alternating F: Gamma(F,S)=4RF",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00021",
+			"Name":"Alternating F: Gamma(F,D)=2SF",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00022",
+			"Name":"G2 coordinate gradient norm = Gram e2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00023",
+			"Name":"G2 harmonicity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00024",
+			"Name":"G2 independence: explicit Jacobian formula",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00025",
+			"Name":"G2 rank-one Hessian cubic identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00026",
+			"Name":"G2 rank-one Hessian trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00027",
+			"Name":"G2 rank-one Hessian squared trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-EXCEPTIONAL-CUBICS::00028",
+			"Name":"G2 rank-one Hessian characteristic polynomial",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

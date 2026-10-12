@@ -1,0 +1,1174 @@
+{
+	"CertificateID":"LSC-CLIFFORD-CUBIC",
+	"Status":"PASS",
+	"ExpectedChecks":193,
+	"ActualChecks":193,
+	"PassedChecks":193,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":0.1692134,
+	"SourceSHA256":"ea8b283171c95834c3aa9f4c0262fb1324ddd175c5ce0c8320ba32aeefda32f5",
+	"Checks":[
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00001",
+			"Name":"Radial identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00002",
+			"Name":"Affine dependence on F^2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00003",
+			"Name":"Derivative in m",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00004",
+			"Name":"Derivative in q",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00005",
+			"Name":"G1 endpoint numerator",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00006",
+			"Name":"Bernstein bidegree",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00007",
+			"Name":"Bernstein reconstruction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00008",
+			"Name":"G1 Bernstein matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00009",
+			"Name":"G1 Bernstein matrix",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00010",
+			"Name":"G1 Bernstein matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00011",
+			"Name":"G1 base numerator",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00012",
+			"Name":"G1 square",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00013",
+			"Name":"G1 boundary",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00014",
+			"Name":"G1 failure at (4,4)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00015",
+			"Name":"G2 endpoint numerator",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00016",
+			"Name":"Bernstein bidegree",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00017",
+			"Name":"Bernstein reconstruction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00018",
+			"Name":"G2 omega=0 Bernstein matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00019",
+			"Name":"G2 omega=0 Bernstein matrix",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00020",
+			"Name":"G2 omega=0 Bernstein matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00021",
+			"Name":"Bernstein bidegree",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00022",
+			"Name":"Bernstein reconstruction",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00023",
+			"Name":"G2 omega=1 Bernstein matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00024",
+			"Name":"G2 omega=1 Bernstein matrix",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00025",
+			"Name":"G2 omega=1 Bernstein matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00026",
+			"Name":"Power obstruction at lambda=0",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00027",
+			"Name":"Power obstruction at lambda=2\/3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00028",
+			"Name":"Jacobi matrix",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00029",
+			"Name":"Jacobi matrix",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00030",
+			"Name":"Independent Jacobi moments",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00031",
+			"Name":"Independent Jacobi moments",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00032",
+			"Name":"Negative Jacobi form",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00033",
+			"Name":"Symmetry",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00034",
+			"Name":"Trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00035",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00036",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00037",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00038",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00039",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00040",
+			"Name":"Symmetry",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00041",
+			"Name":"Trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00042",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00043",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00044",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00045",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00046",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00047",
+			"Name":"Symmetry",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00048",
+			"Name":"Trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00049",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00050",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00051",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00052",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00053",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00054",
+			"Name":"Symmetry",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00055",
+			"Name":"Trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00056",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00057",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00058",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00059",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00060",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00061",
+			"Name":"Symmetry",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00062",
+			"Name":"Trace",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00063",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00064",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00065",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00066",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00067",
+			"Name":"Clifford relation",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00068",
+			"Name":"Ambient q=3, point=1, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00069",
+			"Name":"Ambient q=3, point=1, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00070",
+			"Name":"Ambient q=3, point=1, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00071",
+			"Name":"Ambient q=3, point=1, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00072",
+			"Name":"Ambient q=3, point=1, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00073",
+			"Name":"Ambient q=3, point=1, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00074",
+			"Name":"Ambient q=3, point=1, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00075",
+			"Name":"Ambient q=3, point=1, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00076",
+			"Name":"Ambient q=3, point=1, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00077",
+			"Name":"Ambient q=3, point=1, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00078",
+			"Name":"Ambient q=3, point=1, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00079",
+			"Name":"Ambient q=3, point=2, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00080",
+			"Name":"Ambient q=3, point=2, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00081",
+			"Name":"Ambient q=3, point=2, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00082",
+			"Name":"Ambient q=3, point=2, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00083",
+			"Name":"Ambient q=3, point=2, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00084",
+			"Name":"Ambient q=3, point=2, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00085",
+			"Name":"Ambient q=3, point=2, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00086",
+			"Name":"Ambient q=3, point=2, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00087",
+			"Name":"Ambient q=3, point=2, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00088",
+			"Name":"Ambient q=3, point=2, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00089",
+			"Name":"Ambient q=3, point=2, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00090",
+			"Name":"Ambient q=3, point=3, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00091",
+			"Name":"Ambient q=3, point=3, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00092",
+			"Name":"Ambient q=3, point=3, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00093",
+			"Name":"Ambient q=3, point=3, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00094",
+			"Name":"Ambient q=3, point=3, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00095",
+			"Name":"Ambient q=3, point=3, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00096",
+			"Name":"Ambient q=3, point=3, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00097",
+			"Name":"Ambient q=3, point=3, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00098",
+			"Name":"Ambient q=3, point=3, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00099",
+			"Name":"Ambient q=3, point=3, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00100",
+			"Name":"Ambient q=3, point=3, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00101",
+			"Name":"Ambient q=3, point=4, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00102",
+			"Name":"Ambient q=3, point=4, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00103",
+			"Name":"Ambient q=3, point=4, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00104",
+			"Name":"Ambient q=3, point=4, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00105",
+			"Name":"Ambient q=3, point=4, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00106",
+			"Name":"Ambient q=3, point=4, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00107",
+			"Name":"Ambient q=3, point=4, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00108",
+			"Name":"Ambient q=3, point=4, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00109",
+			"Name":"Ambient q=3, point=4, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00110",
+			"Name":"Ambient q=3, point=4, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00111",
+			"Name":"Ambient q=3, point=4, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00112",
+			"Name":"Ambient q=3, point=5, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00113",
+			"Name":"Ambient q=3, point=5, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00114",
+			"Name":"Ambient q=3, point=5, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00115",
+			"Name":"Ambient q=3, point=5, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00116",
+			"Name":"Ambient q=3, point=5, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00117",
+			"Name":"Ambient q=3, point=5, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00118",
+			"Name":"Ambient q=3, point=5, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00119",
+			"Name":"Ambient q=3, point=5, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00120",
+			"Name":"Ambient q=3, point=5, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00121",
+			"Name":"Ambient q=3, point=5, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00122",
+			"Name":"Ambient q=3, point=5, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00123",
+			"Name":"Ambient q=4, point=1, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00124",
+			"Name":"Ambient q=4, point=1, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00125",
+			"Name":"Ambient q=4, point=1, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00126",
+			"Name":"Ambient q=4, point=1, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00127",
+			"Name":"Ambient q=4, point=1, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00128",
+			"Name":"Ambient q=4, point=1, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00129",
+			"Name":"Ambient q=4, point=1, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00130",
+			"Name":"Ambient q=4, point=1, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00131",
+			"Name":"Ambient q=4, point=1, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00132",
+			"Name":"Ambient q=4, point=1, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00133",
+			"Name":"Ambient q=4, point=1, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00134",
+			"Name":"Ambient q=4, point=2, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00135",
+			"Name":"Ambient q=4, point=2, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00136",
+			"Name":"Ambient q=4, point=2, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00137",
+			"Name":"Ambient q=4, point=2, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00138",
+			"Name":"Ambient q=4, point=2, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00139",
+			"Name":"Ambient q=4, point=2, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00140",
+			"Name":"Ambient q=4, point=2, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00141",
+			"Name":"Ambient q=4, point=2, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00142",
+			"Name":"Ambient q=4, point=2, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00143",
+			"Name":"Ambient q=4, point=2, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00144",
+			"Name":"Ambient q=4, point=2, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00145",
+			"Name":"Ambient q=4, point=3, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00146",
+			"Name":"Ambient q=4, point=3, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00147",
+			"Name":"Ambient q=4, point=3, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00148",
+			"Name":"Ambient q=4, point=3, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00149",
+			"Name":"Ambient q=4, point=3, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00150",
+			"Name":"Ambient q=4, point=3, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00151",
+			"Name":"Ambient q=4, point=3, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00152",
+			"Name":"Ambient q=4, point=3, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00153",
+			"Name":"Ambient q=4, point=3, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00154",
+			"Name":"Ambient q=4, point=3, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00155",
+			"Name":"Ambient q=4, point=3, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00156",
+			"Name":"Ambient q=4, point=4, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00157",
+			"Name":"Ambient q=4, point=4, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00158",
+			"Name":"Ambient q=4, point=4, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00159",
+			"Name":"Ambient q=4, point=4, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00160",
+			"Name":"Ambient q=4, point=4, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00161",
+			"Name":"Ambient q=4, point=4, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00162",
+			"Name":"Ambient q=4, point=4, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00163",
+			"Name":"Ambient q=4, point=4, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00164",
+			"Name":"Ambient q=4, point=4, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00165",
+			"Name":"Ambient q=4, point=4, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00166",
+			"Name":"Ambient q=4, point=4, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00167",
+			"Name":"Ambient q=4, point=5, identity=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00168",
+			"Name":"Ambient q=4, point=5, identity=2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00169",
+			"Name":"Ambient q=4, point=5, identity=3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00170",
+			"Name":"Ambient q=4, point=5, identity=4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00171",
+			"Name":"Ambient q=4, point=5, identity=5",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00172",
+			"Name":"Ambient q=4, point=5, identity=6",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00173",
+			"Name":"Ambient q=4, point=5, identity=7",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00174",
+			"Name":"Ambient q=4, point=5, identity=8",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00175",
+			"Name":"Ambient q=4, point=5, identity=9",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00176",
+			"Name":"Ambient q=4, point=5, identity=10",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00177",
+			"Name":"Ambient q=4, point=5, identity=11",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00178",
+			"Name":"Hopf norm",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00179",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00180",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00181",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00182",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00183",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00184",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00185",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00186",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00187",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00188",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00189",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00190",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00191",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00192",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-CUBIC::00193",
+			"Name":"Hopf spherical gradient identity",
+			"Passed":true,
+			"Detail":"0"
+		}
+	]
+}

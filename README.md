@@ -1,44 +1,97 @@
-# Laplacian algebras and subcalibrations: computational verification
+# Laplacian algebras and subcalibrations
 
-Verification code accompanying **Laplacian algebras and subcalibrations for minimal hypercones (arXiv:2609.17217v2)**, by **Hongbin Cui**.
+Hongbin Cui — manuscript and computational verification materials.
 
-The programs check differential identities, exact positivity certificates, and specified finite or coordinate-model calculations from the paper. The manuscript contains the mathematical proofs; the code provides reproducible algebraic checks.
+**Release prepared:** 2026-10-12 · **Manuscript:** V15, 166 pages  
+**Recorded verification:** PASS — 26/26 units, 7134/7134 checks  
+**Environment:** Wolfram Mathematica 12.0.0, Microsoft Windows 64-bit
 
-## Getting started
+## Start here
 
-Download the complete repository using **Code > Download ZIP**, then extract it before opening a notebook. Keep the directory structure intact: the `.nb` notebooks load accompanying `.wl` files, and some supplemental notebooks also load a shared helper.
+- [Current manuscript (PDF)](paper/Laplacian_algebras_and_subcalibrations_20261012_v15.pdf)
+- [LaTeX source](paper/source/manuscript.tex)
+- [Verification notebook](anc/StartHere.nb)
+- [Completed run summary](anc/results/run-20261012T140950Z-cdffc097/summary.txt)
+- [Machine-readable summary](anc/results/run-20261012T140950Z-cdffc097/summary.json)
+- [Final completion marker](anc/results/run-20261012T140950Z-cdffc097/status.json)
+- [Certificate index (frozen reference)](anc/CertificateIndex.md)
 
-In Mathematica 12, start a fresh kernel, open [Main Mathematica verification](anc/START_HERE_Verification_v5.nb), and choose **Evaluation > Evaluate Notebook**. This entry runs the main thirteen units, containing **550 assertions**. All units must pass and successfully export their TXT and CSV records. Save the evaluated notebook explicitly. Dates and `v5`/`v6` in program names are stable identifiers, not manuscript versions.
+The paper studies variational properties of algebraic minimal hypercones,
+their associated Laplacian algebras, and constructions through polynomial
+realizations of algebraic closure relations. The code checks the algebraic
+identities and finite assertions specified in its certificate index.
+These checks supplement the mathematical proofs; finite examples do not
+establish arbitrary-order statements or replace analytic arguments.
 
-The additional units below run separately; the main entry does not run them. Use a fresh kernel for each separate Mathematica entry.
+## Reproduce the calculation
 
-## Verification units
+Download and extract the complete repository or release archive into a writable
+folder. Open `anc/StartHere.nb` in Mathematica 12.0, quit the existing local
+kernel, and evaluate its input cell with Shift+Enter:
 
-| Unit | Assertions | Entry |
-|---|---:|---|
-| Main thirteen-unit suite | 550 | [Mathematica notebook](anc/START_HERE_Verification_v5.nb) |
-| General cubic algebra | 31 | [Mathematica notebook](anc/mathematica/supplemental/Verify_Chapter_07_General_Cubic_Algebra.nb) |
-| Exceptional cubics | 28 | [Mathematica notebook](anc/mathematica/supplemental/exceptional_cubics/Verify_Exceptional_Cubics.nb) |
-| Cubic certificates | 38 | [Mathematica notebook](anc/mathematica/supplemental/cubic_update_20260927/Verify_Cubic_Update_20260927.nb) |
-| Pullback transfer | 13 | [Mathematica notebook](anc/mathematica/supplemental/pullback_transfer_20260930/verify_pullback_transfer.nb) |
-| Cartan/Jordan pencil | 65 | [Python program and instructions](anc/mathematica/supplemental/jordan_pencil_20260928/README.md) |
-| Intrinsic five-generator table | 62 | [Python program and instructions](anc/mathematica/supplemental/intrinsic_five_generators_20260929/README.md) |
+```wolfram
+Get[FileNameJoin[{NotebookDirectory[], "RunAll.wl"}]]
+```
 
-The 28-, 38-, and 13-assertion notebooks should report **`COMPLETE AND PASSED: True`**. They export a text transcript, a CSV table, and a JSON summary. The two Python-only units use Python 3 and SymPy; their linked instructions give commands and dependencies.
+Alternatively, use an absolute path in a fresh Mathematica notebook:
 
-## Supplied results
+```wolfram
+Get["C:/full/path/to/laplacian-subcalibrations/anc/RunAll.wl"]
+```
 
-The author's native **Mathematica 12.0.0 (Windows 64-bit)** runs cover all **660 Wolfram Language assertions**, with all checks passing. The two Python-only units have passing records for **127 assertions**. The resulting total of **787 program assertions includes stated overlaps**; it does not count 787 distinct mathematical results.
+All verification code is Wolfram Language. No Python, external package, or
+network access is needed to run the suite. Each invocation creates a new
+run directory under `anc/results/`; the supplied record is not overwritten.
+Full success requires `PASS` in both `summary.json` and `status.json`,
+`CompleteSuite: true`, and all 26 units and 7134 checks completed and passed.
 
-Evaluated notebooks and execution records are included. [Verification Records](anc/Verification_Records.md) identifies their locations, dates, environments, and source-hash scope. Preparing this repository did not change or rerun the programs or retained results.
+## Supplied execution record
 
-## Verification scope and documentation
+The author ran the supplied verification code in Wolfram Mathematica 12.0.0
+(Windows 64-bit). The archived run began on 2026-10-12 at 14:09:51 UTC and
+finished at 14:09:53 UTC (22:09:51–22:09:53 in China).
+Its complete, unmodified output is in
+`anc/results/run-20261012T140950Z-cdffc097/`.
+All 34 recorded source SHA-256 hashes match the supplied verification files
+and the before/after snapshots. No new execution is claimed by this packaging.
 
-Exact identities and interval positivity certificates are distinguished from finite consistency tests. In particular, bounded-order determinant checks do not prove the all-orders assertions, and coordinate checks of particular nonradial models do not replace the intrinsic five-generator theorem. Those proofs, together with the geometric comparison and singular-set arguments, are in the manuscript.
+## Manuscript and verification versions
 
-- [Verification Details (PDF)](anc/Verification_Details.pdf): formulas, methods, and the correspondence with the paper.
-- [Running guide and current section mapping](anc/mathematica/chapters/VERIFICATION_GUIDE.md).
-- [Notation guide](anc/NOTATION_GUIDE.md): local code variables and manuscript notation.
-- [Ancillary instructions](anc/README.txt): additional entry and export details.
+The current paper is **V15**. The unchanged verification suite retains its
+original identifier **20261011_memo_v7**. These identify different artifacts.
+Subsequent manuscript revisions did not change the tested identities or code.
 
-When referring to these computations, cite the accompanying manuscript and identify the repository commit or release used.
+The files inside `anc/` are preserved byte for byte, including their historical
+preparation documents. Their statements such as “prepared for a new run” and
+`PREPARED_NOT_YET_RUN` describe the state before the supplied execution;
+the dated PASS records above establish the completed run. This root README
+provides the current publication status.
+
+`anc/manuscript/` contains the V7 PDF and label snapshot used by the frozen
+certificate index. It is a provenance reference, not the current paper.
+The index's old page and equation/theorem locations should be resolved by
+semantic LaTeX labels in `paper/source/` when consulting V15. Do not delete
+or edit the frozen reference files: they belong to the recorded source hashes.
+
+## Compile the paper
+
+With a standard TeX Live installation and latexmk:
+
+```sh
+cd paper/source
+latexmk -pdf manuscript.tex
+```
+
+The paper uses ordinary `amsart`, 11pt, A4, with the contents immediately after
+the abstract. Local figures are included. This repository layout is intended
+for GitHub; an arXiv submission should be packaged separately.
+
+## Integrity and citation
+
+`SHA256SUMS` lists every distributed file other than itself, relative to the
+repository root. On a system with sha256sum, run `sha256sum -c SHA256SUMS`
+before generating new output or modifying the files.
+
+For citation, use the paper's arXiv record and identify the fixed GitHub release
+used for computation. This package does not assert that arXiv v2 is already
+public. See [release notes](RELEASE_NOTES.md).

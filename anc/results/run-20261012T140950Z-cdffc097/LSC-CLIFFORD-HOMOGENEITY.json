@@ -1,0 +1,178 @@
+{
+	"CertificateID":"LSC-CLIFFORD-HOMOGENEITY",
+	"Status":"PASS",
+	"ExpectedChecks":27,
+	"ActualChecks":27,
+	"PassedChecks":27,
+	"EvaluationOK":true,
+	"CountOK":true,
+	"CheckCatalogOK":true,
+	"Messages":[],
+	"UnitMessages":"{}",
+	"ElapsedSeconds":0.1053902,
+	"SourceSHA256":"4dd02a99a5e65c81aba4c20ae8e4c5c7d63efd5d931aae45f94256b2329fb55c",
+	"Checks":[
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00001",
+			"Name":"F: degree of L(G)",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00002",
+			"Name":"F: degree of prefactor",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00003",
+			"Name":"F: degree of G1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00004",
+			"Name":"F: degree of G2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00005",
+			"Name":"F: V_gamma has weighted degree four",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00006",
+			"Name":"F: D_gamma has weighted degree minus two",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00007",
+			"Name":"F: Q_gamma has weighted degree two",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00008",
+			"Name":"F: Qhat has weighted degree two",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00009",
+			"Name":"F: normalized quotient has degree zero",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00010",
+			"Name":"F: S\/R squared equals lambda H",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00011",
+			"Name":"F: S=R squared lambda H before normalization",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00012",
+			"Name":"F: H on lambda=0",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00013",
+			"Name":"F: H on lambda=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00014",
+			"Name":"F: H on theta=0",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00015",
+			"Name":"F: H on theta=1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00016",
+			"Name":"F: cleared endpoint is polynomial, case 1",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00017",
+			"Name":"F: cleared endpoint is polynomial, case 2",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00018",
+			"Name":"F: cleared endpoint is polynomial, case 3",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00019",
+			"Name":"F: cleared endpoint is polynomial, case 4",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00020",
+			"Name":"F: denominator clearing identity, case 1",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00021",
+			"Name":"F: denominator clearing identity, case 2",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00022",
+			"Name":"F: denominator clearing identity, case 3",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00023",
+			"Name":"F: denominator clearing identity, case 4",
+			"Passed":true,
+			"Detail":"0"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00024",
+			"Name":"F: polynomial value at H=0 is finite, case 1",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00025",
+			"Name":"F: polynomial value at H=0 is finite, case 2",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00026",
+			"Name":"F: polynomial value at H=0 is finite, case 3",
+			"Passed":true,
+			"Detail":"True"
+		},
+		{
+			"CheckID":"LSC-CLIFFORD-HOMOGENEITY::00027",
+			"Name":"F: polynomial value at H=0 is finite, case 4",
+			"Passed":true,
+			"Detail":"True"
+		}
+	]
+}
