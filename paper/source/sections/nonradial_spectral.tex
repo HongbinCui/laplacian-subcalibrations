@@ -1,0 +1,274 @@
+% Spectral structure used in the intrinsic five-generator bound.
+\subsubsection{Maximal idempotents and the weight operator}
+\label{subsec:nr-maximal-idempotents}
+
+By \cref{lem:square-free-critical-set}, an irreducible harmonic $F$
+has a nonsingular real zero. Thus \cref{prop:divisibility}
+gives $\cL(F)=-qF$, where homogeneity makes $q$ quadratic.
+
+Use the commutative Euclidean metrized algebra and normalization of
+\cref{prop:cubic-multiplication-dictionary}.
+Harmonicity is the condition $\tr L_x=0$ for every $x$;
+we call such an algebra \emph{exact}, following
+\cite[Section~3.2 and Definition~4.1]{FoxTkachev24}.
+For a self-adjoint operator \(T\), the equation
+\(\cL(F)=-\frac32\ip{Tx}{x}F\) is then equivalent to
+\begin{equation}\label{eq:nr-Hsiang-identity}
+ \ip{x^2}{x^3}=\ip{Tx}{x}\ip{x^2}{x}.
+\end{equation}
+This defines an \emph{exact Hsiang algebra}, with symmetric bilinear weight
+$b(x,y)=\ip{Tx}{y}$. The radial case is the special case in which
+$T$ is scalar.
+Here \(x^3=x(x^2)\) and \(x^4=x(x^3)\); no associativity is assumed.
+Differentiating \eqref{eq:nr-Hsiang-identity} gives
+\begin{equation}\label{eq:nr-vector-identity}
+ 4x^4+(x^2)^2-2\ip{x^2}{x}Tx-3\ip{Tx}{x}x^2=0.
+\end{equation}
+
+As shown in \cref{subsec:cubic-multiplication},
+$\operatorname{Ann}(A)=\{v:vA=0\}$ is the cylindrical subspace of $F$.
+Metric invariance makes $A_{\mathrm{ess}}=\operatorname{Ann}(A)^\perp$
+a subalgebra; its orthogonal splitting from the annihilator has zero
+mixed products.
+
+We use the spherical maximum construction of an idempotent
+\cite[Lemma~6.6.1]{NadirashviliTkachevVladut14} and derive the spectral
+bounds below.
+
+\begin{lemma}[Maximal normalization]\label{lem:nr-max-idempotent}
+Let \(A\) be a commutative metrized algebra with a Euclidean metric
+and nonzero multiplication. After multiplying its product
+by a positive constant, there is a unit idempotent \(c\) such that
+\begin{equation}\label{eq:nr-spherical-maximum}
+ \max_{|x|=1}\ip{x^2}{x}=\ip{c^2}{c}=1.
+\end{equation}
+Every eigenvalue of \(L_c\) on \(c^\perp\) lies in
+\([-1,\frac12]\).
+\end{lemma}
+
+\begin{proof}
+Put \(h(x)=\ip{x^2}{x}\). Polarization shows that \(h\) is a
+nonzero odd cubic, so its maximum \(M\) on the unit sphere is positive.
+At a maximizer \(c\), the Lagrange multiplier equation is \(c^2=Mc\).
+Replacing the product by \(xy/M\) proves
+\eqref{eq:nr-spherical-maximum}. It preserves exactness and replaces
+\(T\) in \eqref{eq:nr-Hsiang-identity} by \(T/M^2\).
+The constrained Hessian of \(h\) at \(c\) is
+\(6L_c-3\Id\) on \(c^\perp\), giving the upper bound.
+For a unit eigenvector \(u\perp c\), with \(cu=ru\), maximality gives
+\[
+ h\left(-\frac c2\pm\frac{\sqrt3}2u\right)
+ =-\frac18-\frac98r\pm\frac{3\sqrt3}8h(u)\le1.
+\]
+Averaging gives \(r\ge-1\).
+\end{proof}
+
+Fix this normalization, which rescales the cubic by a positive constant.
+
+\begin{lemma}[The weight operator at a unit idempotent]
+\label{lem:nr-idempotent-quotient}
+Every unit idempotent \(e\) in an algebra satisfying
+\eqref{eq:nr-Hsiang-identity} satisfies
+\begin{equation}\label{eq:nr-quotient-polynomial}
+ Te=e,\qquad T=p(L_e)-6P_e,\qquad p(t)=4t^3+4t^2-t,
+\end{equation}
+where \(P_ex=\ip{e}{x}e\). In particular, \([T,L_e]=0\).
+\end{lemma}
+
+\begin{proof}
+At \(e\), the scalar identity gives \(\ip{Te}{e}=1\), and the
+vector identity gives \(Te=e\). Its derivative at \(e\) is
+\[
+ 8L_e^3y+8L_e^2y-2L_ey-2Ty-12\ip{e}{y}e=0.
+\]
+This proves \eqref{eq:nr-quotient-polynomial}. Since \(L_e\) is
+self-adjoint and \(L_ee=e\), it commutes with \(P_e\).
+\end{proof}
+
+Write \(E_r=\ker(L_c-r\Id)\). By maximality \(E_1=\R c\), and
+\begin{equation}\label{eq:nr-Peirce-quotient}
+ Tu=p(r)u\qquad (u\in E_r\subset c^\perp).
+\end{equation}
+
+\subsubsection{Fusion identities and spectral rigidity}
+\label{subsec:nr-spectral-rigidity}
+
+We adapt the radial polarization argument in
+\cite[Lemma~6.6.2]{NadirashviliTkachevVladut14}, specifically equation~(6.6.8).
+For nonradial $T$, we derive the fusion rule directly from
+\eqref{eq:nr-vector-identity}, using
+\begin{equation}\label{eq:nr-fusion-polynomial}
+ \mathscr K(r,s,t)=4(r^2+s^2+t^2+rs+rt+st)+2(r+s+t)-3.
+\end{equation}
+
+\begin{lemma}[Fusion and the square identity]\label{lem:nr-fusion-square}
+For \(u\in E_r\), \(v\in E_s\), \(w\in E_t\), all
+perpendicular to \(c\), one has
+\begin{equation}\label{eq:nr-fusion}
+ \mathscr K(r,s,t)\ip{uv}{w}=0.
+\end{equation}
+For \(u\in E_r\subset c^\perp\), set
+\(Q_r(t)=\mathscr K(r,r,t)\). Then
+\begin{equation}\label{eq:nr-square-operator}
+ Q_r(L_c)u^2=3\bigl(2r+p(r)\bigr)|u|^2c.
+\end{equation}
+Writing \(u^2=r|u|^2c+\sum_tq_t\), with
+\(q_t\in E_t\cap c^\perp\), gives
+\begin{equation}\label{eq:nr-square-norm}
+ \sum_t(t+4r)|q_t|^2=4r^2(3r-1)(r+1)|u|^4.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The mixed coefficient of \(ab\) in
+\eqref{eq:nr-vector-identity} at \(c+au+bv\), projected to
+\(c^\perp\) and divided by two, is the projection of
+\[
+ \bigl[4L_c^2+(4r+4s+2)L_c
+       +4(r^2+rs+s^2)+2(r+s)-3\bigr]uv.
+\]
+Pairing with \(w\) proves \eqref{eq:nr-fusion}. The coefficient
+of \(a^2\) at \(c+au\) gives
+\eqref{eq:nr-square-operator}; thus \(Q_r(t)q_t=0\).
+For the norm identity, pair the vector identity at \(u\) with \(c\).
+Metric invariance gives
+\[
+ \ip{u^4}{c}=r|u^2|^2,\qquad
+ \ip{(u^2)^2}{c}=r^2|u|^4+\sum_t t|q_t|^2.
+\]
+The term containing \(Tu\) pairs to zero, and the last term is
+\(-3p(r)r|u|^4\). Rearranging yields
+\eqref{eq:nr-square-norm}, since
+\(3p(r)r-4r^3-r^2=4r^2(3r-1)(r+1)\).
+\end{proof}
+
+\begin{proposition}[A uniform spectral interval]
+\label{prop:nr-spectral-interval}
+Put \(r_0=-(2+\sqrt7)/6\). Then
+\begin{equation}\label{eq:nr-Peirce-interval}
+ \operatorname{Spec}(L_c|_{c^\perp})
+ \subset\{-1,0\}\cup[r_0,-1/6]\cup[1/3,1/2].
+\end{equation}
+Moreover,
+\begin{equation}\label{eq:nr-quotient-interval}
+ \operatorname{Spec}T\subset\{0\}\cup
+ \left[\frac7{27},\frac{17+7\sqrt7}{27}\right],
+ \qquad \ker T=\operatorname{Ann}(A).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+All possible output eigenvalues \(t\) in
+\eqref{eq:nr-square-norm} lie in \([-1,1/2]\). If
+\(-1<r<r_0\), then \(Q_r(t)=4t^2+(8r+2)t+12r^2+4r-3\)
+is decreasing on that interval and
+\(Q_r(1/2)=12r^2+8r-1>0\). All \(q_t\) therefore vanish,
+contradicting the negative right side of
+\eqref{eq:nr-square-norm}. If \(-1/6<r<0\), both endpoint
+values
+\[
+ Q_r(-1)=(6r+1)(2r-1),\qquad Q_r(1/2)=12r^2+8r-1
+\]
+are negative. Convexity makes \(Q_r\) negative throughout the
+interval, giving the same contradiction. If \(0<r<1/3\),
+then \(Q_r(-1)<0\) and \(Q_r(0)<0\); hence every admissible
+root is positive. The left side of the norm identity is nonnegative
+and the right side is negative. This proves
+\eqref{eq:nr-Peirce-interval}. At \(r=1/3\), the norm identity
+also shows that every \(q_t\) vanishes, because \(t+4/3>0\).
+
+Applying \(p\) to these intervals gives the spectral inclusion in
+\eqref{eq:nr-quotient-interval}. The only zero of \(p\) allowed
+by \eqref{eq:nr-Peirce-interval} is \(0\). Thus \(u\in\ker T\)
+implies \(cu=0\), and \eqref{eq:nr-square-operator} gives
+\[
+ (4L_c^2+2L_c-3\Id)u^2=0.
+\]
+Its two roots \((-1\pm\sqrt{13})/4\) lie outside
+\([-1,1/2]\), and it is nonzero at \(1\). Consequently \(u^2=0\).
+The coefficient of \(t^3\) in the vector identity at \(x+tu\)
+is then \(8L_u^3x\): all other terms have degree at most two,
+since \(Tu=u^2=0\). Hence \(L_u^3=0\), and self-adjointness
+gives \(L_u=0\). Conversely, an annihilator element is orthogonal
+to \(c=c^2\) and is killed by \(L_c\), so
+\eqref{eq:nr-quotient-polynomial} kills it as well.
+\end{proof}
+
+By \cref{prop:nr-spectral-interval}, restriction to $A_{\mathrm{ess}}$
+preserves exactness and the defining identity, and
+$T|_{A_{\mathrm{ess}}}$ is positive definite.
+
+Let
+\begin{equation}\label{eq:nr-eigenvalue-one-space}
+ B=E_T(1)=\R c\oplus Z\oplus H\oplus W,
+ \qquad Z=E_{-1},\quad H=E_{-1/2},\quad W=E_{1/2},
+\end{equation}
+since \(p(t)-1=(t+1)(2t-1)(2t+1)\).
+The fusion polynomial gives the following possible outputs on
+\(c^\perp\):
+\[
+\begin{array}{c|cccccc}
+(r,s)&(-1,-1)&(-1,-\frac12)&(-1,\frac12)&
+(-\frac12,-\frac12)&(-\frac12,\frac12)&(\frac12,\frac12)\\ \hline
+ t&\text{none}&\frac12&-\frac12,\frac12&-\frac12&
+ -1,\frac12&-1,-\frac12
+\end{array}
+\]
+(The additional root \(1\) in the fourth column is absent on
+\(c^\perp\).) In particular,
+\begin{equation}\label{eq:nr-B-subalgebra}
+ B^2\subset B,\qquad BB^\perp\subset B^\perp.
+\end{equation}
+
+A Euclidean commutative metrized algebra is \emph{eikonal} if
+\(x^3=|x|^2x\), equivalently \(|x^2|^2=|x|^4\).
+Equivalently, the associated cubic $6F$ is a cubic eiconal in the sense
+of \cite[Definition~3.1.1]{NadirashviliTkachevVladut14}; exactness is a
+separate condition.
+
+\begin{lemma}[The negative Peirce spaces]\label{lem:nr-negative-spaces}
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item If \(H\ne0\), then \(\operatorname{Spec}T\subset\{1,0\}\).
+\item If \(Z\ne0\), then
+\(\operatorname{Spec}T\subset\{1,7/27,0\}\).
+For \(U=E_T(7/27)\), one has
+\begin{equation}\label{eq:nr-U-peirce}
+ U=P\oplus Q,\quad P=E_{1/3},\quad Q=E_{-1/6},\qquad
+ L_z|_P=0,\quad (L_z|_Q)^2=\frac1{12}|z|^2\Id_Q.
+\end{equation}
+\end{enumerate}
+\end{lemma}
+
+The proof is given in \cref{app:nr-spectral-exclusions}.
+
+Exactness excludes $Z=H=W=0$.
+
+\begin{lemma}\label{lem:nr-not-one-dimensional}
+In an exact Hsiang algebra whose multiplication is not identically zero,
+\(E_T(1)\ne\R c\).
+\end{lemma}
+
+The proof is given in \cref{app:nr-spectral-exclusions}.
+
+\begin{theorem}[Spectral rigidity]\label{thm:nonradial-spectral}
+Every exact Euclidean Hsiang algebra whose multiplication is not
+identically zero admits a positive rescaling for which
+\begin{equation}\label{eq:nr-rigid-spectrum}
+ \operatorname{Spec}T\subset\{0,7/27,1\},\qquad
+ \ker T=\operatorname{Ann}(A).
+\end{equation}
+On $A_{\mathrm{ess}}$, either $T|_{A_{\mathrm{ess}}}=\Id$ or
+\begin{equation}\label{eq:nr-quotient-splitting}
+ A_{\mathrm{ess}}=B\oplus U,\qquad T|_B=\Id,\qquad T|_U=\frac7{27}\Id.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The kernel assertion is \cref{prop:nr-spectral-interval}.
+If \(H\ne0\) or \(Z\ne0\), use
+\cref{lem:nr-negative-spaces}.
+Otherwise the fusion table gives \(w^2=|w|^2c/2\) for \(w\in W\).
+The norm identity with \(r=1/2\) then reads
+\(0=3|w|^4/4\), so \(W=0\). This would give
+\(B=\R c\), contrary to \cref{lem:nr-not-one-dimensional}.
+\end{proof}

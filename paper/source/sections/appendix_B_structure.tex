@@ -1,0 +1,511 @@
+\section[Odd-Degree Rigidity and Cubic Structure]{Odd-Degree Rigidity, Cubic Structure and Local Geometry}
+\label{app:cubic-structure}
+
+\subsection{Odd-degree rigidity by second-order expansions}
+\label{sec:odd-rigidity-proof}
+We prove \cref{thm:odd} and determine the normalized cubic closure.
+
+\subsubsection{The closure identities and the degree}
+Throughout this subsection, \(e\geq3\) is odd and
+\(S=|\nabla F|^2\). Counting homogeneous monomials in the
+generators of degrees \(2,e,2e-2\) gives
+\begin{equation}\label{eq:oddtable}
+\begin{aligned}
+ \Delta F&=0,&\Delta S&=\alpha R^{e-2},\\
+ \Gamma(F,S)&=\beta R^{e-2}F,&
+ \Gamma(S,S)&=\gamma R^{2e-3}
+       +\delta R^{e-3}F^2+\varepsilon R^{e-2}S.
+\end{aligned}
+\end{equation}
+Bochner's identity gives \(2|\Hess F|^2=\alpha R^{e-2}\),
+with \(\alpha>0\).
+
+Let \(p\ne0\) be a critical point. Euler's identity gives
+\(F(p)=0\), and \(\nabla S(p)=0\), so \(\gamma=0\).
+Put \(H=\Hess F(p)\) and \(R_0=|p|^2\). The quadratic terms
+at \(p\) in the last two identities of \eqref{eq:oddtable} give
+\[
+ H^3=\frac\beta4R_0^{e-2}H,\qquad
+ H^4=\frac\varepsilon4R_0^{e-2}H^2.
+\]
+Since \(H\ne0\), these identities imply \(\beta>0\) and
+\(\varepsilon=\beta\).
+
+At a positive maximum of \(F\) on the unit sphere,
+\(\nabla F=eFx\) and \(S=e^2F^2>0\). Moreover,
+\(\nabla S=2\Hess F\,\nabla F\) and the differentiated Euler
+identity \(\Hess F\,x=(e-1)\nabla F\) give
+\(\nabla S=2(e-1)Sx\). Substitution gives
+\[
+ S=\frac{\beta}{2e(e-1)},\qquad
+ 4(e-1)^2S^2=\delta\frac{S}{e^2}+\beta S,
+\]
+whence \(\delta=e(e-2)\beta\). Multiplying \(F\) by
+\(2/\sqrt\beta\) and reusing \(F,S,\alpha\) for the normalized
+quantities, we obtain
+\begin{equation}\label{eq:normalizedodd}
+\begin{aligned}
+ \Delta F&=0,&\Delta S&=\alpha R^{e-2},\\
+ \Gamma(F,S)&=4R^{e-2}F,&
+ \Gamma(S,S)&=4R^{e-2}S+4e(e-2)R^{e-3}F^2.
+\end{aligned}
+\end{equation}
+
+Write \(f=F|_{\Sph^{N-1}}\) and \(s=S|_{\Sph^{N-1}}\).
+Removing the radial derivatives from \eqref{eq:normalizedodd} gives
+\begin{equation}\label{eq:odd-spherical-products}
+\begin{aligned}
+ |\nabla_{\Sph}f|^2&=s-e^2f^2,\\
+ \langle\nabla_{\Sph}f,\nabla_{\Sph}s\rangle
+   &=f\bigl(4-2e(e-1)s\bigr),\\
+ |\nabla_{\Sph}s|^2&=4s+4e(e-2)f^2-4(e-1)^2s^2.
+\end{aligned}
+\end{equation}
+Let \(a>0\) be the maximum of \(f\), attained at \(x_0\).
+Both spherical gradients vanish at \(x_0\), and
+\[
+ s(x_0)=\frac{2}{e(e-1)},\qquad
+ a^2=\frac{2}{e^3(e-1)}.
+\]
+Let \(B=\Hess_{\Sph}f(x_0)\) and
+\(C=\Hess_{\Sph}s(x_0)\). Comparing second-order terms in
+the three identities of \eqref{eq:odd-spherical-products},
+in geodesic normal coordinates at \(x_0\), gives
+\begin{equation}\label{eq:odd-maximum-hessians}
+\begin{aligned}
+ C&=2B(B+e^2aI),\\
+ BC&=-e(e-1)aC,\\
+ C^2&=\left(\frac8e-6\right)C+4e(e-2)aB.
+\end{aligned}
+\end{equation}
+The first equation shows that \(B\) and \(C\) commute.
+The first two equations restrict every eigenvalue of \(B\) to
+\(0,-e^2a,-e(e-1)a\). The value \(-e^2a\) would give a zero
+eigenvalue of \(C\) but a nonzero right-hand side in the last
+equation, so it is impossible. Since
+\(\tr B=-e(N+e-2)a<0\), some eigenvalue of \(B\) is nonzero.
+On the corresponding eigenvector, \(B=-e(e-1)a\) and
+\(C=-4/e\). The last equation now gives
+\[
+ 0=\frac{16}{e^2}
+   -\left(\frac8e-6\right)\left(-\frac4e\right)
+   +4e^2(e-1)(e-2)a^2
+   =\frac{8(e-2)(e-3)}{e^2}.
+\]
+Thus \(e=3\), proving \cref{thm:odd}.
+
+\subsubsection{The remaining cubic coefficient}
+For \(e=3\), the spherical Laplacians are
+\[
+ \Delta_{\Sph}f=-3(N+1)f,\qquad
+ \Delta_{\Sph}s=\alpha-4(N+2)s.
+\]
+Let brackets denote normalized spherical integration, and set
+\[
+ M_0=\langle f^2\rangle>0,\quad M_1=\langle s\rangle,
+ \quad M_2=\langle s^2\rangle,\quad M_3=\langle f^2s\rangle.
+\]
+Using \eqref{eq:odd-spherical-products} with \(e=3\), integration
+by parts gives
+\begin{align}
+ M_1&=3(N+4)M_0,\label{eq:m1}\\
+ (\alpha+8)M_0&=4(N+8)M_3,\label{eq:m3}\\
+ M_2+4M_0&=3(N+8)M_3,\label{eq:m2}\\
+ 4(N+6)M_2&=(\alpha+4)M_1+12M_0.\label{eq:m4}
+\end{align}
+These follow, respectively, by integrating
+\(\Delta_{\Sph}(f^2)\), by testing the equation for
+\(\Delta_{\Sph}s\) against \(f^2\), by testing the equation for
+\(\Delta_{\Sph}f\) against \(fs\), and by integrating
+\(\Delta_{\Sph}(s^2)\).
+The middle two identities give
+\(4M_2=(3\alpha+8)M_0\). Substituting this and
+\eqref{eq:m1} into \eqref{eq:m4}, and cancelling \(M_0>0\), yields \((N+6)(3\alpha+8)=3(N+4)(\alpha+4)+12\).
+Consequently,
+\begin{equation}\label{eq:alphadim}
+ \alpha=\frac{2(N+3)}3.
+\end{equation}
+
+\input{sections/appendix_odd_isolated}
+
+\subsection{Spectral exclusions for the weight operator}
+\label{app:nr-spectral-exclusions}
+
+In the notation of
+\cref{subsec:nr-maximal-idempotents,subsec:nr-spectral-rigidity},
+$A$ is an exact Euclidean Hsiang algebra, $c$ is its maximal
+unit idempotent, $E_r=\ker(L_c-r\Id)$, and
+$T=p(L_c)-6P_c$, where $p(t)=4t^3+4t^2-t$.
+In particular, $Z=E_{-1}$, $H=E_{-1/2}$, $W=E_{1/2}$, and
+$B=E_T(1)=\R c\oplus Z\oplus H\oplus W$.
+We use \cref{lem:nr-fusion-square,prop:nr-spectral-interval}.
+
+\subsubsection{The negative Peirce spaces}
+
+\begin{proof}[Proof of \cref{lem:nr-negative-spaces}]
+\emph{(i)} For \(h\in H\), fusion gives
+\(h^2=-|h|^2c/2+q(h)\), with \(q(h)\in H\).
+The norm identity at \(r=-1/2\) gives
+\(|q(h)|^2=|h|^4/2\). Thus
+\(h\diamond k=\sqrt2\,\pi_H(hk)\) makes \(H\) a Euclidean
+eikonal algebra. A positive spherical maximum for its cubic gives a
+unit idempotent \(a\): the multiplier equation is
+\(a\diamond a=Ma\), and \(|a\diamond a|=1\) forces \(M=1\).
+In the original algebra,
+\[
+ a^2=-\frac12c+\frac1{\sqrt2}a,\qquad
+ e=-\frac13c+\frac{2\sqrt2}{3}a
+\]
+gives a unit idempotent \(e\) of \(A\).
+\Cref{lem:nr-idempotent-quotient}, applied to \(c\) and \(e\),
+yields \([T,L_a]=0\).
+
+Fix \(U_m=E_T(m)\) with \(m\ne1\).
+A nonzero block of \(L_a|_{U_m}\) from \(E_r\) to \(E_s\) requires
+\[
+ 4(r^2+rs+s^2)-3=0,\qquad p(r)=p(s)=m.
+\]
+If \(r=s\), then \(r=\pm1/2\), giving \(m=1\).
+If \(r\ne s\), the divided difference of \(p\), together with
+this equality, gives \(r+s=-1/2\). The third root of
+\(p(t)-m\) is then \(-1/2\), again giving \(m=1\).
+Thus \(L_a|_{U_m}=0\). For \(u\in U_m\cap E_r\), it follows
+that \(L_eu=-ru/3\). Since \(u\perp e\), the quotient formula
+at \(e\) gives
+\[
+ 0=p(r)-p(-r/3)=\frac4{27}r(28r^2+24r-9).
+\]
+The quadratic factor has one root below \(-1\) and the other in
+\((0,1/3)\), both excluded by \eqref{eq:nr-Peirce-interval}.
+Hence \(r=m=0\).
+
+\emph{(ii)} For a unit \(z\in Z\), fusion and invariance give \(z^2=-c\)
+and \(cz=-z\). The vectors \(e_\pm=(-c\pm\sqrt3z)/2\)
+are unit idempotents.
+Together with \(c\), they form a triality system in the terminology of
+\cite[Definition~6.8.1]{NadirashviliTkachevVladut14}.
+Thus \cref{lem:nr-idempotent-quotient} gives \([T,L_z]=0\).
+Fix \(U_m=E_T(m)\), \(m\ne1\), and put
+\(X=L_c|_{U_m}\), \(Y=L_z|_{U_m}\).
+For a nonzero block of \(Y\) between distinct roots \(r,s\) of
+\(p(t)=m\), fusion and the divided difference of \(p\) require
+\[
+ 4(r^2+rs+s^2)-2(r+s)-1=0,\qquad
+ 4(r^2+rs+s^2)+4(r+s)-1=0.
+\]
+Thus \(r+s=0\) and \(\{r,s\}=\{1/2,-1/2\}\), which would
+give \(m=1\). Hence \(X,Y\) commute and have a common
+orthonormal eigenbasis.
+
+On a common eigenvector with eigenvalues \(r,y\), the quotient
+formula at \(c,e_+,e_-\) gives
+\[
+ p(r)=p\left(\frac{-r+\sqrt3y}{2}\right)
+     =p\left(\frac{-r-\sqrt3y}{2}\right)=m.
+\]
+These three arguments sum to zero, whereas the three roots of
+\(p(t)-m\) sum to \(-1\). Therefore two of the arguments coincide.
+If \(y=0\), then
+\[
+ 0=p(r)-p(-r/2)=\frac32r(3r-1)(r+1),
+\]
+so \(r=0\) or \(r=1/3\); the root \(-1\) would give \(m=1\).
+If \(y\ne0\), one of the other arguments equals \(r\), and the
+remaining argument is \(-2r\). Thus \(y^2=3r^2\) and
+\[
+ 0=p(r)-p(-2r)=3r(6r+1)(2r-1).
+\]
+Here \(r\ne0\), and \(r=1/2\) again gives \(m=1\). Hence
+\(r=-1/6\), \(m=7/27\), and \(y^2=1/12\).
+This proves the spectral assertion and the actions on \(P,Q\).
+Scaling \(z\) proves \eqref{eq:nr-U-peirce}.
+\end{proof}
+
+\subsubsection{Excluding a one-dimensional weight-one space}
+
+\begin{proof}[Proof of \cref{lem:nr-not-one-dimensional}]
+Suppose \(E_T(1)=\R c\). On $A_{\mathrm{ess}}$ the Peirce
+eigenvalues \(-1,-1/2,1/2,0\) are absent. Fix another eigenvalue \(r\ne1/3\).
+The right side of \eqref{eq:nr-square-norm} is nonzero for every
+nonzero \(u\in E_r\), so \(u^2\) has a nonzero component in
+\(c^\perp\).
+There is at most one root of \(Q_r\) in \([-1,1/2]\).
+Indeed, if \(r\le-3/4\), then \(Q_r\) is strictly decreasing
+there. If \(-3/4<r\le-1/6\), then \(Q_r(1/2)<0\),
+so \(1/2\) lies strictly between its two roots. If
+\(1/3<r<1/2\), then \(Q_r(-1)<0\), and \(-1\) lies
+strictly between the roots. These cases cover every remaining \(r\).
+The nonzero square component must therefore belong to a single
+eigenspace \(E_s\). This root is simple: in the decreasing case,
+\(s<1/2\) gives \(Q'_r(s)<0\), and the other cases have two
+distinct roots. Thus the other root lies outside the interval.
+In particular, the endpoint \(r=r_0\)
+cannot occur: its unique root in the interval is \(1/2\), which is
+absent. We have
+\begin{equation}\label{eq:nr-unique-square-output}
+ E_r^2\subset\R c\oplus E_s,\qquad
+ u^2=r|u|^2c+q(u),\qquad 0\ne q(u)\in E_s.
+\end{equation}
+The equality \(r=s\) would imply
+\(\mathscr K(r,r,r)=3(4r-1)(2r+1)=0\), contrary to
+\eqref{eq:nr-Peirce-interval} and the absence of \(E_{-1/2}\).
+
+Let \(d=-2r-s-1/2\) be the other root of \(Q_r\).
+Symmetry of \(\mathscr K\) gives
+\[
+ \mathscr K(r,r,t)=4(t-s)(t-d),\qquad
+ \mathscr K(r,s,t)=4(t-r)(t-d).
+\]
+Since \(d\) is inadmissible and \(r\ne s\), fusion and
+orthogonality imply \(E_rE_s\subset E_r\). Hence
+\[
+ \ip{u^2}{u}=0,\qquad u^3\in E_r,\qquad
+ u^4\in\R c\oplus E_s.
+\]
+The full vector identity, evaluated at \(u\), now implies
+\((u^2)^2\in\R c\oplus E_s\).
+Expanding \eqref{eq:nr-unique-square-output} shows that
+\(q(u)^2\in\R c\oplus E_s\).
+But \(\mathscr K(s,s,s)\ne0\), since \(s=-1/2,1/4\) are
+excluded. Its \(E_s\) component vanishes, and therefore
+\(q(u)^2\in\R c\).
+Applying \eqref{eq:nr-square-norm} to this nonzero vector gives
+\(s^2(3s-1)(s+1)=0\). Since \(s=0,-1\) are absent, \(s=1/3\).
+
+Every eigenvalue \(r\ne1/3\) thus satisfies
+\[
+ \mathscr K(r,r,1/3)=0
+ \quad\Longleftrightarrow\quad 108r^2+60r-17=0.
+\]
+The positive root \((-5+2\sqrt{19})/18\) belongs to
+\((0,1/3)\) and is excluded. Only
+\(r_*=(-5-2\sqrt{19})/18\) remains. If
+\(a=\dim E_{r_*}\) and \(b=\dim E_{1/3}\), exactness gives
+\[
+ 0=\tr L_c=1+\frac{-5-2\sqrt{19}}{18}a+\frac13b.
+\]
+For \(a=0\) this is positive, while for \(a>0\) its irrational
+part cannot cancel. Both cases are impossible.
+\end{proof}
+
+\subsection{The trace argument for exactness of the core}
+\label{app:nr-core-exactness-proof}
+
+Here $A=B\oplus U$ is the nonradial grading of
+\cref{prop:nr-eikonal-core}, $B$ is eikonal, and $M_b=L_b|_U$.
+We use the representation identities of
+\cref{prop:nr-representation-identities} and the square-norm identity
+$|u^2|^2=|u|^4/9$ from \cref{lem:nr-U-cubic}.
+
+\begin{proof}[Proof of \cref{prop:nr-core-exactness}]
+Put $n=\dim B$, $m=\dim U$, and let
+$\tau=\sum_{\alpha=1}^n e_\alpha^2$ for an orthonormal basis
+$(e_\alpha)$ of $B$.
+Thus $\ip\tau b=\tr_B L_b$.
+Exactness of $A$ and the grading give
+\begin{equation}\label{eq:nr-core-trace-vector}
+ \tr_U M_b=-\ip\tau b,\qquad
+ \Delta_U(u^2)=-2\tau.
+\end{equation}
+Summing \eqref{eq:nr-representation-quadratic} over the basis yields
+\[
+ K:=\sum_{\alpha=1}^n M_{e_\alpha}^2
+     =\frac n{18}\Id_U+\frac16M_\tau.
+\]
+Apply $\Delta_U$ to $|u^2|^2=|u|^4/9$. Using
+\eqref{eq:nr-core-trace-vector}, this gives
+\[
+ 8\ip{Ku}u-4\ip\tau{u^2}
+       =\frac{4(m+2)}9|u|^2.
+\]
+Consequently
+\begin{equation}\label{eq:nr-core-scalar-trace-action}
+ M_\tau=\kappa\Id_U,\qquad
+ \kappa=\frac{n-m-2}{6},\qquad
+ m\kappa=-|\tau|^2.
+\end{equation}
+The last equality is its trace, using
+\eqref{eq:nr-core-trace-vector}.
+
+Suppose $\tau\ne0$, so $\kappa<0$.
+The coefficient of $t^2$ in \eqref{eq:nr-representation-cubic}
+at $b+t\tau$ is
+\begin{equation}\label{eq:nr-core-trace-dichotomy}
+ 3\bigl(36\kappa^2-|\tau|^2\bigr)M_b
+      =\ip{\tau^2+6\kappa\tau}b\Id_U.
+\end{equation}
+If $36\kappa^2\ne|\tau|^2$, every $M_b$ is scalar:
+$M_b=\ell(b)\Id_U$ for a linear form $\ell$,
+which is nonzero because $\ell(\tau)=\kappa$.
+The cubic representation identity then gives, with $r=|b|^2$ and
+$s=|u|^2$,
+\[
+ \ip{b^2}b=108\ell(b)^3-9r\ell(b),\qquad
+ \ip{bu}u=\ell(b)s.
+\]
+The grading therefore factors the original cubic as
+\[
+ F(b+u)=\frac{\ell(b)}2\bigl(36\ell(b)^2-3r+s\bigr),
+\]
+contrary to irreducibility.
+
+It remains that $36\kappa^2=|\tau|^2$.
+From \cref{eq:nr-core-scalar-trace-action,eq:nr-core-trace-dichotomy},
+we obtain
+\[
+ \kappa=-\frac m{36},\qquad
+ \tau^2=-6\kappa\tau.
+\]
+Set $k=-6\kappa=m/6>0$ and $e=\tau/k$.
+Then $e$ is a unit idempotent of $B$ and $M_e=-\Id_U/6$.
+Linearizing the eikonal identity at $e$ gives the orthogonal
+decomposition
+\[
+ B=\R e\oplus Z'\oplus W',\qquad
+ L_e|_{Z'}=-\Id,\qquad L_e|_{W'}=\tfrac12\Id.
+\]
+For $\eta\in W'$, the polarized quadratic identity gives
+$M_\eta/2=3\{M_e,M_\eta\}=-M_\eta$, hence $M_\eta=0$.
+Taking the trace of the quadratic identity at $\eta$ now gives
+\[
+ -\frac m3|\eta|^2
+ =\tr_U M_{\eta^2}
+ =-\ip\tau{\eta^2}
+ =-\frac k2|\eta|^2
+ =-\frac m{12}|\eta|^2.
+\]
+Thus $W'=0$. Since $\dim B\ge2$ by $Z\ne0$ in the original
+Peirce decomposition, $\dim Z'\ge1$. But then
+\[
+ 0<k=\ip\tau e=\tr_B L_e=1-\dim Z'\le0,
+\]
+a contradiction.
+Therefore $\tau=0$, proving both trace assertions;
+\eqref{eq:nr-core-scalar-trace-action} then gives $n=m+2$.
+\end{proof}
+
+\subsection{Local geometry near the cubic critical set}
+\label{sec:cubic-local-geometry}
+
+The local geometry in \cref{prop:cubic-singular-normalization} and
+\eqref{eq:tube} follows from \eqref{eq:cubic-normalized-closure}
+and the Hessian eigenvalues established in that proposition.
+
+\subsubsection{The critical set}
+Fix \(p\in Z^*\).  Translate \(p\) to the coordinate origin and
+write orthonormal coordinates as \((x,y)\), with
+\(x\in\R^{2k}\) in the nonzero Hessian eigenspaces and
+\(y\in\R^{N-2k}\) in its kernel.  In these translated coordinates,
+\(R\) is still the original squared radius, so its constant term
+is \(|p|^2>0\).  The matrix \(F_{xx}(0,0)\) is invertible, while
+\(F_{xy}(0,0)=F_{yy}(0,0)=0\).
+
+The analytic implicit function theorem solves \(F_x=0\) locally
+and uniquely as \(x=\psi(y)\), with
+\(\psi(0)=0\) and \(\psi'(0)=0\).  Set
+\(g(y)=F(\psi(y),y)\).  Since \(F(p)=0\), \(\nabla F(p)=0\),
+and \(F_{yy}(p)=0\), the function \(g\) vanishes to order at
+least three.  We claim that it vanishes identically.
+
+Suppose instead that its first nonzero homogeneous term is \(g_j\),
+of degree \(j\geq3\).  On the graph of \(\psi\), the identity
+\(F_x=0\) gives
+\[
+ \nabla F=(0,\nabla g),\qquad S=|\nabla g|^2,\qquad F=g.
+\]
+Differentiating \(F_x(\psi(y),y)=0\) and \(g_y=F_y\) gives
+\[
+ F_{xy}=-F_{xx}\psi',\qquad
+ F_{yy}=g_{yy}+(\psi')^tF_{xx}\psi'.
+\]
+Consequently,
+\[
+ F_{xy}=O(|y|),\qquad
+ F_{yy}=O(|y|^{j-2})+O(|y|^2),\qquad
+ \nabla g=O(|y|^{j-1}).
+\]
+Since \(j\geq3\), these estimates imply
+\(\nabla S=2\Hess F\nabla F=O(|y|^j)\) on the graph.
+The last identity in \eqref{eq:cubic-normalized-closure} therefore
+becomes
+\[
+ |\nabla S|^2=4R|\nabla g|^2+12g^2.
+\]
+Its left side vanishes to order at least \(2j\), but its right
+side has the nonzero term
+\(4|p|^2|\nabla g_j|^2\) of degree \(2j-2\).
+This contradiction proves \(g\equiv0\), by analyticity.
+
+Every point of the graph \(x=\psi(y)\) is now critical, and every
+nearby critical point lies on that graph.  Thus \(Z^*\) is
+real analytic of dimension \(N-2k\).  Its tangent space is the
+Hessian kernel: differentiating \(\nabla F=0\) along the graph
+gives inclusion in that kernel, and the dimensions agree.
+
+\subsubsection{Local coordinates and the link volume}
+Subtract the graph by setting \(x=\psi(y)+\xi\).  The resulting
+function \(\widetilde F(\xi,y)\) and its first \(\xi\)-derivatives
+vanish at \(\xi=0\).  Taylor's integral formula gives
+\[
+ \widetilde F(\xi,y)=\xi^t A(\xi,y)\xi,\qquad
+ A(\xi,y)=\int_0^1(1-t)\,
+ F_{xx}(\psi(y)+t\xi,y)\,dt.
+\]
+The matrix \(A\) is analytic and symmetric.  After shrinking the
+neighborhood it is invertible with \(k\) positive and \(k\)
+negative eigenvalues.  Successive completion of squares gives
+an analytic invertible matrix \(B(\xi,y)\) such that
+\[
+ A=B^tDB,\qquad D=\operatorname{diag}(\Id_k,-\Id_k).
+\]
+Indeed, at the coordinate origin \(A\) is diagonal with nonzero
+entries.  All pivots remain nonzero on a sufficiently small
+neighborhood, and the positive square roots used to normalize their
+absolute values are analytic there.  The map
+\((\xi,y)\mapsto(B(\xi,y)\xi,y)\) has invertible derivative at
+the origin.  The analytic inverse function theorem therefore gives
+coordinates \((u,v,y)\) in which
+\[
+ F=|u|^2-|v|^2,\qquad Z^*=\{u=v=0\}.
+\]
+The coordinate derivatives and inverse derivatives are bounded on smaller
+neighborhoods, so Euclidean lengths and submanifold areas are
+comparable to those in the coordinate model.
+
+The radial vector lies in \(T_pZ^*\), because \(Z^*\) is a cone.
+It is transverse to the unit sphere.  Hence
+\(M=Z^*\cap\Sph^{N-1}\) is a smooth compact submanifold of
+dimension \(N-2k-1\).  On the sphere, \(f=F|_{\Sph^{N-1}}\)
+and its first derivatives vanish along \(M\).  Its Hessian has
+the same \(2k\) nonzero transverse eigenvalues as the ambient
+Hessian; the removed radial direction belongs to the kernel.
+Applying the preceding Taylor formula and completion of squares
+in a sphere chart gives local coordinates \((u,v,y)\), now with
+\(y\in\R^{N-2k-1}\), for which
+\[
+ f=|u|^2-|v|^2,\qquad M=\{u=v=0\}.
+\]
+
+Put \(t=(|u|^2+|v|^2)^{1/2}\).  The smooth positive-definite
+spherical metric and the bounded coordinate derivatives give
+\(\rho\asymp t\), where \(\rho\) is spherical distance to \(M\).
+They also give \(|\nabla_{\Sph}f|^2\asymp t^2\).  Since
+\(s=|\nabla_{\Sph}f|^2+9f^2\) and \(|f|\leq t^2\), it follows
+that \(s\asymp\rho^2\).
+
+In these coordinates the regular zero link is the product, in a
+bounded chart, of the \(y\)-variables with
+\[
+ \{(u,v):|u|=|v|>0\}\subset\R^{2k}.
+\]
+This quadratic cone has dimension \(2k-1\).  Its link is the
+compact product of two spheres of radius \(1/\sqrt2\), and its
+area inside a ball of radius \(a\) is a constant times
+\(a^{2k-1}\).  Bounded coordinate distortion thus bounds the
+area in each chart with \(\rho<\eps\) by
+\(C\eps^{2k-1}\).  A finite cover of \(M\) gives
+\[
+ \cH^{N-2}\bigl(\Sigma_{\reg}\cap\{\rho<\eps\}\bigr)
+ \leq C\eps^{2k-1},
+\]
+which completes the proof of \eqref{eq:tube}.

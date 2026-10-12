@@ -1,0 +1,498 @@
+\subsection{Nonradial harmonic models}
+\label{sec:nonradial-models}
+
+\subsubsection{One-parameter deformations of Cartan cubics}
+
+Use the notation \(J_d=\operatorname{Herm}_3(\mathbb K_d)\) from
+\cref{sec:exceptional-four-generator}. For the three Cayley--Dickson
+inclusions \(\mathbb K_d\subset\mathbb K_{2d}\), \(d=1,2,4\), the
+involution \(a+b\ell\mapsto a-b\ell\) preserves multiplication
+and conjugation by the Cayley--Dickson formula. Its entrywise extension
+therefore preserves the Jordan product and defines an automorphism
+\(\sigma\) of \(J_{2d}\) with fixed algebra \(J_d\).
+Relative to the common diagonal Jordan frame, it refines each
+non-diagonal Peirce space as
+\[
+ J_{ij}\cong\mathbb K_{2d}
+       =\mathbb K_d\oplus\mathbb K_d\ell,
+ \qquad J_{ij}^{+}\cong\mathbb K_d,\quad
+ J_{ij}^{-}\cong\mathbb K_d\ell.
+\]
+Thus the fixed algebra remains simple of rank three, and its
+non-diagonal Peirce spaces have half the dimensions of those of
+\(J_{2d}\).
+On \(V=(J_{2d})_0\), with inner product
+\(\ip{x}{y}=\frac12\tr(x\bullet y)\), this gives the orthogonal splitting
+\[
+ V=V_+\mathbin{\perp}V_-,\qquad
+ V_+=(J_d)_0,\qquad V_-=U\cong\mathbb K_d^3.
+\]
+The Cartan cubic \(N=\det_{J_{2d}}|_V\) is invariant under \(\sigma\).
+Hence \(N(b+u)=N(b-u)\) for \(b\in V_+\), \(u\in V_-\).
+Since $N$ is cubic and even in $u$, it has the unique bidegree decomposition
+\[
+ N(b+u)=A(b)+\mathsf B(b,u),\qquad
+ \deg A=(3,0),\quad \deg\mathsf B=(1,2).
+\]
+We deform the mixed component by setting
+\begin{equation}\label{eq:nonradial-pencil}
+ F_t=A+t\mathsf B,\qquad t\in\R.
+\end{equation}
+The choice of these pairs makes \(A=\det_{J_d}|_{(J_d)_0}\) itself a
+Cartan cubic; see \cite[Theorem~3.1.1 and
+Sections~3.2.6, 6.4.4--6.4.5]{NadirashviliTkachevVladut14} and
+\cite{TkachevJordan14}. Both \(N\) and \(A\) are therefore harmonic.
+Since \(\Delta=\Delta_b+\Delta_u\) and \(\mathsf B\) is linear in \(b\),
+\[
+ 0=\Delta N=\Delta_bA+\Delta_u\mathsf B,
+ \qquad \Delta F_t=(1-t)\Delta_bA=0.
+\]
+Thus the entire family is harmonic.
+With \(\mathbb K=\mathbb K_d\), this identifies \(V\) with
+\[
+ V_d=\operatorname{Herm}_3(\mathbb K)_0\oplus\mathbb K^3,\qquad
+ \ip{(Z,u)}{(Z',u')}=\tfrac12\operatorname{Re}\tr(ZZ')
+                         +\operatorname{Re}(u^*u').
+\]
+Thus \(\dim V_d=6d+2\). The half-trace metric here differs from the
+trace metric on the complexification in
+\cref{sec:exceptional-four-generator}. Set
+\begin{equation}\label{eq:nonradial-invariants}
+ \rho=\tfrac12\tr Z^2,\quad \nu=|u|^2,\quad
+ A=\det Z,\quad \mathsf{B}=-u^*Zu,\quad W=4u^*Z^2u.
+\end{equation}
+Then \(R=\rho+\nu\). For the nonradial member \(F_{-1/3}\), the
+dictionary with the intrinsic invariants
+\eqref{eq:nr-five-invariants} is
+\[
+ (r,s,a,p,h)=\left(\rho,\nu,\frac{3\sqrt3}{2}A,
+             -\frac{\mathsf B}{2\sqrt3},\frac W{48}\right).
+\]
+The intrinsic normalization is \(\sqrt3 F_{-1/3}/4\), with
+\(3/16\) times the quadratic weight below. We verify the model
+by its coordinate table before invoking the intrinsic theorem.
+
+To verify the mixed term and the isometry, write
+\[
+ Z=\begin{pmatrix}r_1&c&\bar b\\ \bar c&r_2&a\\ b&\bar a&r_3\end{pmatrix},
+ \qquad r_1+r_2+r_3=0.
+\]
+In the determinant formula
+\(r_1r_2r_3-r_1|a|^2-r_2|b|^2-r_3|c|^2+2\operatorname{Re}(abc)\),
+replace \((a,b,c)\) by
+\((a+v_1\ell,b+v_2\ell,c+v_3\ell)\). The quadratic part in
+\(v\), with \(u=(\bar v_1,\bar v_2,\bar v_3)\), is
+\(-u^*Zu=\mathsf{B}\). This verifies the isometry and the signs, including
+the inclusion \(\mathbb H\subset\mathbb O\). In particular,
+\[
+ F_{-1/3}=\frac{4A-N}{3}
+   =\frac13\tr\bigl(\sigma(x)\bullet x^{\bullet2}\bigr),
+\]
+where \(x\in(J_{2d})_0\) corresponds to \((Z,u)\).
+After the common scaling above, this is the Cartan reconstruction in
+\cref{cor:nr-cartan-dimensions}. These models realize all three ambient
+dimensions allowed there; a classification of compatible splittings
+would still be needed to classify all nonradial cubics.
+
+\begin{proposition}[The nonradial differential algebra]
+\label{prop:nonradial-algebra}
+The algebra \(\R[\rho,\nu,A,\mathsf B,W]\) is Laplacian. For
+\(F=F_{-1/3}\), it is the smallest Laplacian algebra containing
+\(R,F\):
+\[
+ \cA_R(F)=\R[\rho,\nu,A,\mathsf{B},W].
+\]
+Its five generators are algebraically independent, and its spherical
+quotient dimension is four. Their Laplacians and gradient products are
+\begin{equation}\label{eq:nonradial-laplacians}
+ \begin{gathered}
+ \Delta\rho=6d+4,\qquad\Delta\nu=6d,\qquad
+ \Delta A=\Delta \mathsf{B}=0,\\
+ \Delta W=16d\rho+\tfrac{16}{3}(3d+2)\nu.
+ \end{gathered}
+\end{equation}
+and, using symmetry, the following relations:
+\begin{align}
+ \Gamma(\rho,\rho)&=4\rho,&\Gamma(\rho,\nu)&=0,
+       &\Gamma(\nu,\nu)&=4\nu,\notag\\
+ \Gamma(\rho,A)&=6A,&\Gamma(\nu,A)&=0,
+       &\Gamma(\rho,\mathsf{B})&=2\mathsf{B},\notag\\
+ \Gamma(\nu,\mathsf{B})&=4\mathsf{B},&\Gamma(\rho,W)&=4W,
+       &\Gamma(\nu,W)&=4W.\label{eq:nonradial-quadratic-pairings}
+\end{align}
+\begin{equation}\label{eq:nonradial-closure}
+\begin{gathered}
+ \begin{aligned}
+ \Gamma(A,A)&=\tfrac43\rho^2,
+ &\qquad\Gamma(\mathsf{B},\mathsf{B})&=\tfrac43\nu^2+W,\\
+ \Gamma(A,\mathsf{B})&=\tfrac43\rho\nu-\tfrac12W,
+ &\qquad\Gamma(A,W)&=16\nu A-\tfrac{16}{3}\rho \mathsf{B},
+ \end{aligned}\\
+ \Gamma(\mathsf{B},W)=16\rho \mathsf{B}-16\nu A+\tfrac{32}{3}\nu \mathsf{B},\\
+ \Gamma(W,W)=16(\rho+\nu)W+\tfrac{64}{3}\mathsf{B}^2-64A\mathsf{B}.
+\end{gathered}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Put \(Q=uu^*\) and \(m_j=u^*Z^ju\). The trace-free characteristic
+identity and the relevant gradients are
+\begin{gather*}
+ Z^3=\rho Z+AI,\qquad
+ \nabla_ZA=2(Z^2-\tfrac23\rho I),\\
+ \nabla_Z\mathsf{B}=-2(Q-\tfrac13\nu I),\qquad \nabla_u\mathsf{B}=-2Zu,\\
+ \nabla_ZW=8(ZQ+QZ-\tfrac23m_1I),\qquad \nabla_uW=8Z^2u.
+\end{gather*}
+Their pairings give \eqref{eq:nonradial-closure}, including
+\[
+ |\nabla_ZW|^2=16\nu W+\tfrac{64}{3}\mathsf{B}^2,\qquad
+ |\nabla_uW|^2=64m_4=16\rho W-64A\mathsf{B}.
+\]
+An orthonormal basis \(E_\alpha\) of \(\operatorname{Herm}_3(\mathbb K)_0\),
+with the indicated trace metric, satisfies
+\(\sum_\alpha E_\alpha^2=\frac23(3d+2)I\).
+Taking diagonal and off-diagonal basis elements proves this identity;
+it gives the last formula in \eqref{eq:nonradial-laplacians}.
+The other Laplacians follow directly by taking traces. The chain
+rule therefore proves that the displayed algebra is Laplacian.
+
+For \(F=F_{-1/3}\) and \(S=|\nabla F|^2\), the table gives
+\begin{equation}\label{eq:nonradial-gradient-square}
+ S=\tfrac43(\rho-\nu/3)^2+\tfrac49W,\qquad
+ \Delta S=\tfrac{32}{27}\bigl((15d+18)\rho+(3d+2)\nu\bigr).
+\end{equation}
+It also gives
+\[
+ \Gamma(F,S)=16(\rho+7\nu/27)F.
+\]
+Thus \(\cL(F)=-qF\), where \(q=8(\rho+7\nu/27)\) is positive
+and nonradial. We check the remaining hypotheses needed for
+\cref{thm:nonradial-five-generators}.
+
+The Cartan cubic \(A\) is irreducible by its harmonic eikonal identity
+\(|\nabla A|^2=4\rho^2/3\). Indeed, if a harmonic cubic
+\(P\) in \(n>2\) variables satisfying
+\(|\nabla P|^2=\kappa|x|^4\), \(\kappa>0\), had a real linear
+factor, write it as
+\(P(t,y)=t(at^2+t\ell(y)+Q(y))\).
+Restriction to \(t=0\) gives \(Q=b|y|^2\), \(b^2=\kappa\).
+Harmonicity gives \(\ell=0\) and \(6a+2b(n-1)=0\).
+The coefficient of \(t^2|y|^2\) in the eikonal equation then
+gives \(6ab+4b^2=2\kappa\), forcing \(n=2\), a contradiction.
+Any real factorization of \(F\) would have a linear factor;
+restriction to \(u=0\) would factor \(A\). Thus \(F\) is
+irreducible.
+
+If \(D_vF\equiv0\) for a constant vector \(v\), differentiating
+\(\cL(F)=-qF\) gives \((D_vq)F=0\). Since \(q\) is positive
+definite, this forces \(v=0\). The point \((Z,u)=(\operatorname{diag}(1,-1,0),0)\) is a
+regular zero, and the two distinct eigenvalues of \(q\) establish
+nonradiality.
+
+The coordinate dictionary above now transfers
+\cref{thm:nonradial-five-generators}, with \(m=3d\), to these
+models, proving the smallest-algebra identity, algebraic independence,
+and spherical quotient dimension four.
+\end{proof}
+
+\begin{theorem}[Minimal members of the Cartan deformation]
+\label{thm:nonradial-models}
+For \(d=1,2,4\), every cubic \(F_t\) in
+\eqref{eq:nonradial-pencil} is harmonic. Its regular zero set is
+minimal if and only if
+\[
+ t\in\{0,1,-\tfrac13\}.
+\]
+The members \(F_0=A\) and \(F_1=N\) are, respectively, a cylindrical
+extension of a Cartan cubic and the original Cartan cubic.
+The cubic \(F=F_{-1/3}\) is irreducible over \(\R\), has no
+cylindrical directions, and satisfies
+\begin{equation}\label{eq:nonradial-minimal-equation}
+ \Delta F=0,\qquad
+ \Gamma(F,S)=2qF,\qquad
+ \cL(F)=-qF,\qquad q=8(\rho+7\nu/27).
+\end{equation}
+Its regular zero set is a minimal hypersurface in ambient dimension
+\(8,14,26\), respectively. Its quadratic weight has two distinct
+positive eigenvalues, with ratio \(7/27\).
+\end{theorem}
+
+\begin{proof}
+Harmonicity was proved above. The closure table gives
+\begin{equation}\label{eq:nonradial-pencil-gradient}
+ S_t:=|\nabla F_t|^2
+   =\tfrac43(\rho+t\nu)^2+t(t-1)W.
+\end{equation}
+Pairing its gradient with \(\nabla F_t\) yields
+\begin{equation}\label{eq:nonradial-pencil-minimality}
+ \cL(F_t)=-8\bigl(\rho+t^2(2-t)\nu\bigr)F_t
+ -\tfrac83t(t-1)(3t+1)(\rho+t\nu)\mathsf B.
+\end{equation}
+This proves minimality for the three stated values and gives
+\eqref{eq:nonradial-minimal-equation} at \(t=-1/3\).
+For necessity, take \(Z=\operatorname{diag}(1,1,-2)\) and, for
+\(t\ne0\), choose
+\[
+ u=t^{-1/2}e_3\quad(t>0),\qquad
+ u=\sqrt{-2/t}\,e_1\quad(t<0).
+\]
+Here \(e_i\) are the standard coordinate vectors of \(\mathbb K^3\).
+Then \(A=-2\), \(\mathsf B=2/t\), and \(F_t=0\), whereas
+\(\nabla_uF_t=-2tZu\ne0\). Moreover, \(\rho+t\nu\) equals
+\(4\) or \(1\), respectively. Thus
+\eqref{eq:nonradial-pencil-minimality} cannot vanish at this regular
+zero unless \(t=1\) or \(t=-1/3\).
+
+The remaining assertions for \(F=F_{-1/3}\) were established in
+\cref{prop:nonradial-algebra} while verifying the hypotheses of the
+intrinsic five-generator theorem.
+\end{proof}
+
+These cones are not congruent to radial cubic cones. Indeed, if
+\(P\circ Q\) has the same zero set as \(F\), with \(Q\) orthogonal
+and \(P\) a radial cubic, the smooth-patch divisibility fact proved
+in \cref{prop:minimizing-irreducibility} gives \(P\circ Q=cF\).
+Here \(F\) is irreducible and has regular real zeros by
+\cref{lem:square-free-critical-set}. Orthogonal equivariance of
+\(\cL\) and \(\cL(cF)=c^3\cL(F)\) would then make \(c^2q\)
+a multiple of \(R\), contradicting
+\eqref{eq:nonradial-minimal-equation}.
+
+For the rest of this section, put \(F=F_{-1/3}\) and
+\(S=|\nabla F|^2\). The generator degrees give
+\[
+ (\cA_R(F))_2=\operatorname{span}\{\rho,\nu\},\qquad
+ (\cA_R(F))_3=\operatorname{span}\{A,\mathsf{B}\}.
+\]
+Thus the cubic part is two-dimensional, unlike the hypothesis of
+\cref{thm:cubic-one-dimensional-degree-three}.
+
+\subsubsection{Singularities and the two unstable models}
+\label{sec:nonradial-singularities}
+
+\begin{lemma}\label{lem:nonradial-singularities}
+The singular set of \(\{F=0\}\), equivalently the critical set of \(F\), is
+\begin{equation}\label{eq:nonradial-critical-set}
+ \Sing\{F=0\}=\Sigma=\{(Z,u):\nu=3\rho,\ Zu=0\}.
+\end{equation}
+The punctured set \(\Sigma\setminus\{0\}\) is smooth of
+dimension \(4d\). At
+\[
+ c=(\operatorname{diag}(1,-1,0),(0,0,\sqrt3)),
+\]
+the Hessian of \(F\) has eigenvalues \(8/3,-8/3,0\), with
+multiplicities \(d+1,d+1,4d\), respectively, and its kernel is
+\(T_c\Sigma\). Every nonzero point of \(\Sigma\) is obtained
+from \(c\) by a Hermitian change of basis and a positive dilation.
+The zero sets, rescaled about such a point, converge smoothly on
+compact subsets of the regular part of
+\begin{equation}\label{eq:nonradial-transverse-cone}
+ \R^{4d}\times\{(v_+,v_-)\in\R^{d+1}\oplus\R^{d+1}:
+                           |v_+|=|v_-|\}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Equation \eqref{eq:nonradial-gradient-square} proves the description
+of \(\Sigma\). For a nonzero \(u\), the restriction of \(Z\)
+to \(u^\perp\) is a trace-free Hermitian \(2\times2\) matrix
+of a fixed positive norm. These matrices form a sphere of dimension
+\(d\), so \(\Sigma\setminus\{0\}\) is a smooth sphere bundle
+over \(\mathbb K^3\setminus\{0\}\), of dimension \(4d\).
+Its eigenvalues are \((\lambda,-\lambda,0)\), \(\lambda>0\),
+which also proves the assertion about changes of basis and dilations.
+
+At \(c\), let the diagonal variation of \(Z\) be
+\((\xi,\eta,-\xi-\eta)\), let \(h_i\) be the variations of
+\(u_i\), and use \(a,b,c'\) for the off-diagonal variations
+in the matrix displayed above. The quadratic term of \(F\) is
+\[
+ Q_2=\xi^2-\eta^2-\tfrac2{\sqrt3}(\xi+\eta)
+             \operatorname{Re}h_3
+       +|b+\bar h_1/\sqrt3|^2-|a-h_2/\sqrt3|^2.
+\]
+The first three terms become \(8st'/3\) under the orthonormal
+changes
+\[
+ s=\tfrac{\sqrt3}{2}(\xi+\eta),\qquad
+ t=\tfrac12(\xi-\eta),\qquad
+ t'=\tfrac12(\sqrt3t-\operatorname{Re}h_3).
+\]
+Completing to orthonormal coordinates gives
+\(Q_2=\frac43(|v_+|^2-|v_-|^2)\) and the stated spectrum.
+Differentiating \(\nabla F=0\) along \(\Sigma\), and comparing
+dimensions, identifies the kernel. Finally,
+\(r^{-2}F(c+rx)=Q_2(x)+rF(x)\), so
+\cref{sec:tangent-instability-transfer} gives the tangent and smooth
+regular graphical convergence.
+The transverse cone is not a hyperplane, so every nonzero point of
+\(\Sigma\) is geometrically singular; the vertex is singular by homogeneity.
+\end{proof}
+
+By \cref{prop:harmonic-positive-multiplier-obstruction}, a smooth
+nonnegative subcalibrating multiplier must vanish on
+\(\Sigma\setminus\{0\}\); in particular, radial powers fail.
+
+\begin{proposition}\label{prop:nonradial-unstable}
+The nonradial cones in ambient dimensions \(8\) and \(14\)
+are unstable on their regular parts and are not area minimizing.
+\end{proposition}
+
+\begin{proof}
+The transverse cone in \eqref{eq:nonradial-transverse-cone} has
+dimension \(2d+1\) and squared second fundamental form
+\(2d/r^2\). Its radial second variation, up to a positive factor,
+is
+\[
+ \int_0^\infty\left(|\phi'|^2-\frac{2d}{r^2}\phi^2\right)
+                                                      r^{2d}\,dr.
+\]
+The sharp Hardy constant \((2d-1)^2/4\) is smaller than \(2d\)
+for \(d=1,2\), so a compactly supported test function on a radial
+annulus gives a negative value. \Cref{lem:tangent-instability-transfer},
+using the regular graphical convergence in \cref{lem:nonradial-singularities},
+proves instability of the original cone.
+\end{proof}
+
+The boundary formula suggests a gradient factor.
+Put \(K=\Delta S\) and \(T=|\nabla S|^2\). For \(H=F\sqrt S\),
+the boundary speed is \(w=S^{-1}\).
+On \(C_{\reg}\), the closure table gives
+\(T/S=\frac{64}{27}(9\rho+\nu)\). Using
+\eqref{eq:nonradial-gradient-square} and
+\eqref{eq:nonradial-minimal-equation} in
+\cref{prop:harmonic-power-Jacobi} yields
+\begin{equation}\label{eq:nonradial-Jacobi-trace}
+ -\frac{J_C(S^{-1})}{S^{-1}}
+ =\frac{K/2-2q-T/S}{S}
+ =\frac{16(d-3)(5\rho+\nu)}{9S}.
+\end{equation}
+For \(d=1,2\), this candidate fails the boundary condition. For \(d=4\),
+its trace is strictly positive; we now prove the global subcalibration sign.
+
+\subsubsection{The minimizing nonradial cone in dimension twenty-six}
+\label{sec:nonradial-certificate}
+
+\begin{theorem}\label{thm:nonradial-minimizing}
+For \(d=4\), both homogeneous potentials
+\[
+ H=F\sqrt S,\qquad G=F\sqrt{RS}
+\]
+generate two-sided subcalibrations for \(E=\{F<0\}\).
+Their divergence signs are strict on \(\{F\ne0\}\).
+Consequently \(E\) is locally perimeter minimizing and
+\(\partial\llbracket E\rrbracket\) is strictly area minimizing,
+with support exactly \(\{F=0\}\subset\R^{26}\).
+\end{theorem}
+
+\begin{proof}
+We first prove the assertion for the degree-five potential \(H\).
+The closure table gives
+\begin{equation}\label{eq:nonradial-T}
+ T=\tfrac{64}{27}(9\rho+\nu)S-\tfrac{1024}{81}F\mathsf{B}.
+\end{equation}
+On \(S>0\), differentiation yields
+\begin{align}\label{eq:nonradial-H-derivatives}
+ \Delta H&=\frac{F}{\sqrt S}
+                  \left(2q+\tfrac12K-\frac{T}{4S}\right),\notag\\
+ |\nabla H|^2&=S^2+2qF^2+\frac{F^2T}{4S}\ge S^2.
+\end{align}
+The resulting defect is
+\begin{align}\label{eq:nonradial-intermediate}
+ \frac{\cL(H)}{S^{3/2}F}
+ ={}&\tfrac12K-2q-\frac TS-\frac{F\Gamma(F,q)}S\notag\\
+ &+\frac{F^2}{S^2}
+       \left(qK+2q^2-\tfrac12\Gamma(S,q)\right)
+       -\frac{F\Gamma(F,T)}{8S^2}\notag\\
+ &+\frac{F^2}{8S^3}
+                    \left(TK-\tfrac12\Gamma(S,T)\right).
+\end{align}
+The quotient is initially written for \(F\ne0\); multiplying
+through gives an identity on all of \(\{S>0\}\).
+Substituting the table gives
+\begin{equation}\label{eq:nonradial-certificate}
+ \cL(H)=\frac{16F}{729S^{3/2}}\mathcal N,
+\end{equation}
+where
+\begin{align}\label{eq:nonradial-N}
+ \mathcal N={}&(405\rho+81\nu)S^3+144F\mathsf{B}S^2\notag\\
+ &+F^2S(46692\rho^2+20040\rho\nu+2212\nu^2-4239S)\notag\\
+ &-(4992\rho+896\nu)F^3\mathsf{B}-256\nu F^4.
+\end{align}
+
+To prove its sign, define
+\[
+\begin{aligned}
+ S_* &=\tfrac43\rho^2+\tfrac{40}{27}\rho\nu+\tfrac4{27}\nu^2,\\
+ K_0&=4992\rho+896\nu,\\
+ H_0&=\tfrac89(36639\rho^2+12634\rho\nu+1555\nu^2).
+\end{aligned}
+\]
+The invariant image satisfies
+\begin{equation}\label{eq:nonradial-bounds}
+ S\le S_*,\qquad 9F^2\le RS,\qquad
+ 16\mathsf{B}^2\le9\nu S,\qquad
+ F\mathsf{B}\le\tfrac3{16}(9\rho+\nu)S.
+\end{equation}
+Indeed, the trace-free eigenvalues of \(Z\) obey
+\(\lambda_i^2\le4\rho/3\), whence
+\(W\le16\rho\nu/3\) and the first inequality follows from
+\eqref{eq:nonradial-gradient-square}. The second is Euler's
+identity and Cauchy--Schwarz. The third follows from
+\(\mathsf{B}^2\le\nu u^*Z^2u=\nu W/4\le9\nu S/16\).
+The last is \(T\ge0\) in \eqref{eq:nonradial-T}.
+There is the exact decomposition
+\begin{align}\label{eq:nonradial-positive-certificate}
+ \mathcal N={}&405\rho S^3+36S^2(F+2\mathsf{B})^2
+                      +S^2(81\nu S-144\mathsf{B}^2)+F^2SH_0\notag\\
+ &+K_0F^2\left(\tfrac3{16}(9\rho+\nu)S-F\mathsf{B}\right)\notag\\
+ &+256\nu F^2\left(\tfrac19RS-F^2\right)
+                      +4275F^2S(S_*-S).
+\end{align}
+Expansion recovers \eqref{eq:nonradial-N}; every summand is
+nonnegative by \eqref{eq:nonradial-bounds}. Since $F\ne0$ implies
+$\rho>0$ and $S>0$, the first summand proves the required strict
+sign for \(\cL(H)\) off \(\{F=0\}\).
+
+For the degree-six potential \(G=\sqrt R\,H\), we use
+\eqref{eq:nonradial-H-derivatives} and
+\eqref{eq:nonradial-T}, which give
+\[
+ \Delta H=\frac F{\sqrt S}
+ \left(\frac{512}{9}\rho+\frac{320}{27}\nu
+                         +\frac{256F\mathsf{B}}{81S}\right).
+\]
+The second and third bounds in \eqref{eq:nonradial-bounds} imply
+\[
+ \frac{|F\mathsf{B}|}{S}\le\frac14\sqrt{\nu(\rho+\nu)}
+                   \le\frac{\rho+2\nu}{8}.
+\]
+Thus the parenthesis is at least
+\((4576\rho+896\nu)/81>0\) for \(R>0\), and
+\(H\Delta H\ge0\). On \(\{S>0\}\), the degree-five
+potential \(H\) is smooth, satisfies \(H\cL(H)\ge0\), and
+has nonvanishing gradient by \eqref{eq:nonradial-H-derivatives}.
+\Cref{prop:cubic-radial-lift}, with degree \(5\) and ambient
+dimension \(26\ge2\cdot5+2\), therefore gives
+\(G\cL(G)\ge0\), strictly where \(F\ne0\), as well as
+\(\nabla G\ne0\) on \(\{S>0\}\).
+
+The exceptional set has codimension ten by
+\cref{lem:nonradial-singularities}. Both potentials extend continuously
+by zero across it with the signs of \(F\), and their normalized gradients
+agree with the outward normal at regular zeros. Thus
+\cref{thm:removable-subcalibration} applies; harmonicity gives the full
+zero-set support. For both fields the strict sign on the two nonempty
+phases gives \eqref{eq:two-phase-flux}, so
+\cref{thm:strict-minimality-flux} proves strict area minimality.
+\end{proof}
+
+The degree-five potential \(H\) also proves strict stability directly.
+Indeed, the cone has dimension \(n=25\), and its subcalibration sign
+gives a nonnegative Jacobi boundary defect. Hence
+\cref{thm:ground-state-gap} yields
+\[
+ Q_C(u)\geq\left(5-\frac{25}{2}\right)^2\int_Cr^{-2}u^2
+       =\frac{225}{4}\int_Cr^{-2}u^2,
+ \qquad u\in C_c^\infty(C_{\reg}\setminus\{0\}).
+\]

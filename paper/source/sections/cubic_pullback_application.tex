@@ -1,0 +1,72 @@
+The common cubic potential gives the following pullback construction,
+including for targets with nonisolated singularities.
+
+\begin{corollary}[Pullback of the common cubic potential]
+\label{cor:common-cubic-pullback}
+Let \(f\not\equiv0\) be a harmonic cubic on \(\R^m\), and put
+\(q=|y|^2\), \(S=|\nabla_yf|^2\), and \(H=f\sqrt{qS}\).
+Suppose, on \(S>0\), that
+\[
+ f\Gamma_y(f,S)\geq0,\qquad H\cL_y(H)\geq0.
+\]
+For every quadratic Clifford map \(P:\R^N\to\R^m\) with
+\(N\geq32\), set \(F=f(P)\), \(Q=q(P)\), and \(T=S(P)\).
+Then
+\[
+ G=R^2F\sqrt{QT}
+\]
+is a subcalibration potential for \(\{F<0\}\). Its boundary current
+is locally mass minimizing and strictly area minimizing, with support
+\(\{F=0\}\).
+The defining polynomial has degree six and the potential has
+homogeneity degree sixteen.
+\end{corollary}
+
+\begin{proof}
+Put \(H_0=f\sqrt S\). Bochner's identity and \(\Delta_y f=0\) give
+\[
+ H_0\Delta_yH_0
+ =f^2\left(|\Hess f|^2-
+       \frac{|\Hess f(\nabla f)|^2}{S}\right)
+       +f\Gamma_y(f,S)\geq0.
+\]
+Since \(H_0\) has degree five, differentiating \(H=\sqrt q\,H_0\)
+yields
+\[
+ H\Delta_yH=qH_0\Delta_yH_0+(m+9)H_0^2\geq0.
+\]
+Thus the ratio condition holds with \(M=0\). Euler's identity gives
+\(\nabla H\ne0\) where \(H\ne0\); at a zero with \(S>0\),
+\(\nabla H=\sqrt{qS}\nabla f\ne0\).
+The exceptional set \(Z=\{\nabla f=0\}\) is conical and algebraic,
+and Euler's identity gives \(Z\subset\{f=0\}\).
+Its codimension is at least two by harmonicity and
+\cref{lem:square-free-critical-set}.
+Now apply \cref{thm:clifford-area-transfer} with \(\ell=6\),
+\(a=2\), and \(M=0\): its bound is \(N\geq1+24+4+3=32\).
+Harmonicity gives both signs near every target zero and hence the
+support and strict-minimality assertions.
+\end{proof}
+
+The first hypothesis holds for the radial cubic models, where
+\(\Gamma(f,S)\) is a positive multiple of \(qf\), and for the
+nonradial models of \cref{thm:nonradial-models}, whose quadratic
+minimality weight is positive. The second holds in the minimizing ranges of
+\cref{thm:cubic-unified-sextic,thm:nonradial-minimizing}.
+Since \(q,f,S\in\cA_q(f)\), this potential is a function of the
+smallest target algebra. For an essential target with \(r\) minimal
+homogeneous generators and a pullback with \(Q<R^2\) somewhere,
+\cref{thm:smallest-clifford-pullback} gives exactly \(r+1\) source
+generators. Thus the three-, four-, and five-generator cubic models
+yield four-, five-, and six-generator pullback algebras whenever the
+two displayed inequalities hold.
+
+For the minimizing nonradial target in \cref{thm:nonradial-minimizing},
+the degree-five potential \(H_0=f\sqrt S\) already satisfies
+\(H_0\cL(H_0)\ge0\), and the Bochner identity above gives
+\(H_0\Delta H_0\ge0\). Thus \cref{thm:clifford-area-transfer}, with
+\(\ell=5\), \(a=1\), and \(M=0\), gives the degree-twelve potential
+\(G=RF\sqrt T\) for every such Clifford map with \(N\ge28\).
+
+For Cartan targets, a weighted inequality gives the lower-degree
+pullback \(G=H(P)\).

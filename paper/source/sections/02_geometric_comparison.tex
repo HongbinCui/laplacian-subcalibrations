@@ -1,0 +1,870 @@
+\section[Geometric Comparison and Subcalibrations]{Geometric Comparison and Subcalibrations across Singular Sets}
+\label{sec:preliminaries}
+
+All ambient metrics in this section are Euclidean. For background on
+minimal surfaces, functions of bounded variation, and minimizing
+boundaries, see \cite{Giusti84}.
+
+\subsection{Stationarity and stability on the regular part}
+\label{sec:prelim-stability}
+
+A smooth submanifold is \emph{minimal} when its mean curvature vector
+vanishes. For singular objects we use integral currents, with the
+boundary convention \(\partial T(\eta)=T(d\eta)\), mass measure
+\(\|T\|\), and restriction \(T\llcorner A\) \cite{Federer69}.
+The associated varifold is \emph{stationary} when
+\begin{equation}\label{eq:stationarity-definition}
+ \delta|S|(Y)=\int\diver_{T_xS}Y\,d\|S\|(x)=0,
+ \qquad Y\in C_c^1(\Omega\setminus\operatorname{spt}\partial S;\R^N),
+\end{equation}
+where \(T_xS\) is the approximate tangent plane and its divergence
+is the trace of the ambient derivative
+\cite[Section~16]{Simon83}.
+We write \(S_{\reg}\) for the regular part
+and \(\Sing S\) for the remaining support, away from the boundary.
+
+For a smooth minimal \(M\), let \(A\) be its second fundamental form
+and \(\nabla^\perp\) its normal connection.  The second variation in a
+compactly supported normal direction \(V\) is
+\begin{equation}\label{eq:normal-second-variation}
+ Q_M^\perp(V)=\int_M\left(|\nabla^\perp V|^2
+       -\sum_{i,j=1}^n\langle A(e_i,e_j),V\rangle^2\right),
+\end{equation}
+where \(e_1,\ldots,e_n\) is a local orthonormal tangent frame.
+With the Laplacian convention \(\int u\Delta u=-\int|\nabla u|^2\),
+the normal Jacobi operator is
+\begin{equation}\label{eq:normal-Jacobi-definition}
+ J_M^\perp V=\Delta_M^\perp V+
+       \sum_{i,j}\langle A(e_i,e_j),V\rangle A(e_i,e_j),
+ \qquad Q_M^\perp(V)=-\int_M\langle V,J_M^\perp V\rangle.
+\end{equation}
+Stability means \(Q_M^\perp(V)\geq0\) for every such \(V\).
+For a stationary singular current the tests are compactly supported
+smooth normal fields on \(S_{\reg}\), away from its boundary;
+see \cite{Simons68} and
+\cite[Lemma~9.7 and Remark~9.8]{Simon83}.
+Each test has compact support away from the singular set, but no common
+positive distance is prescribed for the whole test class.
+Extension across it uses intrinsic energy cutoffs, whereas divergence
+comparison below uses ambient \(L^1\) cutoffs. For cones, strict
+stability means the scale-invariant gap defined below.
+
+\subsection{Area minimization and the strict notions for cones}
+\label{sec:prelim-minimization}
+
+An integral current \(S\) is \emph{locally mass minimizing} if
+\[
+ \mathbf M_U(S)\leq\mathbf M_U(S+\partial R)
+\]
+whenever \(U\Subset\Omega\) and \(R\) is an integral current compactly
+supported in \(U\) of one higher dimension.  Here
+\(\mathbf M_U(S)=\|S\|(U)\).  For multiplicity-one
+submanifolds we also call this \emph{area minimization}.
+Such minimizers are stationary and stable, by first and second variation.
+
+A measurable set \(E\subset\Omega\) has \emph{locally finite perimeter}
+if \(\one_E\in BV_{\rm loc}(\Omega)\): its distributional derivative
+is a vector-valued Radon measure of locally finite mass. For
+\(U\Subset\Omega\),
+\begin{equation}\label{eq:finite-perimeter-definition}
+ \Per(E;U)=|D\one_E|(U),\qquad
+ D\one_E=-\nu_E\,\cH^{N-1}\llcorner\partial^*E,
+\end{equation}
+where \(\partial^*E\) is the reduced boundary and \(\nu_E\) its
+measure-theoretic exterior unit normal; see \cite{Maggi12}.
+
+The current \(\llbracket E\rrbracket\) denotes integration over \(E\)
+with the standard orientation, and
+\(\mathbf M_U(\partial\llbracket E\rrbracket)=\Per(E;U)\).
+Its boundary has multiplicity one on \(\partial^*E\), with support
+\(\overline{\partial^*E}\cap\Omega\). For polynomial hypersurfaces we take
+\(C=\partial\llbracket\{F<0\}\rrbracket\).
+Its support equals the full zero set when both signs occur near every
+zero, in particular for nonzero harmonic \(F\);
+see \cref{rem:polynomial-finite-perimeter}.
+
+A set \(E\) is \emph{locally perimeter minimizing} if
+\(\Per(E;U)\leq\Per(H;U)\) for every locally finite-perimeter set
+\(H\) with \(H\triangle E\Subset U\Subset\Omega\).
+Local perimeter minimization of \(E\) is equivalent to local mass
+minimization of \(\partial\llbracket E\rrbracket\).  This is a direct
+consequence of the codimension-one decomposition theorem
+\cite[Theorem~27.6 and Corollary~27.8]{Simon83}; see also
+\cite[Proposition~2.15]{DeLellis15}.
+
+For the cone statements let \(C\) be a stationary multiplicity-one
+integral cone of real dimension \(n\geq2\), with \(\partial C=0\).
+Put \(r=|x|\) and \(C_1=C\llcorner B_1\).
+We also use \(C\) for its support. By slicing and homogeneity,
+\(\partial C_1=\langle C,r,1\rangle\) is the oriented spherical slice
+on \(\partial B_1\) \cite[Lemma~28.5(2)]{Simon83}.
+
+\begin{definition}[Minimality and stability, with their strict forms]
+\label{def:four-variational-notions}
+The cone is \emph{area minimizing} if \(C_1\) has least mass among
+integral \(n\)-currents with boundary \(\partial C_1\).  It is
+\emph{strictly area minimizing} in the vertex-avoidance sense if it is
+area minimizing and there is \(\Theta>0\) such that
+\begin{equation}\label{eq:strict-minimality-definition}
+ \mathbf M(T)-\mathbf M(C_1)\geq\Theta\eps^n
+ \quad\text{whenever}\quad
+ \partial T=\partial C_1,\quad
+ \operatorname{spt}T\cap B_\eps=\varnothing,\quad 0<\eps<1.
+\end{equation}
+The competitors are integral currents of finite mass and arbitrary
+integer multiplicity in the ambient Euclidean space.
+For \(C=\partial\llbracket E\rrbracket\) with \(E\)
+conical, area minimization is equivalent to local perimeter minimization.
+
+For a two-sided hypersurface cone and \(V=u\nu_C\),
+\eqref{eq:normal-second-variation} becomes
+\begin{equation}\label{eq:Q-definition}
+ Q_C(u)=\int_{C_{\reg}}\bigl(|\nabla_Cu|^2-|A_C|^2u^2\bigr),
+ \qquad u\in C_c^\infty(C_{\reg}\setminus\{0\}).
+\end{equation}
+The cone is \emph{stable} if \(Q_C(u)\geq0\) for every such \(u\), and
+\emph{strictly stable} if there is \(\delta>0\) such that
+\begin{equation}\label{eq:strict-stability-definition}
+ Q_C(u)\geq\delta\int_{C_{\reg}}r^{-2}u^2
+ \qquad\text{for every }u\in C_c^\infty(C_{\reg}\setminus\{0\}).
+\end{equation}
+In arbitrary codimension the same definition uses \(Q_C^\perp(V)\)
+and \(|V|^2\) in place of \(Q_C(u)\) and \(u^2\).
+\end{definition}
+
+The vertex-avoidance convention is that of Hardt--Simon
+\cite[Section~3, (3.1)]{HardtSimon85}, stated for integral currents in
+\cite[p.~210]{Lin87}. These strict notions enter constructions with
+prescribed conical singularities \cite{CaffarelliHardtSimon84},
+metric deformations \cite{WangDeformations20}, and Simon's Liouville
+theorem \cite[equations~(1.4), (1.12) and Corollary~1.13]{Simon21}.
+
+Strict stability does not imply area minimization,
+as \cref{prop:iso-stability,thm:classical-iso-classification} illustrate;
+\cref{prop:complex-zero-gap} gives calibrated area-minimizing cones
+of real codimension two without a positive Hardy gap.
+For a singular link
+\(\Lambda=C\cap\Sph^{N-1}\), angular tests are compactly supported in
+\(\Lambda_{\reg}\); the corresponding spectral formulation is recorded
+in \eqref{eq:exact-Hardy-gap}.
+
+\subsection{Calibrations and the Stokes comparison}
+\label{sec:prelim-calibrations}
+
+A \emph{calibration} is a closed differential \(n\)-form whose
+comass, the supremum of its absolute value on orthonormal
+\(n\)-frames, is at most one. It calibrates an integral current \(S\) if
+\(\omega(\tau_S)=1\) at \(\|S\|\)-almost every point, where \(\tau_S\)
+is the oriented unit tangent \(n\)-vector
+\cite{HarveyLawson82a}.
+
+If \(\omega\) calibrates \(S\) and \(T-S=\partial R\) with
+\(\operatorname{spt}R\Subset U\), Stokes' theorem gives
+\begin{equation}\label{eq:calibration-Stokes-comparison}
+ \mathbf M_U(T)-\mathbf M_U(S)
+ \geq (T-S)(\omega)=\partial R(\omega)=R(d\omega)=0.
+\end{equation}
+The common contributions outside \(U\) cancel; a cutoff equal to one
+near \(\operatorname{spt}R\) makes the evaluation of the difference
+compactly supported.  Thus a calibrated current is mass minimizing.
+
+\subsection{Hypersurface forms and vector-field subcalibrations}
+\label{sec:prelim-subcalibrations}
+
+In codimension one, the identification \(\omega_X=\iota_XdV\) gives
+\begin{equation}\label{eq:form-vector-equivalence}
+ \|\omega_X\|_*=|X|,\qquad
+ d\omega_X=(\diver X)dV,\qquad
+ \omega_X|_{\partial E}=(X\cdot\nu_E)\,d\mu_{\partial E}.
+\end{equation}
+Evaluation on an oriented orthonormal frame and the coordinate
+formula for divergence give these identities. A hypersurface
+calibration is equivalently a field with \(|X|\leq1\),
+\(\diver X=0\), and \(X\cdot\nu_E=1\) on the boundary.
+
+\begin{definition}[Two-sided subcalibration, smooth formulation]
+\label{def:subcalibration}
+Let \(E\subset\Omega\subset\R^N\) have smooth boundary.  A
+\(C^1\) field \(X\) is a two-sided subcalibration for \(E\) if
+\begin{equation}\label{eq:smooth-subcalibration-signs}
+ |X|\leq1,\qquad X\cdot\nu_E=1\text{ on }\partial E,\qquad
+ \diver X\leq0\text{ in }E,\quad
+ \diver X\geq0\text{ in }\Omega\setminus E.
+\end{equation}
+The equivalent form conditions follow from \eqref{eq:form-vector-equivalence}.
+\end{definition}
+
+These phase signs give the comparison used by De~Philippis and Paolini
+\cite{DePhilippisPaolini}. Applying the Stokes argument above to a smooth
+competitor \(H\) with \(H\triangle E\Subset U\Subset\Omega\) gives
+\begin{align}
+ \Per(H;U)-\Per(E;U)
+ &\geq\int_U(\one_H-\one_E)\diver X\,dx\notag\\
+ &=\int_{H\triangle E}q_X\,dx\geq0,
+ \qquad q_X=(1-2\one_E)\diver X.
+ \label{eq:smooth-subcalibration-Stokes}
+\end{align}
+The boundary flux is saturated for \(E\) and bounded by the perimeter
+for \(H\). Below we extend this comparison to singular and
+phase-dependent fields.
+
+\begin{remark}[Historical background on quadratic cones]
+\label{rem:subcalibration-history}
+Fleming's regularity theorem in $\R^3$ \cite{Fleming62} and
+Almgren's theorem in $\R^4$ \cite{Almgren66} exclude nonflat
+area-minimizing hypercones in those dimensions.
+Simons established stability of the balanced quadratic cones in
+\(\R^{2m}\), \(m\geq4\), \cite{Simons68}; Bombieri--De~Giorgi--Giusti
+proved their area minimality \cite[Sections~II--III]{BDGG69}.
+The homogeneous barriers in \cite[Section~IV, p.~260]{BDGG69}
+occur in their construction of entire minimal graphs, separately from
+the cone-minimization proof. Lawson reduced the equivariant Plateau
+problem to weighted orbit spaces and constructed exact calibrating
+one-forms through explicit homogeneous trial functions
+\cite[Section~5, pp.~244--247]{Lawson72}.
+In his 1973 Berkeley thesis, Sim\~oes completed the remaining
+quadratic cases: the cone over the minimal product
+$S^1\times S^5$ is not area minimizing, whereas the cone over
+the minimal product $S^2\times S^4$ is area minimizing
+\cite{Simoes73}. Here the factors have the radii making their
+product minimal in the unit sphere.
+Miranda and collaborators developed new proofs through the
+nonparametric minimal surface equation. In particular,
+Massari--Miranda used graphical subsolutions and cylinder limits
+\cite{MassariMiranda83}; the quartic function
+\(G=(|x|^4-|y|^4)/4\) already appears in this approach
+\cite[pp.~146--147]{Miranda08}.
+Benarros--Miranda gave two one-sided homogeneous functions
+\cite[Section~2, pp.~46--47]{BenarrosMiranda95}.
+After orienting both normalized gradient fields consistently, their
+construction gives potentials \(G_\pm=a_\pm F\) with positive,
+phase-dependent multipliers.
+De~Philippis--Paolini combined the earlier approaches in a short
+subcalibration proof, using divergence inequalities directly in the
+ambient space \cite[pp.~234--235]{DePhilippisPaolini}.
+De~Philippis--Maggi used the exact perimeter-deficit identity
+\cite[Proposition~4.1, equation~(4.5)]{DePhilippisMaggi14}
+to obtain quantitative stability estimates for Lawson cones.
+Liu completed their six exceptional parameter pairs using different
+subcalibrations \cite[Theorems~1--2 and Section~2.1]{Liu19},
+explicitly acknowledging the inspiration of Benarros--Miranda
+\cite[p.~1002]{Liu19}.
+\end{remark}
+
+\subsection{Comparison across removable exceptional sets}
+\label{sec:comparison}
+
+The Stokes comparison \eqref{eq:smooth-subcalibration-Stokes}
+extends across locally \(\cH^{N-1}\)-null singular sets,
+also for different phase potentials.
+
+\subsection*{Boundary flux away from an exceptional set}
+
+For a locally finite-perimeter set \(E\), a relatively closed set
+\(Z\), and \(X\in C^1(\Omega\setminus Z;\R^N)\), the boundary
+condition is \(X\cdot\nu_E=1\) almost everywhere on
+\(\partial^*E\setminus Z\). Extending \(\eta X\) by zero for
+\(\eta\in C_c^1(\Omega\setminus Z)\), Gauss--Green gives
+\[
+ \int_E\diver(\eta X)\,dx
+ =\int_{\partial^*E\setminus Z}\eta\,X\cdot\nu_E\,d\cH^{N-1}.
+\]
+To extend this calculation across \(Z\), we use cutoffs below.
+For singular subcalibration fields in a Riemannian metric, see
+\cite[Fact~2.3 and Section~7]{LiuSimon26}.
+
+\subsection*{Cutoffs near the singular set}
+
+\begin{lemma}[Cutoffs near sets of zero Hausdorff measure]
+\label{lem:null-set-cutoffs}
+Let \(Z\subset\Omega\subset\R^N\) be relatively closed and satisfy
+\begin{equation}\label{eq:H-null}
+ \cH^{N-1}(Z\cap K)=0
+ \quad\text{for every compact }K\Subset\Omega.
+\end{equation}
+For every compact \(K\Subset U\Subset\Omega\), every open set
+\(O\) with \(Z\cap K\subset O\Subset U\), and every \(\eps>0\),
+there is \(\psi\in C_c^1(O)\) such that \(0\leq\psi\leq1\),
+\(\psi=1\) on a neighborhood of \(Z\cap K\), and
+\begin{equation}\label{eq:null-set-cutoff}
+ \int_U\bigl(\psi+|\nabla\psi|\bigr)<\eps.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Cover the compact set \(Z\cap K\) by finitely many balls
+\(B_{r_i}(x_i)\) whose doubled balls lie in \(O\), with
+\(r_i<1\) and \(\sum_i r_i^{N-1}<\eps/(2C_N)\).
+Choose smooth cutoffs \(\psi_i\) supported in the doubled balls,
+equal to one on the covering balls, with \(0\leq\psi_i\leq1\)
+and \(|\nabla\psi_i|\leq C/r_i\).
+Then \(\psi=1-\prod_i(1-\psi_i)\) equals one near \(Z\cap K\),
+and satisfies \(\psi\leq\sum_i\psi_i\) and
+\(|\nabla\psi|\leq\sum_i|\nabla\psi_i|\).  Hence
+\[
+ \int_U\bigl(\psi+|\nabla\psi|\bigr)
+ \leq C_N\sum_i(r_i^N+r_i^{N-1})<\eps.\qedhere
+\]
+\end{proof}
+
+We extend the quantitative subcalibration identity of De Philippis--Maggi
+\cite[Proposition~4.1, equation~(4.5)]{DePhilippisMaggi14}, also used in
+\cite[Section~2, equation~(3)]{Liu19}, to bounded fields that are \(C^1\)
+outside a relatively closed, locally \(\cH^{N-1}\)-null set.
+
+\Needspace{7\baselineskip}
+\begin{theorem}[Two-sided comparison]
+\label{thm:removable-subcalibration}
+Let \(E\subset\Omega\) have locally finite perimeter, and let
+\(Z\subset\Omega\) be relatively closed with
+\(\cH^{N-1}(Z\cap K)=0\) for every compact \(K\Subset\Omega\).
+Suppose
+\(X\in C^1(\Omega\setminus Z;\R^N)\) satisfies
+\begin{enumerate}[label=\textup{(\roman*)}]
+ \item \(|X|\leq1\);
+ \item \(X\cdot\nu_E=1\) for \(\cH^{N-1}\)-almost every point of
+ \(\partial^*E\setminus Z\);
+ \item \(\diver X\leq0\) almost everywhere in \(E\setminus Z\), and
+ \(\diver X\geq0\) almost everywhere in \((\Omega\setminus E)\setminus Z\).
+\end{enumerate}
+Define \(q_X=(1-2\one_E)\diver X\geq0\) off \(Z\) and set it to zero on
+\(Z\).  Then \(q_X\in L^1_{\rm loc}(\Omega)\).  For every
+locally finite-perimeter competitor \(H\) with \(H\triangle E\Subset U\Subset\Omega\),
+\begin{align}
+ \Per(H;U)-\Per(E;U)
+ &=\int_{\partial^*H\cap U}(1-X\cdot\nu_H)\,d\cH^{N-1}
+   +\int_{H\triangle E}q_X\,dx.\label{eq:quantitative-comparison-identity}
+\end{align}
+The values of \(X\) on \(Z\) do not affect the boundary integral.
+In particular,
+\begin{equation}\label{eq:quantitative-comparison}
+ \Per(H;U)-\Per(E;U)\geq\int_{H\triangle E}q_X\,dx.
+\end{equation}
+Thus \(E\) is locally perimeter minimizing and
+\(\partial\llbracket E\rrbracket\) is locally mass minimizing.
+If \(q_X>0\) almost everywhere, equality in perimeter comparison forces
+\(H=E\) up to a null set.  When \(|X|=1\), the first integral in
+\eqref{eq:quantitative-comparison-identity} is
+\(\frac12\int_{\partial^*H\cap U}|\nu_H-X|^2\,d\cH^{N-1}\).
+\end{theorem}
+
+\begin{proof}
+Choose \(K_0\Subset K_1\Subset U\) containing the support of
+\(\one_H-\one_E\) in \(K_0\), and put
+\(\mu=|D\one_E|+|D\one_H|\).
+The null-set assumption and \eqref{eq:finite-perimeter-definition}
+give \(\mu(Z\cap K_1)=0\).
+Take open neighborhoods \(O_j\Subset U\) of \(Z\cap K_1\) with
+\(\mu(O_j)\to0\), and use \cref{lem:null-set-cutoffs} to choose
+\(\psi_j\in C_c^1(O_j)\) with
+\(\int_U(\psi_j+|\nabla\psi_j|)\to0\).
+Pass to a subsequence so that \(\psi_j\to0\) almost everywhere, and set
+\(\eta_j=1-\psi_j\).  Fix \(\chi\in C_c^1(U)\) equal to one near
+\(K_0\), with support in \(K_1\).
+The field \(\chi\eta_jX\), extended by zero near \(Z\), is an admissible
+\(C^1\) field.  The distributional derivative identity
+\eqref{eq:finite-perimeter-definition}, applied to
+\(\one_H-\one_E\), gives
+\begin{align}
+ \int_{H\triangle E}\eta_jq_X
+ &=\int_{\partial^*H}\chi\eta_j X\cdot\nu_H
+   -\int_{\partial^*E}\chi\eta_j
+   -\int_U(\one_H-\one_E)X\cdot\nabla\eta_j.
+ \label{eq:BV-cutoff-comparison}
+\end{align}
+We have used \(\chi=1\) on the difference set and
+\((\one_H-\one_E)\diver X=q_X\) there.  The final integral is bounded in
+absolute value by \(\int_U|\nabla\psi_j|\).
+The boundary integrals converge because their cutoff errors are at most
+\(\mu(O_j)\). Thus the right-hand side of
+\eqref{eq:BV-cutoff-comparison} has a finite limit. Since
+\(0\leq\eta_jq_X\to q_X\) almost everywhere, Fatou's lemma gives
+\[
+ \int_{H\triangle E}q_X
+ \leq\liminf_j\int_{H\triangle E}\eta_jq_X<\infty.
+\]
+Now \(0\leq\eta_jq_X\leq q_X\), so dominated convergence gives
+equality in the limit of \eqref{eq:BV-cutoff-comparison}.
+Since \(H=E\) outside \(K_0\), the boundary fluxes cancel there.
+Consequently
+\[
+ \int_{H\triangle E}q_X
+ =\int_{\partial^*H\cap U}X\cdot\nu_H-\Per(E;U),
+\]
+which proves \eqref{eq:quantitative-comparison-identity}.
+For almost every ball \(B\Subset\Omega\), both
+\(H=E\setminus B\) and \(H=E\cup B\) have locally finite perimeter.
+The integrability just proved for these two comparisons gives integrability
+of \(q_X\) on the two parts of \(B\), hence local integrability in
+\(\Omega\).  The current conclusion follows from the equivalence in
+\cref{sec:prelim-minimization}; the other conclusions follow from
+nonnegativity.
+\end{proof}
+
+\begin{remark}[Semialgebraic singular sets]
+A closed semialgebraic set of dimension at most \(N-2\) satisfies
+\eqref{eq:H-null}: its finite smooth stratification
+\cite[Sections~2.3 and~2.8]{BochnakCosteRoy98} has strata of zero
+\(\cH^{N-1}\)-measure.
+\end{remark}
+
+\begin{remark}[Finite perimeter of polynomial sublevel sets]
+\label{rem:polynomial-finite-perimeter}
+Let \(F\) be a nonzero real polynomial of degree \(d\), and put
+\(E=\{F<0\}\) and \(Q_L=(-L,L)^N\).
+On each coordinate line, the restriction of \(F\) is either zero
+or a nonzero univariate polynomial of degree at most \(d\).
+Thus the restriction of \(\one_E\) has one-dimensional variation
+at most \(d\). For \(\varphi\in C_c^1(Q_L)\), Fubini and
+one-dimensional integration by parts give
+\[
+ \left|\int_{Q_L}\one_E\,\partial_i\varphi\,dx\right|
+ \leq d(2L)^{N-1}\|\varphi\|_\infty.
+\]
+Each distributional derivative \(D_i\one_E\) is therefore a finite
+measure on \(Q_L\), and
+\[
+ \Per(E;Q_L)\leq\sum_{i=1}^N|D_i\one_E|(Q_L)
+ \leq Nd(2L)^{N-1}.
+\]
+In particular, polynomial sublevel sets have locally finite perimeter.
+This also applies to \(\{G<0\}\) whenever \(G\) has the same sign
+almost everywhere as a polynomial.
+
+We also recall that \(\{F=0\}\) has Lebesgue measure zero.
+Write \(F\) as a polynomial in one coordinate. Outside the zero
+set of a nonzero coefficient polynomial, its fibers are finite.
+Induction on \(N\) and Fubini prove the assertion.
+
+If both signs of \(F\) occur in every neighborhood of each zero, then
+\[
+ \partial E=\operatorname{spt}\partial\llbracket E\rrbracket
+ =\{F=0\}.
+\]
+Indeed, both phases have positive volume in every ball centered at
+a zero. The perimeter in such a ball cannot vanish, since otherwise
+\(\one_E\) would be constant almost everywhere there. Away from
+the zero set, \(\one_E\) is locally constant.
+For nonzero harmonic \(F\), the strong maximum principle gives this
+sign condition.
+\end{remark}
+
+\begin{corollary}[Gradient subcalibration criterion]
+\label{cor:gradient-subcalibration}
+Let \(G\in C^2(\Omega\setminus Z)\cap C^0(\Omega)\), assume that
+\(E=\{G<0\}\) has locally finite perimeter, and suppose that \(Z\) contains
+the critical set of \(G\) and the singular part of \(\{G=0\}\).
+If \(Z\) is relatively closed, \(\cH^{N-1}(Z\cap K)=0\) for every
+compact \(K\Subset\Omega\), and
+\[
+ G\cL(G)\geq0\qquad\text{on }\Omega\setminus Z,
+\]
+then \(E\) is locally perimeter minimizing.
+\end{corollary}
+
+\begin{proof}
+Use \(X=\nabla G/|\nabla G|\) and
+\eqref{eq:div-normalized-gradient}.  On \(G<0\) its divergence is
+nonpositive, and on \(G>0\) it is nonnegative.  Along the regular zero set it
+is the exterior unit normal.
+\end{proof}
+
+We call \(G\) a \emph{sub-calibration potential} for \(E=\{G<0\}\)
+when its normalized gradient satisfies \cref{def:subcalibration}, or
+\cref{thm:removable-subcalibration} when an exceptional set is present.
+\Cref{def:homogeneous-subcalibration-potential} specifies the homogeneous
+potentials used for polynomial defining equations.
+
+\paragraph{Applying the criterion to homogeneous potentials.}
+In the algebraic applications, \(G=aF\) has positive degree
+\(\ell\), and \(a\) is smooth and positive outside a closed conical
+exceptional set \(Z\) containing the singular zeros of \(F\).
+Once \(G\) extends continuously with the signs of \(F\), its negative
+phase has locally finite perimeter by
+\cref{rem:polynomial-finite-perimeter}. Moreover, outside \(Z\),
+\[
+ F\neq0\ \Longrightarrow\
+ \langle x,\nabla G\rangle=\ell G\neq0,
+ \qquad
+ F=0\ \Longrightarrow\ \nabla G=a\nabla F\neq0.
+\]
+It remains to check the null-set condition on \(Z\) and the global
+sign \(G\cL(G)\geq0\). The exceptional sets and their codimensions
+are collected in \cref{app:exceptional-set-summary}.
+
+\subsection*{One-sided comparison and two different fields}
+
+A set \(E\) is \emph{inward minimizing} if perimeter comparison holds
+for competitors contained in \(E\), and \emph{outward minimizing} if
+it holds for competitors containing \(E\).  All changes are compactly
+supported. These are the subminimality and complementary subminimality
+of \cite[Definition~1.1]{DePhilippisPaolini}. The paired comparison
+retains both divergence remainders.
+
+\begin{theorem}[One-sided and paired comparison]
+\label{thm:paired-subcalibration}
+Let \(E\subset\Omega\) have locally finite perimeter, and let
+\(Z\subset\Omega\) be relatively closed with
+\(\cH^{N-1}(Z\cap K)=0\) for every compact \(K\Subset\Omega\).
+Suppose \(X_-,X_+\in C^1(\Omega\setminus Z;\R^N)\) satisfy
+\[
+ |X_\pm|\leq1,\qquad X_\pm\cdot\nu_E=1
+ \quad\cH^{N-1}\text{-a.e. on }\partial^*E\setminus Z.
+\]
+Assume only the respective phase signs
+\[
+ \diver X_-\leq0\text{ in }E\setminus Z,\qquad
+ \diver X_+\geq0\text{ in }(\Omega\setminus E)\setminus Z.
+\]
+Define, with zero values on \(Z\),
+\[
+ q_-=-\one_E\diver X_-,\qquad
+ q_+=\one_{\Omega\setminus E}\diver X_+.
+\]
+Then \(q_-,q_+\in L^1_{\rm loc}(\Omega)\), and the following
+conclusions hold for changes compactly supported in \(U\Subset\Omega\).
+\begin{enumerate}[label=\textup{(\roman*)}]
+ \item The assumptions on \(X_-\) alone imply
+ \[
+  \Per(H;U)-\Per(E;U)\geq\int_{E\setminus H}q_-
+  \qquad(H\subset E).
+ \]
+ The assumptions on \(X_+\) alone imply the corresponding estimate
+ \[
+  \Per(H;U)-\Per(E;U)\geq\int_{H\setminus E}q_+
+  \qquad(H\supset E).
+ \]
+ \item Together they imply, for every locally finite-perimeter \(H\),
+ \begin{equation}\label{eq:paired-weighted-comparison}
+  \Per(H;U)-\Per(E;U)
+  \geq\int_{E\setminus H}q_-+\int_{H\setminus E}q_+.
+ \end{equation}
+ Thus \(E\) is locally perimeter minimizing, and its oriented boundary
+ is locally mass minimizing among integral currents.  If each weight
+ is positive almost everywhere on its phase, equality implies
+ \(H=E\) up to a null set.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+For \(H\subset E\), the cutoff proof of
+\cref{thm:removable-subcalibration} uses the divergence sign only on
+\(E\setminus H\). With \(X_-\), it gives
+\[
+ \Per(H;U)-\Per(E;U)
+ =\int_{\partial^*H\cap U}(1-X_-\cdot\nu_H)
+  +\int_{E\setminus H}q_-.
+\]
+The analogous identity with \(X_+\) holds for \(H\supset E\).
+Their nonnegative boundary terms prove \textup{(i)}; taking
+\(H=E\setminus B\) and \(H=E\cup B\) for almost every relatively
+compact ball proves local integrability of the respective weights.
+
+For an unrestricted competitor, apply these inequalities to
+\(H\cap E\) and \(H\cup E\).  The perimeter inequality for
+unions and intersections \cite{Maggi12} gives
+\[
+ \Per(H\cap E;U)+\Per(H\cup E;U)
+ \leq\Per(H;U)+\Per(E;U).
+\]
+Adding the two one-sided estimates proves
+\eqref{eq:paired-weighted-comparison}.  The current conclusion follows
+from the equivalence in \cref{sec:prelim-minimization}, and positivity
+gives the equality assertion.
+\end{proof}
+
+\begin{remark}[Fields defined on their respective sides]
+\label{rem:phase-local-fields}
+When \(E\) is open and \(\partial E\setminus Z\) is smooth, it is
+enough to construct \(X_-\) on an open neighborhood of
+\(\overline E\setminus Z\), and \(X_+\) on an open neighborhood of
+\(\overline{\Omega\setminus E}\setminus Z\), relative to
+\(\Omega\setminus Z\).  A smooth cutoff equal to one on the relevant
+closed phase extends each bounded field by zero to the unused side.
+This preserves its norm, boundary values, and the divergence on its
+own phase.  In a conical setting the cutoff may be chosen on the unit
+sphere, so homogeneity is preserved.  No matching of the two potentials
+is required; their normalized gradients both equal \(\nu_E\) on the
+regular boundary.
+
+Liu's subcalibrations for the six exceptional Lawson-cone parameter pairs
+\cite[Sections~2.1 and~3]{Liu19} use powers of different block radii,
+and sometimes different homogeneous degrees, on the two sides.
+The positive multipliers \(G_\pm=a_\pm F\) give the common normal
+\(\nu_E\) along the regular cone, so
+\cref{thm:paired-subcalibration} applies.
+
+Phase-dependent multipliers also appear in Liu's application of
+Simon's analytic estimates to hypersurfaces with prescribed closed
+singular sets \cite[Theorem~1 and Definition~1.3]{LiuSimon26}.
+\end{remark}
+
+\subsection*{Strict minimality and distance-weighted comparison}
+
+\begin{theorem}[Strict minimality from two-sided divergence integrals]
+\label{thm:strict-minimality-flux}
+Let \(E\subset\R^{n+1}\), \(n\geq2\), be conical, and suppose the hypotheses
+of \cref{thm:removable-subcalibration} hold globally with a conical
+exceptional set \(Z\) and a zero-homogeneous field \(X\).
+Suppose
+\begin{equation}\label{eq:two-phase-flux}
+ A_-:=\int_{B_1\cap E}q_X\,dx>0,
+ \qquad
+ A_+:=\int_{B_1\setminus E}q_X\,dx>0.
+\end{equation}
+Then \(C=\partial\llbracket E\rrbracket\) is strictly area minimizing in
+\cref{def:four-variational-notions}, with
+\begin{equation}\label{eq:strict-minimality-constant}
+ \Theta=\min\{A_-,A_+\}.
+\end{equation}
+In particular the assertion permits nonisolated singularities.
+\end{theorem}
+
+\begin{proof}
+Both integrals are finite by \cref{thm:removable-subcalibration}.
+Homogeneity gives \(q_X(rx)=r^{-1}q_X(x)\), so their values over
+\(B_\eps\) are \(\eps^nA_-\) and \(\eps^nA_+\).
+If a set competitor \(H\) has no perimeter in the connected ball
+\(B_\eps\), then \(\one_H\) is constant there.  Accordingly,
+\(H\triangle E\) contains either \(B_\eps\cap E\) or
+\(B_\eps\setminus E\), up to a null set.
+Equation \eqref{eq:quantitative-comparison} proves the desired mass gap
+for set-boundary competitors.
+
+For an arbitrary integral-current competitor, consider the nearest-point
+projection onto the closed unit ball,
+\[
+ \pi(x)=\frac{x}{\max\{1,|x|\}}.
+\]
+This map is \(1\)-Lipschitz, fixes \(\partial C_1\), and maps
+\(\R^{n+1}\setminus B_\eps\) into itself.
+Although \(\pi\) is not proper, the integral representation of the
+finite-mass current \(T\) defines \(\pi_\#T\), since the
+\(n\)-Jacobian of \(\pi\) is bounded by one.
+The pushforward mass estimate and the identity
+\(\partial(\pi_\#T)=\pi_\#(\partial T)\)
+give
+\[
+ \mathbf M(\pi_\#T)\leq\mathbf M(T),
+ \qquad \partial(\pi_\#T)=\partial C_1;
+\]
+see \cite[Remark~26.21(1), Lemma~26.25, and
+Remark~27.2(3)]{Simon83}.  For finite-mass currents with noncompact
+support, these statements follow from the compactly supported case by
+cutoffs: the additional boundary term is bounded by
+\(O(L^{-1})\mathbf M(T)\) for a cutoff at radius \(L\), and tends to
+zero.  The same projection is used in
+\cite[proof of Proposition~1.2]{DeLellisSpadaroSpolaor17}.
+We may therefore replace \(T\) by \(\pi_\#T\) and assume
+\(\operatorname{spt}T\subset\overline B_1\).
+
+Since \(\partial(T-C_1)=0\), coning \(T-C_1\) to the origin gives an
+integral \((n+1)\)-current \(R\) with
+\(\partial R=T-C_1\) and support in \(\overline B_1\)
+\cite[equation~(26.26) and Remark~27.2(2)--(3)]{Simon83}.
+A top-dimensional integral current is integration against an
+integer-valued multiplicity.  Since its boundary has finite mass, this
+multiplicity has bounded variation
+\cite[Remark~26.28]{Simon83}.  Thus
+\[
+ R=\llbracket k\rrbracket,
+ \qquad k\in BV_c(\R^{n+1};\mathbb Z),
+ \qquad v:=\one_E+k\in BV_{\mathrm{loc}}(\R^{n+1};\mathbb Z).
+\]
+We have \(\partial\llbracket v\rrbracket=T+C-C_1\).
+In \(B_\eps\), the right-hand side vanishes because \(T\) avoids
+this ball and \(C=C_1\) there.  The Constancy Theorem
+\cite[Theorem~26.27]{Simon83}, applied on the connected
+open set \(B_\eps\), therefore gives \(v=m\) almost everywhere
+there for some \(m\in\mathbb Z\).
+
+Set \(H=\{v\geq1\}\). The integer-level decomposition
+\cite[Theorem~27.6]{Simon83} gives, for every relatively compact
+open set \(U\subset\R^{n+1}\),
+\[
+ |Dv|(U)=\sum_{j\in\mathbb Z}
+       \Per(\{v\geq j\};U)
+ \geq\Per(H;U).
+\]
+Thus \(H\) has locally finite perimeter. Moreover,
+\(H=E\) outside \(\overline B_1\), and \(\one_H\) is constant
+in \(B_\eps\).
+Since \(\|C\|(\partial B_1)=0\), the mass measures of \(T\) and
+\(C-C_1\) are mutually singular.  Hence, for \(\rho>1\),
+\[
+ \Per(H;B_\rho)\leq |Dv|(B_\rho)
+ =\mathbf M(T)+\Per(E;B_\rho)-\mathbf M(C_1).
+\]
+Apply the set comparison in \(B_\rho\) and cancel the common exterior
+perimeter.  This yields
+\eqref{eq:strict-minimality-definition} with
+\eqref{eq:strict-minimality-constant}.
+\end{proof}
+
+
+\begin{corollary}[Strict mass gap from paired fields]
+\label{cor:paired-strict-minimality}
+Suppose \cref{thm:paired-subcalibration} holds globally for a conical
+set \(E\subset\R^{n+1}\), \(n\geq2\), a conical exceptional set \(Z\),
+and fields that are zero-homogeneous on their respective phases.
+If
+\[
+ A_-:=\int_{B_1\cap E}q_->0,\qquad
+ A_+:=\int_{B_1\setminus E}q_+>0,
+\]
+then every integral-current competitor in
+\eqref{eq:strict-minimality-definition} satisfies
+\[
+ \mathbf M(T)-\mathbf M(C_1)
+ \geq\min\{A_-,A_+\}\eps^n.
+\]
+\end{corollary}
+
+\begin{proof}
+The degree-\(-1\) weights are locally integrable by
+\cref{thm:paired-subcalibration}. A set competitor avoiding \(B_\eps\)
+fills or empties it, so \eqref{eq:paired-weighted-comparison} gives the
+gap. The current-to-set reduction in the proof of
+\cref{thm:strict-minimality-flux} preserves ball avoidance and does
+not increase the mass excess.
+\end{proof}
+
+\begin{corollary}[Polynomial potentials with nonzero divergence]
+\label{cor:polynomial-strict-minimality}
+Let \(N\geq3\).  Suppose a homogeneous polynomial \(G\) satisfies the global hypotheses of
+\cref{cor:gradient-subcalibration}.  If both \(\{G<0\}\) and \(\{G>0\}\)
+are nonempty and \(\cL(G)\not\equiv0\), then
+\(\partial\llbracket\{G<0\}\rrbracket\) is strictly area minimizing.
+\end{corollary}
+
+\begin{proof}
+The normalized gradient is zero-homogeneous.  Its critical set is
+conical and satisfies \eqref{eq:H-null}.  Off this set,
+\[
+ q_X=\frac{|\cL(G)|}{|\nabla G|^3}.
+\]
+A nonzero polynomial has a Lebesgue-null zero set
+by \cref{rem:polynomial-finite-perimeter}. Thus \(q_X>0\) almost everywhere on both open
+phases.  Equation \eqref{eq:two-phase-flux} follows, and
+\cref{thm:strict-minimality-flux} applies.
+\end{proof}
+
+For nonpolynomial potentials, verify positive flux in both phases and
+apply \cref{thm:strict-minimality-flux}, as for the radical potentials in
+\cref{ex:Riedler-correct-power,sec:complex-determinants}.
+
+For regular area-minimizing hypercones, Niu \cite[Theorem~3]{Niu26}
+characterizes simultaneous strict stability and strict minimality by
+\eqref{eq:distance-weighted-comparison}. We prove sufficiency across
+the singular sets of \cref{thm:removable-subcalibration}, using the
+quantitative subcalibration method of De Philippis--Maggi
+\cite[Section~4]{DePhilippisMaggi14} and Liu
+\cite[Section~2.2]{Liu19}.
+
+\begin{proposition}[Distance-weighted sufficient criterion]
+\label{prop:distance-weighted-comparison}
+Under the geometric and comparison hypotheses of
+\cref{thm:strict-minimality-flux}, suppose the cone is two-sided and minimal on its regular part and, for some \(c>0\),
+\begin{equation}\label{eq:linear-distance-divergence}
+ q_X(x)\geq c\,\frac{\dist(x,C)}{|x|^2}
+ \quad\text{for almost every }x\notin C.
+\end{equation}
+Assume each phase contains points at positive distance from \(C\).
+Then the cone is strictly area minimizing and strictly stable, and
+\begin{equation}\label{eq:distance-weighted-comparison}
+ \Per(H;U)-\Per(E;U)
+ \geq c\int_{H\triangle E}\frac{\dist(x,C)}{|x|^2}\,dx.
+\end{equation}
+More precisely, \(Q_C(u)\geq c\int_Cr^{-2}u^2\) for the regular-part
+test class in \cref{def:four-variational-notions}.
+\end{proposition}
+
+\begin{proof}
+The weighted comparison follows from
+\eqref{eq:quantitative-comparison}. The two phase integrals are
+positive, so \cref{thm:strict-minimality-flux} gives strict minimality.
+For a smooth compactly supported regular-part function \(u\), perturb the
+boundary by the normal graph \(tu\) in a fixed regular tubular neighborhood.
+Minimality and tubular coordinates give
+\begin{align*}
+ \Per(E_{tu};U)-\Per(E;U)&=\tfrac12t^2Q_C(u)+o(t^2),\\
+ \int_{E_{tu}\triangle E}\frac{\dist(x,C)}{|x|^2}\,dx
+ &=\tfrac12t^2\int_Cr^{-2}u^2+o(t^2).
+\end{align*}
+Indeed, on each normal segment the leading integral is
+\(r^{-2}\int_0^{|tu|}s\,ds\); its tubular Jacobian and the radial weight
+contribute only higher-order terms on this compact support.
+Divide \eqref{eq:distance-weighted-comparison} by \(t^2/2\) and let
+\(t\to0\).
+\end{proof}
+
+\subsection{Algebraic tangent cones and local instability}
+\label{sec:tangent-instability-transfer}
+
+Let $C=\{F=0\}$ for a nonzero polynomial $F$, and let $p\in C$.
+Writing $F(p+z)=H_m(z)+\cdots+H_d(z)$ with $H_m\not\equiv0$
+homogeneous of degree $m$, we have
+\[
+ r^{-m}F(p+rz)\longrightarrow H_m(z)
+ \quad\text{in }C^\infty_{\mathrm{loc}}\quad(r\downarrow0).
+\]
+The implicit function theorem gives smooth graphical convergence of
+$(C-p)/r$ near compact subsets of $\{H_m=0,\ \nabla H_m\ne0\}$.
+If $H_m$ changes sign near every zero, then $\{H_m=0\}$ is the
+unique local Hausdorff tangent: uniform convergence gives one inclusion,
+and sign change gives the other. This condition holds when $F$ is harmonic
+or $H_m$ is an indefinite quadratic form. Thus an indefinite Hessian at
+a critical point gives the quadratic tangent
+$\{z:\langle\Hess F(p)z,z\rangle=0\}$.
+For homogeneous $F$ and $p\ne0$, Euler's identity gives $D_pH_m=0$,
+so this leading zero set splits off the line $\R p$.
+The cubic Hessian criterion in \cref{prop:cubic-general-singular-spectrum}
+identifies these quadratic factors.
+
+\begin{lemma}[Instability under a regular tangent limit]
+\label{lem:tangent-instability-transfer}
+Let $C$ be an $n$-dimensional hypersurface, minimal on its two-sided
+regular part. Suppose that $C_j=(C-p)/r_j$, $r_j\downarrow0$,
+converges locally graphically in $C^2$ on compact regular subsets of
+$\Sigma=Q\times\R^k$, where $Q$ is a two-sided minimal cone.
+If $Q$ is unstable on its regular part, then $C$ admits a compactly
+supported regular-part variation with negative second variation
+in every neighborhood of $p$.
+\end{lemma}
+
+\begin{proof}
+Write $Q_\Sigma(\phi)=\int_\Sigma
+(|\nabla_\Sigma\phi|^2-|A_\Sigma|^2\phi^2)$.
+Choose $\phi\in C_c^\infty(Q_{\reg})$ with $Q_Q(\phi)<0$.
+For $k>0$, take a nonzero $\chi\in C_c^\infty(\R^k)$ and
+set $\chi_T(w)=\chi(w/T)$. The product metric gives
+\[
+ Q_{Q\times\R^k}(\phi\chi_T)
+ =T^k\left(\int_{\R^k}\chi^2\right)Q_Q(\phi)
+ +T^{k-2}\left(\int_{\R^k}|\nabla\chi|^2\right)
+             \left(\int_Q\phi^2\right)<0
+\]
+for sufficiently large $T$; for $k=0$ use $\phi$ itself.
+Fix the resulting test function $\psi$ and a relatively compact regular
+neighborhood of its support. Transport $\psi$ by the graphical
+parametrizations to $\psi_j$ on $C_j$, extending by zero.
+The induced metrics and second fundamental forms converge, so
+$Q_{C_j}(\psi_j)\to Q_\Sigma(\psi)<0$.
+For $u_j(x)=\psi_j((x-p)/r_j)$,
+\[
+ Q_C(u_j)=r_j^{\,n-2}Q_{C_j}(\psi_j)<0.
+\]
+Its support lies in the regular part and shrinks to $p$.
+\end{proof}
+
+A leading form $a(|u|^2-|v|^2)$ in orthogonal coordinates,
+$a\ne0$, with $u,v\in\R^s$ and $s=2,3$, gives an unstable
+quadratic factor: $|A|^2=(2s-2)/\rho^2$, where
+$\rho^2=|u|^2+|v|^2$, and the sharp radial Hardy constant is
+$(2s-3)^2/4<2s-2$.
+For example, the minimal cubic $F=\operatorname{Re}(z_1z_2z_3)$
+on $\mathbb C^3$ has leading term $\operatorname{Re}(z_2z_3)$
+at $p=(1,0,0)$, giving the tangent
+$\R^2\times\{(u,v)\in\R^2\oplus\R^2:|u|=|v|\}$.
+The lemma proves local instability at $p$; see
+\cref{sec:tangents} for the Clifford and Hurwitz cubic models.

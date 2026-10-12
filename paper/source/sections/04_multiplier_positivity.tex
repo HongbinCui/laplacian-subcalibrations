@@ -1,0 +1,1152 @@
+\section[Multipliers and Global Positivity]{Multipliers, Jacobi Identities, and Global Positivity}
+\label{sec:algebraic-jacobi}
+
+The multiplier expansion relates global divergence to its Jacobi trace;
+\cref{sec:laplacian-calculus} reduces the sign test to the invariant image.
+
+\subsection{The global multiplier defect}
+
+\begin{proposition}[Odd-power invariance and regular defining potentials]
+\label{prop:potential-normal-form}
+Let \(\Omega\subset\R^N\setminus\{0\}\) be open and conical, and
+let \(F\) be smooth and homogeneous with \(\nabla F\neq0\) on
+\(C\cap\Omega=\{F=0\}\cap\Omega\).
+\begin{enumerate}[label=\textup{(\roman*)}]
+ \item Let \(a>0\) be smooth and homogeneous on \(\Omega\), and
+ let \(m\geq1\) be an odd integer.  Set
+ \[
+  \widetilde F=F^m,\qquad G=aF,\qquad
+  \widetilde G=a^m\widetilde F=G^m.
+ \]
+ Then
+ \begin{equation}\label{eq:odd-power-field}
+  \nabla\widetilde G=mG^{m-1}\nabla G,\qquad
+  \cL(\widetilde G)=m^3G^{3m-3}\cL(G).
+ \end{equation}
+ Thus \(X_{\widetilde G}=X_G\) wherever \(F\neq0\) and
+ \(\nabla G\neq0\), and \(X_G\) gives its smooth extension across
+ \(C\cap\Omega\).  Conversely, every positive smooth homogeneous
+ multiplier \(b\) for \(\widetilde F\) is obtained by setting
+ \(a=b^{1/m}\).  Hence the two defining equations admit the same
+ multiplier subcalibration fields, with the same regular boundary
+ extensions and the same remaining exceptional sets.
+ \item If a smooth homogeneous function \(G\) has the same zero set
+ and signs as \(F\) on \(\Omega\), and \(\nabla G\neq0\) on
+ \(C\cap\Omega\), then \(G=bF\) for a positive smooth homogeneous
+ function \(b\) on \(\Omega\).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+For \textup{(i)}, the chain rule gives \(\cL(\psi(G))=(\psi'(G))^3\cL(G)\).
+Take \(\psi(t)=t^m\).
+Its derivative is positive off \(t=0\), which proves the field
+identity.  On the regular cone, \(\nabla G=a\nabla F\neq0\),
+so \(X_G\) provides the exterior normal extension.  Off the cone,
+the two gradients vanish at exactly the same points.  The inverse
+correspondence follows from \(bF^m=(b^{1/m}F)^m\); the positive
+root is smooth and homogeneous.
+
+For \textup{(ii)}, use local coordinates \((y,t)\) with \(t=F\).
+Since \(G(y,0)=0\),
+\[
+ G(y,t)=t\int_0^1\partial_tG(y,st)\,ds.
+\]
+The integral extends \(b=G/F\) smoothly, with
+\(b|_C=|\nabla G|/|\nabla F|>0\) by the common phase signs and
+regularity.  These extensions agree on overlaps; the quotient also
+gives \(\deg b=\deg G-\deg F\).
+\end{proof}
+
+Part \textup{(i)} preserves the divergence and its phase integrals.
+For \(m>1\), \(\nabla\widetilde G=0\) on the cone; the
+Jacobi--Hardy formulas use its regular field extension \(X_G\), the degree
+\(\ell=\deg\widetilde G/m\), and \(w=|\nabla G|^{-1}|_C\).
+
+The displayed algebra \(\R[R,F^m]\) need not itself be Laplacian closed, even when
+\(\R[R,F]\) is: for \(F=x_1\),
+\(\Delta(F^3)=6F\notin\R[R,F^3]\).
+The radial and gradient powers used below are discussed in
+\cref{app:power-identities}.
+
+Let \(\Omega\subset\R^N\) be open and \(F,a\in C^\infty(\Omega)\),
+with \(a>0\). Suppose \(\nabla F\ne0\) on
+\(C=\{F=0\}\cap\Omega\) and \(C\) is minimal. Put \(G=aF\).
+The product rule gives \(\cL(G)|_C=a^3\cL(F)|_C=0\).
+Smooth division by \(F\), as in
+\cref{prop:potential-normal-form}\textup{(ii)}, therefore defines
+\[
+ \lambda_F=\frac{\cL(F)}F,\qquad \cK_F(a)=\frac{\cL(aF)}F.
+\]
+Then \(G\cL(G)=aF^2\cK_F(a)\). Polynomial divisibility gives
+the same \(\lambda_F\) as \eqref{eq:L-divisibility}. Write
+\[
+ P=\nabla F,\quad Q=\nabla a,\qquad
+ S=|P|^2,\quad T=\langle P,Q\rangle,\quad V=|Q|^2.
+\]
+
+\begin{theorem}[Exact multiplier expansion]
+\label{thm:exact-multiplier}
+Under the preceding smooth hypotheses, the multiplier defect equals
+\begin{align}
+\cK_F(a)={}&a^3\lambda_F\notag\\
+&+a^2\bigl(S\Delta a+2T\Delta F-2\Hess F(P,Q)-\Hess a(P,P)\bigr)\notag\\
+&+2a(T^2-SV)\notag\\
+&+Fa\bigl(2T\Delta a+V\Delta F-\Hess F(Q,Q)
+              -2\Hess a(P,Q)\bigr)\notag\\
+&+F^2\cL(a).                                           \label{eq:exact-multiplier}
+\end{align}
+If, in addition, \(F,a\) are polynomials in a Laplacian algebra
+\(\cA\) and \(F\mid\cL(F)\) in \(\R[x_1,\ldots,x_N]\),
+then every term in \eqref{eq:exact-multiplier} belongs to \(\cA\).
+\Cref{prop:divisibility} gives sufficient geometric conditions for
+this polynomial divisibility.
+\end{theorem}
+
+\begin{proof}
+Expand \(\nabla(aF)=aP+FQ\),
+\(\Delta(aF)=a\Delta F+F\Delta a+2T\), and
+\[
+ \Hess(aF)=a\Hess F+F\Hess a+dF\otimes da+da\otimes dF.
+\]
+The constant term in \(\cL(aF)\) is
+\(a^3\cL(F)=a^3F\lambda_F\); collecting the remaining powers of \(F\)
+gives the formula.  The identity
+\[
+ 2\Hess u(\nabla v,\nabla w)
+ =\Gamma(v,\Gamma(u,w))+\Gamma(w,\Gamma(u,v))
+  -\Gamma(u,\Gamma(v,w))
+\]
+expresses the Hessian terms through gradient inner products.
+
+By closure, \(\cL(F)=S\Delta F-\Gamma(F,S)/2\in\cA\).
+Polynomial division, \cref{prop:MR-finite-and-division}, then gives
+\(\lambda_F\in\cA\), proving the algebra assertion.
+\end{proof}
+
+\begin{lemma}[The defect at a critical zero]
+\label{lem:critical-multiplier-defect}
+Let \(F\) be a nonzero polynomial satisfying
+\(\cL(F)=F\lambda_F\), with polynomial \(\lambda_F\), and let
+\(a\) be a \(C^2\) function near a point \(p\) with
+\(F(p)=0\) and \(\nabla F(p)=0\).
+The right-hand side of \eqref{eq:exact-multiplier} defines a continuous
+extension of \(\cL(aF)/F\), and
+\begin{equation}\label{eq:critical-multiplier-defect}
+ \cK_F(a)(p)=a(p)^3\lambda_F(p).
+\end{equation}
+If \(\lambda_F(p)<0\), no such multiplier with \(a(p)>0\)
+can satisfy \((aF)\cL(aF)\ge0\) throughout a punctured neighborhood
+of \(p\). In particular, a nonnegative \(C^2\) multiplier satisfying
+this sign condition must vanish at \(p\).
+\end{lemma}
+
+\begin{proof}
+The expansion is a product-rule identity wherever \(F\ne0\), and
+every term on its right-hand side is continuous. At \(p\), one has
+\(F=0\), \(P=0\), \(S=0\), and \(T=0\), so only
+\(a^3\lambda_F\) remains. If \(a(p)>0\) and
+\(\lambda_F(p)<0\), continuity gives \(a>0\) and
+\(\cK_F(a)<0\) near \(p\). A nonzero polynomial has a zero set
+with empty interior, so there are nearby points with \(F\ne0\), where
+\[
+ (aF)\cL(aF)=aF^2\cK_F(a)<0.
+\]
+This contradicts the required sign.
+\end{proof}
+
+\paragraph{Logarithmic differentiation of a positive multiplier.}
+On the open domain where \(a>0\), including the regular cone,
+\(h=\log a\) is smooth and satisfies
+\begin{equation}\label{eq:log-multiplier-derivatives}
+ \nabla h=\frac{\nabla a}{a},\qquad
+ \Delta h=\frac{\Delta a}{a}-\frac{|\nabla a|^2}{a^2},\qquad
+ \Gamma(h,q)=\frac{\Gamma(a,q)}a.
+\end{equation}
+If $a$ has degree $d$, then $h(tx)=h(x)+d\log t$ for $t>0$.
+
+\subsection{The Jacobi boundary condition}
+\label{sec:jacobi-boundary-condition}
+
+Let \(J_{C_{\rm reg}}=\Delta_{C_{\rm reg}}+|A_C|^2\)
+be the Jacobi operator associated with the second variation; see
+\cite{Simons68} and \cite[Remark~9.8]{Simon83}. With scalar mean curvature
+defined by \(H=\diver_{C_{\rm reg}}\nu\), a variation with normal
+speed \(w\) has linearization \(-J_Cw\).
+
+\begin{theorem}[Exact Jacobi trace]
+\label{thm:Jacobi-trace}
+For the smooth \(F,a\) of \cref{thm:exact-multiplier}, along
+\(C_{\reg}\cap\Omega\),
+\begin{equation}\label{eq:Jacobi-trace}
+ \boxed{
+ \left.\cK_F(a)\right|_{C_{\rm reg}}
+ =-a^4|\nabla F|^3J_{C_{\rm reg}}
+ \left(\frac1{a|\nabla F|}\right).}
+\end{equation}
+Consequently, \(\cK_F(a)\geq0\) near this hypersurface requires the positive
+Jacobi supersolution
+\begin{equation}\label{eq:positive-Jacobi}
+ w=(a|\nabla F|)^{-1}>0,
+ \qquad J_Cw\leq0.
+\end{equation}
+It is a Jacobi field exactly when the boundary defect vanishes.
+\end{theorem}
+
+\begin{proof}
+The flow of \(\nabla G/|\nabla G|^2\) parametrizes the level sets
+\(M_t=\{G=t\}\), with normal speed
+\(w=|\nabla G|^{-1}=(a|\nabla F|)^{-1}\) at \(t=0\).
+The mean-curvature variation at the minimal zero level is
+\(\frac{d}{dt}H_{M_t}|_0=-J_Cw\).
+On the other hand, \eqref{eq:div-normalized-gradient} gives, along this flow,
+\[
+ H_{M_t}=\frac{F\cK_F(a)}{|\nabla G|^3},\qquad
+ \frac{dF}{dt}\bigg|_0
+ =\left.\frac{\langle\nabla F,\nabla G\rangle}{|\nabla G|^2}\right|_C
+ =\frac1a.
+\]
+Since \(F=0\) on \(C\), differentiation of the other factors contributes
+zero at \(t=0\).  Using \(|\nabla G|^3=a^3|\nabla F|^3\) there yields
+\[
+ -J_Cw=\frac{d}{dt}H_{M_t}\bigg|_0
+ =\left.\frac{\cK_F(a)}{a^4|\nabla F|^3}\right|_C,
+\]
+which is \eqref{eq:Jacobi-trace}.
+\end{proof}
+
+\begin{proposition}[Harmonic power multipliers on the boundary]
+\label{prop:harmonic-power-Jacobi}
+Let \(F\not\equiv0\) be a homogeneous polynomial of degree \(e\ge2\) satisfying
+\eqref{eq:harmonic-minimal-weight}. Put \(R=r^2\),
+\(K=\Delta S=2|\Hess F|^2\), and \(T=|\nabla S|^2\).
+For real \(\sigma,\gamma\), define \(G=r^\sigma S^\gamma F\) on
+\(\{S>0\}\). Its boundary speed is \(w=r^{-\sigma}S^{-\gamma-1/2}\).
+On \(C_{\reg}\),
+\begin{equation}\label{eq:harmonic-power-Jacobi}
+ -\frac{J_Cw}{w}
+ =\frac{\sigma\bigl(N-1-2e-\sigma-4\gamma(e-1)\bigr)}{R}
+  +\frac{\gamma K-(2\gamma+1)q}{S}
+  -\frac{\gamma(2\gamma+3)}2\frac{T}{S^2}.
+\end{equation}
+In particular, a two-sided subcalibration generated by \(G\) requires
+the right-hand side to be nonnegative on \(C_{\reg}\).
+\end{proposition}
+
+\begin{proof}
+Set \(w_0=S^{-1/2}\). Applying \cref{thm:Jacobi-trace} with
+\(a=1\) and \(\cL(F)=-qF\) gives \(J_Cw_0/w_0=q/S\).
+On \(C_{\reg}\), equation \eqref{eq:harmonic-minimal-weight} implies
+\(\nabla S\perp\nabla F\) and \(\Hess F(\nu_C,\nu_C)=0\).
+Since \(\Hess F\,\nu_C=\nabla S/(2\sqrt S)\), decomposition into
+normal and tangential components gives
+\[
+ |A_C|^2=\frac{K}{2S}-\frac{T}{2S^2},\qquad
+ |\nabla_C\log w_0|^2=\frac{T}{4S^2}.
+\]
+For \(p=2\gamma+1\), the chain rule reads
+\[
+ \frac{J_C(w_0^p)}{w_0^p}
+ =p\frac{J_Cw_0}{w_0}+(1-p)|A_C|^2
+       +p(p-1)|\nabla_C\log w_0|^2.
+\]
+Finally, \(C\) has dimension \(N-1\), so
+\(\Delta_Cr^{-\sigma}/r^{-\sigma}
+ =\sigma(\sigma-N+3)/R\).
+The homogeneity of \(w_0^p\), of degree \(-p(e-1)\), gives the
+cross term \(2\sigma p(e-1)/R\). Substitution proves the formula.
+\end{proof}
+
+\begin{theorem}[Positive-solution identity and homogeneous Hardy gap]
+\label{thm:ground-state-gap}
+Let \(C^n\subset\R^{n+1}\), \(n\geq2\), be a cone whose regular part
+is two-sided and minimal.  Let \(G\) be a smooth homogeneous defining function of degree
+\(\ell\) on a conical neighborhood of \(C_{\reg}\setminus\{0\}\), with
+\(\nabla G\neq0\) there.  Set
+\begin{equation}\label{eq:boundary-Jacobi-potential}
+ w=|\nabla G|^{-1}\big|_C>0,\qquad
+ V_G=-\frac{J_Cw}{w}=r^{-2}\beta_G(\theta).
+\end{equation}
+For every \(u\in C_c^\infty(C_{\reg}\setminus\{0\})\),
+\begin{equation}\label{eq:ground-state-identity}
+ Q_C(u)=\int_Cw^2\left|\nabla_C\left(\frac uw\right)\right|^2
+             +\int_CV_Gu^2.
+\end{equation}
+If \(\beta_G\geq\beta_0\) on the regular link for a finite constant \(\beta_0\), then
+\begin{equation}\label{eq:homogeneous-strict-stability}
+ Q_C(u)\geq\left[\left(\ell-\frac n2\right)^2+\beta_0\right]
+                  \int_Cr^{-2}u^2.
+\end{equation}
+For \(G=aF\) in \cref{thm:Jacobi-trace},
+\begin{equation}\label{eq:boundary-potential-algebraic}
+ V_G=\left.\frac{\cK_F(a)}{a^3|\nabla F|^2}\right|_C
+     =\left.\partial_{\nu_C}\diver
+          \left(\frac{\nabla G}{|\nabla G|}\right)\right|_C.
+\end{equation}
+Consequently a nonnegative Jacobi boundary defect implies stability;
+if also \(\ell\neq n/2\), it implies strict stability with constant at
+least \((\ell-n/2)^2\).
+\end{theorem}
+
+\begin{proof}
+Substituting \(u=wv\) and integrating by parts gives
+\eqref{eq:ground-state-identity}.
+Homogeneity gives \(w=r^{1-\ell}\phi(\theta)\), \(\phi>0\).
+Writing \(\Lambda_{\reg}=C_{\reg}\cap\Sph^n\), the cone volume
+element \(r^{n-1}\,dr\,d\mu_\Lambda\) gives
+\[
+ \int_Cw^2|\nabla_Cv|^2
+ \geq\int_{\Lambda_{\reg}}\phi^2
+       \int_0^\infty r^{n+1-2\ell}|\partial_rv|^2\,dr\,d\mu_\Lambda.
+\]
+For every real \(p\) and \(f\in C_c^\infty(0,\infty)\), completion of the
+square proves
+\[
+ \int_0^\infty r^p(f')^2\,dr
+ \geq\frac{(p-1)^2}{4}\int_0^\infty r^{p-2}f^2\,dr.
+\]
+Apply this with \(p=n+1-2\ell\) for each angular point.
+The resulting term is \((\ell-n/2)^2\int_Cr^{-2}u^2\).
+Adding \(\int_CV_Gu^2\geq\beta_0\int_Cr^{-2}u^2\) proves
+\eqref{eq:homogeneous-strict-stability}.
+The first equality in \eqref{eq:boundary-potential-algebraic} follows by
+dividing \eqref{eq:Jacobi-trace} by \(a^4|\nabla F|^3w\).
+For the second, differentiate
+\(\diver X_G=F\cK_F(a)/|\nabla G|^3\) in the unit normal direction on
+\(F=0\), where \(\partial_\nu F=|\nabla F|\).
+\end{proof}
+
+\begin{remark}[Vanishing trace and the Hardy gap]
+\label{rem:vanishing-trace-strict-stability}
+If \(J_Cw=0\), formula \eqref{eq:ground-state-identity} still contains
+the Hardy gap \((\ell-n/2)^2\).  This lower bound vanishes only at the central degree
+\(\ell=n/2\).
+Failure of strict stability requires a sequence with Hardy quotient
+tending to zero; see \cref{prop:complex-zero-gap}.
+\end{remark}
+
+\begin{remark}[Subcalibrations as paired geometric barriers]
+\label{rem:paired-barriers}
+For \(G=aF\), \(a>0\), and \(\cK_F(a)\geq0\), the regular levels
+\(M_t=\{G=t\}\), oriented by \(X_G\), satisfy
+\[
+ H_{M_t}=\frac{F\cK_F(a)}{|\nabla G|^3},\qquad
+ tH_{M_t}\geq0.
+\]
+Thus \(G\) is a supersolution on \(F<0\) and a subsolution on
+\(F>0\) of the level-set equation \(\diver X_G=0\).
+The level-set variation in the proof of \cref{thm:Jacobi-trace}
+has normal graph height \(s_t=tw+O(t^2)\), with
+\(w=(a|\nabla F|)^{-1}\), and gives
+\begin{equation}\label{eq:paired-barrier-expansion}
+ H_{M_t}=-tJ_Cw+O(t^2).
+\end{equation}
+Thus \(J_Cw<0\) gives strict local barriers on both sides.
+\end{remark}
+
+The sign of \(\cK_F(a)\) away from the cone requires a separate
+calculation, as the stable non-minimizing examples in
+\cref{sec:isoparametric-reduction} illustrate.
+
+\subsubsection*{The admissible degree}
+
+Let \(C^{N-1}\subset\R^N\), \(N\geq3\), be a minimal cone, let
+\(\Sigma=C\cap\Sph^{N-1}\), and suppose a homogeneous potential \(G=aF\)
+has total degree \(\ell\).  Then \(w=(a|\nabla F|)^{-1}\) has degree
+\(1-\ell\).  If the entire link \(\Sigma\) is smooth, it is compact
+and connected; see the maximum-principle argument of Hardt--Simon
+\cite[p.~104]{HardtSimon85}.
+Let \(\lambda_1(\Sigma)\) be the first eigenvalue of
+\(-\Delta_\Sigma-|A_\Sigma|^2\).  Existence of
+a positive homogeneous Jacobi supersolution requires
+\begin{equation}\label{eq:degree-window}
+ \ell\in I_F:=
+ \left[\frac{N-1}{2}-\beta_F,
+       \frac{N-1}{2}+\beta_F\right],
+ \qquad
+ \beta_F^2=\frac{(N-3)^2}{4}+\lambda_1(\Sigma).
+\end{equation}
+If the radicand is negative, no positive homogeneous Jacobi supersolution
+with positive angular part exists.  More precisely, if \(\phi_1>0\) is the
+first eigenfunction and
+\(w=r^{1-\ell}\phi_1\), then
+\[
+ J_Cw=r^{-1-\ell}\left[
+ (1-\ell)(N-2-\ell)-\lambda_1(\Sigma)
+ \right]\phi_1.
+\]
+For any positive angular supersolution, integrating its inequality
+against \(\phi_1\) gives the same necessary degree condition.
+Using \(\phi_1\), interior degrees give \(J_Cw<0\) and endpoints
+give \(J_Cw=0\). A prescribed angular multiplier requires its own sign test.
+
+For a smooth compact connected link, the zero-gap case is rigid.
+Write $n=N-1$, $H_\Sigma=-\Delta_\Sigma-|A_\Sigma|^2$, and
+$\delta_C=(n-2)^2/4+\lambda_1(\Sigma)$, the exact Hardy gap in
+\eqref{eq:exact-Hardy-gap}. If $w=r^{1-\ell}\phi>0$ and
+$-J_Cw/w=r^{-2}\beta\ge0$, then
+\begin{equation}\label{eq:critical-boundary-rigidity}
+ \delta_C=0\quad\Longrightarrow\quad
+ \ell=n/2,\qquad \beta\equiv0,\qquad
+ \phi\text{ is a positive first eigenfunction of }H_\Sigma.
+\end{equation}
+Indeed, \eqref{eq:degree-window} forces $\ell=n/2$.
+Then $(H_\Sigma+(n-2)^2/4)\phi=\beta\phi$.
+Pairing with a positive first eigenfunction $\psi$ gives
+$0=\int_\Sigma\beta\phi\psi$, hence $\beta=0$.
+Simplicity of the first eigenvalue now gives the last assertion.
+In particular, a nonnegative boundary defect that is positive at one
+point suffices for strict stability on such a link.
+
+\begin{remark}[Two admissible power multipliers]
+\label{cor:two-power-strict-stability}
+Let $F$ be a homogeneous polynomial of degree $e\ge2$ on
+$\R^{n+1}$, $n\ge3$, whose zero set $C$ is minimal, with
+$\nabla F\ne0$ on $C\setminus\{0\}$ and nonempty smooth compact
+connected link $\Sigma$. Put $S=|\nabla F|^2$, and suppose that
+$s=S|_\Sigma$ is nonconstant. If two distinct real parameter pairs
+$(\alpha_i,b_i)$ give potentials
+\[
+ G_i=r^{\alpha_i}S^{b_i/2}F,\qquad
+ \operatorname{sgn}(F)\diver X_{G_i}\ge0\quad\text{where }F\ne0
+\]
+in a two-sided neighborhood of $C\setminus\{0\}$ on which both
+fields are defined, then $C$ is strictly stable.
+Indeed, by \cref{thm:Jacobi-trace}, the positive boundary speeds
+$w_i=r^{-\alpha_i}S^{-(b_i+1)/2}$ are Jacobi supersolutions.
+\Cref{thm:ground-state-gap} first gives stability.
+Their potential degrees are $\ell_i=e+\alpha_i+b_i(e-1)$.
+If the Hardy gap were zero, \eqref{eq:critical-boundary-rigidity}
+would force $\ell_i=n/2$ and both angular parts
+$s^{-(b_i+1)/2}$ to be proportional to the same first eigenfunction.
+Thus $s^{-(b_1-b_2)/2}$ would be constant. Since $s$ is nonconstant,
+$b_1=b_2$, and equality of the degrees then gives $\alpha_1=\alpha_2$,
+a contradiction.
+\end{remark}
+
+\paragraph{Example: admissible degrees on the Simons cone.}
+\label{par:Simons-degree-example}
+Let
+\[
+ F(x,y)=|x|^2-|y|^2,\qquad (x,y)\in\R^4\times\R^4,\qquad R=r^2.
+\]
+Its zero link is
+\(\Sigma=\Sph^3(1/\sqrt2)\times\Sph^3(1/\sqrt2)\), with
+\(|A_\Sigma|^2=6\).  The constant function attains
+\(\lambda_1(\Sigma)=-6\), so \eqref{eq:degree-window} gives
+\[
+ \beta_F^2=\frac{25}{4}-6=\frac14,\qquad I_F=[3,4].
+\]
+The quadratic \(F\) itself lies outside this interval.  Choose instead
+\(G=RF=|x|^4-|y|^4\), of degree \(\ell=4\), as in
+\cite[Section~2]{DePhilippisPaolini}; see
+\cref{rem:subcalibration-history} for its historical antecedents.
+Direct calculation gives
+\begin{align*}
+ |\nabla G|^2&=4R(R^2+3F^2),& \Delta G&=24F,\\
+ \cL(G)&=192RF^3,& \cK_F(R)&=192RF^2,\\
+ G\cL(G)&=192R^2F^4\geq0.
+\end{align*}
+This is the strictly minimizing \(g=2\), \(m_1=m_2=3\) case of
+\cref{sec:isoparametric-reduction}.
+
+On the other hand,
+\[
+ w=|\nabla G|^{-1}\big|_C=\frac1{2r^3},\qquad
+ J_Cw=0,\qquad \cK_F(R)\big|_C=0.
+\]
+Nevertheless \cref{thm:ground-state-gap} gives
+\[
+ Q_C(u)\geq\left(4-\frac72\right)^2\int_Cr^{-2}u^2
+ =\frac14\int_Cr^{-2}u^2,
+\]
+and \eqref{eq:exact-Hardy-gap} shows this constant is optimal.
+Thus an endpoint degree and zero Jacobi trace coexist with both
+strict area minimality and strict stability.
+For \(G_\eps=r^{-\eps}G\), \(0<\eps<1\), the boundary coefficient
+is \(\beta_{G_\eps}=\eps-\eps^2>0\).
+For all sufficiently small \(\eps>0\), \(G_\eps\) retains the
+subcalibration sign and its normalized gradient satisfies the linear
+distance bound; see \cref{cor:four-degenerate-certificates}.
+
+\subsubsection*{The spectral obstruction for a singular link}
+For a singular link, we use the angular Rayleigh infimum, without
+assuming connectedness of \(\Sigma_{\reg}\) or existence of a first
+eigenfunction.\footnote{If \(\Sigma\) is the connected support of a stationary
+integral \((N-2)\)-varifold in \(\Sph^{N-1}\), with
+\(\cH^{N-3}(\Sing\Sigma)=0\), regular-part connectedness follows from
+\cite[Lemma~2.2]{Zhu18}.}
+Define
+\begin{equation}\label{eq:Friedrichs-bottom}
+ \lambda_{\rm F}(\Sigma)=
+ \inf_{0\neq\phi\in C_c^\infty(\Sigma_{\rm reg})}
+ \frac{\int_{\Sigma_{\rm reg}}
+ (|\nabla\phi|^2-|A_\Sigma|^2\phi^2)}
+ {\int_{\Sigma_{\rm reg}}\phi^2}.
+\end{equation}
+This infimum may equal \(-\infty\); when finite, it is the bottom of
+the Friedrichs extension and need not be attained.
+Zhu's spherical stability convention
+\cite[Section~2.1.5, equation~(2.8)]{Zhu18} includes the Ricci term:
+\[
+ \lambda_1^{Z}(\Sigma)=\lambda_{\rm F}(\Sigma)-(N-2).
+\]
+The exact cone stability quotient is
+\begin{equation}\label{eq:exact-Hardy-gap}
+\begin{aligned}
+ \inf_{0\neq u\in C_c^\infty(C_{\rm reg}\setminus\{0\})}
+ \frac{Q_C(u)}{\int_Cr^{-2}u^2}
+ &=\frac{(N-3)^2}{4}+\lambda_{\rm F}(\Sigma)\\
+ &=\frac{(N-1)^2}{4}+\lambda_1^{Z}(\Sigma).
+\end{aligned}
+\end{equation}
+By radial--angular separation \cite{Simons68,CabrePoggesi18},
+the sharp radial Hardy inequality and the angular Rayleigh bound give
+the lower bound. For a product
+test \(u(r,\theta)=\eta(r)\varphi(\theta)\), the cone quotient is
+the sum of the radial Hardy quotient and the angular Rayleigh
+quotient. Independent minimizing sequences give equality, including
+\(\lambda_{\rm F}(\Sigma)=-\infty\).
+If the right-hand side is negative, no fields satisfying the
+comparison criterion can exist.
+
+\begin{remark}[What the boundary trace determines]
+Equality \(a_1|_{C_{\rm reg}}=a_2|_{C_{\rm reg}}\) is equivalent to
+local smooth divisibility of \(a_1-a_2\) by \(F\). By
+\eqref{eq:Jacobi-trace}, it implies
+\begin{equation}\label{eq:boundary-ideal-class}
+ \left.\cK_F(a_1)\right|_{C_{\rm reg}}
+ =\left.\cK_F(a_2)\right|_{C_{\rm reg}}.
+\end{equation}
+Thus the boundary defect depends only on \(a|_C\).
+\end{remark}
+
+For calibrated complex cones with zero Hardy gap, see the
+Jacobi-field construction in \cref{prop:complex-zero-gap}.
+
+\input{sections/harmonic_multiplier_criterion}
+
+\subsection{Radial multipliers in arbitrary degree}
+\label{sec:general-radial-multipliers}
+
+Let \(F\) be a nonzero homogeneous polynomial of degree \(e\ge2\),
+put \(S=|\nabla F|^2\), and suppose \(\cL(F)=-qF\) for a
+polynomial \(q\).
+The identity in \cref{prop:radial-master-identity} gives the following
+radial specialization.
+For \(\sigma>0\), set
+\begin{align}
+ A_\sigma&=\sigma(N-1-2e-\sigma),\qquad
+ c_\sigma=\sigma(\sigma+2e),\notag\\
+ B_\sigma&=c_\sigma\bigl(e+\sigma(N-1)\bigr).
+ \label{eq:general-radial-coefficients}
+\end{align}
+Then, on \(r>0\),
+\begin{align}
+ |\nabla(r^\sigma F)|^2
+ &=r^{2\sigma}\left(S+c_\sigma\frac{F^2}{R}\right),
+ \label{eq:general-radial-gradient}\\
+ \cL(r^\sigma F)&=r^{3\sigma-2}F\,\mathscr H_\sigma,
+ \label{eq:general-radial-defect}\\
+ \mathscr H_\sigma
+ &=A_\sigma S-Rq+c_\sigma F\Delta F
+                  +B_\sigma\frac{F^2}{R}.
+ \label{eq:general-radial-bracket}
+\end{align}
+The exact sign condition is \(\mathscr H_\sigma\ge0\) on \(r>0\).
+A sufficient test follows.
+
+\begin{proposition}[A radial criterion without harmonicity]
+\label{prop:general-radial-existence}
+Let \(F\) be a homogeneous polynomial of degree \(e\ge2\) on
+\(\R^N\), \(N\ge3\), taking both signs,
+and suppose \(\cL(F)=-qF\) for a polynomial \(q\).
+Assume that \(Z=\{\nabla F=0\}\) has dimension at most \(N-2\),
+as holds whenever \(F\) is square-free by
+\cref{lem:square-free-critical-set}.
+If constants \(\kappa,\eta\ge0\) and \(\sigma>0\) satisfy
+\begin{equation}\label{eq:general-radial-comparisons}
+ Rq\le\kappa S,\qquad F\Delta F\ge-\eta S
+ \quad\hbox{on }\R^N,
+\end{equation}
+and
+\begin{equation}\label{eq:general-radial-sufficient}
+ \sigma\bigl[N-1-2e(1+\eta)-(1+\eta)\sigma\bigr]\ge\kappa,
+\end{equation}
+then \(G=r^\sigma F\) generates a two-sided subcalibration and
+\(\partial\llbracket\{F<0\}\rrbracket\) is strictly area minimizing.
+Moreover, on \(C_{\reg}=\{F=0,S>0\}\),
+\begin{equation}\label{eq:general-radial-Hardy}
+ Q_C(u)\ge
+ \left[\frac{(N-1-2e)^2}{4}-\kappa\right]
+ \int_Cr^{-2}u^2,
+ \qquad u\in C_c^\infty(C_{\reg}).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The assumptions give
+\[
+ \mathscr H_\sigma\ge
+ (A_\sigma-c_\sigma\eta-\kappa)S
+ +B_\sigma\frac{F^2}{R}\ge0.
+\]
+Since \(\sigma,c_\sigma,B_\sigma>0\), the bracket is positive off
+the cone. Euler's identity and \eqref{eq:general-radial-gradient}
+give \(Z\subset\{F=0\}\) and \(\nabla G\ne0\) off \(Z\).
+The continuous potential has the signs of \(F\), and the algebraic
+set \(Z\) is locally \(\cH^{N-1}\)-null. Thus
+\cref{cor:gradient-subcalibration,thm:strict-minimality-flux}
+give minimization and its strict form.
+
+The Jacobi trace \eqref{eq:Jacobi-trace} and
+\eqref{eq:general-radial-defect} give, on \(C_{\reg}\),
+\begin{equation}\label{eq:general-radial-Jacobi}
+ -\frac{J_Cw}{w}=\frac{A_\sigma}{R}-\frac qS
+ \ge\frac{A_\sigma-\kappa}{R},
+ \qquad w=r^{-\sigma}S^{-1/2}.
+\end{equation}
+Apply \cref{thm:ground-state-gap} with \(\ell=e+\sigma\) and use
+\[
+ \left(e+\sigma-\frac{N-1}{2}\right)^2+A_\sigma
+ =\frac{(N-1-2e)^2}{4}
+\]
+to obtain \eqref{eq:general-radial-Hardy}.
+\end{proof}
+
+Writing \(b_\eta=N-1-2e(1+\eta)\), the left side of
+\eqref{eq:general-radial-sufficient} is maximized, when
+\(b_\eta>0\), at \(\sigma=b_\eta/[2(1+\eta)]\).
+This yields the explicit sufficient dimension condition
+\begin{equation}\label{eq:general-radial-dimension}
+ b_\eta>0,\qquad
+ N\ge1+2e(1+\eta)+2\sqrt{(1+\eta)\kappa}.
+\end{equation}
+Separating the terms in \eqref{eq:general-radial-bracket} can lose sharpness:
+
+\begin{example}[Nonsharpness of the simplified criterion]
+\label{ex:radial-separated-nonsharp}
+Let \(F=7u-v\), where \(u=|x|^2\), \(v=|y|^2\), and
+\((x,y)\in\R^2\times\R^8\). This is a classical Lawson cone;
+see \cite{Liu19} for quantitative subcalibrations in this family.
+Here
+\[
+ \Delta F=12,\qquad S=196u+4v,\qquad \cL(F)=-56F.
+\]
+The least nonnegative constants in
+\eqref{eq:general-radial-comparisons} are
+\(\kappa=14\) and \(\eta=3\), both attained at \(u=0<v\).
+Consequently \eqref{eq:general-radial-sufficient} would require
+\(\sigma(-7-4\sigma)\ge14\), which fails for every
+\(\sigma>0\). Nevertheless, the radial polynomial potential
+\(G=RF\) satisfies the exact identity
+\begin{equation}\label{eq:radial-Lawson-counterexample}
+ \cL(G)=64RF\bigl[(v-11u)^2+96u^2\bigr].
+\end{equation}
+Since \(S>0\) away from the origin, this gives a two-sided
+subcalibration with strict signed divergence off the cone.
+Thus \eqref{eq:general-radial-sufficient} need not hold for any
+positive exponent, even with the least admissible comparison constants.
+\end{example}
+
+Finite comparison constants also need not exclude nonzero critical
+points without harmonicity. For this explicitly reducible comparison,
+outside the introductory convention, put \(u=|x|^2\), \(v=|y|^2\), with
+\((x,y,z)\in\R^4\times\R^4\times\R^2\), the square-free
+but reducible polynomial \(F=u^2-v^2\) satisfies
+\[
+ S=16(u^3+v^3),\qquad \Delta F=24(u-v),\qquad
+ \cL(F)=192F(u-v)^2.
+\]
+Hence \(\kappa=\eta=0\) are admissible in
+\eqref{eq:general-radial-comparisons}, and \(\sigma=1/2\)
+satisfies \eqref{eq:general-radial-sufficient}. Its zero set is the
+Simons cone in \(\R^8\) times \(\R^2\), with critical set
+\(\{x=y=0\}\). The quartic defining equation includes the
+positive factor \(u+v\) away from that set.
+
+If \(F\) belongs to a Laplacian algebra \(\cA\) containing
+\(R\), then \(S,\Delta F\in\cA\), and the division property
+of \cref{prop:MR-finite-and-division} gives \(q\in\cA\).
+Thus \(R\mathscr H_\sigma\in\cA\), and its sign on \(R>0\)
+can be tested on the real quotient using the closure table.
+
+\begin{corollary}[A harmonic radial criterion in arbitrary degree]
+\label{cor:harmonic-radial-existence}\label{main:harmonic-radial}
+Under the hypotheses of \cref{prop:harmonic-power-Jacobi}, suppose that
+for a constant \(\kappa\ge0\),
+\begin{equation}\label{eq:harmonic-radial-bound}
+ Rq\le\kappa S\quad\hbox{on }\R^N,\qquad
+ N\ge2e+1+2\sqrt\kappa.
+\end{equation}
+Then, with \(\sigma=(N-1-2e)/2\), the potential \(G=r^\sigma F\)
+generates a two-sided subcalibration. The phase \(\{F<0\}\) is locally
+perimeter minimizing, and its oriented boundary current is locally
+mass minimizing with support \(C=\{F=0\}\). The cone is strictly
+area minimizing, and
+\begin{equation}\label{eq:harmonic-radial-Hardy}
+ Q_C(u)\ge\left[\frac{(N-1-2e)^2}{4}-\kappa\right]
+ \int_Cr^{-2}u^2,
+ \qquad u\in C_c^\infty(C\setminus\{0\}).
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Write \(b=N-1-2e\). By
+\cref{prop:harmonic-global-comparison} below,
+\(S>0\) off the origin and \(\kappa\ge e(e-1)>0\).
+The dimension assumption gives \(b>0\), and
+\(\sigma=b/2\) satisfies
+\(\sigma(b-\sigma)=b^2/4\ge\kappa\).
+Harmonicity gives both nonempty phases and
+\(F\Delta F=0\). Thus \cref{prop:general-radial-existence}
+applies with \(\eta=0\) and \(Z=\{0\}\), proving the
+subcalibration, strict minimality, and Hardy bound.
+The support of the boundary current is all of \(\{F=0\}\)
+by \cref{rem:polynomial-finite-perimeter}.
+\end{proof}
+
+Any \(\sigma\ge0\) with \(\sigma(N-1-2e-\sigma)\ge\kappa\)
+works; even integers give polynomial potentials, as in the
+\hyperref[par:Simons-degree-example]{Simons example}. A local radial
+subcalibration already implies strict stability for regular harmonic cones:
+
+\begin{corollary}[Strict stability from a harmonic radial potential]
+\label{cor:harmonic-radial-strict-stability}
+Let $F$ be a nonzero real homogeneous harmonic polynomial
+of degree $e\ge2$ on $\R^{n+1}$, $n\ge3$. Suppose $C=\{F=0\}$
+is minimal, $\nabla F\ne0$ on $C\setminus\{0\}$, and its link
+is nonempty, smooth, compact, and connected. If for some
+$\alpha\in\R$ the potential $G=r^\alpha F$ satisfies
+\[
+ \operatorname{sgn}(F)\diver X_G\ge0\qquad\text{where }F\ne0
+\]
+in a two-sided neighborhood of $C\setminus\{0\}$ on which $X_G$
+is defined, then $C$ is strictly stable.
+\end{corollary}
+
+\begin{proof}
+The hypotheses already imply that $F$ is real irreducible.
+Indeed, \cref{lem:square-free-critical-set} shows that $F$ is
+square-free and each real irreducible factor has a nonempty zero
+set on the unit sphere. These closed sets are pairwise disjoint,
+since a common zero of two factors would give $\nabla F=0$.
+Their union is the connected link, so there can be only one factor.
+Set $R=r^2$ and $S=|\nabla F|^2$.
+By \cref{prop:divisibility}, $\cL(F)=-qF$ for a homogeneous
+polynomial $q$ of degree $2e-4$, possibly zero.
+The sign hypothesis and \cref{thm:Jacobi-trace} make
+$w=r^{-\alpha}S^{-1/2}$ a positive Jacobi supersolution.
+Suppose that the Hardy gap is zero. Equation
+\eqref{eq:critical-boundary-rigidity} gives
+$e+\alpha=n/2$ and $J_Cw=0$.
+With $c=\alpha(\alpha+2e)(e+\alpha n)$, the radial identity
+of \cref{prop:radial-master-identity} and $\Delta F=0$ give
+\begin{equation}\label{eq:harmonic-critical-radial-defect}
+ \cL(G)=r^{3\alpha-4}FB,\qquad
+ B=R(\alpha^2S-Rq)+cF^2.
+\end{equation}
+Thus $B\ge0$ near the cone, and $J_Cw=0$ together with
+\cref{thm:Jacobi-trace} gives $B|_{C\setminus\{0\}}=0$.
+The divisibility argument in \cref{prop:divisibility} yields
+$B=FB_1$. At a regular zero, $F$ changes sign, so $B\ge0$
+on both sides forces $B_1$ to vanish there as well.
+Applying the same argument again gives $F^2\mid B$.
+Since $F$ has nonzero real zeros, it is coprime to $R$.
+Equation \eqref{eq:harmonic-critical-radial-defect} therefore implies
+$F^2\mid\alpha^2S-Rq$. Its degree is at most $2e-2<2e$, so
+\begin{equation}\label{eq:harmonic-critical-radial-obstruction}
+ Rq=\alpha^2S\qquad\text{identically}.
+\end{equation}
+Choose an extremum $p$ of $F$ on the unit sphere with $F(p)\ne0$.
+Euler's identities give
+$\nabla F(p)=eF(p)p$ and
+$\Hess F(p)p=(e-1)\nabla F(p)$.
+Using harmonicity and $\cL(F)=-qF$ gives
+$q(p)=e(e-1)S(p)$, with $S(p)>0$.
+Consequently \eqref{eq:harmonic-critical-radial-obstruction}
+forces $\alpha^2=e(e-1)$.
+Together with $\alpha=n/2-e$, this becomes $n^2=4e(n-1)$,
+which is impossible for integers $n\ge3$, since it would imply
+$n-1\mid1$.
+\end{proof}
+
+\begin{proposition}[Global comparison and the critical set]
+\label{prop:harmonic-global-comparison}
+Let \(F\not\equiv0\) be a homogeneous polynomial of degree \(e\ge2\)
+on \(\R^N\), \(N\ge3\), satisfying
+\(\Gamma(F,S)=2qF\), where \(S=|\nabla F|^2\) and \(q\) is a
+polynomial. Then
+\begin{equation}\label{eq:global-comparison-regularity}
+ \exists\,\kappa<\infty:\ Rq\le\kappa S
+ \quad\Longleftrightarrow\quad
+ \{\nabla F=0\}=\{0\}.
+\end{equation}
+In this case the least comparison constant is
+\begin{equation}\label{eq:harmonic-optimal-comparison}
+ \kappa_F=\max_{\Sph^{N-1}}\frac qS\ge e(e-1).
+\end{equation}
+Consequently the hypotheses of
+\cref{cor:harmonic-radial-existence} require \(N\ge4e\).
+\end{proposition}
+
+\begin{proof}
+If \(S>0\) off the origin, compactness of the unit sphere and
+homogeneity give the finite maximum in
+\eqref{eq:harmonic-optimal-comparison}.
+Conversely, suppose \(c\ne0\) and \(\nabla F(c)=0\).
+Euler's identity gives \(F(c)=0\). Write
+\[
+ F(c+y)=P_m(y)+O(|y|^{m+1}),\qquad m\ge2,
+\]
+where \(P_m\not\equiv0\) is the first nonzero homogeneous Taylor
+term. Choose a unit vector \(v\) maximizing \(|P_m|\), and put
+\(p=P_m(v)\ne0\). Then
+\(\nabla P_m(v)=mpv\) and
+\(\Hess P_m(v)(v,v)=m(m-1)p\). Along \(c+tv\),
+\begin{align*}
+ S&=m^2p^2t^{2m-2}(1+O(t)),\\
+ q=\frac{\Hess F(\nabla F,\nabla F)}{F}
+  &=m^3(m-1)p^2t^{2m-4}(1+O(t)).
+\end{align*}
+It follows that
+\begin{equation}\label{eq:critical-comparison-blowup}
+ \frac{Rq}{S}(c+tv)
+ =\frac{|c|^2m(m-1)}{t^2}+O(t^{-1})\longrightarrow+\infty.
+\end{equation}
+This rules out a finite comparison constant, including when
+\(q(c)=0\).
+
+For the lower bound, take a unit vector maximizing \(|F|\).
+The same calculation, now with degree \(e\) at the origin, gives
+\(q/S=e(e-1)\) at that vector. Finally, \(4e-1<2e+1+2\sqrt{e(e-1)}<4e\),
+so the integer dimension in the harmonic radial criterion is at least \(4e\).
+\end{proof}
+
+\begin{proposition}[Rigidity at the sharp comparison constant]
+\label{prop:harmonic-sharp-comparison}
+Under the algebraic hypotheses of
+\cref{prop:harmonic-global-comparison}, let
+\(M=\max_{\Sph^{N-1}}|F|\). Then
+\begin{equation}\label{eq:harmonic-comparison-rigidity}
+ Rq\le e(e-1)S
+ \quad\Longleftrightarrow\quad
+ S=e^2M^2R^{e-1}.
+\end{equation}
+If also \(\Delta F=0\) and \(N\ge3\), the equality case is
+precisely a harmonic Cartan--M\"unzner polynomial after normalization
+by \(M\).
+\end{proposition}
+
+\begin{proof}
+Put \(f=F|_{\Sph^{N-1}}\) and \(s=S|_{\Sph^{N-1}}\).
+The restriction of \(F\) to any great circle is a real trigonometric
+polynomial of degree at most \(e\). Applying the classical
+Bernstein--Szeg\H{o} inequality
+\cite[Section~5.1, Theorem~5.1.3]{BorweinErdelyi95} to a great circle in the
+direction of \(\nabla_{\Sph}f\) gives
+\begin{equation}\label{eq:spherical-Bernstein-bound}
+ s=|\nabla_{\Sph}f|^2+e^2f^2\le e^2M^2.
+\end{equation}
+On the other hand, homogeneity and \(\Gamma(F,S)=2qF\) give
+\[
+ \Gamma_{\Sph}(f^2,s)
+ =4f^2\bigl(q-e(e-1)s\bigr)\le0.
+\]
+Thus \(s\) is nonincreasing along the gradient ascent flow of
+\(f^2\). The critical set of \(f^2\) is semialgebraic with
+finitely many connected components, and \(f^2\) is constant on each
+component. Choose \(a<M^2\) above every other critical value.
+Every forward trajectory starting in the nonempty open set
+\(\{f^2>a\}\) has its accumulation points in the critical set at
+value \(M^2\): the value increases along the trajectory, and every
+accumulation point of a gradient flow on this compact sphere is
+critical. At those points \(s=e^2M^2\). Monotonicity of \(s\)
+and \eqref{eq:spherical-Bernstein-bound} therefore force
+\(s=e^2M^2\) throughout \(\{f^2>a\}\). Homogeneity and the
+polynomial identity principle give the asserted formula for \(S\)
+on all of \(\R^N\).
+
+Conversely, differentiating that formula yields
+\(q=e^3(e-1)M^2R^{e-2}\), proving the comparison with equality.
+When \(F\) is harmonic, \(F/M\) satisfies both Cartan--M\"unzner
+equations with equal multiplicities.
+\end{proof}
+
+\begin{lemma}[Degree of a nonnegative polynomial first integral]
+\label{lem:nonnegative-first-integral-degree}
+Let \(F\not\equiv0\) be a homogeneous polynomial of degree \(e\ge1\)
+on \(\R^N\), \(N\ge2\), with
+\(\nabla F\ne0\) on \(\{F=0\}\setminus\{0\}\).
+If \(K\not\equiv0\) is a homogeneous polynomial of degree \(\ell>0\),
+\(K\ge0\), and \(\Gamma(F,K)=0\), then \(\ell\ge2e\).
+\end{lemma}
+
+\begin{proof}
+Choose \(p\in\Sph^{N-1}\) with
+\(K(p)=B=\max_{\Sph^{N-1}}K>0\).
+The constrained maximum and Euler's identity give
+\(\nabla K(p)=\ell Bp\), hence
+\[
+ 0=\Gamma(F,K)(p)=e\ell BF(p).
+\]
+Thus \(F(p)=0\) and \(w=\nabla F(p)\ne0\), with \(w\perp p\).
+Differentiating Euler's identity gives
+\(\Hess F(p)p=(e-1)w\). Differentiating
+\(\Gamma(F,K)=0\) at \(p\) then gives
+\[
+ \Hess K(p)w=-\Hess F(p)\nabla K(p)=-\ell B(e-1)w.
+\]
+For \(v=w/|w|\), the function
+\(T(t)=K(p\cos t+v\sin t)\) is a real trigonometric polynomial
+of degree at most \(\ell\), with \(0\le T\le B\), and
+\[
+ T''(0)=\Hess K(p)(v,v)-\nabla K(p)\cdot p=-e\ell B.
+\]
+The trigonometric Bernstein inequality, applied twice to \(T-B/2\)
+\cite[Section~5.1, Theorem~5.1.4]{BorweinErdelyi95}, yields
+\[
+ e\ell B\le\|T''\|_\infty
+ \le\ell^2\|T-B/2\|_\infty\le\frac{\ell^2B}{2}.
+\]
+Consequently \(\ell\ge2e\).
+\end{proof}
+
+\begin{proposition}[Rigidity for a radial minimality weight]
+\label{prop:regular-radial-weight-rigidity}
+Let \(F\not\equiv0\) be a homogeneous polynomial of degree \(e\ge2\) on
+\(\R^N\), \(N\ge3\), with \(\operatorname{Crit}(F)=\{0\}\).
+Put \(S=|\nabla F|^2\) and
+\(M_F=\max_{\Sph^{N-1}}|F|\). If
+\[
+ \Gamma(F,S)=2\lambda R^{e-2}F
+\]
+for a constant \(\lambda\), then
+\[
+ \lambda=e^3(e-1)M_F^2,\qquad
+ S=e^2M_F^2R^{e-1}=\frac{\lambda}{e(e-1)}R^{e-1}.
+\]
+If also \(\Delta F=0\), then \(F/M_F\) is a harmonic
+Cartan--M\"unzner polynomial. In particular,
+\[
+ \cA_R(F)=\R[R,F],\qquad e\in\{2,3,4,6\},\qquad
+ \kappa_F=e(e-1).
+\]
+\end{proposition}
+
+\begin{proof}
+After replacing \(F\) by \(-F\) if necessary, choose
+\(p\in\Sph^{N-1}\) with \(F(p)=M_F\). Then
+\(\nabla F(p)=eM_Fp\) and \(S(p)=e^2M_F^2\).
+Since \(S\) has degree \(2e-2\),
+\[
+ 2\lambda M_F=\Gamma(F,S)(p)
+ =eM_F(2e-2)S(p)=2e^3(e-1)M_F^3.
+\]
+This determines \(\lambda\). The spherical Bernstein--Szeg\H{o}
+bound \eqref{eq:spherical-Bernstein-bound}, extended by homogeneity,
+shows that \(K:=e^2M_F^2R^{e-1}-S\ge0\).
+Using \(\Gamma(F,R)=2eF\), we obtain
+\[
+ \Gamma(F,K)
+ =2\bigl[e^3(e-1)M_F^2-\lambda\bigr]R^{e-2}F=0.
+\]
+If \(K\not\equiv0\), its degree \(2e-2\) contradicts
+\cref{lem:nonnegative-first-integral-degree}. Hence \(K=0\).
+
+If \(\Delta F=0\), the normalized equations
+\(|\nabla(F/M_F)|^2=e^2R^{e-1}\) and \(\Delta(F/M_F)=0\)
+are the harmonic Cartan--M\"unzner equations, as in
+\cref{prop:harmonic-sharp-comparison}. Together with
+\(\Gamma(R,F)=2eF\) and \(\Delta R=2N\), they show that
+\(\cA_R(F)=\R[R,F]\). The nonempty zero link is regular by hypothesis
+and minimal since \(\cL(F)=-\lambda R^{e-2}F\); hence
+\cref{thm:rank-one-classification} gives the degree restriction.
+Finally, \(Rq/S=e(e-1)\) off the origin.
+\end{proof}
+
+\begin{example}[Harmonic isoparametric polynomials]
+\label{ex:harmonic-isoparametric-radial}
+For a normalized harmonic Cartan--M\"unzner polynomial of degree
+\(e\ge2\) on \(\R^N\), \(N\ge3\),
+\[
+ S=e^2R^{e-1},\qquad q=e^3(e-1)R^{e-2},\qquad
+ \kappa_F=e(e-1).
+\]
+The dimension condition of \cref{cor:harmonic-radial-existence}
+is therefore equivalent to \(N\ge4e\). In this range the choice
+\(\sigma=2\lfloor e/2\rfloor\in\{e-1,e\}\) satisfies
+\(\sigma(N-1-2e-\sigma)\ge e(e-1)\), so
+\[
+ G=R^{\lfloor e/2\rfloor}F
+\]
+is a polynomial subcalibration potential.
+The realizable equal-multiplicity parameters satisfying this threshold
+are listed in \cref{sec:harmonic-isoparametric-scope}, together with
+the Clifford-algebra explanation for the quartic restriction.
+By \cref{prop:regular-radial-weight-rigidity}, they exhaust
+\cref{cor:harmonic-radial-existence} when \(q\) is radial:
+harmonic quadrics in even dimensions \(N\ge8\), and Cartan cubics
+in dimensions \(14\) and \(26\).
+\end{example}
+
+\begin{proposition}[Positive multipliers at a harmonic critical zero]
+\label{prop:harmonic-positive-multiplier-obstruction}
+\label{rem:harmonic-radial-singular-obstruction}
+Let \(F\not\equiv0\) be a harmonic polynomial, and suppose
+\(F(c)=0=\nabla F(c)\). If \(a\) is \(C^2\) near \(c\) and
+\(a(c)>0\), then \(G=aF\) cannot satisfy \(G\cL(G)\ge0\)
+throughout any neighborhood of \(c\).
+\end{proposition}
+
+\begin{proof}
+Use the first nonzero Taylor term \(P_m\), the vector \(v\), and
+\(p=P_m(v)\ne0\) as in the proof of
+\cref{prop:harmonic-global-comparison}. Harmonicity gives
+\(\Delta(aF)=2\Gamma(a,F)+F\Delta a=O(t^{m-1})\) along
+\(c+tv\). The leading Hessian term therefore yields
+\[
+ F(c+tv)\cL(aF)(c+tv)
+ =-a(c)^3m^3(m-1)p^4t^{4m-4}+o(t^{4m-4})<0
+\]
+for all sufficiently small positive \(t\). Here \(a>0\) and
+\(\nabla(aF)\ne0\), so the required sign fails.
+\end{proof}
+
+\begin{remark}[Quartic and quintic scope]
+\label{rem:higher-degree-radial-scope}
+The criterion of \cref{cor:harmonic-radial-existence} applies in every
+degree but requires a regular link. In degrees four and five its
+conditions read, respectively, \(N\ge16\),
+\(\kappa_F\le(N-9)^2/4\), and \(N\ge20\),
+\(\kappa_F\le(N-11)^2/4\). Degree five is absent from the
+Cartan--M\"unzner list, so \cref{prop:harmonic-sharp-comparison}
+forces \(\kappa_F>20\) in that case.
+Moreover, \cref{prop:regular-radial-weight-rigidity} forces \(q\)
+to be nonradial in any degree-five example satisfying the criterion.
+The determinant cones in \cref{main:complex-determinants} instead
+have nonzero critical points and use nonradial minor-norm multipliers.
+Likewise, adding cylindrical directions cannot produce new examples
+of the radial criterion, by
+\cref{prop:harmonic-positive-multiplier-obstruction}.
+\end{remark}
+
+\subsection{Homogeneous potentials on a spherical quotient}
+\label{sec:spherical-quotient-potentials}
+
+Let \(I=(I_1,\ldots,I_j)\), where each invariant \(I_i\) is
+homogeneous of degree \(d_i\), and write
+\[
+ z_i=\frac{I_i}{r^{d_i}},\qquad
+ K_{\Sph}=z(\Sph^{N-1}).
+\]
+For an ambient closure containing \(R\), Euler's identity
+\(\nabla_{\Sph}I_i=\nabla I_i-d_iI_i\theta\) and the polar
+Laplacian give the spherical closure data
+\begin{equation}\label{eq:spherical-closure-from-ambient}
+ g^{\Sph}_{ij}=\left.\Gamma(I_i,I_j)\right|_{R=1}-d_id_jz_iz_j,
+ \qquad
+ b^{\Sph}_i=\left.\Delta I_i\right|_{R=1}
+              -d_i(d_i+N-2)z_i.
+\end{equation}
+More generally, assume the spherical data close as functions of \(z\).
+Let \(\widehat\Gamma_{\Sph}\), \(\widehat\Delta_{\Sph}\) be their
+operators from \cref{thm:finite-reduction}, with signs tested on
+the actual image \(K_{\Sph}\).
+
+\begin{proposition}[The spherical equation for a homogeneous potential]
+\label{prop:spherical-quotient-potential}
+Let $\varphi$ be smooth on a neighborhood of the relevant part of
+$K_{\Sph}$ in the ambient invariant-coordinate space.
+For \(G=r^\ell \varphi(z)\), define
+\begin{align}
+ W_\ell[\varphi]&=\ell^2\varphi^2+\widehat\Gamma_{\Sph}(\varphi,\varphi),
+ \label{eq:general-spherical-W}\\
+ \mathfrak N_\ell[\varphi]
+ &=W_\ell[\varphi]\bigl(\widehat\Delta_{\Sph}\varphi+(N-1)\ell \varphi\bigr)
+       -\tfrac12\widehat\Gamma_{\Sph}(\varphi,W_\ell[\varphi]).
+ \label{eq:general-spherical-N}
+\end{align}
+Then
+\begin{equation}\label{eq:general-spherical-L}
+ |\nabla G|^2=r^{2\ell-2}W_\ell[\varphi],\qquad
+ \cL(G)=r^{3\ell-4}\mathfrak N_\ell[\varphi].
+\end{equation}
+Where \(W_\ell[\varphi]>0\), one has
+\(r\diver X_G=\mathfrak N_\ell[\varphi]/W_\ell[\varphi]^{3/2}\).
+These identities hold at singular quotient values whenever their
+pullbacks are smooth and \(W_\ell[\varphi]>0\).
+\end{proposition}
+
+\begin{proof}
+Polar differentiation gives
+\[
+ \nabla G=r^{\ell-1}(\ell \varphi\,\partial_r+\nabla_{\Sph}\varphi),\qquad
+ \Delta G=r^{\ell-2}
+       [\widehat\Delta_{\Sph}\varphi+\ell(\ell+N-2)\varphi].
+\]
+The radial and angular terms give
+\[
+ \tfrac12\Gamma(G,|\nabla G|^2)
+ =r^{3\ell-4}\left[
+  \ell(\ell-1)\varphi W_\ell[\varphi]
+  +\tfrac12\widehat\Gamma_{\Sph}(\varphi,W_\ell[\varphi])\right].
+\]
+Subtracting this expression from \(|\nabla G|^2\Delta G\) proves the formula.
+\end{proof}
+
+For a nonzero homogeneous polynomial \(F\) of degree \(e\geq1\),
+put \(R=r^2\) and \(S=|\nabla F|^2\).
+When these quantities give a closed quotient as above, the angular
+variables are
+\begin{equation}\label{eq:rank-two-general-variables}
+ f=\frac{F}{R^{e/2}},\qquad
+ s=\frac{S}{R^{e-1}},\qquad K_{\Sph}=\{(f(x),s(x)):r=1\}.
+\end{equation}
+If this image has dimension two, a homogeneous invariant potential
+with a positive multiplier has the form
+\[
+ G=r^\ell f\,a(f,s),\qquad a>0.
+\]
+The power family \eqref{eq:power-family} corresponds to
+\(\varphi(f,s)=fs^\gamma\) and
+\(\ell=e+2\alpha+2\gamma(e-1)\).  It is a restricted family of
+angular multipliers.
+
+\begin{remark}[Phase-dependent quotient potentials]
+\label{cor:rank-two-paired-potentials}
+Let \(N\geq3\).  Suppose \(E=\{F<0\}\) has smooth boundary off a
+closed conical set \(Z\) containing the origin and satisfying the
+null-set hypothesis of \cref{thm:paired-subcalibration}. Use the quotient
+\eqref{eq:rank-two-general-variables}.
+Choose degrees \(\ell_-\), \(\ell_+\) and put
+\(h_\pm=f a_\pm(f,s)\), where the positive multipliers \(a_\pm\)
+are smooth on invariant-coordinate neighborhoods of the respective
+closed-phase images outside \(Z\).
+Assume there that \(W_{\ell_\pm}[h_\pm]>0\), and assume
+\[
+ \mathfrak N_{\ell_-}[h_-]\leq0\quad(f<0),\qquad
+ \mathfrak N_{\ell_+}[h_+]\geq0\quad(f>0).
+\]
+Then \(G_\pm=r^{\ell_\pm}h_\pm\) give
+\eqref{eq:paired-weighted-comparison} with weights on the respective phases
+\[
+ q_\pm=\frac1r\,
+  \frac{|\mathfrak N_{\ell_\pm}[h_\pm]|}
+       {W_{\ell_\pm}[h_\pm]^{3/2}},
+\]
+extended by zero outside their phases. The boundary is area minimizing,
+and strictly area minimizing if both unit-ball phase integrals are positive.
+Indeed, on the regular boundary,
+\(\nabla G_\pm=r^{\ell_\pm-e}a_\pm\nabla F\), so both normalized
+fields equal \(\nu_E\).  The spherical equation gives their phase
+signs and weights.  Apply \cref{rem:phase-local-fields},
+\cref{thm:paired-subcalibration}, and
+\cref{cor:paired-strict-minimality}. The two multipliers need not agree
+on \(f=0\).
+\end{remark}
+
+A useful initial family is \(G=R^\alpha S^\gamma F\), with
+\(S=|\nabla F|^2\).  Its full multiplier identities are collected in
+\cref{app:power-identities}, especially
+\cref{prop:combined-power-multiplier}.
