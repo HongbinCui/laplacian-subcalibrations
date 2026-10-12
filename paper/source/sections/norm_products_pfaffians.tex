@@ -1,0 +1,417 @@
+\section{Normed Products and Complex Pfaffians}
+\label{sec:norm-products-pfaffians}
+
+We apply \cref{thm:spectral-gradient-subcalibration} to octonionic products
+and complex Pfaffians in every integer degree.
+The multiplication maps over normed division algebras are harmonic morphisms; see
+\cite[Section~4.5.2]{RiedlerThesis25}. The minimality of the real-part
+Pfaffian cones also follows from the holomorphic construction of
+Hoppe--Tkachev \cite[Corollary~5.2 and Remark~5.5]{HoppeTkachev19}.
+Their smallest algebras have the spectral table, with Laplacian
+coefficients \(32\) and \(24\), respectively. Both exceed
+\(24-16/d\), giving the potential \(F|\nabla F|\).
+
+\subsection{Products in a normed division algebra}
+
+Let \(\mathbb K=\mathbb H\) or \(\mathbb O\), put
+\(\delta=\dim_{\R}\mathbb K\), and fix an integer \(d\ge2\).
+Choose a full parenthesization of the ordered product of \(d\)
+variables, and write
+\begin{equation}\label{eq:norm-product-definition}
+ P:\mathbb K^d\longrightarrow\mathbb K,
+ \qquad P(x_1,\ldots,x_d)=x_1\cdots x_d,
+ \qquad F=\operatorname{Re}P.
+\end{equation}
+The fixed parentheses allow for the nonassociativity of
+\(\mathbb O\). Set
+\begin{equation}\label{eq:norm-product-generators}
+ r_a=|x_a|^2,\qquad E_k=e_k(r_1,\ldots,r_d),\qquad
+ R=E_1=\sum_a|x_a|^2,
+\end{equation}
+where \(e_k\) denotes the \(k\)-th elementary symmetric polynomial.
+We use \(E_0=1\) and \(E_k=0\) for \(k>d\).
+
+\begin{proposition}[Differential closure of normed products]
+\label{prop:norm-product-closure}
+For every parenthesization in \eqref{eq:norm-product-definition},
+the polynomial \(F\) is real irreducible, homogeneous of degree \(d\), and
+satisfies
+\begin{equation}\label{eq:norm-product-F-closure}
+\begin{gathered}
+ \Delta F=0,\qquad \Gamma(F,F)=E_{d-1},\\
+ \Gamma(F,E_k)=2(d-k+1)E_{k-1}F,
+\end{gathered}
+\end{equation}
+\begin{equation}\label{eq:norm-product-E-closure}
+\begin{aligned}
+ \Delta E_k&=2\delta(d-k+1)E_{k-1},\\
+ \Gamma(E_i,E_j)&=4\sum_{a=1}^d r_a
+       \frac{\partial e_i}{\partial r_a}
+       \frac{\partial e_j}{\partial r_a}.
+\end{aligned}
+\end{equation}
+Consequently
+\begin{equation}\label{eq:norm-product-minimality}
+ \cL(F)=-2E_{d-2}F.
+\end{equation}
+The polynomial critical set is
+\begin{equation}\label{eq:norm-product-critical-set}
+ Z_d=\{\nabla F=0\}
+ =\bigcup_{1\le a<b\le d}\{x_a=x_b=0\},
+\end{equation}
+and has real codimension \(2\delta\).
+\end{proposition}
+
+\begin{proof}
+Multiplication in \(\mathbb K\) is real bilinear and satisfies
+\(|uv|=|u||v|\); see
+\cite[Chapter~1, Appendix, pp.~21--22]{Shapiro2000}.
+A parenthesized product is therefore real
+multilinear, and induction on its multiplication tree gives
+\[
+ |P(x)|^2=\prod_{a=1}^d r_a.
+\]
+With all variables except \(x_a\) fixed, the derivative
+\(A_a=D_{x_a}P:\mathbb K\to\mathbb K\) is a linear map satisfying
+\[
+ |A_av|^2=\left(\prod_{b\ne a}r_b\right)|v|^2.
+\]
+By polarization, \(A_a^*A_a=(\prod_{b\ne a}r_b)I\), the usual
+characterization of a linear similarity
+\cite[Chapter~1, Lemma~1.3(1), pp.~15--16]{Shapiro2000}.
+The source and target have the same dimension, so also
+\(A_aA_a^*=(\prod_{b\ne a}r_b)I\); this remains true when the
+coefficient is zero.  Since \(F=\ip{P}{1}\), it follows that
+\[
+ |\nabla_{x_a}F|^2=|A_a^*1|^2=\prod_{b\ne a}r_b.
+\]
+Summing over \(a\) proves \(\Gamma(F,F)=E_{d-1}\).
+Every second derivative within a single variable block vanishes,
+so \(\Delta F=0\).  The choice \(x_1=\cdots=x_d=1\) shows that
+\(F\) is nonzero.
+
+For irreducibility, a factorization \(F=AB\) must be homogeneous
+in every variable block, by the lowest- and highest-degree argument
+in \cref{lem:square-free-critical-set}. Since each block degree of
+\(F\) is one, \(A\) and \(B\) depend on disjoint groups of blocks.
+If both are nonconstant, retain one variable from each group and set
+all remaining variables equal to \(1\). Every parenthesization then
+reduces \(F\) to \(\operatorname{Re}(uv)=\langle u,\bar v\rangle\),
+a nondegenerate bilinear form of rank \(\delta>1\)
+\cite[Chapter~1, Appendix, pp.~21--22]{Shapiro2000}.
+The specialized factorization would express it as a product of two
+linear forms in separate variables, of rank one, a contradiction.
+
+Euler's identity in each variable block gives
+\(\Gamma(F,r_a)=2F\).  Hence
+\[
+ \Gamma(F,E_k)=2F\sum_a\frac{\partial e_k}{\partial r_a}
+ =2(d-k+1)E_{k-1}F.
+\]
+Moreover, \(\Delta r_a=2\delta\),
+\(\Gamma(r_a,r_b)=4r_a\delta_{ab}\), and each \(e_k\) is affine
+in each individual \(r_a\).  These facts prove
+\eqref{eq:norm-product-E-closure} by the chain rule.
+Harmonicity and the identity for \(\Gamma(F,E_{d-1})\) now give
+\eqref{eq:norm-product-minimality}.
+
+Finally, the nonnegative sum
+\(E_{d-1}=\sum_a\prod_{b\ne a}r_b\) vanishes precisely when at
+least two blocks vanish.  Each largest linear component of this
+set has dimension \(\delta(d-2)\), proving the codimension claim.
+\end{proof}
+
+The vector-valued map itself satisfies
+\begin{equation}\label{eq:norm-product-harmonic-morphism}
+ \Delta P=0,\qquad DP\,DP^*=E_{d-1}I_{\delta},\qquad
+ DP(\nabla E_{d-1})=4E_{d-2}P.
+\end{equation}
+Indeed, the first two identities were established blockwise in the
+proof, while multilinearity gives \(DP(\nabla r_a)=2P\), whence
+the third.  Thus the target of the pullback defining our hypersurface
+is the hyperplane \(\{\operatorname{Re}y=0\}\subset\mathbb K\).
+The umbilic condition in \eqref{eq:norm-product-harmonic-morphism}
+places its regular pullback within Riedler's umbilic framework
+\cite[Theorem~5.1.4]{RiedlerThesis25}.  The direct identity
+\eqref{eq:norm-product-minimality} additionally covers regular zeros
+lying over \(P=0\), for instance points with exactly one zero block.
+
+\begin{proposition}[Exact algebra and quotient image]
+\label{prop:norm-product-exact-algebra}
+For \(d\ge3\),
+\begin{equation}\label{eq:norm-product-smallest-algebra}
+ \cA_R(F)=\R[E_1,\ldots,E_d,F],
+\end{equation}
+and its \(d+1\) displayed generators are algebraically independent.
+Their joint image is exactly
+\begin{equation}\label{eq:norm-product-quotient-image}
+ \left\{(e_1(r),\ldots,e_d(r),f):
+             r\in[0,\infty)^d,\quad f^2\le e_d(r)\right\}.
+\end{equation}
+The spherical quotient dimension is \(d\).
+For \(d=2\), the smaller algebra \(\cA_R(F)=\R[R,F]\) is already
+closed and its spherical quotient dimension is one.
+\end{proposition}
+
+\begin{proof}
+Apply \cref{prop:spectral-smallest-algebra} with
+\(r_a=|x_a|^2\) and \(b_k=2\delta(d-k+1)>0\) from
+\cref{prop:norm-product-closure}.
+
+The norm identity implies \(F^2\le E_d\).
+Conversely, choose an imaginary unit \(u\in\mathbb K\), and put
+\[
+ x_1=\sqrt{r_1}(\cos\theta+u\sin\theta),\qquad
+ x_a=\sqrt{r_a}\quad(a\ge2).
+\]
+All bracketings then give \(F=\sqrt{e_d(r)}\cos\theta\).
+This realizes every value in \eqref{eq:norm-product-quotient-image},
+including its boundary.
+At distinct positive \(r_a\), the Jacobian of
+\((e_1,\ldots,e_d)\) is a nonzero Vandermonde determinant.
+Taking \(\sin\theta\ne0\) adds a phase direction changing \(F\)
+while fixing all \(E_k\).  The joint map thus has rank \(d+1\)
+on a nonempty open set, which proves algebraic independence.
+Fixing \(E_1=1\) lowers the rank by one.  In the quadratic case,
+\(R,F\) have independent differentials at generic points and
+give the asserted one-dimensional spherical quotient.
+\end{proof}
+
+In particular, different octonionic parenthesizations have the same
+abstract differential closure and the same quotient image.  These
+statements do not identify the corresponding embedded hypersurfaces
+up to orthogonal congruence.
+
+\begin{theorem}[Octonionic product cones in every degree]
+\label{thm:octonionic-product-minimizing}
+For every \(d\ge2\) and every fixed parenthesization, let
+\(F=\operatorname{Re}(x_1\cdots x_d)\) on \(\mathbb O^d\).
+Then the cone \(C_d=\{F=0\}\subset\R^{8d}\) is the support of the
+locally mass-minimizing boundary \(\partial\llbracket\{F<0\}\rrbracket\).
+A global two-sided subcalibration off the set \(Z_d\) in
+\eqref{eq:norm-product-critical-set} is
+\begin{equation}\label{eq:octonionic-product-potential}
+ G=F\sqrt{E_{d-1}}=F|\nabla F|,
+ \qquad X=\frac{\nabla G}{|\nabla G|}.
+\end{equation}
+Here \(Z_d\) has real codimension sixteen; it contains nonzero
+points whenever \(d\ge3\). The cone is strictly area minimizing
+and strictly stable, with
+\begin{equation}\label{eq:octonionic-product-Hardy-gap}
+ Q_{C_d}(u)\ge\frac{(4d+1)^2}{4}\int_{C_d}r^{-2}u^2,
+ \qquad u\in C_c^\infty((C_d)_{\reg}\setminus\{0\}).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+By \cref{prop:norm-product-closure}, \(\Delta E_{d-1}=32E_{d-2}\)
+and \(Z_d\) has codimension sixteen. Since \(32>24-16/d\),
+\cref{thm:spectral-gradient-subcalibration}, with \(N=8d\), gives
+all assertions, including \eqref{eq:octonionic-product-Hardy-gap}.
+\end{proof}
+
+\begin{remark}[The quaternionic closure]
+\label{rem:quaternionic-product-threshold}
+Quaternionic products have the same algebra and minimality identities,
+but \(\Delta S=16B\). The potential \(F\sqrt S\) works for \(d=2\)
+and fails for \(d\ge3\): at equal positive roots its boundary
+coefficient is \((-4+8/d)B<0\), and the phase construction above
+realizes arbitrarily small nonzero \(F\) with those roots fixed.
+\end{remark}
+
+\subsection{Complex Pfaffians and their minor norms}
+
+Let \(W_d\) be the space of complex skew-symmetric \(2d\)-by-\(2d\)
+matrices, with the Euclidean metric
+\begin{equation}\label{eq:pfaffian-metric}
+ |Z|^2=\sum_{i<j}|z_{ij}|^2=\tfrac12\tr(ZZ^*),
+ \qquad \dim_{\R}W_d=2d(2d-1).
+\end{equation}
+The independent coordinates are the complex entries \(z_{ij}\),
+\(i<j\).  For \(d\ge2\), set
+\begin{equation}\label{eq:pfaffian-generators}
+ f(Z)=\operatorname{Pf}(Z),\qquad F=\operatorname{Re}f,
+ \qquad E_k(Z)=\sum_{\substack{I\subset\{1,\ldots,2d\}\\|I|=2k}}
+                 |\operatorname{Pf}(Z_I)|^2.
+\end{equation}
+Here \(Z_I\) is the principal submatrix on \(I\), and
+\(\operatorname{Pf}(Z_\varnothing)=1\).
+In particular, \(E_1=R=|Z|^2\) and \(E_d=|f|^2\).
+
+\begin{proposition}[Pfaffian differential closure]
+\label{prop:pfaffian-closure}
+For \(F,E_k\) defined by \eqref{eq:pfaffian-generators}, \(F\) is
+real irreducible and
+\begin{equation}\label{eq:pfaffian-F-closure}
+\begin{gathered}
+ \Delta F=0,\qquad\Gamma(F,F)=E_{d-1},\\
+ \Gamma(F,E_k)=2(d-k+1)E_{k-1}F,
+\end{gathered}
+\end{equation}
+\begin{equation}\label{eq:pfaffian-Laplacian}
+ \Delta E_k=4(d-k+1)(2d-2k+1)E_{k-1}.
+\end{equation}
+At every point there exist nonnegative numbers \(r_1,\ldots,r_d\)
+such that \(E_k=e_k(r)\), and
+\begin{equation}\label{eq:pfaffian-Gamma}
+ \Gamma(E_i,E_j)=4\sum_{a=1}^d r_a
+       \frac{\partial e_i}{\partial r_a}
+       \frac{\partial e_j}{\partial r_a}.
+\end{equation}
+In particular, \(\cL(F)=-2E_{d-2}F\).
+For \(d\ge3\),
+\begin{equation}\label{eq:pfaffian-smallest-algebra}
+ \cA_R(F)=\R[E_1,\ldots,E_d,F],
+\end{equation}
+with algebraically independent generators and spherical quotient
+dimension \(d\).  For \(d=2\), \(\cA_R(F)=\R[R,F]\).
+\end{proposition}
+
+\begin{proof}
+Complexification gives
+\(2F=\operatorname{Pf}(Z)+\operatorname{Pf}(W)\) for independent
+skew-symmetric matrices \(Z,W\). It is linear in \(z_{12}\), with
+coefficient \(\operatorname{Pf}(Z_{\{3,\ldots,2d\}})\).
+That coefficient is coprime to the constant term, since the latter
+contains \(w_{12}w_{34}\cdots w_{2d-1,2d}\) with coefficient one.
+Gauss' lemma proves irreducibility
+\cite[Chapter~VIII, Section~5, pp.~395--398]{Knapp16}.
+
+Write \(\omega=\sum_{i<j}z_{ij}e_i\wedge e_j\) in an orthonormal
+basis of \(\mathbb C^{2d}\).  The coefficient of \(e_I\) in
+\(\omega^k/k!\) is \(\operatorname{Pf}(Z_I)\).  Consequently
+\begin{equation}\label{eq:pfaffian-exterior-norm}
+ E_k=\left|\frac{\omega^k}{k!}\right|^2,
+\end{equation}
+which proves that all \(E_k\) are invariant under unitary congruence
+\(Z\mapsto UZU^T\).
+The skew-symmetric unitary normal form is
+\[
+ Z=U\operatorname{diag}(\sigma_1J,\ldots,\sigma_dJ)U^T,
+ \qquad \sigma_a\ge0,\qquad
+ J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+\]
+For a direct proof, let \(T(v)=Z\bar v\).  Skew-symmetry gives
+\(T^2=-ZZ^*\) and
+\(\ip{v}{Tw}=-\ip{w}{Tv}\), where the Hermitian inner product is
+conjugate linear in its first argument.  Choose a unit eigenvector
+\(v\) of \(ZZ^*\) with positive eigenvalue \(\sigma^2\), and put
+\(w=-Tv/\sigma\).  These identities imply that \(v,w\) are
+orthonormal, \(Tv=-\sigma w\), and \(Tw=\sigma v\).
+Their orthogonal complement is \(T\)-invariant.  Induction gives
+the displayed normal form, with zero blocks at the last step.
+At this normal form only
+principal minors which are unions of complete two-by-two blocks
+can have nonzero Pfaffian.  Thus \(E_k=e_k(\sigma_1^2,\ldots,
+\sigma_d^2)\).
+
+To compute first derivatives, more generally use the block diagonal
+matrix with complex entries \(z_aJ\).  A nonzero principal Pfaffian
+is a product of its block entries; its derivative in any off-block
+coordinate vanishes.  A principal Pfaffian which vanishes contributes
+zero to the first derivative of its squared modulus.  Therefore the
+gradient of \(E_k\) has only block components at this matrix, and
+\[
+ \frac{\partial E_k}{\partial z_a}
+   =\bar z_a\,e_{k-1}(r_1,\ldots,\widehat r_a,\ldots,r_d),
+ \qquad r_a=|z_a|^2.
+\]
+The real Euclidean inner product of these gradients gives
+\eqref{eq:pfaffian-Gamma}.  Unitary congruence preserves the metric
+\eqref{eq:pfaffian-metric}, so this calculation holds everywhere.
+
+The polynomial \(f\) is holomorphic, hence \(\Delta F=0\).
+Differentiating its Pfaffian expansion gives
+\[
+ \frac{\partial f}{\partial z_{ij}}
+   =\pm\operatorname{Pf}(Z_{\{1,\ldots,2d\}\setminus\{i,j\}}).
+\]
+For a holomorphic polynomial on complex Euclidean space,
+\[
+ |\nabla\operatorname{Re}f|^2=\sum_{i<j}|\partial f/\partial z_{ij}|^2.
+\]
+This proves \(\Gamma(F,F)=E_{d-1}\).
+At the block diagonal matrix, complex bilinear extension of
+\(\Gamma\) gives
+\[
+ \Gamma(f,E_k)
+ =2\sum_a\frac{\partial f}{\partial z_a}
+                \frac{\partial E_k}{\partial\bar z_a}
+ =2(d-k+1)E_{k-1}f.
+\]
+Unitary congruence preserves every \(E_k\), and \(f(UZU^T)=\det(U)f(Z)\).
+Hence the identity is covariant under this action.
+Taking real parts proves the remaining identity in
+\eqref{eq:pfaffian-F-closure}; polynomial continuity includes all
+degenerate normal forms.
+
+For the Laplacian, apply
+\(\Delta|p|^2=4\sum_{i<j}|\partial p/\partial z_{ij}|^2\)
+to each holomorphic principal Pfaffian in \eqref{eq:pfaffian-generators}.
+Each derivative deletes a pair of indices.  A fixed set of \(2k-2\)
+indices is obtained in exactly
+\(\binom{2d-2k+2}{2}=(d-k+1)(2d-2k+1)\) ways, proving
+\eqref{eq:pfaffian-Laplacian}.
+The minimality identity follows from
+\(-\tfrac12\Gamma(F,E_{d-1})=-2E_{d-2}F\).
+
+Now apply \cref{prop:spectral-smallest-algebra} with
+\(r_a=\sigma_a^2\) and \(b_k=4(d-k+1)(2d-2k+1)>0\).
+To verify independence, take distinct positive \(r_a\), with
+\(z_1=\sqrt{r_1}e^{i\theta}\) and \(z_a=\sqrt{r_a}\) for \(a\ge2\).
+Then \(E_k=e_k(r)\) and \(F=\sqrt{e_d(r)}\cos\theta\).
+The Vandermonde and phase argument in
+\cref{prop:norm-product-exact-algebra} applies without change.
+It also proves that the joint image is exactly
+\eqref{eq:norm-product-quotient-image}.
+\end{proof}
+
+\begin{theorem}[Area minimization for complex Pfaffians]
+\label{thm:pfaffian-minimizing}
+For every \(d\ge2\), the cone
+\[
+ C_d=\{\operatorname{Re}\operatorname{Pf}(Z)=0\}
+ \subset W_d\cong\R^{2d(2d-1)}
+\]
+is the support of the locally mass-minimizing boundary of
+\(\{\operatorname{Re}\operatorname{Pf}(Z)<0\}\).
+A two-sided subcalibration is the normalized gradient of
+\begin{equation}\label{eq:pfaffian-potential}
+ G=F\sqrt{E_{d-1}}=F|\nabla F|,
+\end{equation}
+defined off
+\begin{equation}\label{eq:pfaffian-critical-set}
+ Z_d=\{Z:\operatorname{rank}_{\mathbb C}Z\le2d-4\}
+     =\{\nabla F=0\}.
+\end{equation}
+This exceptional set has real codimension twelve.
+The cone is strictly area minimizing and strictly stable, with
+\begin{equation}\label{eq:pfaffian-Hardy-gap}
+ Q_{C_d}(u)\ge\frac{(4d^2-6d+1)^2}{4}\int_{C_d}r^{-2}u^2,
+ \qquad u\in C_c^\infty((C_d)_{\reg}\setminus\{0\}).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+By \cref{prop:pfaffian-closure}, the spectral table holds with \(S=E_{d-1},\; B=E_{d-2},\; \Delta S=24B\),
+and \(24\ge24-16/d\).
+
+The normal form shows that \(S=0\) precisely when at most
+\(d-2\) of the \(\sigma_a\) are nonzero, proving
+\eqref{eq:pfaffian-critical-set}. The stratum of
+complex skew-symmetric \(n\)-by-\(n\) matrices of rank \(2q\)
+has complex dimension \(2q(n-2q)+\binom{2q}{2}\).
+Indeed, choose its kernel, of dimension \(n-2q\), and then choose
+a nondegenerate alternating form on the \(2q\)-dimensional quotient.
+Its complex codimension is therefore
+\(\binom{n-2q}{2}\).
+For \(n=2d\) and \(q=d-2\), this is six; lower rank strata have
+larger codimension.  Hence \(Z_d\) is a closed algebraic set of
+real codimension twelve and has locally zero
+\(\cH^{2d(2d-1)-1}\)-measure.
+
+\Cref{thm:spectral-gradient-subcalibration}, with \(N=2d(2d-1)\),
+gives the minimizing assertions and \eqref{eq:pfaffian-Hardy-gap}.
+Here \(4d^2-6d+1>0\) for \(d\ge2\).
+\end{proof}
+

@@ -1,0 +1,238 @@
+\subsection{The intrinsic five-generator closure}
+\label{subsec:nr-five-generators}
+
+Use the normalization in \cref{lem:nr-max-idempotent}.
+
+\begin{theorem}[Five generators in the nonradial branch]
+\label{thm:nonradial-five-generators}
+Let $F$ be a nonzero irreducible homogeneous harmonic cubic on a
+Euclidean space $V=V_{\mathrm{ess}}(F)$, with minimal regular zero set
+and nonradial quadratic weight. After a constant rescaling of $F$, let
+$V=B\oplus U$ be the orthogonal splitting of
+\cref{thm:nonradial-spectral}. For $x=b+u$, define
+\begin{equation}\label{eq:nr-five-invariants}
+ r=|b|^2,\qquad s=|u|^2,\qquad
+ a=\ip{b^2}b,\qquad p=\ip{bu}u,\qquad h=|bu|^2.
+\end{equation}
+Then
+\begin{equation}\label{eq:nr-five-algebra}
+ \cA_R(F)=\R[r,s,a,p,h],\qquad
+ R=r+s,\qquad F=\frac{a+3p}{6}.
+\end{equation}
+These five polynomials are algebraically independent. In particular,
+the smallest Laplacian algebra of $F$ requires exactly five ordinary
+algebra generators, of degrees $2,2,3,3,4$.
+\end{theorem}
+
+\begin{proof}
+By \cref{thm:nonradial-spectral,prop:nr-eikonal-core},
+both $B$ and $U$ are nonzero, $B$ is eikonal, and
+$B^2\subset B$, $BU\subset U$, $U^2\subset B$.
+By \cref{prop:nr-core-exactness}, irreducibility makes $B$ exact,
+and the symmetric operators $M_b=L_b|_U$ satisfy
+\begin{equation}\label{eq:nr-five-traces}
+ \tr_B L_b=0,\qquad \tr_U M_b=0\qquad(b\in B).
+\end{equation}
+Write $m=\dim U$, $n=\dim B=m+2$, and $w=u^2\in B$.
+The identities of
+\cref{prop:nr-representation-identities,lem:nr-U-cubic}, together with
+\eqref{eq:nr-mixed-polarization}, give
+\begin{align}
+ M_{b^2}&=6M_b^2-\frac r3\Id_U,
+ &108M_b^3&=9rM_b+a\Id_U,\label{eq:nr-five-representation}\\
+ |w|^2&=\frac{s^2}{9},
+ &w^2&=\frac s3w,\notag\\
+ M_wu&=\frac s9u,
+ &18u(bu)&=3bw+sb.\label{eq:nr-five-mixed}
+\end{align}
+The eikonal identity on $B$ gives $b(b^2)=rb$ and $|b^2|^2=r^2$.
+
+\emph{Differential closure.}
+The five bidegrees with respect to $B\oplus U$ are, respectively,
+\[
+ (2,0),\quad(0,2),\quad(3,0),\quad(1,2),\quad(2,2).
+\]
+Thus, for any of the
+five generators $f$ of bidegree $(i,j)$,
+\[
+ \Gamma(r,f)=2if,\qquad \Gamma(s,f)=2jf.
+\]
+All remaining gradient products are
+\begin{equation}\label{eq:nr-five-gamma}
+\begin{aligned}
+ \Gamma(a,a)&=9r^2,\\
+ \Gamma(a,p)&=18h-rs,\\
+ \Gamma(p,p)&=\frac{s^2}{9}+4h,\\
+ \Gamma(a,h)&=rp+\frac{sa}{3},\\
+ \Gamma(p,h)&=\frac{rp}{3}+\frac{2sp}{9}+\frac{sa}{27},\\
+ \Gamma(h,h)&=\frac{r+s}{3}h+\frac{p^2}{9}+\frac{ap}{27}.
+\end{aligned}
+\end{equation}
+To verify the table intrinsically, metric invariance and
+\eqref{eq:nr-five-mixed} give the gradients, written in their
+$B\oplus U$ components,
+\begin{equation}\label{eq:nr-five-gradients}
+ \nabla a=(3b^2,0),\qquad
+ \nabla p=(w,2M_bu),\qquad
+ \nabla h=\left(\frac{bw}{3}+\frac{sb}{9},\,2M_b^2u\right).
+\end{equation}
+Their pairings, using \eqref{eq:nr-five-representation}, yield the
+first five lines of \eqref{eq:nr-five-gamma}.
+For the last line, polarize the eikonal identity on $B$ at $w$ to obtain
+\[
+ 2w(wb)+w^2b=|w|^2b+2\ip wb w.
+\]
+Pairing with $b$ and using
+$\ip{b^2}w=6h-rs/3$ gives
+\[
+ |bw|^2=\frac{s^2r}{9}+p^2-sh.
+\]
+Consequently
+\[
+ |\nabla_Bh|^2=\frac{sh}{3}+\frac{p^2}{9},\qquad
+ |\nabla_Uh|^2=4\ip{M_b^4u}u
+             =\frac{rh}{3}+\frac{ap}{27},
+\]
+which proves the final pairing.
+
+The Laplacians are
+\begin{equation}\label{eq:nr-five-laplacians}
+ \Delta r=2(m+2),\qquad \Delta s=2m,\qquad
+ \Delta a=\Delta p=0,\qquad
+ \Delta h=\frac{mr+(m+2)s}{9}.
+\end{equation}
+To verify these formulas, exactness of $B$ implies
+$\sum_{\alpha=1}^n e_\alpha^2=0$ for an orthonormal basis of $B$.
+Summing the quadratic identity in \eqref{eq:nr-five-representation},
+and separately taking its trace, gives
+\[
+ \sum_{\alpha=1}^n M_{e_\alpha}^2=\frac n{18}\Id_U,
+ \qquad \tr M_b^2=\frac m{18}r.
+\]
+Consequently,
+\[
+ \Delta_Bh=2\sum_{\alpha=1}^n|M_{e_\alpha}u|^2=\frac n9s,
+ \qquad \Delta_Uh=2\tr M_b^2=\frac m9r.
+\]
+The other formulas in \eqref{eq:nr-five-laplacians} follow from
+\eqref{eq:nr-five-traces}. The differential chain rule now proves
+that $\R[r,s,a,p,h]$ is a Laplacian algebra.
+
+\emph{Recovery from $R$ and $F$.}
+The grading gives $F=(a+3p)/6$. Applying
+\eqref{eq:nr-five-gamma} and \eqref{eq:nr-five-laplacians} gives
+\begin{equation}\label{eq:nr-five-gradient-square}
+ S=\frac14(r-s/3)^2+4h,\qquad
+ \Delta S=\frac{(10m+36)r+(2m+4)s}{9}.
+\end{equation}
+Since $R=r+s$ and $m>0$, we recover the two radii directly:
+\begin{equation}\label{eq:nr-five-radius-recovery}
+ r=\frac{9\Delta S-(2m+4)R}{8(m+4)},\qquad s=R-r.
+\end{equation}
+Both belong to $\cA_R(F)$, because $S=\Gamma(F,F)$ and
+$\Delta S$ do. Setting $D=\Gamma(r,F)=a+p$ then gives
+\[
+ p=3F-\frac D2,\qquad
+ a=\frac{3D}{2}-3F,\qquad
+ h=\frac{\Gamma(a,p)+rs}{18}.
+\]
+Thus all five generators belong to $\cA_R(F)$. Since their algebra
+is Laplacian and contains $R,F$, equality follows.
+
+\emph{Algebraic independence.}
+At the maximal unit idempotent $c$,
+\cref{prop:nr-eikonal-core} supplies a nonzero $(-1)$-Peirce space
+$Z\subset B$. Choose a unit vector $z\in Z$. Then $z^2=-c$, so at
+$b=z$ one has $r=1$, $a=0$, and
+\[
+ \nabla_B r=2z,\qquad \nabla_B a=-3c.
+\]
+In particular, the differential of $(r,a)$ has rank two.
+By \eqref{eq:nr-five-representation}, every eigenvalue of $M_z$ lies in
+\[
+ \{\lambda_1,\lambda_2,\lambda_3\}
+   =\left\{-\frac1{2\sqrt3},0,\frac1{2\sqrt3}\right\}.
+\]
+Let their multiplicities be $k_1,k_2,k_3$, allowing zero provisionally.
+The identities $\tr M_z=0$, $\tr M_z^2=m/18$, and
+$k_1+k_2+k_3=m$ imply $k_1=k_2=k_3=m/3>0$.
+Choose $u=u_1+u_2+u_3$ with a nonzero component in each eigenspace.
+For fixed $b=z$, the map from $t_i=|u_i|^2$ to the remaining invariants
+is
+\[
+ \begin{pmatrix}s\\p\\h\end{pmatrix}
+ =
+ \begin{pmatrix}
+  1&1&1\\
+  \lambda_1&\lambda_2&\lambda_3\\
+  \lambda_1^2&\lambda_2^2&\lambda_3^2
+ \end{pmatrix}
+ \begin{pmatrix}t_1\\t_2\\t_3\end{pmatrix}.
+\]
+The Vandermonde matrix is invertible, and the differentials $dt_i$
+are independent because $u_i\ne0$. Thus $(s,p,h)$ has rank three
+in the $U$ directions, whereas $(r,a)$ depends only on $b$ and has
+rank two. The full five-invariant map has rank five at this point.
+Its components are therefore algebraically independent. Their
+polynomial algebra has transcendence degree five and cannot be
+generated by fewer than five elements.
+\end{proof}
+
+\begin{corollary}[Cartan reduction and ambient dimensions]
+\label{cor:nr-cartan-dimensions}
+Under the hypotheses and normalization of
+\cref{thm:nonradial-five-generators}, the cubic
+\begin{equation}\label{eq:nr-cartan-reduction}
+ H=a-9p=6\bigl(\Gamma(r,F)-5F\bigr)
+\end{equation}
+satisfies
+\[
+ \Delta H=0,\qquad |\nabla H|^2=9R^2.
+\]
+It is orthogonally equivalent to a normalized Cartan cubic, and
+\[
+ \dim V\in\{8,14,26\}.
+\]
+Writing $C=H/6$ and $C_B=C\circ\operatorname{pr}_B$, one has
+\begin{equation}\label{eq:nr-cartan-reconstruction}
+ F=\frac{4C_B-C}{3}.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The formula for $H$ follows from $6F=a+3p$ and
+$\Gamma(r,F)=a+p$. By \eqref{eq:nr-five-gradients},
+\[
+ \nabla H=(3b^2-9u^2,-18bu).
+\]
+The identities $|b^2|^2=r^2$, $|u^2|^2=s^2/9$, and
+$\ip{b^2}{u^2}=6h-rs/3$ therefore give
+\[
+ |\nabla H|^2
+ =9r^2+9s^2-54(6h-rs/3)+324h=9(r+s)^2.
+\]
+Also $\Delta H=0$ by \eqref{eq:nr-five-laplacians}.
+
+Put $m=\dim U$. The multiplicity calculation in the proof of
+\cref{thm:nonradial-five-generators} gives $m/3\in\mathbb N$
+and $m>0$. Since $\dim B=m+2$, it follows that
+$\dim V=2m+2\ge8$.
+Cartan's classification of harmonic cubic eikonals
+\cite{Cartan39}, or \cite[Theorem~1.1]{TkachevCartan10},
+now identifies $H$ with a Cartan cubic in dimension $5,8,14$, or
+$26$. In the latter theorem, the additional reducible possibility
+$x_N^3-3x_N\sum_{i<N}x_i^2$ has Laplacian $6(2-N)x_N$,
+so harmonicity and $N\ge8$ exclude it. The same dimension bound
+excludes $N=5$. Finally, $C_B=a/6$ and $C=(a-9p)/6$ give
+\eqref{eq:nr-cartan-reconstruction}.
+\end{proof}
+
+The reduction recovers $F$ from a Cartan cubic and a compatible
+splitting $B\oplus U$. Classifying $F$ up to equivalence therefore
+also requires classifying these splittings.
+
+The models in \cref{sec:nonradial-models} realize the sharp bound
+and express \(r,s\) and the other invariants in coordinates.
+The programs check their closure, recovery, and rank-five minor;
+the universal spectral and trace arguments are proved above and in
+\cref{app:cubic-structure}.

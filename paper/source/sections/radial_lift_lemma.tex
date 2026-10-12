@@ -1,0 +1,32 @@
+\subsection{Radial multiplication preserving the divergence sign}
+
+\begin{proposition}[Radial multiplication of a homogeneous potential]
+\label{prop:cubic-radial-lift}
+Let \(h\) be smooth and homogeneous of degree \(d>0\) on a conical
+open subset of \(\R^N\setminus\{0\}\). If
+\[
+ h\cL(h)\ge0,\qquad h\Delta h\ge0,\qquad N\ge2d+2,
+\]
+then \(g=\sqrt R\,h\) satisfies \(g\cL(g)\ge0\), strictly where
+\(h\ne0\). If \(\nabla h\ne0\) throughout the domain, then
+\(\nabla g\ne0\) there as well.
+\end{proposition}
+
+\begin{proof}
+The radial master identity, \cref{prop:radial-master-identity} with
+\(\alpha=1/2\), reads
+\begin{align}
+ \cL(\sqrt R\,h)=R^{3/2}\Biggl[\cL(h)
+ &+(2d+1)\frac{h^2\Delta h}{R}
+ +(N-2d-2)\frac{h|\nabla h|^2}{R}\notag\\
+ &+(2d+1)(d+N-1)\frac{h^3}{R^2}\Biggr].
+ \label{eq:cubic-radial-lift}
+\end{align}
+Multiplication by \(g=\sqrt R\,h\) makes every term nonnegative;
+the last one is positive when \(h\ne0\). The same master identity
+gives
+\[
+ |\nabla g|^2=R|\nabla h|^2+(2d+1)h^2,
+\]
+proving the final assertion.
+\end{proof}

@@ -1,0 +1,409 @@
+\subsection{Subcalibrations from orthogonal quartic data}
+\label{sec:quartic-table-existence}
+
+The orthogonal-quartic table determines the minimal level, singular
+set, and subcalibration of every realization in the following sufficient
+minimizing range. Exact thresholds for particular families also use
+the instability arguments below.
+
+Throughout this subsection, let $E_0,E_1,E_2$ be nonzero homogeneous
+quartic polynomials on $\R^N$ satisfying
+\eqref{eq:orthogonal-quartic-data}, with $R=|x|^2$.  Suppose
+$r_1,r_2\geq2$, and put
+\begin{gather}
+ \begin{gathered}
+ h=r_1+r_2,\qquad \rho=r_0+r_1+r_2,\\
+ c=\frac{r_1-1}{h-2},\qquad a=1-2c,\qquad b=c(1-c)>0,
+ \end{gathered}
+ \label{eq:quartic-general-weights}\\
+ T=\frac{E_1+E_2}{4},\qquad
+ F=\frac{(1-c)E_1-cE_2}{4}.
+ \label{eq:quartic-general-generators}
+\end{gather}
+By \cref{lem:quartic-block-weights-image}, $N=2\rho-2$.
+The choice of $c$ is the minimal-level condition
+\eqref{eq:quartic-level-condition}.  Direct substitution gives
+\begin{equation}\label{bh:reduced-table}
+ \begin{gathered}
+ (\Gamma(I_i,I_j))_{I=(R,T,F)}=
+ \begin{pmatrix}
+ 4R&8T&8F\\
+ 8T&4RT&4RF\\
+ 8F&4RF&4R(aF+bT)
+ \end{pmatrix},\\
+ (\Delta R,\Delta T,\Delta F)=(2N,2hR,2aR).
+ \end{gathered}
+\end{equation}
+Thus the gradient table is independent of $r_0$, while the ambient
+dimension records all three weights.  By
+\cref{prop:MR-generator-test}, $\R[R,T,F]$ is a Laplacian algebra.
+It is exactly $\cA_R(F)$: writing $S=|\nabla F|^2$, one obtains
+\[
+ S=4R(aF+bT),\qquad
+ \Delta S=8(N+8)(aF+bT)+8(a^2+bh)R^2.
+\]
+Since $b>0$, the second identity recovers $T$ in $\cA_R(F)$.
+The generators are algebraically independent.  Indeed, the nonzero
+polynomial $E_0E_1E_2$ is positive somewhere; there the gradients of
+the three blocks are independent, and the change to $(R,T,F)$ is
+locally invertible.  Fixing $R=1$ therefore leaves spherical quotient
+dimension two.
+
+\begin{lemma}[Geometry determined by the quartic data]
+\label{lem:quartic-table-geometry}
+At each fixed $R\geq0$, the full image of $(T,F)$ is
+described by
+\begin{equation}\label{eq:quartic-table-image}
+ 0\leq T\leq R^2/4,\qquad -cT\leq F\leq(1-c)T.
+\end{equation}
+The critical set of $F$ and the geometric singular set of
+$C=\{F=0\}$ are both $Z=\{T=0\}$, and
+$\dim Z\leq N-h$.  The hypersurface $C$ is minimal outside $Z$,
+both phases approach every point of $C$, and
+$\partial\llbracket\{F<0\}\rrbracket$ has support $C$.
+\end{lemma}
+
+\begin{proof}
+The simplex image in \cref{lem:quartic-block-weights-image} and
+homogeneity prove \eqref{eq:quartic-table-image}. Moreover,
+\[
+ |\nabla F|^2=R\bigl((1-c)^2E_1+c^2E_2\bigr),
+\]
+so the critical set of $F$ is exactly $Z$.  The reduced table gives
+\begin{equation}\label{bh:minimality}
+ \cL(F)=-8F\{b(R^2+2T)+2aF\},
+\end{equation}
+which proves regular minimality.
+
+Nonzero points of $Z$ exist because $E_0$ attains one on the unit
+sphere. Fix such a point $p$ and write $R_0=R(p)$ and
+$\Hess E_i(p)=8R_0P_i$ for $i=1,2$, using the projections obtained
+in the proof of \cref{lem:quartic-block-weights-image}. The quadratic terms of
+$\Gamma(E_1,E_2)=0$ give $P_1P_2+P_2P_1=0$.  Taking the trace
+shows $P_1P_2=0$.  Hence
+\[
+ \Hess T(p)=2R_0(P_1+P_2),\qquad
+ \Hess F(p)=2R_0\bigl((1-c)P_1-cP_2\bigr).
+\]
+The first Hessian has rank $h$.  Applying the implicit function
+theorem to $h$ independent components of $\nabla T$ places $Z$
+locally in a smooth submanifold of codimension $h$.  Consequently
+$\dim Z\leq N-h$ and $\cH^{N-1}(Z)=0$.
+The second Hessian has positive and negative indices $r_1,r_2$,
+respectively, so both phases occur arbitrarily near every such $p$.
+If the zero set were a smooth hypersurface at $p$, its leading
+quadratic term would vanish on its tangent hyperplane and thus have
+rank at most two.  Its actual rank is $h\geq4$, a contradiction.
+Thus these points are geometrically singular.
+
+Homogeneity gives the same two-phase conclusion at the origin,
+and regularity gives it on $C\setminus Z$.  Polynomial finite
+perimeter and the local BV Poincar\'e inequality then identify the
+support of the boundary current with $C$.  The vertex is singular
+as well: a cone smooth at its vertex would be a hyperplane, whereas
+$C$ has nonzero singular points.
+\end{proof}
+
+\begin{theorem}[Polynomial subcalibrations from orthogonal quartics]
+\label{thm:quartic-table-existence}
+For the data \eqref{eq:orthogonal-quartic-data} and
+\eqref{eq:quartic-general-weights}--\eqref{eq:quartic-general-generators},
+suppose that either
+\[
+ h\geq9,
+ \qquad\text{or}\qquad
+ r_1=r_2=4\ \text{ and }\ r_0\geq5.
+\]
+There exists a homogeneous polynomial $G=AF$ of degree at most ten,
+with $A>0$ on $T>0$, whose critical set is $Z=\{T=0\}$ and whose
+normalized gradient satisfies
+\[
+ \operatorname{sgn}(G)\,\diver X_G>0\qquad\text{off }C=\{F=0\}.
+\]
+The current $\partial\llbracket\{F<0\}\rrbracket$ has full support
+$C$ and is strictly area minimizing.  Its regular part is strictly
+stable, with the explicit lower bound
+\begin{equation}\label{eq:bihomogeneous-Hardy}
+ Q_C(\varphi)\geq
+ \left[\frac{(N-17)^2}{4}+8h-72\right]
+ \int_Cr^{-2}\varphi^2,\qquad
+ \varphi\in C_c^\infty(C_{\reg}\setminus\{0\}),\quad r=\sqrt R.
+\end{equation}
+\end{theorem}
+
+\subsubsection{Selecting the multiplier}
+
+At $p\in Z\setminus\{0\}$, \eqref{bh:minimality} gives
+$\lambda_F(p)=-8bR(p)^2<0$. Hence
+\cref{lem:critical-multiplier-defect} forces every admissible smooth
+multiplier to vanish on $Z$.
+For $A\in\R[R,T]$, scaling a nonzero point of $Z$ gives
+$A(R,0)=0$ for all $R>0$, so $T$ divides $A$ as a polynomial in
+$R,T$.  The lowest two nonzero homogeneous choices are therefore
+$T$ and $RT$, up to a positive constant.
+
+These two candidates suffice in the stated ranges:
+\begin{equation}\label{bh:potentials}
+ G=\begin{cases}
+ TF,&h\geq11,\ \text{or }h=10\ \text{and }r_1,r_2\geq3,\\
+ RTF,&h=9,\ \text{or }\{r_1,r_2\}=\{2,8\},\\
+ RTF,&r_1=r_2=4,\ r_0\geq5.
+ \end{cases}
+\end{equation}
+With $s=T/R^2$ and $z=F/T$, these are $R^4s^2z$ and $R^5s^2z$:
+the radial factor changes the defect but preserves vanishing on $Z$.
+We use \cref{thm:finite-reduction,thm:exact-multiplier} and, for
+$h=9$, the realizability restriction \cref{cor:quartic-nine-weights}.
+
+\subsubsection{The degree-eight potential and its range}
+
+For $G_8=TF$, the reduced table gives
+\begin{gather}
+ \norm{\nabla G_8}^2=4RT(bT^2+aTF+3F^2),\qquad
+ \Delta G_8=R\{2aT+2(h+4)F\},\label{bh:G8-basic}\\
+ \begin{split}\label{bh:G8-defect}
+ \cL(G_8)=8TF\big\{&bT^2[(h-8)R^2-4T]\\
+                  &+aTF[(h-4)R^2-4T]
+                    +3F^2[hR^2-4T]\big\}.
+ \end{split}
+\end{gather}
+Introduce the dimensionless variables
+\[
+ s=T/R^2\in(0,1/4],\qquad z=F/T\in[-c,1-c].
+\]
+The braces in \eqref{bh:G8-defect}, divided by $R^2T^2$, are
+\begin{equation}\label{bh:p8}
+ p_8(z,s)=b(h-8-4s)+a(h-4-4s)z+3(h-4s)z^2.
+\end{equation}
+Since
+\[
+ b+az=(1-c)^2(z+c)+c^2(1-c-z)>0,
+\]
+we have $\partial_s p_8=-4(b+az+3z^2)<0$.  It is enough to prove
+\begin{equation}\label{bh:q8}
+ q(z):=p_8(z,1/4)=b(h-9)+a(h-5)z+3(h-1)z^2>0.
+\end{equation}
+
+First take one of the degree-eight cases in \eqref{bh:potentials},
+so $h\geq10$. Interchanging $E_1,E_2$ preserves the problem, so we
+may assume
+$1/(h-2)\leq c\leq1/2$ and $a\geq0$.  For $z\geq0$,
+\eqref{bh:q8} is positive.  On $[-c,0]$ its vertex is
+$z_*=-a(h-5)/(6(h-1))$, which lies in this interval exactly when
+\[
+ c\geq c_*:=\frac{h-5}{8(h-2)}.
+\]
+If $c<c_*$, the minimum is attained at $-c$, where \(q(-c)=4c((h-1)c-1)>0\).
+If $c\geq c_*$, the minimum is positive exactly when
+\begin{equation}\label{bh:D8}
+ D_8(c):=12(h-1)(h-9)c(1-c)-(h-5)^2(1-2c)^2>0.
+\end{equation}
+This expression increases on $0<c\leq1/2$.  For $h\geq13$,
+\[
+ D_8(c_*)=
+ \frac{3(h-1)(h-5)(h^2-14h+21)}{4(h-2)^2}>0.
+\]
+For $h=12,11$, the bound $c\geq1/(h-2)>c_*$ gives, respectively,
+\[
+ D_8(1/10)=107/25>0,\qquad D_8(1/9)=52/27>0.
+\]
+For $h=10$ with $r_1,r_2\geq3$, one has $c\geq1/4>c_*$ and
+$D_8(1/4)=14>0$. This proves positivity in every degree-eight
+case of \eqref{bh:potentials}.
+
+The same candidate does not give a uniform result for $h=10$.
+For $c=1/8$, hence $a=3/4$ and $b=7/64$, one has
+\begin{equation}\label{eq:quartic-degree-eight-obstruction}
+ p_8(-1/16,1/4)=-5/256<0.
+\end{equation}
+By \cref{lem:quartic-table-geometry}, this point is attained in every
+realization with $(r_1,r_2)=(2,8)$. Thus $TF$ has the wrong divergence
+sign at points of the complement. For $h=9$, one has
+$q(z)=4az+24z^2$ with $a\ne0$, so $q$ is negative for small $z$ of
+the opposite sign. For $r_1=r_2=4$, one instead has
+$q(z)=-b+21z^2$, negative near zero. The exact image assertion again
+realizes these negative values with $F\ne0$. Hence, within the
+theorem's range, the degree-eight choices in \eqref{bh:potentials}
+are precisely the cases in which $TF$ has the required strict sign.
+
+\subsubsection{The degree-ten potential in the remaining ranges}
+
+For $G_{10}=RTF$, the same table gives
+\begin{equation}\label{bh:G10}
+ \cL(G_{10})=8R^5T^3F\,p_{10}(z,s),
+\end{equation}
+where
+\begin{align}
+ p_{10}(z,s)={}&b[h-8+(2h-23)s]
+       +a[h-4+(2h-14)s]z\nonumber\\
+       &+[3h+(15h-33)s+(18h+27)s^2]z^2\nonumber\\
+       &+2(r_0-1)s\bigl[b+az+3(1+3s)z^2\bigr].
+       \label{bh:p10}
+\end{align}
+Because $r_0\geq1$ and $b+az>0$ on the image interval, the last
+line is nonnegative.  Thus increasing the unused block weight
+$r_0$ can only improve this certificate.
+
+For $h=9$, \cref{cor:quartic-nine-weights} gives $r_0\geq8$.
+At $r_0=8$, the full polynomial is
+\begin{equation}\label{eq:quartic-nine-certificate}
+ p_{10}(z,s)=b(1+9s)+a(5+18s)z+
+ (27+144s+315s^2)z^2.
+\end{equation}
+Since $c\in[1/7,6/7]$, one has $a^2\leq25/49$ and
+$4b\geq24/49$. The negative discriminant is therefore bounded below by
+\begin{align}
+ &4b(1+9s)(27+144s+315s^2)-a^2(5+18s)^2\nonumber\\
+ &\qquad\geq
+ \frac{23+4788s+30564s^2+68040s^3}{49}>0.
+ \label{eq:quartic-nine-discriminant}
+\end{align}
+The leading coefficient is positive, so \eqref{eq:quartic-nine-certificate}
+is positive for all real $z$ and $0<s\leq1/4$. Increasing $r_0$
+preserves positivity on the image interval.
+
+When $h=10$, the first three terms are
+\[
+ b(2-3s)+a(6+6s)z+(30+117s+207s^2)z^2.
+\]
+Here $c\in[1/8,7/8]$, so $a^2\leq9/16$ and
+$b=(1-a^2)/4$.  The negative of the discriminant is bounded below by
+\begin{align*}
+ &4b(2-3s)(30+117s+207s^2)-a^2(6+6s)^2\\
+ &\hspace{10mm}\geq
+ 6+\frac{45}{2}s+\frac{117}{16}s^2-\frac{4347}{16}s^3
+ \geq\frac{1797}{1024}>0.
+\end{align*}
+The final inequality follows from $0<s\leq1/4$ by discarding the
+positive linear and quadratic terms. The leading coefficient is
+positive, so this polynomial is positive for all real $z$ and all
+allowed $s$.
+
+Finally, for $r_1=r_2=4$ one has $h=8$, $a=0$, and $b=1/4$.
+The full polynomial becomes
+\begin{equation}\label{eq:quartic-balanced-eight-certificate}
+ p_{10}(z,s)=\frac{2r_0-9}{4}s+
+ \bigl[24+(81+6r_0)s+(153+18r_0)s^2\bigr]z^2.
+\end{equation}
+This is positive for every $s>0$ if $r_0\geq5$.
+Together these calculations prove the required sign in every
+case of \eqref{bh:potentials}.
+
+\subsubsection{Global minimality and the Hardy bound}
+
+\begin{proof}[Completion of the proof of \cref{thm:quartic-table-existence}]
+\leavevmode\par\nobreak
+Both multipliers are positive on $T>0$. Euler's identity excludes
+critical points where $F\ne0$, and $|\nabla F|^2=4bRT$ excludes them
+on $F=0$, $T>0$. On $Z$, both potentials and their gradients vanish.
+Thus they have critical set $Z$ and the same phases as $F$.
+The full-support and dimension conclusions of
+\cref{lem:quartic-table-geometry} verify the hypotheses of
+\cref{cor:gradient-subcalibration,thm:removable-subcalibration}.
+Their comparison, followed by \cref{cor:polynomial-strict-minimality},
+gives strict integral-current mass minimization and the gap
+$\Theta\varepsilon^{N-1}$.
+
+For stability, \eqref{eq:boundary-potential-algebraic} gives
+\[
+ \beta_{TF}=2(h-8)\frac{R^2}{T}-8,\qquad
+ \beta_{RTF}=2(h-8)\frac{R^2}{T}+4\rho-50.
+\]
+Since $R^2/T\geq4$ and $h\geq8$, the homogeneous Hardy estimate
+\cref{thm:ground-state-gap}, with cone dimension $N-1=2\rho-3$,
+gives the same lower bound for both potential degrees:
+\begin{align*}
+ \left(8-\frac{N-1}{2}\right)^2+8(h-8)-8
+ &=\frac{(N-17)^2}{4}+8h-72,\\
+ \left(10-\frac{N-1}{2}\right)^2+8(h-8)+4\rho-50
+ &=\frac{(N-17)^2}{4}+8h-72.
+\end{align*}
+For $h\geq10$ this coefficient is positive. For $h=9$,
+\cref{cor:quartic-nine-weights} gives $N=2r_0+16\geq32$, so the
+coefficient $(N-17)^2/4$ is positive as well. In the remaining
+case, $h=8$ and $r_0\geq5$ imply $N\geq24$, so it is at least
+$17/4$.  This proves \eqref{eq:bihomogeneous-Hardy}.
+\end{proof}
+
+For the splitting specialization $r_0=1$, $h=\ell$, one has
+$N=2\ell$, and the Hardy coefficient becomes
+$\ell^2-9\ell+1/4$. For $r_0>1$ and unequal active weights,
+\cref{prop:quartic-weight-realizability} determines realizability,
+and the inequalities above give a sufficient minimizing range.
+
+\subsubsection{The balanced specialization}
+
+\begin{corollary}[The degree-eight potential for balanced quartics]
+\label{prop:balanced-quartic-multiplier}
+Suppose that the three nonzero quartics in
+\eqref{eq:orthogonal-quartic-data} have weights $(r_0,\nu,\nu)$,
+with $\nu\geq5$. Set
+\[
+ F=\frac{E_+-E_-}{4},\qquad W=\frac{E_++E_-}{4},\qquad G=WF.
+\]
+The conclusions of \cref{thm:quartic-table-existence} hold for $G$,
+with $\Sigma=\{W=0\}$. In this normalization, $\Delta F=0$,
+$|F|\leq W\leq R^2/4$, and
+\begin{equation}\label{eq:balanced-quartic-smallest-algebra}
+ \cA_R(F)=\R[R,W,F]
+\end{equation}
+is a polynomial algebra with generator degrees $(2,4,4)$.
+Moreover,
+\begin{align}
+ |\nabla G|^2&=4RW(W^2+3F^2),\qquad
+ \Delta G=4(\nu+2)RF,\label{eq:balanced-quartic-gradient}\\
+ \cL(G)&=16FW\left\{
+ W^2\big[(\nu-4)R^2-2W\big]
+ +3F^2\big[\nu R^2-2W\big]\right\}.
+ \label{eq:balanced-quartic-certificate}
+\end{align}
+\end{corollary}
+
+\begin{proof}
+Take $T=W$, $F_{\mathrm{gen}}=F/2$, $h=2\nu\geq10$, and $c=1/2$
+in \cref{thm:quartic-table-existence}. Its table becomes
+\begin{equation}\label{eq:balanced-quartic-table}
+ \Delta(R,W,F)=(2N,4\nu R,0),\qquad
+ (\Gamma(I_i,I_j))_{I=(R,W,F)}=
+ \begin{pmatrix}
+ 4R&8W&8F\\
+ 8W&4RW&4RF\\
+ 8F&4RF&4RW
+ \end{pmatrix}.
+\end{equation}
+Substituting this normalization in
+\eqref{bh:G8-basic}--\eqref{bh:G8-defect} gives
+\eqref{eq:balanced-quartic-gradient}--\eqref{eq:balanced-quartic-certificate}.
+\end{proof}
+
+The following table organizes the applications of the common
+quartic theorem. The splitting, Riedler, and weight-two families
+have exact thresholds, obtained by combining this theorem with
+instability arguments. Each construction also identifies its
+singular set, including the real rank-one strata in the weight-two
+families.
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\caption{Euclidean quartic realizations of
+\cref{thm:quartic-table-existence}. Only parameters admitting the
+specified Clifford realization are included. The intrinsic
+Simons-cone result in \cref{thm:Hopf-Simons-section} uses a
+separate differential table.}
+\label{tab:quartic-weight-realizations}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Family & $(r_0,r_1,r_2)$ & Minimizing parameters used here\\
+\midrule
+OT--FKM splitting & $(1,m,\ell-m)$ & $\ell\ge10$, $2\le m\le\ell-2$\\
+Riedler pullback & $(N/2-2k+1,k,k)$ & $N\ge32$, $k\ge4$\\
+Hopf pairing & $(1,8,8)$ & Ambient dimension $32$\\
+Balanced Clifford example & $(3,7,7)$ & Ambient dimension $32$\\
+Additional block example & $(2,5,10)$ & Ambient dimension $32$\\
+Weight-two families & $(2,m,4k-m-1)$ & $m=2,3$, $k\ge3$\\
+Unequal Lawson pullback & $(22,5,6)$ & Ambient dimension $64$\\
+\bottomrule
+\end{tabular}
+\end{table}

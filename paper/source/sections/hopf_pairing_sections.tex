@@ -1,0 +1,154 @@
+\subsubsection{The Hopf pairing and its balanced section}
+\label{sec:Hopf-pairing}
+
+The Hopf pairing realizes weights $(1,8,8)$ and has two linear
+singular strata. Its balanced section also gives an intrinsic
+comparison inside a Simons cone.
+
+Let \(h:\R^{16}\to\R^9\) be the quadratic extension of the standard
+octonionic Hopf map \(\Sph^{15}\to\Sph^8\), normalized by
+\begin{equation}\label{eq:Hopf-normalization}
+ |h(x)|^2=|x|^4,\qquad
+ Dh(x)Dh(x)^{\mathsf T}=4|x|^2\Id_9,\qquad \Delta h=0.
+\end{equation}
+For polarization of the spherical norm identity and the Hopf construction
+from norm-preserving bilinear multiplication, see
+\cite[Chapter~15]{Shapiro2000}.
+The coordinates are \(h_i(x)=\langle A_ix,x\rangle\) for a nine-matrix Clifford
+system on \(\R^{16}\); see \cite[Theorem~A and Section~1.2]{Radeschi14}.
+On \(\R^{16}\oplus\R^{16}\), set
+\begin{equation}\label{eq:Hopf-pairing-definitions}
+ u=|x|^2,\quad v=|y|^2,\quad R=u+v,\quad V=u-v,\quad T=uv,
+ \qquad F(x,y)=\langle h(x),h(y)\rangle.
+\end{equation}
+In particular, \(|F|\leq T\), and \(F\) has bidegree \((2,2)\).
+
+\begin{proposition}[The pairing closure]\label{prop:Hopf-closure}
+The algebra \(\cA=\R[u,v,F]=\R[R,V,F]\) is a graded Laplacian
+algebra of spherical quotient dimension two. Its closure table, in
+the ordered generators \((u,v,F)\), is
+\begin{equation}\label{eq:Hopf-closure}
+ (\Delta u,\Delta v,\Delta F)=(32,32,0),\qquad
+ \bigl(\Gamma(I_i,I_j)\bigr)=
+ \begin{pmatrix}
+  4u&0&4F\\
+  0&4v&4F\\
+  4F&4F&4uv(u+v)
+ \end{pmatrix}.
+\end{equation}
+The quartic zero set \(C=\{F=0\}\) is minimal on its regular part,
+and its geometric singular set is
+\begin{equation}\label{eq:Hopf-singular-set}
+ Z=(\R^{16}\times\{0\})\cup(\{0\}\times\R^{16}).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Equation \eqref{eq:Hopf-normalization} gives
+\[
+ |\nabla_xF|^2=4uv^2,\qquad
+ |\nabla_yF|^2=4u^2v,\qquad \Delta F=0.
+\]
+Euler's identity in each block gives the remaining entries of
+\eqref{eq:Hopf-closure}, and \cref{prop:MR-generator-test}
+proves Laplacian closure. Surjectivity of the Hopf map gives
+the full image
+\[
+ \{(u,v,f):u,v\geq0,\ |f|\leq uv\}.
+\]
+Its interior proves algebraic independence and spherical quotient
+dimension two. Since $uv$ varies at fixed $R$ and $F=0$,
+$\Gamma(F,F)=4Ruv\notin\R[R,F]$.
+
+Since \(\Gamma(F,R)=8F\) and \(\Gamma(F,T)=4RF\), we obtain
+\[
+ \cL(F)=-\tfrac12\Gamma(F,4RT)=-8(R^2+2T)F.
+\]
+This proves regular minimality and identifies the critical set as
+\(Z\). At \((0,y_0)\), \(y_0\ne0\), the transverse quadratic term
+is \(\langle A(h(y_0))x,x\rangle\), where
+\(A(a)=\sum_i a_iA_i\). Its eigenvalues are
+\(\pm|y_0|^2\), each with multiplicity eight. Hence the tangent
+cone is the product of a quadratic cone of signature \((8,8)\)
+with \(\R^{16}\), and the point is geometrically singular.
+The other axis is identical; the vertex is singular as well.
+\end{proof}
+
+\begin{remark}[A second realization of the pairing table]
+The Clifford construction in \cref{sec:Clifford-composition-background}
+also realizes this table. Put
+\(Q=u^2+v^2-2F\). For a nine-matrix Clifford system
+\(P_0,\ldots,P_8\) on \(\R^{32}\), the generators
+\[
+ \widehat R=|z|^2,\qquad
+ \widehat V=\langle P_0z,z\rangle,\qquad
+ \widehat Q=\sum_{i=0}^8\langle P_iz,z\rangle^2
+\]
+have the same gradient and Laplacian identities as \((R,V,Q)\).
+Both images are
+\(\{(R,V,Q):R\geq0,\ V^2\leq Q\leq R^2\}\).
+The inverse relations
+\(u=(R+V)/2\), \(v=(R-V)/2\), and \(F=(R^2+V^2-2Q)/4\)
+therefore identify their graded differential algebras.
+\end{remark}
+
+\begin{theorem}[A polynomial subcalibration of the pairing cone]
+\label{thm:Hopf-pairing}
+The potential \(G=TF=|x|^2|y|^2F\) has degree eight and
+subcalibrates \(C=\{F=0\}\). Its oriented boundary current
+\(\partial\llbracket\{F<0\}\rrbracket\) is strictly area minimizing
+in \(\R^{32}\). Moreover,
+\begin{equation}\label{eq:Hopf-Hardy-bound}
+ Q_C(\varphi)\geq\frac{449}{4}\int_C r^{-2}\varphi^2,
+ \qquad \varphi\in C_c^\infty(C_{\reg}),\quad r=\sqrt R.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The three blocks
+\[
+ E_0=(u-v)^2,\qquad E_1=2(T+F),\qquad E_2=2(T-F)
+\]
+have weights $(1,8,8)$. The centered generator $F/2$ gives
+$h=16$, $r_0=1$, and $c=1/2$ in
+\cref{thm:quartic-table-existence}. Its balanced specialization
+\cref{prop:balanced-quartic-multiplier} gives $G=TF$ and
+\begin{align}
+ \Delta G&=40RF,\qquad
+ |\nabla G|^2=4RT(T^2+3F^2),\label{eq:Hopf-gradient}\\
+ \cL(G)&=32TF\bigl[T^2(2R^2-T)
+                    +3F^2(4R^2-T)\bigr].\label{eq:Hopf-defect}
+\end{align}
+The Hardy constant in \eqref{eq:bihomogeneous-Hardy} is $449/4$
+at $(N,h)=(32,16)$.
+\end{proof}
+
+\begin{remark}[Relation with the OT--FKM and Riedler constructions]
+\label{rem:Hopf-FKM-Riedler}
+The matrices \(B_i=\operatorname{diag}(A_i,-A_i)\) form a Clifford
+system on \(\R^{32}\). Its OT--FKM polynomial
+\cite[Section~1.3]{Radeschi14} is
+\[
+ \Psi=R^2-2\sum_{i=1}^9\langle B_i(x,y),(x,y)\rangle^2
+     =4F-V^2.
+\]
+It has multiplicities \((8,7)\). Applying the centering formula
+\eqref{eq:iso-F-z} to \(-\Psi\), with ordered multiplicities
+\((7,8)\), shows that its minimal regular hypercone is
+\(\{\Psi+R^2/15=0\}\). Nonvertex singularities distinguish $C$ from every cone over a
+regular isoparametric hypersurface. They also distinguish it from
+Riedler's family: its singular dimension is $N-2k$, so congruence
+would require $N=32$, $2k=16$, but sixteen Clifford matrices
+require ambient dimension at least $256$
+\cite[Remark~5.2.6(1) and Table~4.1]{RiedlerThesis25}. Although
+\(F=\langle\cdot,\cdot\rangle\circ(h,h)\), the product map
+\(\Phi(x,y)=(h(x),h(y))\) satisfies
+\[
+ D\Phi D\Phi^{\mathsf T}=4\operatorname{diag}(u\Id_9,v\Id_9).
+\]
+It is not horizontally conformal on \(u\ne v\), so the pullback
+criterion in \cref{prop:pullback-subcalibration} does not apply
+to this map on \(\R^{32}\).
+\end{remark}
+
+\input{sections/appendix_quartic_intrinsic_section}

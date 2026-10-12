@@ -1,0 +1,149 @@
+\subsection{Even-degree closure and a regular-link identity}
+\label{sec:even-gradient-structure}
+
+Even-degree gradient-square closure need not imply harmonicity.
+We record its identities and a regular-link consequence, leaving
+further geometry and variational properties aside.
+
+\begin{proposition}[The even-degree closure and its signs]
+\label{prop:even-gradient-closure}
+Let \(F\) be a real irreducible homogeneous polynomial of degree
+\(d=2m\ge4\) on \(\R^N\), with a nonempty minimal regular zero set.
+Suppose \(\R[R,F,S]\) is Laplacian, where
+\(R=|x|^2\) and \(S=|\nabla F|^2\).
+There are constants \(c,\alpha,\beta,\lambda,\mu\) such that
+\begin{equation}\label{eq:even-rfs-closure}
+\begin{aligned}
+ \Delta F&=cR^{m-1},&
+ \Delta S&=\alpha R^{d-2}+\beta R^{m-2}F,\\
+ \cL(F)&=(\lambda R^{d-2}+\mu R^{m-2}F)F,\\
+ \Gamma(F,S)&=2cR^{m-1}S
+       -2\lambda R^{d-2}F-2\mu R^{m-2}F^2.
+\end{aligned}
+\end{equation}
+Moreover, \(\alpha>0\) and \(\lambda<0\).
+\end{proposition}
+
+\begin{proof}
+The degrees of \(R,F,S\) are \(2,d,2d-2\).
+The homogeneous pieces of degrees \(d-2\) and \(2d-4\) are
+therefore spanned by \(R^{m-1}\) and by
+\(R^{d-2},R^{m-2}F\), respectively.
+Minimality and \cref{prop:divisibility} make \(\cL(F)/F\)
+a polynomial of degree \(2d-4\); division inside a Laplacian
+algebra, \cref{prop:MR-finite-and-division}, places it in the same
+homogeneous piece. The identity
+\(\cL(F)=S\Delta F-\Gamma(F,S)/2\) proves the mixed entry.
+
+Bochner's identity and \(\Gamma(R,F)=2dF\) give
+\begin{equation}\label{eq:even-bochner}
+ |\Hess F|^2=\frac\alpha2R^{d-2}
+       +\left(\frac\beta2-cd(d-2)\right)R^{m-2}F.
+\end{equation}
+At a nonzero regular zero this shows \(\alpha\ge0\).
+The polynomial \(F\) changes sign across that zero.
+If \(\alpha=0\), nonnegativity of the left side would force
+\(\beta/2-cd(d-2)=0\), and hence \(\Hess F=0\), contrary
+to \(d\ge4\). Thus \(\alpha>0\).
+
+Let \(a>0\) and \(b_0<0\) be the maximum and minimum of
+\(F\) on the unit sphere. At either extremum, with value \(t\),
+Euler's identity gives
+\[
+ \nabla F=dt x,\qquad S=d^2t^2,\qquad
+ \nabla S=2(d-1)Sx.
+\]
+Substitution in the mixed entry, followed by division by \(2t\),
+gives
+\[
+ d^3(d-1)t^2+(\mu-cd^2)t+\lambda=0.
+\]
+The two distinct values \(a,b_0\) are its roots. Consequently
+\(\lambda=d^3(d-1)ab_0<0\).
+\end{proof}
+
+\begin{remark}[Harmonic normalization]
+\label{rem:even-harmonic-suspension}
+With \(a=c/[d(N+d-2)]\), the polynomial \(H=F-aR^m\)
+is harmonic, and
+\[
+ |\nabla H|^2=S-2ad^2R^{m-1}F+a^2d^2R^{d-1}.
+\]
+Thus \(\R[R,H,|\nabla H|^2]=\R[R,F,S]\).
+This change preserves the algebra, but generally changes the zero set
+and the critical set; it does not reduce the geometric classification
+to the harmonic case.
+
+\end{remark}
+
+\begin{proposition}[An isoparametric function on the regular link]
+\label{prop:even-singular-link-structure}
+Assume \cref{prop:even-gradient-closure} and that $F$ has a nonzero
+critical point. Put $\ell=d-1$ and
+$h=(\alpha-2c^2)/(-\lambda)$. On
+$M=\{F=0,\ S>0\}\cap\Sph^{N-1}$, the function
+$u=-2\ell^2S|_M/\lambda$ satisfies $0<u\le1$ and
+\begin{equation}\label{eq:even-normalized-link}
+ |\nabla_Mu|^2=4\ell^2u(1-u),\qquad
+ \Delta_Mu=2\ell^2(h-1)-2\ell(N+2\ell-3)u.
+\end{equation}
+Thus $u$ is isoparametric in the intrinsic sense that its gradient
+square and Laplacian depend only on its value.
+\end{proposition}
+
+\begin{proof}
+Let $p\ne0$ be critical, $R_0=R(p)$ and $H=\Hess F(p)$.
+Euler's identity gives $F(p)=0$. Comparing quadratic terms at $p$
+in \eqref{eq:even-rfs-closure} and using \eqref{eq:even-bochner} gives
+\begin{equation}\label{eq:even-critical-hessian}
+ H(2H^2-2cR_0^{m-1}H+\lambda R_0^{d-2}\Id)=0,
+ \quad \tr H=cR_0^{m-1},\quad
+ \tr(H^2)=\tfrac\alpha2R_0^{d-2}.
+\end{equation}
+The normalized nonzero eigenvalues are among
+$\eta_\pm=(c\pm\sqrt{c^2-2\lambda})/2$, with opposite signs.
+Both occur: $H\ne0$ since $\alpha>0$, and if only $\eta_+$
+occurred with multiplicity $a\ge1$, its trace would give
+$(a-1)\eta_+=\eta_-$, a contradiction. The other case is identical.
+
+Closure and degree counting give
+\begin{align*}
+ \Gamma(S,S)={}&D_0R^{2d-3}+D_1R^{3m-3}F
+ +D_2R^{d-3}F^2+D_3R^{m-3}F^3\\
+ &+D_4R^{d-2}S+D_5R^{m-2}FS,
+\end{align*}
+with the $D_3$ term omitted for $d=4$.
+At $p$ its constant term gives $D_0=0$, and its quadratic terms give
+$4H^4=D_1R_0^{3m-3}H/2+D_4R_0^{d-2}H^2$.
+For each of the two roots, this reads $4\eta^3=D_1/2+D_4\eta$.
+Using $\eta^2=c\eta-\lambda/2$ yields
+\begin{equation}\label{eq:even-critical-gamma}
+ D_0=0,\qquad D_1=-4c\lambda,\qquad D_4=4c^2-2\lambda.
+\end{equation}
+
+On $C_{\reg}=\{F=0,S>0\}$ take $\nu=\nabla F/\sqrt S$.
+The mixed entry in \eqref{eq:even-rfs-closure} and
+\eqref{eq:even-critical-gamma} imply
+\[
+ \nu(S)=2cR^{m-1}\sqrt S,\qquad
+ |\Hess F\,\nu|^2=(c^2-\lambda/2)R^{d-2}.
+\]
+Subtracting $\nu(S)^2$ from $\Gamma(S,S)$ gives the tangential
+gradient square. Differentiating $\Gamma(F,S)$ in direction $\nu$,
+and using $\nu(R)=0$ on $C$, gives
+$\Hess S(\nu,\nu)=(2c^2-\lambda)R^{d-2}$.
+Since $C_{\reg}$ is minimal,
+$\Delta_CS=\Delta S-\Hess S(\nu,\nu)$, and hence
+\begin{equation}\label{eq:even-cone-structure}
+ |\nabla_CS|^2=-2\lambda R^{d-2}S,\qquad
+ \Delta_CS=-(h-1)\lambda R^{d-2}.
+\end{equation}
+Finally $S$ has degree $2\ell$. Writing $s=S|_M$ and separating
+radial derivatives in the cone metric gives
+\[
+ |\nabla_Ms|^2=-2\lambda s-4\ell^2s^2,\qquad
+ \Delta_Ms=-(h-1)\lambda-2\ell(N+2\ell-3)s.
+\]
+Normalization proves \eqref{eq:even-normalized-link}; its first
+identity and $s>0$ imply $0<u\le1$.
+\end{proof}

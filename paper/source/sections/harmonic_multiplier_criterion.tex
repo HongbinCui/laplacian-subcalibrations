@@ -1,0 +1,172 @@
+\subsection{A multiplier criterion for harmonic defining functions}
+\label{sec:harmonic-multiplier-criterion}
+
+The following criterion permits multipliers that degenerate at the
+singular set. Its spectral application appears in
+\cref{sec:spectral-positivity}.
+
+Let \(F\not\equiv0\) be a homogeneous polynomial of positive degree on
+\(\R^N\), \(N\ge2\), satisfying \eqref{eq:harmonic-minimal-weight}, and set
+\(U=\{S>0\}\).  Let \(h\) be smooth on \(U\), put \(a=e^h\),
+and suppose that a smooth function \(\tau\) on \(U\) satisfies
+\begin{equation}\label{eq:harmonic-log-compatibility}
+ \Gamma(F,h)=\tau F.
+\end{equation}
+Thus \(\nabla h\) is tangent to the regular zero set. Introduce
+\begin{equation}\label{eq:harmonic-log-auxiliary}
+ H_h=\Gamma(h,h),\qquad Q_h=H_h+2\tau,\qquad
+ P_h=Q_h\Delta h-\tfrac12\Gamma(h,Q_h),
+\end{equation}
+and the boundary coefficient
+\begin{equation}\label{eq:harmonic-log-D0}
+ D_h=S(\Delta h-\tau-H_h)-q-\tfrac12\Gamma(h,S).
+\end{equation}
+These functions are defined on \(U\) without division by \(F\).
+
+\begin{lemma}[Harmonic multiplier identity]
+\label{lem:harmonic-log-multiplier}
+With the preceding notation, \(G=aF\) satisfies
+\begin{align}
+ |\nabla G|^2&=a^2(S+F^2Q_h),
+ \label{eq:harmonic-log-gradient}\\
+ \cL(G)&=a^3F\left(D_h+F^2P_h-
+                    \tfrac F2\Gamma(F,Q_h)\right).
+ \label{eq:harmonic-log-defect}
+\end{align}
+Along \(C_{\reg}=\{F=0,S>0\}\), one has
+\begin{equation}\label{eq:harmonic-log-Jacobi}
+ \frac{D_h}{S}=-\frac{J_Cw}{w},\qquad
+ w=(a\sqrt S)^{-1}.
+\end{equation}
+If in addition \(\Gamma(F,Q_h)=\kappa F\) for a smooth function
+\(\kappa\), then \eqref{eq:harmonic-log-defect} becomes
+\begin{equation}\label{eq:harmonic-log-two-coefficients}
+ \cL(G)=a^3F(D_h+F^2D_{1,h}),\qquad
+ D_{1,h}=Q_h\Delta h-\tfrac12\kappa-
+                         \tfrac12\Gamma(h,Q_h).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The product and chain rules give
+\[
+ \nabla G=a(\nabla F+F\nabla h),\qquad
+ \Delta G=aF(\Delta h+Q_h).
+\]
+The first formula gives \eqref{eq:harmonic-log-gradient}.  Set
+\(V=S+F^2Q_h\).  Differentiating \(|\nabla G|^2=a^2V\) yields
+\[
+ a^{-3}\Gamma(G,|\nabla G|^2)
+ =2FV(\tau+H_h)+\Gamma(F,V)+F\Gamma(h,V).
+\]
+Here
+\[
+ \begin{aligned}
+ \Gamma(F,V)&=2qF+2FSQ_h+F^2\Gamma(F,Q_h),\\
+ \Gamma(h,V)&=\Gamma(h,S)+2\tau F^2Q_h+
+                                      F^2\Gamma(h,Q_h).
+ \end{aligned}
+\]
+Substitute these identities in
+\(\cL(G)=|\nabla G|^2\Delta G-
+\tfrac12\Gamma(G,|\nabla G|^2)\), and use
+\(Q_h=H_h+2\tau\).  The terms proportional to \(F\) and
+\(F^3\) give \eqref{eq:harmonic-log-defect}.
+The additional divisibility assumption gives
+\eqref{eq:harmonic-log-two-coefficients}.
+
+On the regular zero set, \(\cK_F(a)=a^3D_h\), so
+\eqref{eq:boundary-potential-algebraic} gives
+\eqref{eq:harmonic-log-Jacobi}.
+\end{proof}
+
+\begin{theorem}[A monotonicity criterion for harmonic multipliers]
+\label{thm:harmonic-monotonicity-criterion}
+In the setting of \cref{lem:harmonic-log-multiplier}, suppose on
+\(U\) that
+\begin{equation}\label{eq:harmonic-log-monotonicity}
+ Q_h\ge0,\qquad D_h\ge0,\qquad \Delta h\ge0,\qquad
+ F\Gamma(F,Q_h)\le0,\qquad \Gamma(h,Q_h)\le0.
+\end{equation}
+Then \(\nabla(aF)\ne0\) on \(U\), and
+\(F\cL(aF)\ge0\) there. With
+\(Z=\R^N\setminus U=\{\nabla F=0\}\), the field
+\[
+ X=\frac{\nabla(aF)}{|\nabla(aF)|}\quad\text{on }U
+\]
+is a two-sided subcalibration of \(E=\{F<0\}\) across \(Z\).
+Consequently \(E\) is locally perimeter minimizing and
+\(\partial\llbracket E\rrbracket\) is locally mass minimizing.
+No regularity of the spherical link is assumed.
+\end{theorem}
+
+\begin{proof}
+By \eqref{eq:harmonic-log-gradient},
+\(|\nabla(aF)|^2\ge a^2S>0\).  In the bracket in
+\eqref{eq:harmonic-log-defect}, each of
+\(D_h\), \(F^2Q_h\Delta h\),
+\(-F^2\Gamma(h,Q_h)/2\), and
+\(-F\Gamma(F,Q_h)/2\) is nonnegative.  Thus
+\(F\cL(aF)\ge0\), and
+\eqref{eq:div-normalized-gradient} gives the required divergence
+signs.  At every regular zero, \(\nabla(aF)=a\nabla F\), so
+\(X\) is the exterior unit normal to \(E\).
+
+By \cref{rem:polynomial-finite-perimeter,lem:square-free-critical-set},
+\(E\) has locally finite perimeter and its algebraic critical set
+\(Z\subset\{F=0\}\) has locally zero \(\cH^{N-1}\)-measure.
+Apply \cref{thm:removable-subcalibration} to \(X\); no extension
+of \(a\) across \(Z\) is needed.
+\end{proof}
+
+\begin{remark}[Alternative coefficient tests]
+\label{rem:harmonic-alternative-tests}
+If \(\Gamma(F,Q_h)=\kappa F\), the monotonicity conditions may be replaced by
+\(Q_h\ge0\), \(D_h\ge0\), and \(D_{1,h}\ge0\).
+Without this divisibility assumption, the conditions
+\[
+ Q_h\ge0,\quad D_h\ge0,\quad P_h\ge0,\quad
+ \Gamma(F,Q_h)^2\le16D_hP_h
+\]
+also suffice: the last inequality gives
+\(\tfrac12|F\Gamma(F,Q_h)|\le D_h+F^2P_h\).
+All inequalities must hold throughout \(U\).
+\end{remark}
+
+For the natural choice \(a=\sqrt S\),
+the quantities in the criterion use only \(q,S\) and their derivatives. Writing
+\(K=\Delta S\) and \(T=\Gamma(S,S)\), one obtains
+\begin{equation}\label{eq:harmonic-gradient-multiplier-data}
+ \begin{aligned}
+ h&=\tfrac12\log S,& \tau&=q/S,&
+ Q_h&=\frac{T}{4S^2}+\frac{2q}{S},\\
+ \Delta h&=\frac{K}{2S}-\frac{T}{2S^2},&&&
+ D_h&=\frac K2-2q-\frac TS.
+ \end{aligned}
+\end{equation}
+Under the spectral identities below, the two monotonicity signs hold,
+and the remaining condition reduces to a lower bound for \(\Delta S\).
+
+\begin{remark}[The nonharmonic correction]
+\label{rem:nonharmonic-log-multiplier}
+Suppose instead that \(\cL(F)=-qF\), without assuming
+\(\Delta F=0\), and retain \(U=\{S>0\}\),
+\eqref{eq:harmonic-log-compatibility}, and the auxiliary functions above.
+The term \(2S\Delta F\) in \(\Gamma(F,S)\) changes only the defect:
+\[
+ \cL(aF)=a^3F\left(D_h+FQ_h\Delta F+F^2P_h
+                         -\tfrac F2\Gamma(F,Q_h)\right).
+\]
+The gradient identity is unchanged, so the square-completion test of
+\cref{rem:harmonic-alternative-tests} becomes
+\[
+ Q_h\ge0,\qquad D_h\ge0,\qquad P_h\ge0,\qquad
+ \bigl(\Gamma(F,Q_h)-2Q_h\Delta F\bigr)^2\le16D_hP_h.
+\]
+It gives comparison when \(Z=\{S=0\}\) is locally
+\(\cH^{N-1}\)-null, in particular for square-free homogeneous \(F\)
+by \cref{lem:square-free-critical-set}. The natural choice
+\(h=\frac12\log S\) must still satisfy the compatibility assumption:
+now \(\Gamma(F,h)=\Delta F+qF/S\), which need not be divisible
+smoothly by \(F\) across its regular zero set.
+\end{remark}

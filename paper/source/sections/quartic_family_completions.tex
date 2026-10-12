@@ -1,0 +1,379 @@
+\subsection{The splitting, Hopf and Riedler families}
+\label{sec:quartic-family-completions}
+
+We apply the common theorem to the splitting construction, the Hopf
+pairing and Riedler's pullbacks. The splitting and Riedler families
+admit complete variational classifications. The balanced Hopf section
+also illustrates intrinsic comparison inside a Simons cone, and the
+degree-nine Riedler potential supplies an additional Hardy improvement.
+
+\subsubsection{The OT--FKM splitting criterion}
+
+For the data \eqref{bh:quartic-data}--\eqref{bh:centered}, the exact
+minimizing threshold is as follows.
+
+\begin{theorem}\label{bh:main}
+The hypersurface $C=\{F=0\}\subset\R^{2\ell}$ is minimal on its
+regular part, and
+\[
+ \Sing C=(\R^\ell\times\{0\})\cup(\{0\}\times\R^\ell).
+\]
+The oriented boundary $\partial\llbracket\{F<0\}\rrbracket$ is
+area minimizing if and only if $\ell\geq10$. In all these minimizing
+cases it is strictly area minimizing in the sense of
+\cref{def:four-variational-notions}. The polynomial potentials and
+strict-stability bound of \cref{thm:quartic-table-existence} apply,
+with degrees ten for $\ell=10$ and eight for $\ell\geq12$.
+For the remaining
+admissible dimensions $\ell=4,6,8$, the regular part of $C$ is unstable.
+\end{theorem}
+
+\paragraph{Closure and singularities.}
+
+For $x\ne0$, the vectors \(x,A_1x,\ldots,A_{m-1}x\)
+are orthogonal and have length $|x|$. Consequently $0\leq Q\leq T$.
+Direct differentiation gives, in the variables $I=(u,v,Q)$,
+\begin{equation}\label{bh:original-table}
+ (\Gamma(I_i,I_j))=
+ \begin{pmatrix}4u&0&4Q\\0&4v&4Q\\4Q&4Q&4RQ\end{pmatrix},
+ \qquad
+ \Delta I=(2\ell,2\ell,2mR).
+\end{equation}
+For example,
+$\nabla_yQ=2\sum_{i=0}^{m-1}\ip{A_i x}{y}A_i x$, with $A_0=\Id$,
+so $\norm{\nabla_yQ}^2=4uQ$; differentiating in $x$ gives $4vQ$.
+By \cref{prop:MR-generator-test},
+\begin{equation}\label{bh:algebra}
+ \cA=\R[u,v,Q]=\R[R,u-v,F]
+\end{equation}
+is a graded Laplacian algebra, with generator degrees $(2,2,4)$.
+The determinant of its gradient matrix is $64RQ(T-Q)$, which is
+positive at points with $u,v>0$ and $0<Q<T$. These points exist by
+choosing the components of $y$ both in and perpendicular to the
+span above. Thus the three generators are algebraically independent;
+the spherical quotient dimension is two. The separately harmonic
+normal form of \cref{prop:two-block-normal} is
+$P=Q-(m/\ell)uv$; the minimal polynomial $F=Q-cuv$ differs from
+it by a radial term in the two blocks.
+
+With
+$p_0=u-v$ and $p_{i+1}=2\langle A_i x,y\rangle$ for
+$A_0=\Id$, the matrices in \cref{rem:split-composed-foliation}
+form a symmetric Clifford system, and
+\[
+ F=\frac14\left(\sum_{i=1}^{m}p_i^2
+                    +cp_0^2-cR^2\right).
+\]
+Its blocks $E_0=p_0^2$, $E_1=4Q$, and $E_2=4(T-Q)$
+have weights $(1,m,\ell-m)$. The substitutions in
+\eqref{bh:centered} therefore give \eqref{bh:reduced-table} with
+$h=\ell$ and $N=2\ell$.
+The calculation after \eqref{bh:reduced-table} recovers
+$\cA_R(F)=\R[R,T,F]$, of degrees $(2,4,4)$. Independence follows
+since $(u,v,Q)\mapsto(u+v,uv,Q-cuv)$ has Jacobian $u-v$.
+Both algebras have spherical quotient dimension two, but
+\eqref{bh:algebra} also retains the sign of $u-v$.
+
+The geometry follows from \cref{lem:quartic-table-geometry}. For
+$\ell\ge10$, evenness of $\ell$ and
+\cref{thm:quartic-table-existence} give the variational conclusions.
+The remaining dimensions are excluded by the following local
+model and angular calculation.
+
+Fix $x_0\ne0$, and write
+$W_{x_0}=\operatorname{span}\{x_0,A_1x_0,\ldots,A_{m-1}x_0\}$.
+The first nonzero term of $F$ at $(x_0,0)$ is
+\begin{equation}\label{bh:transverse}
+ \norm{x_0}^2\big((1-c)\norm{y_\parallel}^2
+                         -c\norm{y_\perp}^2\big),
+ \quad y_\parallel\in W_{x_0},\quad y_\perp\in W_{x_0}^\perp.
+\end{equation}
+The tangent cone is the product of $\R^\ell$ with this nonlinear
+Lawson cone. Its transverse link is
+\[
+ \Sph^{m-1}(\sqrt c)\times
+ \Sph^{\ell-m-1}(\sqrt{1-c})\subset\Sph^{\ell-1}.
+\]
+Both multiplicities are positive by \eqref{bh:range}. Smooth local
+orthonormal frames for $W_x$ and $W_x^\perp$ identify a neighborhood
+of the stratum with a smoothly varying family of these quadratic cones.
+The same description holds on the other coordinate subspace. 
+
+\begin{remark}[Clifford coordinates of the OT--FKM splitting]
+\label{rem:split-composed-foliation}
+Put $A_0=\Id$. The symmetric Clifford system
+\[
+ P_0=\begin{pmatrix}\Id&0\\0&-\Id\end{pmatrix},\qquad
+ P_{i+1}=\begin{pmatrix}0&A_i^T\\A_i&0\end{pmatrix}
+ \quad(0\leq i\leq m-1)
+\]
+has coordinates $p_0=u-v$ and $p_{i+1}=2\langle A_i x,y\rangle$.
+The common geometric interpretation is given in
+\cref{sec:Clifford-composition-background}.
+\end{remark}
+
+
+\subsubsection{The unstable OT--FKM splitting dimensions}
+
+For $\ell=4,6$, the transverse Lawson cone in \eqref{bh:transverse}
+is unstable: its link has dimension $\ell-2$ and constant squared
+curvature $\ell-2$, giving the Hardy margin
+\begin{equation}\label{bh:Lawson-margin}
+ \frac{(\ell-3)^2}{4}-(\ell-2)<0.
+\end{equation}
+\Cref{lem:tangent-instability-transfer} transfers a negative
+variation from this transverse cone to $C_{\rm reg}$, using the
+local model \eqref{bh:transverse}.
+
+For $\ell=8$, the transverse Lawson cone can be area minimizing;
+instability follows instead from the angular calculation below.
+
+\begin{lemma}\label{bh:curvature}
+On the regular part of the quartic cone,
+\begin{equation}\label{bh:AC}
+ \norm{A_C}^2=(\ell-2)\frac{R}{T}+\frac{2(\ell-1)}R.
+\end{equation}
+On $\Lambda=C\cap\Sph^{2\ell-1}$, put $t=T|_\Lambda$. Then
+\begin{gather}\label{bh:link-table}
+ \norm{A_\Lambda}^2=\frac{\ell-2}{t}+2(\ell-1),\qquad
+ \norm{\nabla_\Lambda t}^2=4t(1-4t),\\
+ \Delta_\Lambda t=2(\ell-1)-8\ell t.\nonumber
+\end{gather}
+\end{lemma}
+\begin{proof}
+Put $W=\norm{\nabla F}^2$ and $\nu=\nabla F/\sqrt W$.
+The Euclidean Bochner identity gives
+$\norm{\nabla^2F}^2=\Delta W/2-\Gamma(F,\Delta F)$.
+On $F=0$, \eqref{bh:reduced-table} yields
+\begin{align*}
+ W&=4bRT,\\
+ \norm{\nabla^2F}^2&=4(a^2+b\ell)R^2+8b(\ell+4)T,\\
+ \norm{\nabla\sqrt W}^2&=4[(a^2+b)R^2+5bT],\\
+ \nabla^2F(\nu,\nu)&=\Delta F=2aR.
+\end{align*}
+Now use
+\[
+ \norm{A_C}^2=
+ \frac{\norm{\nabla^2F}^2-2\norm{\nabla\sqrt W}^2
+                     +(\nabla^2F(\nu,\nu))^2}{W}
+\]
+to obtain \eqref{bh:AC}. The normal Hessian of any polynomial $V$ can also be computed
+from the closure table, using
+\[
+ \Hess V(\nu,\nu)=\frac{
+ \Gamma(F,\Gamma(F,V))-\tfrac12\Gamma(V,W)}{W}.
+\]
+On $F=0$, this gives
+\[
+ \Gamma(T,F)=0,\qquad
+ \Hess T(\nu,\nu)=2R-\frac{4T}{R},\qquad
+ \Delta_C T=2(\ell-1)R+\frac{4T}{R}.
+\]
+Subtracting the radial contribution of the degree-four function $T$
+on the $(2\ell-1)$-dimensional cone gives the last identity in
+\eqref{bh:link-table}. Subtracting the squared radial derivative from
+$\Gamma(T,T)=4RT$ gives the gradient identity.
+\end{proof}
+
+For $\ell=8$, the positive function $\phi=t^{-1}$ satisfies
+\begin{equation}\label{bh:eigenfunction}
+ (\Delta_\Lambda+\norm{A_\Lambda}^2)\phi=46\phi.
+\end{equation}
+To apply this identity, we cut off near the singular set of the link.
+Its two singular strata have dimension seven and
+transverse dimension seven in $\Lambda$. The local quadratic-cone
+description after \eqref{bh:transverse} implies
+$t\asymp\rho^2$ and transverse volume density comparable to
+$\rho^6\,d\rho$, where $\rho$ is distance to the singular stratum.
+Thus $\phi\asymp\rho^{-2}$, its gradient is $O(\rho^{-3})$, and
+$\phi$, its gradient and the potential term have the required
+finite integrals.
+
+Choose cutoffs $\eta_\varepsilon$ vanishing for $\rho<\varepsilon$
+and equal to one for $\rho>2\varepsilon$, with gradient bounded by
+$O(\varepsilon^{-1})$. Then
+\[
+ \int_\Lambda\phi^2\norm{\nabla\eta_\varepsilon}^2
+ =O(\varepsilon^{-4}\varepsilon^{-2}\varepsilon^7)
+ =O(\varepsilon)\longrightarrow0.
+\]
+Multiplying \eqref{bh:eigenfunction} by
+$\eta_\varepsilon^2\phi$ and integrating by parts on the regular
+part proves that the angular Rayleigh quotients of
+$\eta_\varepsilon\phi$ tend to $-46$. The cone has dimension fifteen,
+so \eqref{eq:exact-Hardy-gap} gives compactly supported regular
+variations whose scale-invariant quotients tend to
+\begin{equation}\label{bh:negative-margin}
+ \frac{(15-2)^2}{4}-46=-\frac{15}{4}<0.
+\end{equation}
+This proves instability. Together with \eqref{bh:Lawson-margin} and
+the evenness of $\ell$, it completes Theorem~\ref{bh:main}.
+
+\input{sections/hopf_pairing_sections}
+
+\subsubsection{Riedler's Clifford--Simons quartics}
+
+The construction and area-minimizing range
+\(N\geq32\), \(k\geq4\) are due to Riedler
+\cite[Section~5.2 and Theorem~5.2.5]{RiedlerThesis25}.
+The common quartic theorem gives polynomial potentials; the
+degree-nine potential below improves their Hardy bound. The
+sixteen-dimensional endpoint is a splitting cone.
+
+Let \(A_1,\ldots,A_{2k}\) be a symmetric Clifford system on
+\(\R^N\), and write
+\(P_i(x)=\langle A_i x,x\rangle\) and
+\(Q=\sum_{i=1}^{2k}P_i^2\). Define
+\[
+ F=\sum_{i=1}^{k}P_i^2-\sum_{i=k+1}^{2k}P_i^2,
+ \qquad C^4_{N,k}=\{x\in\R^N:F(x)=0\}.
+\]
+This particular Clifford realization requires
+$\delta(2k-1)\mid N/2$ \cite[Section~3.5]{FKM81}.
+Here $F=f\circ P$, where
+$f(y)=\sum_{i\leq k}y_i^2-\sum_{i>k}y_i^2$, so the composition
+is the pullback of a Simons cone. The unequal-target example
+\cref{ex:lawson-pullback} extends this connection with the transfer
+theorem of \cref{sec:quartic-application}.
+At the comparison endpoint \(k=1\),
+\(F=(P_1-P_2)(P_1+P_2)\) is reducible and harmonic;
+\cref{prop:minimizing-irreducibility} excludes area minimization.
+For the minimizing parameters below, the same proposition gives
+irreducibility.
+The chain rule gives the identities recorded in
+\cite[Lemma~5.2.11]{RiedlerThesis25}:
+\begin{equation}\label{eq:quartic-ambient-closure}
+ \bigl(\Gamma(I_i,I_j)\bigr)_{I=(R,Q,F)}=
+ \begin{pmatrix}
+ 4R&8Q&8F\\
+ 8Q&16RQ&16RF\\
+ 8F&16RF&16RQ
+ \end{pmatrix},\qquad
+ \Delta I=(2N,16kR,0).
+\end{equation}
+The determinant is \(1024R(R^2-Q)(Q^2-F^2)\), so the spherical
+quotient has dimension two wherever \(0<Q<R^2\) and \(|F|<Q\).
+For a concrete example, take the quadratic octonionic Hopf map
+\(\widetilde P=(P_1,\ldots,P_9):\R^{16}\to\R^9\), normalized by
+\(|\widetilde P|^2=R^2\), and retain its first eight components.
+Then \(k=4\) and \(Q=R^2-P_9^2\). Choose an image with
+\(P_9\neq0\) and nonzero components in both four-dimensional blocks.
+This gives \(0<Q<R^2\) and \(|F|<Q\). Taking two copies of this
+eight-matrix Clifford system gives \(N=32\), \(k=4\), in the
+minimizing range below; the same point, placed in one copy, retains
+the strict inequalities.
+When \(Q\not\equiv R^2\), these generators correspond to
+\eqref{eq:orthogonal-quartic-data} via
+\[
+ (E_0,E_1,E_2)=\left(R^2-Q,\frac{Q+F}{2},\frac{Q-F}{2}\right),
+ \qquad (r_0,r_1,r_2)=\left(\frac N2-2k+1,k,k\right).
+\]
+For $N\ge32$, $k\ge4$, normalize $T=Q/4$, $F_{\rm gen}=F/8$.
+Lemma~\ref{lem:quartic-table-geometry} gives regular minimality,
+the singular set $\{Q=0\}$, and full support. If $k=4$, then
+$r_0\ge9$ and \cref{thm:quartic-table-existence} gives $G=RQF$;
+if $k\ge5$, \cref{prop:balanced-quartic-multiplier} gives $G=QF$.
+Thus the boundary current is strictly area minimizing in this range,
+with the Hardy bound \eqref{eq:bihomogeneous-Hardy}. Positive
+constant rescalings do not affect normalized gradients.
+
+The defining polynomial itself satisfies
+\[
+ |\nabla F|^2=16RQ,\qquad \Delta F=0,\qquad
+ \cL(F)=-64F(Q+2R^2).
+\]
+The last identity follows from
+$\cL(F)=-\Gamma(F,\Gamma(F,F))/2$ and
+\eqref{eq:quartic-ambient-closure}.
+
+\begin{example}[Riedler's subcalibration potential]
+\label{ex:Riedler-correct-power}
+For \(N\geq32\) and \(k\geq4\), Riedler's thesis uses
+\cite[Section~5.2.2, Lemmas~5.2.12--5.2.13]{RiedlerThesis25}
+\begin{equation}\label{eq:Riedler-correct-potential}
+ G=RQ^{3/4}F=16^{-3/4}R^{1/4}S^{3/4}F,
+ \qquad S=|\nabla F|^2=16RQ.
+\end{equation}
+This potential has degree nine. The parameters in
+\cref{prop:harmonic-power-Jacobi} are
+\((e,\sigma,\gamma)=(4,1/2,3/4)\).
+Using \eqref{eq:quartic-ambient-closure}, we obtain the boundary Jacobi coefficient
+\begin{equation}\label{eq:Riedler-positive-boundary}
+ \beta_G=(2N-41)+(12k-47)\frac{R^2}{Q}>0.
+\end{equation}
+Since \(Q\leq R^2\), \cref{thm:ground-state-gap} gives
+\[
+ Q_C(u)\geq
+ \left[\left(9-\frac{N-1}{2}\right)^2+2N+12k-88\right]
+ \int_Cr^{-2}u^2.
+\]
+This lower bound exceeds the general quartic bound
+\eqref{eq:bihomogeneous-Hardy}, with $h=2k$, by
+\[
+ \left[\frac{(N-19)^2}{4}+2N+12k-88\right]
+ -\left[\frac{(N-17)^2}{4}+16k-72\right]
+ =N+2-4k=2r_0>0.
+\]
+Thus Riedler's degree-nine potential gives the stronger Hardy bound.
+\end{example}
+
+\begin{corollary}[Instability of Riedler's sixteen-dimensional quartic]
+\label{thm:Riedler-unstable}
+The cone $C^4_{16,4}$ is unstable on its regular part and is not area
+minimizing. More precisely, there are compactly supported variations on the regular
+part with scale-invariant quotients of the second variation tending to
+$-15/4$.
+\end{corollary}
+
+\begin{proof}
+Write $F_R$ for the defining quartic of $C^4_{16,4}$ and let
+$A_1,\ldots,A_8$ be its symmetric Clifford matrices. The volume
+matrix $A_9=A_1\cdots A_8$ satisfies
+\[
+ A_9^T=A_9,\qquad A_9^2=I,\qquad A_9A_i=-A_iA_9.
+\]
+Its two eigenspaces have dimension eight, since $A_1$ exchanges
+them isometrically. Choosing compatible orthonormal bases gives
+coordinates $(x,y)\in\R^8\oplus\R^8$ in which
+\[
+ A_{i+1}=\begin{pmatrix}0&B_i\\B_i^T&0\end{pmatrix}
+ \quad(0\leq i\leq7),\qquad B_0=I.
+\]
+The matrices $B_1,\ldots,B_7$ are skew-symmetric and satisfy
+$B_iB_j+B_jB_i=-2\delta_{ij}I$. Thus the eight vectors $B_i y$
+$(0\leq i\leq7)$ are pairwise orthogonal, all of length $|y|$, and
+\begin{gather*}
+ \sum_{i=0}^7\langle x,B_i y\rangle^2=|x|^2|y|^2,
+ \qquad Q=4|x|^2|y|^2,\\
+ \frac{F_R}{8}
+ =\sum_{i=0}^3\langle x,B_i y\rangle^2
+       -\frac12|x|^2|y|^2=F_{\rm split}.
+\end{gather*}
+Consequently $C^4_{16,4}$ is orthogonally congruent to a splitting
+cone \eqref{bh:centered} with $(\ell,m)=(8,4)$.
+Its Clifford representation is the balanced one: the symmetric
+involution $B_1B_2B_3$ anticommutes with $B_4$, so its two
+eigenspaces have dimension four.
+
+In the original variables, $\Lambda=C^4_{16,4}\cap\Sph^{15}$ and
+$q=Q|_\Lambda=4t$, so \eqref{bh:link-table} reads
+\begin{equation}\label{eq:Riedler-16-link}
+ |A_\Lambda|^2=\frac{24}{q}+14,\qquad
+ |\nabla_\Lambda q|^2=16q(1-q),\qquad
+ \Delta_\Lambda q=56-64q.
+\end{equation}
+The $\ell=8$ argument above transfers under this orthogonal
+identification, and \eqref{bh:negative-margin} gives the asserted
+quotients and instability.
+\end{proof}
+
+This is the case left undecided in
+\cite[Remark~5.2.6(3)]{RiedlerThesis25}. Together with
+Theorem~5.2.5 and the exclusions in Remark~5.2.6(1)--(2)
+of that thesis, it gives
+\[
+ C^4_{N,k}\text{ is area minimizing}
+ \quad\Longleftrightarrow\quad N\geq32\text{ and }k\geq4
+\]
+among the admissible Clifford--Simons quartics.
+
